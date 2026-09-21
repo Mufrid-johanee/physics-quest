@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Load the Cargo Ship",
+    "mass_kg": 60,
+    "height_m": 4,
+    "max_energy_j": 3000,
+    "max_time_s": 10,
+    "max_force_n": null,
+    "max_arrival_speed_ms": null,
+    "allowed_sources": ["motor", "hand_crank"],
+    "w_out_j": 2352.0
+  },
+  {
+    "id": 2,
+    "title": "Rescue the Lifeboat",
+    "mass_kg": 120,
+    "height_m": 2,
+    "max_energy_j": 3200,
+    "max_time_s": 12,
+    "max_force_n": 400,
+    "max_arrival_speed_ms": null,
+    "allowed_sources": ["motor", "hand_crank"],
+    "w_out_j": 2352.0
+  },
+  {
+    "id": 3,
+    "title": "Storm Blackout",
+    "mass_kg": 100,
+    "height_m": 3,
+    "max_energy_j": null,
+    "max_time_s": null,
+    "max_force_n": null,
+    "max_arrival_speed_ms": 1.0,
+    "allowed_sources": ["counterweight"],
+    "w_out_j": 2940.0
+  }
+]

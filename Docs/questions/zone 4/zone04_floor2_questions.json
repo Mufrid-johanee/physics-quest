@@ -1,0 +1,714 @@
+{
+  "zone": "04_electricity_magnetism",
+  "floor": 2,
+  "bloom_levels": [
+    "understand",
+    "apply"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z04_f2_001",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What occurs when an uncharged metal sphere is brought near a positively charged rod without touching it?",
+      "options": [
+        "Negative charges accumulate on the near side and positive charges on the far side due to electrostatic induction",
+        "The sphere acquires an overall permanent positive charge immediately",
+        "Electrons leap out into the surrounding air from the sphere",
+        "The sphere turns into an electromagnet"
+      ],
+      "correct_answer": "Negative charges accumulate on the near side and positive charges on the far side due to electrostatic induction",
+      "explanation": "The positive rod attracts free conduction electrons toward the near surface of the sphere, leaving an equal deficit of electrons (positive charge) on the opposite side."
+    },
+    {
+      "id": "z04_f2_002",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a piece of paper get attracted to a comb that has been run through dry hair?",
+      "options": [
+        "The charged comb induces opposite charges on the nearest surface of the neutral paper, resulting in net electrostatic attraction",
+        "Friction between air molecules glues the paper to the comb",
+        "The paper becomes magnetized by the plastic comb",
+        "Air pressure pushes the paper toward the vacuum created by the comb"
+      ],
+      "correct_answer": "The charged comb induces opposite charges on the nearest surface of the neutral paper, resulting in net electrostatic attraction",
+      "explanation": "Although the paper is overall neutral, the comb's electric field polarizes molecules in the paper, bringing opposite induced charges closer than like charges and creating net attraction."
+    },
+    {
+      "id": "z04_f2_003",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does doubling the cross-sectional area of a wire affect its electrical resistance?",
+      "options": [
+        "The resistance is halved",
+        "The resistance is doubled",
+        "The resistance quadruples",
+        "The resistance remains unchanged"
+      ],
+      "correct_answer": "The resistance is halved",
+      "explanation": "Resistance is inversely proportional to cross-sectional area: R = ρL/A. Doubling area A cuts resistance R by a factor of 2."
+    },
+    {
+      "id": "z04_f2_004",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does doubling the length of a wire affect its electrical resistance?",
+      "options": [
+        "The resistance is doubled",
+        "The resistance is halved",
+        "The resistance quadruples",
+        "The resistance decreases by a factor of 4"
+      ],
+      "correct_answer": "The resistance is doubled",
+      "explanation": "From R = ρL/A, resistance is directly proportional to wire length L. Doubling length doubles the resistance."
+    },
+    {
+      "id": "z04_f2_005",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is the equivalent resistance of a parallel circuit always LESS than the smallest individual resistance in that circuit?",
+      "options": [
+        "Connecting branches in parallel adds more independent pathways for current to flow, increasing total conductance",
+        "Current cancels out between opposite branches",
+        "Parallel connections cool down the resistors",
+        "Voltages subtract from one another across parallel paths"
+      ],
+      "correct_answer": "Connecting branches in parallel adds more independent pathways for current to flow, increasing total conductance",
+      "explanation": "Each added parallel branch provides an additional route for charge flow. Because total conductance is G_total = G1 + G2 + ..., equivalent resistance R_p = 1/G_total is smaller than any individual branch resistance."
+    },
+    {
+      "id": "z04_f2_006",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is pure copper widely used for connecting wires in homes, while nichrome is used for toaster heating elements?",
+      "options": [
+        "Copper has very low resistivity to minimize energy loss, while nichrome has high resistivity to produce heat",
+        "Copper produces heat more rapidly than nichrome",
+        "Nichrome melts at low temperatures to serve as a fuse",
+        "Copper is an electrical insulator while nichrome is a superconductor"
+      ],
+      "correct_answer": "Copper has very low resistivity to minimize energy loss, while nichrome has high resistivity to produce heat",
+      "explanation": "Connecting wires must conduct electricity with minimum voltage drop and heating (low ρ). Heating elements require high resistivity (high ρ) and high melting point to glow and dissipate heat (P = I²R)."
+    },
+    {
+      "id": "z04_f2_007",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What determines the direction of the magnetic force on a positive charge moving through a magnetic field?",
+      "options": [
+        "The right-hand rule for the vector cross product F = q(v × B)",
+        "Coulomb's electrostatic law",
+        "Ohm's law",
+        "The direction of gravity acting on the charge"
+      ],
+      "correct_answer": "The right-hand rule for the vector cross product F = q(v × B)",
+      "explanation": "The magnetic Lorentz force is given by F = q(v × B), which acts perpendicular to both velocity v and magnetic field B as dictated by the right-hand rule."
+    },
+    {
+      "id": "z04_f2_008",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does no magnetic force act on a stationary charged particle in a magnetic field?",
+      "options": [
+        "Magnetic force requires charge motion (F = qvB sin θ; when v = 0, F = 0)",
+        "Stationary charges lose their electric field",
+        "Magnetic fields repel stationary electrons completely",
+        "Magnetic force only acts on neutral neutrons"
+      ],
+      "correct_answer": "Magnetic force requires charge motion (F = qvB sin θ; when v = 0, F = 0)",
+      "explanation": "A static charge produces only an electrostatic field. A magnetic force arises from interaction with magnetic fields, which requires moving charges (current or velocity v > 0)."
+    },
+    {
+      "id": "z04_f2_009",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does Fleming's Right-Hand Rule differ in application from Fleming's Left-Hand Rule?",
+      "options": [
+        "Right-Hand Rule determines induced current direction in generators; Left-Hand Rule determines force direction in motors",
+        "Right-Hand Rule is used for DC motors; Left-Hand Rule is used for AC transformers",
+        "Right-Hand Rule calculates electrostatic force; Left-Hand Rule calculates resistance",
+        "Both rules give identical directions and can be used interchangeably"
+      ],
+      "correct_answer": "Right-Hand Rule determines induced current direction in generators; Left-Hand Rule determines force direction in motors",
+      "explanation": "Fleming's Left-Hand Rule is the Motor Rule (predicts motion/thrust from current and field). Fleming's Right-Hand Rule is the Generator Rule (predicts induced current from motion and field)."
+    },
+    {
+      "id": "z04_f2_010",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does an electric motor draw a large surge current when first turned on, but less current once running at full speed?",
+      "options": [
+        "At full speed, the rotating armature generates a back-EMF that opposes supply voltage, reducing net current",
+        "The armature resistance increases tenfold as it spins",
+        "The battery voltage drops to zero at full speed",
+        "Friction stops all electron flow after two seconds"
+      ],
+      "correct_answer": "At full speed, the rotating armature generates a back-EMF that opposes supply voltage, reducing net current",
+      "explanation": "As the motor turns, it acts like a generator producing back-EMF (Eb). The net armature current is I = (V - Eb)/R. At startup Eb = 0, so initial current is very high."
+    },
+    {
+      "id": "z04_f2_011",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the role of the carbon brushes in an electric DC motor or generator?",
+      "options": [
+        "They maintain a sliding electrical contact with the rotating split rings without tangling wires",
+        "They magnetize the stator poles",
+        "They cool the motor by absorbing friction heat",
+        "They insulate the rotor from the metallic casing"
+      ],
+      "correct_answer": "They maintain a sliding electrical contact with the rotating split rings without tangling wires",
+      "explanation": "Carbon brushes are stationary conductive blocks that press gently against rotating commutator segments, completing the circuit while allowing free rotation."
+    },
+    {
+      "id": "z04_f2_012",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens when a bar magnet is pushed rapidly into a stationary copper coil connected to a galvanometer?",
+      "options": [
+        "A momentary current is induced in the coil, deflecting the galvanometer pointer",
+        "The coil permanently demagnetizes the bar magnet",
+        "The copper wire melts due to electrostatic charges",
+        "The galvanometer pointer remains strictly at zero"
+      ],
+      "correct_answer": "A momentary current is induced in the coil, deflecting the galvanometer pointer",
+      "explanation": "By Faraday's law of electromagnetic induction, moving the magnet changes the magnetic flux through the coil turns, inducing a transient EMF and electric current."
+    },
+    {
+      "id": "z04_f2_013",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a step-up transformer NOT violate the law of conservation of energy when it steps up voltage?",
+      "options": [
+        "The secondary current decreases proportionally, keeping total output power equal to (or slightly less than) input power",
+        "Energy is created from magnetic flux inside the iron core",
+        "Voltage is not related to electrical energy or power",
+        "Transformers only conserve electric charge, not electrical energy"
+      ],
+      "correct_answer": "The secondary current decreases proportionally, keeping total output power equal to (or slightly less than) input power",
+      "explanation": "In an ideal transformer, power in equals power out: P_p = P_s → V_p × I_p = V_s × I_s. Stepping up voltage means secondary current drops by the exact same ratio."
+    },
+    {
+      "id": "z04_f2_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two point charges of +2 μC and +3 μC are separated by a distance of 0.3 m in air. What is the electrostatic repulsive force between them? (k = 9 × 10⁹ N·m²/C²)",
+      "options": [
+        "0.6 N",
+        "6.0 N",
+        "0.06 N",
+        "1.8 N"
+      ],
+      "correct_answer": "0.6 N",
+      "explanation": "F = k(q1 × q2) / r² = (9 × 10⁹ × 2 × 10⁻⁶ × 3 × 10⁻⁶) / (0.3)² = (0.054) / 0.09 = 0.6 N."
+    },
+    {
+      "id": "z04_f2_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A charge of 12 Coulombs flows through an electric lamp in 4 seconds. What is the current flowing through the lamp?",
+      "options": [
+        "3 A",
+        "48 A",
+        "0.33 A",
+        "8 A"
+      ],
+      "correct_answer": "3 A",
+      "explanation": "I = Q / t = 12 C ÷ 4 s = 3 A."
+    },
+    {
+      "id": "z04_f2_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 100 Ω resistor is connected across a 220 V line. What electric current passes through the resistor?",
+      "options": [
+        "2.2 A",
+        "22 A",
+        "0.45 A",
+        "22000 A"
+      ],
+      "correct_answer": "2.2 A",
+      "explanation": "I = V / R = 220 V ÷ 100 Ω = 2.2 A."
+    },
+    {
+      "id": "z04_f2_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much work is done in moving an electric charge of 5 Coulombs across two points having a potential difference of 12 Volts?",
+      "options": [
+        "60 J",
+        "2.4 J",
+        "0.42 J",
+        "17 J"
+      ],
+      "correct_answer": "60 J",
+      "explanation": "Work done W = Q × V = 5 C × 12 V = 60 Joules."
+    },
+    {
+      "id": "z04_f2_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Three resistors of 4 Ω, 6 Ω, and 12 Ω are connected in parallel. What is their equivalent resistance?",
+      "options": [
+        "2 Ω",
+        "22 Ω",
+        "4 Ω",
+        "1 Ω"
+      ],
+      "correct_answer": "2 Ω",
+      "explanation": "1/R_p = 1/4 + 1/6 + 1/12 = 3/12 + 2/12 + 1/12 = 6/12 = 1/2 → R_p = 2 Ω."
+    },
+    {
+      "id": "z04_f2_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Three resistors of 5 Ω, 10 Ω, and 15 Ω are connected in series across a 60 V battery. What is the current flowing in the circuit?",
+      "options": [
+        "2 A",
+        "6 A",
+        "12 A",
+        "4 A"
+      ],
+      "correct_answer": "2 A",
+      "explanation": "Total resistance R_s = 5 + 10 + 15 = 30 Ω. Circuit current I = V / R_s = 60 V ÷ 30 Ω = 2 A."
+    },
+    {
+      "id": "z04_f2_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An electric iron rated at 1000 W operates on a 220 V domestic mains supply. What is the current drawn by the iron?",
+      "options": [
+        "4.55 A",
+        "2.20 A",
+        "0.22 A",
+        "10.0 A"
+      ],
+      "correct_answer": "4.55 A",
+      "explanation": "I = P / V = 1000 W ÷ 220 V ≈ 4.55 A."
+    },
+    {
+      "id": "z04_f2_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An electric bulb is rated 220 V, 60 W. What is its operating resistance when lit?",
+      "options": [
+        "806.7 Ω",
+        "3.67 Ω",
+        "13200 Ω",
+        "220 Ω"
+      ],
+      "correct_answer": "806.7 Ω",
+      "explanation": "P = V² / R → R = V² / P = (220)² / 60 = 48400 / 60 ≈ 806.7 Ω."
+    },
+    {
+      "id": "z04_f2_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 2000 W electric water geyser is operated for 2 hours every day. How many kilowatt-hours (units) of electrical energy does it consume in a 30-day month?",
+      "options": [
+        "120 kWh",
+        "60 kWh",
+        "240 kWh",
+        "4 kWh"
+      ],
+      "correct_answer": "120 kWh",
+      "explanation": "Daily energy = 2 kW × 2 h = 4 kWh. Monthly energy = 4 kWh/day × 30 days = 120 kWh."
+    },
+    {
+      "id": "z04_f2_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "If electricity costs 8 Taka per unit (kWh), what is the monthly cost of operating four 100 W fans running 10 hours daily for 30 days?",
+      "options": [
+        "960 Taka",
+        "120 Taka",
+        "480 Taka",
+        "1920 Taka"
+      ],
+      "correct_answer": "960 Taka",
+      "explanation": "Total power = 4 × 100 W = 400 W = 0.4 kW. Daily energy = 0.4 kW × 10 h = 4 kWh. Monthly units = 4 × 30 = 120 units. Total cost = 120 × 8 = 960 Taka."
+    },
+    {
+      "id": "z04_f2_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A straight wire of length 0.5 m carries a current of 4 A perpendicular to a uniform magnetic field of 0.2 Tesla. What is the magnetic force acting on the wire?",
+      "options": [
+        "0.4 N",
+        "4.0 N",
+        "0.8 N",
+        "0.1 N"
+      ],
+      "correct_answer": "0.4 N",
+      "explanation": "F = BIL sin(90°) = 0.2 T × 4 A × 0.5 m × 1 = 0.4 N."
+    },
+    {
+      "id": "z04_f2_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A transformer has 500 turns on its primary coil and 2500 turns on its secondary coil. If the primary is connected to a 220 V AC supply, what is the secondary output voltage?",
+      "options": [
+        "1100 V",
+        "44 V",
+        "5500 V",
+        "220 V"
+      ],
+      "correct_answer": "1100 V",
+      "explanation": "Vs = Vp × (Ns / Np) = 220 V × (2500 / 500) = 220 × 5 = 1100 V."
+    },
+    {
+      "id": "z04_f2_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A step-down transformer converts 2200 V down to 220 V. If the secondary coil has 50 turns, how many turns are on the primary coil?",
+      "options": [
+        "500 turns",
+        "50 turns",
+        "250 turns",
+        "1000 turns"
+      ],
+      "correct_answer": "500 turns",
+      "explanation": "Np = Ns × (Vp / Vs) = 50 × (2200 / 220) = 50 × 10 = 500 turns."
+    },
+    {
+      "id": "z04_f2_027",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A copper wire has a length of 2 m and a cross-sectional area of 1.7 × 10⁻⁶ m². If the resistivity of copper is 1.7 × 10⁻⁸ Ω·m, what is its resistance?",
+      "options": [
+        "0.02 Ω",
+        "0.2 Ω",
+        "2.0 Ω",
+        "0.002 Ω"
+      ],
+      "correct_answer": "0.02 Ω",
+      "explanation": "R = ρL / A = (1.7 × 10⁻⁸ × 2) / (1.7 × 10⁻⁶) = 2 × 10⁻² = 0.02 Ω."
+    },
+    {
+      "id": "z04_f2_028",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A parallel plate capacitor holds a charge of 40 μC when connected across a 20 V battery. What is its capacitance?",
+      "options": [
+        "2 μF",
+        "800 μF",
+        "0.5 μF",
+        "20 μF"
+      ],
+      "correct_answer": "2 μF",
+      "explanation": "C = Q / V = 40 μC ÷ 20 V = 2 μF."
+    },
+    {
+      "id": "z04_f2_029",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much energy is stored in a 10 μF capacitor charged to a potential difference of 100 V?",
+      "options": [
+        "0.05 J",
+        "0.1 J",
+        "1.0 J",
+        "0.005 J"
+      ],
+      "correct_answer": "0.05 J",
+      "explanation": "U = (1/2)CV² = 0.5 × (10 × 10⁻⁶ F) × (100 V)² = 0.5 × 10⁻⁵ × 10⁴ = 0.05 J."
+    },
+    {
+      "id": "z04_f2_030",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A wire of resistance 16 Ω is cut into four equal pieces, and the four pieces are connected in parallel. What is the equivalent resistance of this combination?",
+      "options": [
+        "1 Ω",
+        "4 Ω",
+        "0.25 Ω",
+        "16 Ω"
+      ],
+      "correct_answer": "1 Ω",
+      "explanation": "Cutting into four equal pieces gives each piece a resistance of 16 / 4 = 4 Ω. Connecting four 4 Ω resistors in parallel gives R_p = 4 / 4 = 1 Ω."
+    },
+    {
+      "id": "z04_f2_031",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two charges of +4 C and -4 C are separated by 2 meters in vacuum. What is the electric field intensity at the exact midpoint between them? (k = 9 × 10⁹ N·m²/C²)",
+      "options": [
+        "7.2 × 10¹⁰ N/C",
+        "0 N/C",
+        "3.6 × 10¹⁰ N/C",
+        "1.8 × 10¹⁰ N/C"
+      ],
+      "correct_answer": "7.2 × 10¹⁰ N/C",
+      "explanation": "At midpoint r = 1 m. E from +4 C points toward negative charge: E+ = kq/r² = 9×10⁹×4/1² = 3.6×10¹⁰ N/C. E from -4 C also points toward negative charge: E- = 3.6×10¹⁰ N/C. Net E = E+ + E- = 7.2 × 10¹⁰ N/C."
+    },
+    {
+      "id": "z04_f2_032",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A cell of EMF 6.0 V and internal resistance 0.5 Ω is connected to an external resistor of 5.5 Ω. What is the terminal potential difference across the cell?",
+      "options": [
+        "5.5 V",
+        "6.0 V",
+        "0.5 V",
+        "5.0 V"
+      ],
+      "correct_answer": "5.5 V",
+      "explanation": "Current I = E / (R + r) = 6.0 / (5.5 + 0.5) = 1.0 A. Terminal voltage V = E - Ir = 6.0 - (1.0 × 0.5) = 5.5 V."
+    },
+    {
+      "id": "z04_f2_033",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A battery delivers 5 A through an electric toaster for 3 minutes. How much electric charge passes through the toaster in this time?",
+      "options": [
+        "900 C",
+        "15 C",
+        "150 C",
+        "180 C"
+      ],
+      "correct_answer": "900 C",
+      "explanation": "t = 3 minutes = 180 seconds. Charge Q = I × t = 5 A × 180 s = 900 Coulombs."
+    },
+    {
+      "id": "z04_f2_034",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In a laboratory, a 50 Ω galvanometer gives full-scale deflection with 2 mA. What shunt resistance must be placed in parallel to convert it into an ammeter reading up to 5 A?",
+      "options": [
+        "0.02 Ω",
+        "0.2 Ω",
+        "2.0 Ω",
+        "0.002 Ω"
+      ],
+      "correct_answer": "0.02 Ω",
+      "explanation": "Shunt S = (Ig × G) / (I - Ig) ≈ (0.002 A × 50 Ω) / (5 - 0.002) = 0.1 / 4.998 ≈ 0.02 Ω."
+    },
+    {
+      "id": "z04_f2_035",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An electric immersion rod of resistance 44 Ω is immersed in water and connected to a 220 V line for 5 minutes. How much heat energy in Joules is generated?",
+      "options": [
+        "330,000 J",
+        "1,100 J",
+        "55,000 J",
+        "660,000 J"
+      ],
+      "correct_answer": "330,000 J",
+      "explanation": "Power P = V² / R = (220)² / 44 = 48400 / 44 = 1100 W. Time t = 5 × 60 = 300 s. Heat H = P × t = 1100 W × 300 s = 330,000 J."
+    },
+    {
+      "id": "z04_f2_036",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 100% efficient transformer has a primary coil drawing 2 A at 220 V. If the secondary voltage is 44 V, what is the secondary current?",
+      "options": [
+        "10 A",
+        "0.4 A",
+        "5 A",
+        "20 A"
+      ],
+      "correct_answer": "10 A",
+      "explanation": "Ip × Vp = Is × Vs → 2 A × 220 V = Is × 44 V → Is = 440 / 44 = 10 A."
+    },
+    {
+      "id": "z04_f2_037",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A uniform wire of resistance R is stretched to double its original length without altering its volume. What is its new resistance?",
+      "options": [
+        "4R",
+        "2R",
+        "R/2",
+        "R/4"
+      ],
+      "correct_answer": "4R",
+      "explanation": "Volume V = A × L is constant. When length doubles (L' = 2L), cross-sectional area halves (A' = A/2). New resistance R' = ρ(2L)/(A/2) = 4(ρL/A) = 4R."
+    },
+    {
+      "id": "z04_f2_038",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two point charges of +1 C and +9 C are fixed 4 m apart. At what distance from the +1 C charge along the line joining them is the net electric field zero?",
+      "options": [
+        "1.0 m",
+        "2.0 m",
+        "0.5 m",
+        "1.5 m"
+      ],
+      "correct_answer": "1.0 m",
+      "explanation": "kq1/x² = kq2/(d - x)² → 1/x² = 9/(4 - x)² → taking square root: 1/x = 3/(4 - x) → 4 - x = 3x → 4x = 4 → x = 1.0 m."
+    },
+    {
+      "id": "z04_f2_039",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A current of 2 A passes through a solenoid having 500 turns. If the length of the solenoid is 0.5 m, what is the magnetic flux density inside it? (μ₀ = 4π × 10⁻⁷ T·m/A)",
+      "options": [
+        "2.51 × 10⁻³ T",
+        "1.26 × 10⁻³ T",
+        "5.02 × 10⁻³ T",
+        "6.28 × 10⁻⁴ T"
+      ],
+      "correct_answer": "2.51 × 10⁻³ T",
+      "explanation": "Turn density n = N / L = 500 / 0.5 = 1000 turns/m. B = μ₀nI = (4π × 10⁻⁷) × 1000 × 2 = 8π × 10⁻⁴ T ≈ 2.513 × 10⁻³ T."
+    },
+    {
+      "id": "z04_f2_040",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A house has five 40 W fluorescent lamps and two 100 W computers running simultaneously. What is the total current drawn from the 220 V supply?",
+      "options": [
+        "1.82 A",
+        "0.91 A",
+        "3.64 A",
+        "2.20 A"
+      ],
+      "correct_answer": "1.82 A",
+      "explanation": "Total power = (5 × 40) + (2 × 100) = 200 + 200 = 400 W. Total current I = P / V = 400 W ÷ 220 V ≈ 1.818 A ≈ 1.82 A."
+    },
+    {
+      "id": "z04_f2_041",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "What fuse rating should be selected to protect a circuit powering a 2 kW electric room heater connected to a 220 V mains line?",
+      "options": [
+        "10 A",
+        "5 A",
+        "2 A",
+        "15 A"
+      ],
+      "correct_answer": "10 A",
+      "explanation": "Operating current I = P / V = 2000 W ÷ 220 V ≈ 9.09 A. A 10 A fuse is the standard standard commercial rating just above operating current."
+    },
+    {
+      "id": "z04_f2_042",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A charged cloud at a potential of 4 × 10⁷ V discharges 20 C of electric charge to the earth via a lightning flash in 0.001 s. What average electrical power is released during the strike?",
+      "options": [
+        "8 × 10¹¹ W (800 GW)",
+        "8 × 10⁸ W",
+        "4 × 10⁹ W",
+        "8 × 10⁶ W"
+      ],
+      "correct_answer": "8 × 10¹¹ W (800 GW)",
+      "explanation": "Energy released E = Q × V = 20 C × (4 × 10⁷ V) = 8 × 10⁸ J. Power P = E / t = (8 × 10⁸ J) / (10⁻³ s) = 8 × 10¹¹ W (800 GW)."
+    },
+    {
+      "id": "z04_f2_043",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two resistors of 10 Ω and 20 Ω are connected in series to a 30 V supply. What is the potential difference across the 20 Ω resistor?",
+      "options": [
+        "20 V",
+        "10 V",
+        "15 V",
+        "30 V"
+      ],
+      "correct_answer": "20 V",
+      "explanation": "Total resistance R = 10 + 20 = 30 Ω. Current I = 30 V / 30 Ω = 1 A. Voltage across 20 Ω is V2 = I × R2 = 1 A × 20 Ω = 20 V."
+    },
+    {
+      "id": "z04_f2_044",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An alpha particle (charge +3.2 × 10⁻¹⁹ C) enters a magnetic field of 0.5 T perpendicular to its direction of motion at a speed of 2 × 10⁶ m/s. What is the magnetic force acting on it?",
+      "options": [
+        "3.2 × 10⁻¹³ N",
+        "1.6 × 10⁻¹³ N",
+        "6.4 × 10⁻¹³ N",
+        "3.2 × 10⁻¹⁹ N"
+      ],
+      "correct_answer": "3.2 × 10⁻¹³ N",
+      "explanation": "F = qvB = (3.2 × 10⁻¹⁹ C) × (2 × 10⁶ m/s) × (0.5 T) = 3.2 × 10⁻¹³ N."
+    },
+    {
+      "id": "z04_f2_045",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A step-down transformer has an efficiency of 90%. If the input power to the primary coil is 1000 W, what is the output power available at the secondary coil?",
+      "options": [
+        "900 W",
+        "1111 W",
+        "100 W",
+        "810 W"
+      ],
+      "correct_answer": "900 W",
+      "explanation": "Output power = Efficiency × Input power = 0.90 × 1000 W = 900 W."
+    },
+    {
+      "id": "z04_f2_046",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 12 V car battery has an internal resistance of 0.04 Ω. When the starter motor draws 150 A, what is the terminal voltage of the battery?",
+      "options": [
+        "6.0 V",
+        "12.0 V",
+        "11.4 V",
+        "8.0 V"
+      ],
+      "correct_answer": "6.0 V",
+      "explanation": "Internal voltage drop Ir = 150 A × 0.04 Ω = 6.0 V. Terminal voltage V = E - Ir = 12.0 - 6.0 = 6.0 V."
+    },
+    {
+      "id": "z04_f2_047",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In an experiment, the potential difference across a conductor is increased from 10 V to 20 V while its temperature remains constant. What happens to the current flowing through it?",
+      "options": [
+        "It doubles",
+        "It quadruples",
+        "It is halved",
+        "It remains constant"
+      ],
+      "correct_answer": "It doubles",
+      "explanation": "According to Ohm's law (V = IR), if resistance R is constant, current I is directly proportional to voltage V. Doubling voltage doubles the current."
+    },
+    {
+      "id": "z04_f2_048",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A circuit contains two resistors in parallel: 3 Ω and 6 Ω. What is the power dissipated in the 3 Ω resistor when the pair is connected across a 6 V battery?",
+      "options": [
+        "12 W",
+        "6 W",
+        "18 W",
+        "4 W"
+      ],
+      "correct_answer": "12 W",
+      "explanation": "In parallel, each branch experiences the full 6 V. Power in 3 Ω resistor = V² / R = 6² / 3 = 36 / 3 = 12 W."
+    },
+    {
+      "id": "z04_f2_049",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A square loop of wire with an area of 0.04 m² is placed perpendicular to a magnetic field of 0.5 T. If the field drops to zero in 0.02 s, what average EMF is induced in the loop?",
+      "options": [
+        "1.0 V",
+        "0.02 V",
+        "0.5 V",
+        "2.0 V"
+      ],
+      "correct_answer": "1.0 V",
+      "explanation": "Initial flux Φ = B × A = 0.5 × 0.04 = 0.02 Wb. Change in flux ΔΦ = 0.02 Wb. Induced EMF = ΔΦ / Δt = 0.02 Wb / 0.02 s = 1.0 V."
+    },
+    {
+      "id": "z04_f2_050",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A transmission line of resistance 5 Ω carries 20 A of electric current. How much power is dissipated as heat in this transmission line?",
+      "options": [
+        "2000 W",
+        "100 W",
+        "500 W",
+        "4000 W"
+      ],
+      "correct_answer": "2000 W",
+      "explanation": "P_loss = I²R = (20 A)² × 5 Ω = 400 × 5 = 2000 W."
+    }
+  ]
+}

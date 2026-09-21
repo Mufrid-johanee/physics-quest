@@ -1,0 +1,709 @@
+{
+  "zone": "05_thermodynamics_modern_physics",
+  "floor": 3,
+  "bloom_levels": [
+    "apply",
+    "analyze"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 10,
+  "one_word_count": 5,
+  "questions": [
+    {
+      "id": "z05_f3_001",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A force of 500 N acts perpendicular to an area of 0.25 m². What is the pressure produced in Pascals?",
+      "correct_answer": "2000 Pa",
+      "accepted_answers": [
+        "2000 Pa",
+        "2000Pa",
+        "2000",
+        "2000 n/m2"
+      ],
+      "explanation": "P = F / A = 500 N ÷ 0.25 m² = 2000 Pa."
+    },
+    {
+      "id": "z05_f3_002",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "What is the liquid pressure in Pascals at a depth of 5 meters in pure water? (Density = 1000 kg/m³, g = 9.8 m/s²)",
+      "correct_answer": "49000 Pa",
+      "accepted_answers": [
+        "49000 Pa",
+        "49000Pa",
+        "49000",
+        "49 kPa",
+        "49kPa"
+      ],
+      "explanation": "P = hρg = 5 m × 1000 kg/m³ × 9.8 m/s² = 49000 Pa."
+    },
+    {
+      "id": "z05_f3_003",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "An object of density 800 kg/m³ floats in water of density 1000 kg/m³. What percentage of the object's volume is submerged under water?",
+      "correct_answer": "80%",
+      "accepted_answers": [
+        "80%",
+        "80",
+        "80 percent"
+      ],
+      "explanation": "Submerged fraction = ρ_body / ρ_liquid = 800 / 1000 = 0.80 = 80%."
+    },
+    {
+      "id": "z05_f3_004",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "How much heat energy in Joules is required to raise the temperature of 1 kg of water by 10°C? (Specific heat capacity of water = 4200 J/(kg·K))",
+      "correct_answer": "42000 J",
+      "accepted_answers": [
+        "42000 J",
+        "42000J",
+        "42000",
+        "42 kJ",
+        "42kJ"
+      ],
+      "explanation": "Q = msΔT = 1 kg × 4200 J/(kg·K) × 10 K = 42000 J."
+    },
+    {
+      "id": "z05_f3_005",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A radioactive sample has a half-life of 10 days. After 30 days, what fraction of the original radioactive nuclei remains?",
+      "correct_answer": "1/8",
+      "accepted_answers": [
+        "1/8",
+        "0.125",
+        "12.5%"
+      ],
+      "explanation": "Number of half-lives n = 30 / 10 = 3. Remaining fraction = (1/2)³ = 1/8."
+    },
+    {
+      "id": "z05_f3_006",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "Which medical imaging modality provides the highest soft-tissue contrast without using any ionizing radiation?",
+      "correct_answer": "mri",
+      "accepted_answers": [
+        "mri",
+        "magnetic resonance imaging"
+      ],
+      "explanation": "MRI uses non-ionizing magnetic fields and radiofrequency pulses to map hydrogen density, providing unmatched soft-tissue visualization."
+    },
+    {
+      "id": "z05_f3_007",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What radioactive particle consists of two protons and two neutrons bound together into a helium nucleus?",
+      "correct_answer": "alpha particle",
+      "accepted_answers": [
+        "alpha particle",
+        "alpha",
+        "alpha ray"
+      ],
+      "explanation": "An alpha particle is a Helium-4 nucleus (⁴₂He²⁺) emitted during alpha decay of heavy radionuclides."
+    },
+    {
+      "id": "z05_f3_008",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "At what specific temperature on the Celsius scale does liquid water achieve its maximum density?",
+      "correct_answer": "4°C",
+      "accepted_answers": [
+        "4°C",
+        "4 deg c",
+        "4 degrees c",
+        "4"
+      ],
+      "explanation": "Due to anomalous expansion, liquid water reaches its maximum density of 1000 kg/m³ at 4°C."
+    },
+    {
+      "id": "z05_f3_009",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "Which medical diagnostic technique detects real-time blood flow direction and velocity using ultrasound frequency shifts?",
+      "correct_answer": "doppler ultrasound",
+      "accepted_answers": [
+        "doppler ultrasound",
+        "doppler",
+        "color doppler"
+      ],
+      "explanation": "Doppler ultrasound measures the frequency shift of sound waves reflected from moving erythrocytes to evaluate vascular blood flow."
+    },
+    {
+      "id": "z05_f3_010",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What type of wave represents ventricular depolarization on a clinical electrocardiogram (ECG) tracing?",
+      "correct_answer": "qrs complex",
+      "accepted_answers": [
+        "qrs complex",
+        "qrs",
+        "qrs wave"
+      ],
+      "explanation": "The QRS complex represents the electrical depolarization wave sweeping through the ventricles immediately before ventricular contraction."
+    },
+    {
+      "id": "z05_f3_011",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A hydraulic press has a master cylinder with a piston radius of 2 cm and a slave cylinder with a piston radius of 20 cm. If a force of 100 N is applied to the master piston, what force does the slave piston exert?",
+      "options": [
+        "10,000 N",
+        "1,000 N",
+        "20,000 N",
+        "500 N"
+      ],
+      "correct_answer": "10,000 N",
+      "explanation": "Force ratio F2 / F1 = (r2 / r1)² = (20 / 2)² = 10² = 100. F2 = 100 N × 100 = 10,000 N."
+    },
+    {
+      "id": "z05_f3_012",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A solid cylinder of mass 4 kg and volume 0.005 m³ is suspended completely submerged in oil of density 800 kg/m³. What is the tension in the supporting string? (g = 10 m/s²)",
+      "options": [
+        "0 N (floats freely)",
+        "40 N",
+        "20 N",
+        "10 N"
+      ],
+      "correct_answer": "0 N (floats freely)",
+      "explanation": "Downward weight W = mg = 4 × 10 = 40 N. Upward buoyant force F_B = V × ρ_oil × g = 0.005 × 800 × 10 = 40 N. Net downward force T = W - F_B = 40 - 40 = 0 N."
+    },
+    {
+      "id": "z05_f3_013",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A steel rod of initial length 5.0 m is heated from 15°C to 65°C. If the linear expansion coefficient of steel is 1.2 × 10⁻⁵ K⁻¹, what is the rod's final length?",
+      "options": [
+        "5.0030 m",
+        "5.0300 m",
+        "5.0015 m",
+        "5.0060 m"
+      ],
+      "correct_answer": "5.0030 m",
+      "explanation": "ΔL = L × α × ΔT = 5.0 × (1.2 × 10⁻⁵) × (65 - 15) = 5.0 × 1.2 × 10⁻⁵ × 50 = 0.0030 m. Final length = 5.0 + 0.0030 = 5.0030 m."
+    },
+    {
+      "id": "z05_f3_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An aluminum kettle of mass 0.5 kg contains 1.0 kg of water, both at 20°C. How much heat is needed to bring the water to 100°C? (s_water = 4200 J/(kg·K), s_Al = 900 J/(kg·K))",
+      "options": [
+        "372,000 J",
+        "336,000 J",
+        "400,000 J",
+        "280,000 J"
+      ],
+      "correct_answer": "372,000 J",
+      "explanation": "ΔT = 80 K. Q_water = 1.0 × 4200 × 80 = 336,000 J. Q_Al = 0.5 × 900 × 80 = 36,000 J. Total Q = 336,000 + 36,000 = 372,000 J."
+    },
+    {
+      "id": "z05_f3_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How many kilograms of ice at 0°C can be completely melted by 1,008,000 Joules of heat? (Latent heat of fusion = 3.36 × 10⁵ J/kg)",
+      "options": [
+        "3 kg",
+        "1.5 kg",
+        "6 kg",
+        "0.33 kg"
+      ],
+      "correct_answer": "3 kg",
+      "explanation": "m = Q / L_f = 1,008,000 J ÷ 336,000 J/kg = 3 kg."
+    },
+    {
+      "id": "z05_f3_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sample of Radon-222 has a half-life of 3.8 days. If its initial activity is 1600 Bq, how many days will it take for the activity to fall to 100 Bq?",
+      "options": [
+        "15.2 days",
+        "11.4 days",
+        "7.6 days",
+        "19.0 days"
+      ],
+      "correct_answer": "15.2 days",
+      "explanation": "Activity drops from 1600 → 800 → 400 → 200 → 100 Bq (4 half-lives). Total time = 4 × 3.8 days = 15.2 days."
+    },
+    {
+      "id": "z05_f3_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An elephant of mass 4000 kg stands evenly on all four feet. Each foot has a circular ground contact area of 0.05 m². What pressure does the elephant exert on the ground? (g = 10 m/s²)",
+      "options": [
+        "200,000 Pa",
+        "800,000 Pa",
+        "50,000 Pa",
+        "40,000 Pa"
+      ],
+      "correct_answer": "200,000 Pa",
+      "explanation": "Total force F = mg = 4000 × 10 = 40,000 N. Total area for 4 feet A = 4 × 0.05 = 0.20 m². Pressure P = 40,000 / 0.20 = 200,000 Pa (200 kPa)."
+    },
+    {
+      "id": "z05_f3_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A rectangular swimming pool has dimensions 20 m long, 10 m wide, and 2 m deep, completely filled with water (density = 1000 kg/m³). What is the total thrust force exerted by water on the bottom floor? (g = 10 m/s²)",
+      "options": [
+        "4.0 × 10⁶ N",
+        "2.0 × 10⁵ N",
+        "8.0 × 10⁶ N",
+        "2.0 × 10⁶ N"
+      ],
+      "correct_answer": "4.0 × 10⁶ N",
+      "explanation": "Floor area A = 20 × 10 = 200 m². Bottom pressure P = hρg = 2 × 1000 × 10 = 20,000 Pa. Total thrust F = P × A = 20,000 Pa × 200 m² = 4.0 × 10⁶ N."
+    },
+    {
+      "id": "z05_f3_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A copper wire of length 3 m and diameter 2 mm is stretched by a load of 100 N. If Young's modulus for copper is 1.1 × 10¹¹ Pa, what is the extension produced?",
+      "options": [
+        "0.87 mm",
+        "0.22 mm",
+        "1.74 mm",
+        "0.087 mm"
+      ],
+      "correct_answer": "0.87 mm",
+      "explanation": "Radius r = 1 mm = 10⁻³ m. Area A = π r² = π (10⁻³)² ≈ 3.14 × 10⁻⁶ m². ΔL = (FL) / (AY) = (100 × 3) / (3.14 × 10⁻⁶ × 1.1 × 10¹¹) = 300 / 3.454 × 10⁵ ≈ 8.68 × 10⁻⁴ m = 0.87 mm."
+    },
+    {
+      "id": "z05_f3_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A piece of glass weighs 2.5 N in air and 1.5 N when submerged in water. What is the volume of the glass? (Density of water = 1000 kg/m³, g = 10 m/s²)",
+      "options": [
+        "1.0 × 10⁻⁴ m³",
+        "2.5 × 10⁻⁴ m³",
+        "1.5 × 10⁻⁴ m³",
+        "4.0 × 10⁻⁴ m³"
+      ],
+      "correct_answer": "1.0 × 10⁻⁴ m³",
+      "explanation": "Buoyant force F_B = 2.5 - 1.5 = 1.0 N. Volume V = F_B / (ρ_water × g) = 1.0 / (1000 × 10) = 1.0 × 10⁻⁴ m³ (100 cm³)."
+    },
+    {
+      "id": "z05_f3_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An X-ray tube operates with a tube current of 10 mA (0.01 A). How many electrons strike the tungsten target per second? (Charge of electron = 1.6 × 10⁻¹⁹ C)",
+      "options": [
+        "6.25 × 10¹⁶",
+        "1.6 × 10¹⁷",
+        "6.25 × 10¹⁸",
+        "1.0 × 10¹⁶"
+      ],
+      "correct_answer": "6.25 × 10¹⁶",
+      "explanation": "n = I / e = (0.01 C/s) / (1.6 × 10⁻¹⁹ C) = 6.25 × 10¹⁶ electrons per second."
+    },
+    {
+      "id": "z05_f3_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In a nuclear reaction, a mass defect of 1.0 × 10⁻⁶ kg (1 mg) is completely converted into energy. How much energy in Joules is released? (c = 3.0 × 10⁸ m/s)",
+      "options": [
+        "9.0 × 10¹⁰ J",
+        "3.0 × 10¹¹ J",
+        "9.0 × 10¹³ J",
+        "3.0 × 10⁸ J"
+      ],
+      "correct_answer": "9.0 × 10¹⁰ J",
+      "explanation": "E = mc² = (1.0 × 10⁻⁶ kg) × (3.0 × 10⁸ m/s)² = 10⁻⁶ × 9.0 × 10¹⁶ = 9.0 × 10¹⁰ Joules."
+    },
+    {
+      "id": "z05_f3_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A lead bullet of mass 0.02 kg moving at 200 m/s hits a wooden block and comes to rest. Assuming all kinetic energy is converted into heat inside the bullet, what is its temperature rise? (Specific heat capacity of lead = 130 J/(kg·K))",
+      "options": [
+        "153.8°C",
+        "76.9°C",
+        "307.7°C",
+        "200.0°C"
+      ],
+      "correct_answer": "153.8°C",
+      "explanation": "KE = 1/2 mv² = 0.5 × 0.02 × (200)² = 400 J. Q = msΔT → 400 = 0.02 × 130 × ΔT = 2.6 ΔT → ΔT = 400 / 2.6 ≈ 153.8°C."
+    },
+    {
+      "id": "z05_f3_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 100 cm³ glass container is full of mercury at 0°C. How much mercury will overflow if temperature rises to 50°C? (γ_mercury = 18 × 10⁻⁵ K⁻¹, γ_glass = 2.4 × 10⁻⁵ K⁻¹)",
+      "options": [
+        "0.78 cm³",
+        "0.90 cm³",
+        "0.12 cm³",
+        "1.02 cm³"
+      ],
+      "correct_answer": "0.78 cm³",
+      "explanation": "Apparent expansion γ_apparent = γ_mercury - γ_glass = (18 - 2.4) × 10⁻⁵ = 15.6 × 10⁻⁵ K⁻¹. Overflow ΔV = V × γ_app × ΔT = 100 × (15.6 × 10⁻⁵) × 50 = 0.78 cm³."
+    },
+    {
+      "id": "z05_f3_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A clinical ultrasound scanner detects a Doppler frequency shift of 2 kHz from a blood vessel when using a 5 MHz probe (speed of sound in tissue = 1540 m/s). If beam angle θ = 0° (cos θ = 1), what is blood velocity?",
+      "options": [
+        "0.308 m/s",
+        "0.616 m/s",
+        "1.54 m/s",
+        "0.154 m/s"
+      ],
+      "correct_answer": "0.308 m/s",
+      "explanation": "Δf = (2 f v cos θ) / c → 2000 = (2 × 5 × 10⁶ × v × 1) / 1540 = (10⁷ v) / 1540 → v = (2000 × 1540) / 10⁷ = 0.308 m/s (30.8 cm/s)."
+    },
+    {
+      "id": "z05_f3_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much work is done against gravity to pump 1000 liters (1 m³) of water to the rooftop tank of a 15-meter building? (Density of water = 1000 kg/m³, g = 9.8 m/s²)",
+      "options": [
+        "147,000 J",
+        "15,000 J",
+        "98,000 J",
+        "294,000 J"
+      ],
+      "correct_answer": "147,000 J",
+      "explanation": "Mass m = 1000 kg. Work W = mgh = 1000 kg × 9.8 m/s² × 15 m = 147,000 Joules."
+    },
+    {
+      "id": "z05_f3_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a piece of cork float with most of its volume above water, while a piece of oak floats with most of its volume submerged?",
+      "options": [
+        "Cork has a much lower density (~240 kg/m³) than oak (~750 kg/m³), requiring less displaced water to match its weight",
+        "Cork contains magnetic pockets that repel water molecules",
+        "Oak wood is chemically soluble in water",
+        "Water exerts greater buoyant force on lighter materials"
+      ],
+      "correct_answer": "Cork has a much lower density (~240 kg/m³) than oak (~750 kg/m³), requiring less displaced water to match its weight",
+      "explanation": "By the law of floatation, V_submerged / V_total = ρ_wood / ρ_water. Cork's low density means only ~24% is submerged, whereas denser oak must submerge ~75% to generate sufficient upthrust."
+    },
+    {
+      "id": "z05_f3_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why do deep-sea fish explode or suffer severe barotrauma when hauled rapidly to the ocean surface?",
+      "options": [
+        "Their internal body fluids are equilibrated to immense deep-sea hydrostatic pressures; sudden surface decompression causes internal gases to expand violently",
+        "Sunlight is poisonous to deep-sea marine biology",
+        "Seawater at the surface contains too much oxygen",
+        "Surface waves heat the fish to boiling temperatures"
+      ],
+      "correct_answer": "Their internal body fluids are equilibrated to immense deep-sea hydrostatic pressures; sudden surface decompression causes internal gases to expand violently",
+      "explanation": "At depths of thousands of meters, ambient hydrostatic pressure P = hρg is hundreds of atmospheres. Rapid ascent drops external pressure, causing dissolved gases in tissues and swim bladders to expand catastrophically (Boyle's Law)."
+    },
+    {
+      "id": "z05_f3_029",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the physical mechanism by which a drinking straw draws beverage liquid up into the mouth?",
+      "options": [
+        "Expanding lungs and mouth cavity lowers internal air pressure, allowing higher atmospheric pressure outside to push the liquid up",
+        "The plastic straw exerts electrostatic suction on the liquid",
+        "Capillary action alone pulls the drink upward against gravity",
+        "Liquid molecules are repelled by air in the straw"
+      ],
+      "correct_answer": "Expanding lungs and mouth cavity lowers internal air pressure, allowing higher atmospheric pressure outside to push the liquid up",
+      "explanation": "Sucking removes air from inside the straw, creating a partial vacuum. The higher atmospheric pressure acting on the open surface of the drink pushes the fluid up the straw."
+    },
+    {
+      "id": "z05_f3_030",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a clinical glass fever thermometer feature a narrow constriction in the capillary bore just above the mercury bulb?",
+      "options": [
+        "To prevent the expanded mercury thread from falling back into the bulb when removed from the patient's mouth",
+        "To slow down the initial expansion of mercury during reading",
+        "To filter out air bubbles from entering the mercury reservoir",
+        "To allow the doctor to reset the temperature without shaking"
+      ],
+      "correct_answer": "To prevent the expanded mercury thread from falling back into the bulb when removed from the patient's mouth",
+      "explanation": "The constriction allows expanding mercury to push past during measurement, but breaks the mercury column when cooling begins, freezing the peak temperature reading until vigorously shaken down."
+    },
+    {
+      "id": "z05_f3_031",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a large body of water (like an ocean or large lake) moderate the climate of nearby coastal lands, preventing extreme heat or cold?",
+      "options": [
+        "Water has an exceptionally high specific heat capacity, absorbing immense solar heat in summer and releasing it slowly in winter with small temperature changes",
+        "Ocean water reflects 100% of atmospheric coldness back into space",
+        "Water molecules generate geothermal heat continuously",
+        "Evaporation creates a permanent greenhouse cloud layer over coastal towns"
+      ],
+      "correct_answer": "Water has an exceptionally high specific heat capacity, absorbing immense solar heat in summer and releasing it slowly in winter with small temperature changes",
+      "explanation": "Water's high specific heat (4200 J/(kg·K)) is roughly five times that of soil and rock. It acts as a massive thermal buffer, absorbing summer heat without rising much in temperature and releasing it during winter."
+    },
+    {
+      "id": "z05_f3_032",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does sweating cool the human body efficiently during vigorous exercise?",
+      "options": [
+        "Evaporation of each gram of perspiration extracts 2.26 × 10⁶ J/kg of latent heat of vaporization directly from the skin",
+        "Sweat dissolves hot thermal particles on the skin surface",
+        "Sweat creates cold ice crystals across skin pores",
+        "Perspiration blocks incoming sunlight from reaching blood vessels"
+      ],
+      "correct_answer": "Evaporation of each gram of perspiration extracts 2.26 × 10⁶ J/kg of latent heat of vaporization directly from the skin",
+      "explanation": "Perspiration utilizes the large latent heat of vaporization of water (2.26 × 10⁶ J/kg). Evaporating moisture draws thermal energy directly from cutaneous blood vessels, stabilizing core body temperature."
+    },
+    {
+      "id": "z05_f3_033",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an electric current flow in a forward-biased p-n junction diode, whereas virtually no current flows under reverse bias?",
+      "options": [
+        "Forward bias opposes and reduces the built-in potential barrier, enabling majority carriers to cross; reverse bias widens the barrier",
+        "Reverse bias destroys the semiconductor crystal permanently",
+        "Forward bias generates new radioactive alpha particles at the junction",
+        "Reverse bias converts silicon atoms into copper"
+      ],
+      "correct_answer": "Forward bias opposes and reduces the built-in potential barrier, enabling majority carriers to cross; reverse bias widens the barrier",
+      "explanation": "Forward bias pushes majority electrons in n-region and holes in p-region toward the junction, thinning the depletion region. Reverse bias pulls carriers away from the junction, widening the insulating depletion layer."
+    },
+    {
+      "id": "z05_f3_034",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is Lead-206 (²⁰⁶₈₂Pb) the final stable end-product of the Uranium-238 radioactive decay series?",
+      "options": [
+        "Its magic numbers of nucleons give it a tightly bound, highly stable nuclear configuration that undergoes no further spontaneous decay",
+        "It has the largest mass of any element on Earth",
+        "Lead absorbs all incoming cosmic rays to stay stable",
+        "Uranium atoms stop decaying when they run out of electrons"
+      ],
+      "correct_answer": "Its magic numbers of nucleons give it a tightly bound, highly stable nuclear configuration that undergoes no further spontaneous decay",
+      "explanation": "Nuclear stability peaks around iron and lead. Lead-206 has a stable neutron-to-proton ratio where binding energy per nucleon prevents further spontaneous alpha or beta emission."
+    },
+    {
+      "id": "z05_f3_035",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why are ultrasound gel couplants always smeared on a patient's skin before performing an ultrasound scan?",
+      "options": [
+        "To eliminate the acoustic impedance mismatch between air and skin, preventing 99.9% of ultrasound from reflecting away at the surface",
+        "To numb the patient's skin against electrical shocks",
+        "To lubricate the probe so it can spin at 10,000 RPM",
+        "To chemically dissolve dead skin cells that block sound"
+      ],
+      "correct_answer": "To eliminate the acoustic impedance mismatch between air and skin, preventing 99.9% of ultrasound from reflecting away at the surface",
+      "explanation": "Air has very low acoustic impedance compared to human tissue. Even a microscopic air gap between transducer and skin causes almost total reflection of ultrasound energy. Aqueous gel matches impedance to transmit sound efficiently."
+    },
+    {
+      "id": "z05_f3_036",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a hot air balloon rise into the sky when the burner heats the air inside the envelope?",
+      "options": [
+        "Heated air expands and becomes less dense than surrounding ambient air, generating a net upward buoyant force",
+        "Hot air is attracted upward by solar gravity",
+        "Burner flames emit positive electrical charges that push against the ground",
+        "Air molecules are destroyed by heat, creating a perfect vacuum"
+      ],
+      "correct_answer": "Heated air expands and becomes less dense than surrounding ambient air, generating a net upward buoyant force",
+      "explanation": "By Charles's law, gas expands when heated (ρ ∝ 1/T). The hot air inside has lower density than cooler outside air, so weight of displaced ambient air exceeds total balloon weight, producing net upward upthrust."
+    },
+    {
+      "id": "z05_f3_037",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does a CT scan eliminate the anatomical superposition problem seen in conventional 2D planar X-rays?",
+      "options": [
+        "By rotating the X-ray source and multi-row detector array 360° around the patient to collect cross-sectional projection data computed into slice voxels",
+        "By using radioactive gamma cameras that see through bones",
+        "By taking pictures from ten different cameras using visible flash photography",
+        "By freezing the patient's body to absolute zero during exposure"
+      ],
+      "correct_answer": "By rotating the X-ray source and multi-row detector array 360° around the patient to collect cross-sectional projection data computed into slice voxels",
+      "explanation": "Planar radiography projects all structures along a line onto a single plane, obscuring depth. CT takes hundreds of angular views, using filtered back-projection algorithms to isolate distinct axial slices."
+    },
+    {
+      "id": "z05_f3_038",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does water in a car radiator prevent the engine block from overheating better than most other commercial liquids?",
+      "options": [
+        "Water's high specific heat capacity allows it to absorb enormous quantities of engine waste heat with minimal temperature rise",
+        "Water has zero thermal expansion",
+        "Water prevents gasoline from burning",
+        "Water conducts electricity away from the engine cylinders"
+      ],
+      "correct_answer": "Water's high specific heat capacity allows it to absorb enormous quantities of engine waste heat with minimal temperature rise",
+      "explanation": "With a specific heat of 4200 J/(kg·K), water absorbs more heat per kilogram per degree temperature rise than oils or alcohol, making it the most efficient coolant fluid for circulating systems."
+    },
+    {
+      "id": "z05_f3_039",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is an n-p-n transistor generally preferred over a p-n-p transistor in high-speed digital switching circuits?",
+      "options": [
+        "Electrons have much higher drift mobility than positive holes in semiconductor crystal lattices",
+        "n-p-n transistors require zero operating voltage",
+        "p-n-p transistors produce radioactive gamma emissions",
+        "n-p-n transistors can only conduct direct current"
+      ],
+      "correct_answer": "Electrons have much higher drift mobility than positive holes in semiconductor crystal lattices",
+      "explanation": "In silicon, electron mobility μ_n (~1400 cm²/V·s) is nearly three times greater than hole mobility μ_p (~450 cm²/V·s). Faster carrier transit times give n-p-n devices superior frequency response and switching speeds."
+    },
+    {
+      "id": "z05_f3_040",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a thick glass bottle crack when placed full of water with its cap tightly sealed into a deep freezer?",
+      "options": [
+        "Water expands anomalously by roughly 9% in volume when freezing into ice, exerting immense bursting pressures",
+        "Glass melts at sub-zero temperatures",
+        "Cold air chemically dissolves glass silica",
+        "Ice molecules attract gravitational forces that shatter the bottle"
+      ],
+      "correct_answer": "Water expands anomalously by roughly 9% in volume when freezing into ice, exerting immense bursting pressures",
+      "explanation": "As water freezes below 4°C down to 0°C, its open hexagonal crystal lattice expands volume by ~9% (density drops from 1.00 g/cm³ to 0.92 g/cm³), generating thousands of atmospheres of pressure against rigid walls."
+    },
+    {
+      "id": "z05_f3_041",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does radiotherapy target malignant cancer cells more effectively than healthy normal tissue?",
+      "options": [
+        "Rapidly dividing cancer cells have impaired DNA repair mechanisms and are far more susceptible to radiation-induced mitotic cell death",
+        "Radiation completely avoids healthy cells due to magnetic shielding",
+        "Cancer cells absorb 100% of gamma photons while normal cells reflect them",
+        "Healthy cells are surrounded by lead membranes"
+      ],
+      "correct_answer": "Rapidly dividing cancer cells have impaired DNA repair mechanisms and are far more susceptible to radiation-induced mitotic cell death",
+      "explanation": "Ionizing radiation causes double-stranded DNA breaks. Rapidly proliferating cancer cells lack robust enzymatic repair mechanisms, accumulating lethal chromosomal aberrations that trigger apoptosis."
+    },
+    {
+      "id": "z05_f3_042",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the reason why an astronaut must wear a pressurized space suit in the vacuum of outer space?",
+      "options": [
+        "Zero atmospheric pressure would cause bodily fluids and dissolved blood gases to boil at body temperature (ebullism)",
+        "Gravity in space pushes blood toward the feet",
+        "Space air is too heavy to breathe without mechanical compressors",
+        "Cosmic dust sticks to unpressurized skin"
+      ],
+      "correct_answer": "Zero atmospheric pressure would cause bodily fluids and dissolved blood gases to boil at body temperature (ebullism)",
+      "explanation": "At zero ambient pressure, the boiling point of water drops below normal body temperature (37°C). Moisture on lungs, eyes, and mucous membranes would vaporize instantly, with fatal circulatory collapse."
+    },
+    {
+      "id": "z05_f3_043",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an Electroencephalogram (EEG) require sensitive differential amplifiers and electrical shielding in the clinical examination room?",
+      "options": [
+        "Neural brain wave signals are minute microvolt fluctuations (10–100 μV) easily swamped by 50 Hz power line electromagnetic interference",
+        "Brain waves travel faster than the speed of light",
+        "EEG machines emit high-power ultrasound pulses",
+        "The human skull generates 220 V alternating currents"
+      ],
+      "correct_answer": "Neural brain wave signals are minute microvolt fluctuations (10–100 μV) easily swamped by 50 Hz power line electromagnetic interference",
+      "explanation": "Postsynaptic potentials detected across the scalp are minuscule (~10–100 μV). High common-mode rejection ratio (CMRR) amplifiers and Faraday shielding are necessary to eliminate ambient 50/60 Hz mains hum."
+    },
+    {
+      "id": "z05_f3_044",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What happens to the electrical conductivity of an intrinsic semiconductor when its temperature is increased from 0 K to 300 K?",
+      "options": [
+        "Conductivity increases exponentially because thermal energy breaks covalent bonds and generates mobile electron-hole pairs",
+        "Conductivity drops to zero because of lattice vibration scattering",
+        "Conductivity remains exactly zero at all temperatures",
+        "The semiconductor turns into a permanent magnet"
+      ],
+      "correct_answer": "Conductivity increases exponentially because thermal energy breaks covalent bonds and generates mobile electron-hole pairs",
+      "explanation": "At 0 K, the valence band is completely full and conduction band empty (perfect insulator). Thermal excitation elevates valence electrons across the bandgap Eg into the conduction band, increasing conductivity (σ ∝ e^(-Eg/2kT))."
+    },
+    {
+      "id": "z05_f3_045",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a steel ship float higher in the dense, saline waters of the Dead Sea compared to the Baltic Sea?",
+      "options": [
+        "The Dead Sea's higher brine density exerts equal buoyant force with a smaller displaced water volume (V = W / ρg)",
+        "The Dead Sea has lower gravitational pull",
+        "Salt crystals stick to the ship hull to make it lighter",
+        "The Baltic Sea contains downward-flowing whirlpools"
+      ],
+      "correct_answer": "The Dead Sea's higher brine density exerts equal buoyant force with a smaller displaced water volume (V = W / ρg)",
+      "explanation": "Dead Sea density is ~1240 kg/m³ versus Baltic Sea (~1005 kg/m³). To balance the ship's constant weight, F_B = V_submerged × ρ × g requires less submerged volume in denser brine, lifting the ship higher."
+    },
+    {
+      "id": "z05_f3_046",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a bimetallic strip in an electrical iron break the circuit when a preset temperature is exceeded?",
+      "options": [
+        "Differential thermal expansion bends the strip away from the electrical contact point, opening the circuit",
+        "The metal melts and opens the circuit like a fuse",
+        "High temperature demagnetizes the contact screw",
+        "The electrical current converts the metal into an insulator"
+      ],
+      "correct_answer": "Differential thermal expansion bends the strip away from the electrical contact point, opening the circuit",
+      "explanation": "The higher expansion metal (brass) expands more than the lower expansion metal (invar/iron), causing the cantilevered strip to curl away from the electrical contact, de-energizing the heating coil."
+    },
+    {
+      "id": "z05_f3_047",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why are patients forbidden from taking any ferromagnetic metal objects (like hairpins, keys, or oxygen tanks) into an MRI scanner room?",
+      "options": [
+        "The powerful static magnetic field (1.5–3 Tesla) turns ferromagnetic items into dangerous high-velocity projectiles",
+        "Metal objects absorb all radio waves and permanently silence the computer",
+        "Metal keys cause the MRI helium gas to freeze solid",
+        "The magnetic field converts steel into radioactive cobalt"
+      ],
+      "correct_answer": "The powerful static magnetic field (1.5–3 Tesla) turns ferromagnetic items into dangerous high-velocity projectiles",
+      "explanation": "MRI scanners generate fringe fields tens of thousands of times stronger than Earth's field. Ferromagnetic objects experience massive attractive gradient forces, flying into the bore like lethal missiles."
+    },
+    {
+      "id": "z05_f3_048",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a hydraulic brake system fail immediately if even a small air bubble gets trapped inside the brake fluid lines?",
+      "options": [
+        "Air is highly compressible; pedal effort goes into compressing the air bubble rather than transmitting pressure to brake calipers",
+        "Air dissolves brake fluid chemically",
+        "The bubble turns into steam and burns the brake pads",
+        "Air bubbles generate reverse hydraulic pressure"
+      ],
+      "correct_answer": "Air is highly compressible; pedal effort goes into compressing the air bubble rather than transmitting pressure to brake calipers",
+      "explanation": "Liquids are nearly incompressible, transmitting pressure undiminished (Pascal's law). Gases have low bulk modulus; applied pedal force compresses the air volume without building hydraulic caliper pressure ('spongy pedal')."
+    },
+    {
+      "id": "z05_f3_049",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a clinical thermographic camera detect localized breast tumors or soft-tissue inflammation?",
+      "options": [
+        "Malignant tumors have increased metabolic activity and vascular angiogenesis that radiate elevated infrared thermal emission",
+        "Tumors emit X-rays that expose thermographic sensors",
+        "Tumors absorb all infrared light, appearing as absolute zero cold spots",
+        "Inflamed tissues produce acoustic ultrasound vibrations"
+      ],
+      "correct_answer": "Malignant tumors have increased metabolic activity and vascular angiogenesis that radiate elevated infrared thermal emission",
+      "explanation": "Rapidly growing neoplasms recruit new blood vessels (hypervascularity) and exhibit accelerated metabolism, emitting higher blackbody infrared radiation (W = εσT⁴) that thermal cameras map as hotspots."
+    },
+    {
+      "id": "z05_f3_050",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does an Integrated Circuit (IC) achieve vastly superior reliability and speed compared to circuits built from discrete transistors and wired components?",
+      "options": [
+        "Thousands or millions of microscopic components are etched onto a single silicon chip, eliminating interconnect wiring and minimizing propagation delay",
+        "ICs operate using nuclear energy instead of electrical power",
+        "ICs eliminate electrical resistance completely at all temperatures",
+        "Components on an IC communicate using sound waves"
+      ],
+      "correct_answer": "Thousands or millions of microscopic components are etched onto a single silicon chip, eliminating interconnect wiring and minimizing propagation delay",
+      "explanation": "Monolithic planar fabrication integrates transistors, diodes, and resistors on a sub-millimeter silicon die. Eliminating manual solder joints enhances reliability, while sub-micron path lengths minimize parasitic capacitance and delay."
+    }
+  ]
+}

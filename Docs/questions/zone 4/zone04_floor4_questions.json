@@ -1,0 +1,696 @@
+{
+  "zone": "04_electricity_magnetism",
+  "floor": 4,
+  "bloom_levels": [
+    "analyze",
+    "evaluate"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 20,
+  "mcq_count": 12,
+  "one_word_count": 8,
+  "pass_threshold": 0.75,
+  "questions": [
+    {
+      "id": "z04_f4_001",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A transformer has a turns ratio Ns/Np of 10. If the primary coil is powered with 220 V AC, what is the secondary output voltage in Volts?",
+      "correct_answer": "2200 V",
+      "accepted_answers": [
+        "2200 V",
+        "2200V",
+        "2200",
+        "2200 volts"
+      ],
+      "explanation": "Vs = Vp × (Ns / Np) = 220 V × 10 = 2200 V."
+    },
+    {
+      "id": "z04_f4_002",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "When high current passes through a conductor, what parasitic magnetic effect pushes current density predominantly toward the outer perimeter of the wire?",
+      "correct_answer": "skin effect",
+      "accepted_answers": [
+        "skin effect",
+        "the skin effect"
+      ],
+      "explanation": "At high frequencies or currents, internal self-induced eddy currents oppose current flow in the center, crowding alternating current toward the conductor's outer skin."
+    },
+    {
+      "id": "z04_f4_003",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A domestic electrical installer replaces a blown 5 A fuse with a 30 A fuse wire to prevent it from tripping repeatedly. What primary hazard is created by this action?",
+      "correct_answer": "fire",
+      "accepted_answers": [
+        "fire",
+        "fire hazard",
+        "electrical fire",
+        "overheating"
+      ],
+      "explanation": "An oversized 30 A fuse allows dangerous overcurrents to pass without melting, causing household wiring to overheat, melt insulation, and ignite electrical fires."
+    },
+    {
+      "id": "z04_f4_004",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What electrical component acts as a non-mechanical electronic switch and amplifier, replacing early vacuum tubes?",
+      "correct_answer": "transistor",
+      "accepted_answers": [
+        "transistor",
+        "bjt",
+        "fet",
+        "bipolar junction transistor"
+      ],
+      "explanation": "The semiconductor transistor (invented in 1947) controls large collector currents via small base signals, serving as the universal solid-state amplifier and digital switch."
+    },
+    {
+      "id": "z04_f4_005",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "An engineer evaluates whether stepping up transmission voltage tenfold (from 10 kV to 100 kV) reduces cable I²R power dissipation by a factor of 100 for the same delivered power. Is this calculation correct? Answer yes or no.",
+      "correct_answer": "yes",
+      "accepted_answers": [
+        "yes"
+      ],
+      "explanation": "Since P = VI, a 10× increase in V drops current I to 1/10th. Power loss in cables is P_loss = I²R; reducing current by 10 cuts power loss by (1/10)² = 1/100."
+    },
+    {
+      "id": "z04_f4_006",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A homeowner proposes connecting a standard electric water heater rated 110 V directly to a 220 V supply outlet. Will the power dissipated increase by a factor of 4? Answer yes or no.",
+      "correct_answer": "yes",
+      "accepted_answers": [
+        "yes"
+      ],
+      "explanation": "Power is P = V² / R. Doubling voltage from 110 V to 220 V across fixed resistance R quadruples power dissipation (2² = 4), which will rapidly burn out the heating element."
+    },
+    {
+      "id": "z04_f4_007",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A student claims that an ideal step-up transformer delivers more electrical energy per second from its secondary coil than it absorbs through its primary coil. Is this claim physically possible? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "By the first law of thermodynamics (conservation of energy), no passive machine or transformer can output more energy or power than it receives (efficiency η ≤ 100%)."
+    },
+    {
+      "id": "z04_f4_008",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "An electrician evaluates connecting all electrical ceiling fans in series rather than parallel to save wiring cost. Is this proposed installation acceptable for a standard home? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "In series, switching off one fan would stop all fans, and adding fans would divide the supply voltage, causing every fan to run sluggishly at a fraction of rated speed."
+    },
+    {
+      "id": "z04_f4_009",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A factory considers replacing copper transmission cables with aluminum cables of the exact same diameter. Will line resistance increase or decrease? Answer increase or decrease.",
+      "correct_answer": "increase",
+      "accepted_answers": [
+        "increase",
+        "increases"
+      ],
+      "explanation": "Aluminum has higher electrical resistivity (ρ_Al ≈ 2.8 × 10⁻⁸ Ω·m) than copper (ρ_Cu ≈ 1.7 × 10⁻⁸ Ω·m). For identical dimensions, aluminum wire resistance is ~60% higher."
+    },
+    {
+      "id": "z04_f4_010",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A vehicle mechanic tests a car battery and finds its open-circuit EMF is 12.6 V, but its terminal voltage collapses to 4.0 V while cranking the engine. Does this evaluation indicate excessive internal resistance? Answer yes or no.",
+      "correct_answer": "yes",
+      "accepted_answers": [
+        "yes"
+      ],
+      "explanation": "Terminal voltage V = E - Ir. A severe voltage collapse from 12.6 V down to 4.0 V indicates high internal resistance (Ir = 8.6 V), showing the battery is degraded or sulfated."
+    },
+    {
+      "id": "z04_f4_011",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a bird safely perch on a 33 kV overhead transmission line, but electrocutes itself if its wing simultaneously brushes the steel pylon?",
+      "options": [
+        "Brushing the grounded steel pylon completes a high-voltage path to Earth across a 33,000 V potential difference",
+        "The pylon carries positive magnetic charges that attract the bird",
+        "Steel reflects electrical currents into the bird's feathers",
+        "The bird loses its electrical capacitance upon touching steel"
+      ],
+      "correct_answer": "Brushing the grounded steel pylon completes a high-voltage path to Earth across a 33,000 V potential difference",
+      "explanation": "On a single wire, ΔV across the bird's feet is negligible. Touching the grounded steel pylon subjects the bird to the full 33 kV line-to-earth potential difference, driving a massive fatal current."
+    },
+    {
+      "id": "z04_f4_012",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What happens to the magnetic field pattern of a long solenoid if an iron rod is inserted along its central axis while carrying a steady current?",
+      "options": [
+        "The magnetic flux density increases hundreds of times because iron has very high magnetic permeability",
+        "The magnetic field collapses to zero because iron absorbs magnetic lines",
+        "The solenoid converts from an electromagnet into an electrostatic capacitor",
+        "Current through the solenoid stops flowing immediately"
+      ],
+      "correct_answer": "The magnetic flux density increases hundreds of times because iron has very high magnetic permeability",
+      "explanation": "Iron's relative permeability μ_r is typically 1,000–5,000. It aligns its internal magnetic domains with the solenoid's field, massively increasing the interior magnetic flux density B = μ_r μ₀ n I."
+    },
+    {
+      "id": "z04_f4_013",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a household lighting circuit, two identical 60 W bulbs are wired in parallel. If one bulb burns out, how does the brightness of the surviving bulb change?",
+      "options": [
+        "Its brightness remains completely unchanged because it still receives the full 220 V mains supply",
+        "Its brightness doubles because it receives all the current",
+        "Its brightness is halved",
+        "It turns off immediately"
+      ],
+      "correct_answer": "Its brightness remains completely unchanged because it still receives the full 220 V mains supply",
+      "explanation": "In parallel, each branch is independent and connected across the constant 220 V mains. The voltage across and current through the surviving bulb remain unchanged, preserving its brightness."
+    },
+    {
+      "id": "z04_f4_014",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is an Earth wire connected directly to the metallic body of an electric clothes iron rather than to its heating element?",
+      "options": [
+        "If an internal insulation fault touches the live wire to the metal chassis, fault current is safely diverted to ground to trip the breaker",
+        "The earth wire supplies additional current to heat the metal chassis",
+        "The earth wire prevents the iron from rusting",
+        "Connecting the earth wire to the element would double electricity bills"
+      ],
+      "correct_answer": "If an internal insulation fault touches the live wire to the metal chassis, fault current is safely diverted to ground to trip the breaker",
+      "explanation": "Grounding the metal chassis ensures that if live conductor insulation chafes and touches the frame, the low-impedance earth path safely drains current and blows the fuse rather than electrocuting the user."
+    },
+    {
+      "id": "z04_f4_015",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an electric generator armature experience strong mechanical resistance (torque opposition) when connected to a heavy electrical load?",
+      "options": [
+        "By Lenz's law, induced currents create opposing magnetic forces that resist the mechanical rotation driving them",
+        "The generator bearings overheat and seize under current",
+        "Electrons become heavier as they carry electric current",
+        "The load pushes electric voltage backwards through the mechanical drive shaft"
+      ],
+      "correct_answer": "By Lenz's law, induced currents create opposing magnetic forces that resist the mechanical rotation driving them",
+      "explanation": "Supplying power draws current through the armature. This current in the stator magnetic field experiences a counter-torque (F = BIL) opposing rotation, requiring more mechanical input power to maintain speed."
+    },
+    {
+      "id": "z04_f4_016",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What causes the high-frequency buzzing sound heard near large electrical substations and high-power transformers?",
+      "options": [
+        "Magnetostriction causing periodic mechanical strain in the core at twice the AC grid frequency (100 Hz or 120 Hz)",
+        "Electrons arcing through the transformer cooling oil",
+        "Radio waves bouncing off substation fences",
+        "Cooling fans rotating at 100,000 RPM"
+      ],
+      "correct_answer": "Magnetostriction causing periodic mechanical strain in the core at twice the AC grid frequency (100 Hz or 120 Hz)",
+      "explanation": "Transformer core laminations microscopically deform under alternating magnetic fields twice per cycle regardless of magnetic polarity, vibrating at 2f = 100 Hz (for 50 Hz grids) and radiating an audible hum."
+    },
+    {
+      "id": "z04_f4_017",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why are copper conductors in high-voltage power lines suspended from tall pylons using ceramic or glass insulator discs rather than metal brackets?",
+      "options": [
+        "Ceramics have enormous dielectric breakdown strength and high resistivity, preventing current from shorting to the grounded steel tower",
+        "Ceramics are flexible and absorb wind turbulence better than metal",
+        "Metal brackets absorb electricity and reduce voltage",
+        "Ceramics eliminate lightning strikes completely"
+      ],
+      "correct_answer": "Ceramics have enormous dielectric breakdown strength and high resistivity, preventing current from shorting to the grounded steel tower",
+      "explanation": "High voltages (hundreds of kilovolts) would instantly flash over to grounded steel towers if supported by conductors. Ceramic disc strings provide the required creeping distance and dielectric barrier."
+    },
+    {
+      "id": "z04_f4_018",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a DC series motor run dangerously fast (overspeed runaway) if started with no mechanical load connected?",
+      "options": [
+        "Armature current and field flux are identical; at low load, field flux becomes very weak, forcing speed to soar to generate required back-EMF",
+        "The motor generates infinite electrical power when unloaded",
+        "Friction in the commutator becomes negative at zero load",
+        "A series motor has no magnetic field poles"
+      ],
+      "correct_answer": "Armature current and field flux are identical; at low load, field flux becomes very weak, forcing speed to soar to generate required back-EMF",
+      "explanation": "In a series motor, field flux Φ ∝ I_a. Under zero load, I_a drops, weakening the field. Because speed N ∝ E_b / Φ, an extremely small flux causes rotational speed to rise dangerously, risking mechanical destruction."
+    },
+    {
+      "id": "z04_f4_019",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a laboratory, a technician tests two parallel current-carrying wires. If the current in both wires is doubled and their separation distance is doubled, what happens to the force per unit length?",
+      "options": [
+        "The force per unit length doubles",
+        "The force per unit length quadruples",
+        "The force per unit length remains unchanged",
+        "The force per unit length is halved"
+      ],
+      "correct_answer": "The force per unit length doubles",
+      "explanation": "F/L = (μ₀ I1 I2) / (2π d). If I1' = 2I1, I2' = 2I2, and d' = 2d: (F/L)' = [μ₀ (2I1)(2I2)] / [2π (2d)] = 2 × [(μ₀ I1 I2) / (2π d)] = 2(F/L)."
+    },
+    {
+      "id": "z04_f4_020",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an incandescent light bulb usually burn out at the exact moment it is switched on, rather than after running steadily for hours?",
+      "options": [
+        "Cold tungsten filament has very low resistance, drawing a massive inrush current surge that thermally stresses any thinned section",
+        "The switch creates an electrostatic shock wave",
+        "Voltage surges to 10,000 V every time a wall switch closes",
+        "Cold glass absorbs all visible light and cracks the filament"
+      ],
+      "correct_answer": "Cold tungsten filament has very low resistance, drawing a massive inrush current surge that thermally stresses any thinned section",
+      "explanation": "Tungsten resistance at room temperature is roughly 1/10th to 1/15th of its operating resistance at 2500°C. Turning on the switch triggers a huge current surge (I = V/R_cold) that vaporizes the thinnest filament segment."
+    },
+    {
+      "id": "z04_f4_021",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does a lightning arrester protect electrical substations against high-voltage atmospheric surges?",
+      "options": [
+        "Its non-linear metal-oxide varistor conducts negligible current at operating voltage, but drops to near-zero resistance during a surge to divert energy to ground",
+        "It catches lightning in a giant glass capacitor for storage",
+        "It turns high-voltage electricity into radio waves directed at clouds",
+        "It cuts off all power to consumer homes during rain"
+      ],
+      "correct_answer": "Its non-linear metal-oxide varistor conducts negligible current at operating voltage, but drops to near-zero resistance during a surge to divert energy to ground",
+      "explanation": "Zinc-oxide (ZnO) surge arresters exhibit highly non-linear resistance. At normal line voltages they act as open circuits; when lightning creates a kilovolt spike, they conduct heavily, clamping voltage safely."
+    },
+    {
+      "id": "z04_f4_022",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a step-down transformer require thicker copper wire for its secondary coil than for its primary coil?",
+      "options": [
+        "The secondary delivers a much higher current, requiring a larger cross-sectional area to minimize I²R resistive heating",
+        "The secondary coil operates at higher voltage and needs mechanical support",
+        "Thicker wire increases the turns ratio automatically",
+        "Secondary coils are exposed to higher magnetic field radiation"
+      ],
+      "correct_answer": "The secondary delivers a much higher current, requiring a larger cross-sectional area to minimize I²R resistive heating",
+      "explanation": "Because power P = VI is conserved, stepping down voltage forces secondary current Is to be much higher than primary Ip. Thicker wire (larger area A) lowers resistance R = ρL/A to safely handle heavy current."
+    },
+    {
+      "id": "z04_f4_023",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is an analog voltmeter designed with an extremely high internal resistance, whereas an ammeter is designed with near-zero internal resistance?",
+      "options": [
+        "To minimize their perturbation of the circuit conditions they are intended to measure",
+        "To prevent the pointer from spinning too quickly",
+        "To make voltmeters compatible with alternating current",
+        "Because voltmeters must store high electrical charges like capacitors"
+      ],
+      "correct_answer": "To minimize their perturbation of the circuit conditions they are intended to measure",
+      "explanation": "An ideal voltmeter draws zero branch current (R_v → ∞), leaving circuit operation unaltered. An ideal ammeter introduces zero voltage drop (R_a → 0), leaving loop current unchanged."
+    },
+    {
+      "id": "z04_f4_024",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is pure silicon doped with pentavalent phosphorus atoms to create an n-type semiconductor?",
+      "options": [
+        "Phosphorus donates extra free conduction electrons that significantly increase electrical conductivity",
+        "Phosphorus captures electrons to create positive holes",
+        "Phosphorus transforms silicon into a superconductor at room temperature",
+        "Phosphorus increases the electrical resistance of the silicon crystal"
+      ],
+      "correct_answer": "Phosphorus donates extra free conduction electrons that significantly increase electrical conductivity",
+      "explanation": "Phosphorus has 5 valence electrons. Four form covalent bonds with adjacent silicon atoms, while the fifth is easily liberated into the conduction band as a mobile negative charge carrier."
+    },
+    {
+      "id": "z04_f4_025",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a p-n junction diode allow electric current to flow easily under forward bias, but blocks current under reverse bias?",
+      "options": [
+        "Forward bias lowers the depletion barrier allowing majority carriers to cross; reverse bias widens the depletion layer and barrier potential",
+        "Forward bias destroys all electrons inside the semiconductor",
+        "Reverse bias turns the p-type region into an electrical insulator",
+        "Diodes contain miniature mechanical valves that shut under reverse polarity"
+      ],
+      "correct_answer": "Forward bias lowers the depletion barrier allowing majority carriers to cross; reverse bias widens the depletion layer and barrier potential",
+      "explanation": "Under forward bias (p-side positive, n-side negative), the applied voltage opposes the built-in potential, thinning the depletion zone and allowing charge carriers to cross freely. Reverse bias widens the barrier."
+    },
+    {
+      "id": "z04_f4_026",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What happens when an alternating current of 50 Hz is passed through a normal moving-coil galvanometer?",
+      "options": [
+        "The pointer vibrates imperceptibly about zero because the average torque over each complete cycle is zero",
+        "The pointer deflects steadily to the maximum scale value",
+        "The galvanometer coil burns out immediately within 1 microsecond",
+        "The pointer rotates continuously like an electric fan"
+      ],
+      "correct_answer": "The pointer vibrates imperceptibly about zero because the average torque over each complete cycle is zero",
+      "explanation": "Torque reverses direction every 10 ms (50 Hz AC). Due to rotational inertia, the mechanical coil assembly cannot track this rapid alternation, displaying a net deflection of zero."
+    },
+    {
+      "id": "z04_f4_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a Faraday cage protect sensitive electronics and occupants inside an automobile from a direct lightning strike?",
+      "options": [
+        "Charges reside exclusively on the outer conductive surface of a hollow metal shell, leaving zero electric field inside",
+        "The metal roof absorbs all electrical charge into nuclear mass",
+        "Rubber tires insulate the vehicle completely from cloud voltages",
+        "Lightning cannot strike objects moving faster than 10 km/h"
+      ],
+      "correct_answer": "Charges reside exclusively on the outer conductive surface of a hollow metal shell, leaving zero electric field inside",
+      "explanation": "By Gauss's law, electrostatic charges on a conductor redistribute entirely along the outer surface. The electric field inside any hollow metallic enclosure remains strictly zero (electrostatic shielding)."
+    },
+    {
+      "id": "z04_f4_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does a rheostat regulate the speed of an electric motor or the brightness of a lamp?",
+      "options": [
+        "By adjusting the length of resistive wire in series, varying total circuit resistance and controlling current",
+        "By converting direct current into radio waves",
+        "By altering the chemical voltage of the power source",
+        "By changing the physical frequency of electron oscillations"
+      ],
+      "correct_answer": "By adjusting the length of resistive wire in series, varying total circuit resistance and controlling current",
+      "explanation": "A sliding contact alters effective wire length L. Since R = ρL/A, varying resistance adjusts current (I = V/R) and voltage delivered to the connected load."
+    },
+    {
+      "id": "z04_f4_029",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an electric current flowing through a coiled wire produce a much stronger magnetic field than the same current in a straight wire?",
+      "options": [
+        "Magnetic fields from each adjacent loop add vectorially along the central axis of the coil",
+        "Coiling a wire increases the electric charge of electrons",
+        "Coiling a wire slows down the speed of electricity",
+        "Straight wires absorb their own magnetic fields"
+      ],
+      "correct_answer": "Magnetic fields from each adjacent loop add vectorially along the central axis of the coil",
+      "explanation": "By superposition, each circular turn generates a magnetic field at the center. Coiling N turns multiplies the axial magnetic field strength N-fold (B = μ₀NI / 2R)."
+    },
+    {
+      "id": "z04_f4_030",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An electrical contractor proposes wiring lighting fixtures and high-power air conditioners on the same 5 A circuit breaker to cut installation costs. How do you evaluate this proposal?",
+      "options": [
+        "Hazardous and unacceptable: air conditioning compressors draw heavy surge currents that will cause continuous tripping or overheat 5 A wiring",
+        "Acceptable and cost-efficient for modern homes",
+        "Acceptable only if all lighting fixtures use incandescent bulbs",
+        "Hazardous only during winter months"
+      ],
+      "correct_answer": "Hazardous and unacceptable: air conditioning compressors draw heavy surge currents that will cause continuous tripping or overheat 5 A wiring",
+      "explanation": "Air conditioners require dedicated 15 A or 20 A circuits with heavy-gauge cable. Operating on a 5 A lighting circuit will trip the breaker or melt wiring, creating a serious fire hazard."
+    },
+    {
+      "id": "z04_f4_031",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A utility company evaluates whether to transmit 100 MW of power at 400 kV instead of 100 kV across a 200 km line with a resistance of 10 Ω. What is the reduction in I²R transmission power loss?",
+      "options": [
+        "Power loss drops from 10 MW down to 0.625 MW (a 16-fold reduction in loss)",
+        "Power loss drops from 100 MW down to 10 MW",
+        "Power loss remains exactly identical",
+        "Power loss drops to zero Watts completely"
+      ],
+      "correct_answer": "Power loss drops from 10 MW down to 0.625 MW (a 16-fold reduction in loss)",
+      "explanation": "At 100 kV: I = 100 MW / 100 kV = 1000 A. Loss = I²R = (1000)² × 10 = 10 MW. At 400 kV: I = 100 MW / 400 kV = 250 A. Loss = (250)² × 10 = 0.625 MW. Loss is reduced by (400/100)² = 16 times."
+    },
+    {
+      "id": "z04_f4_032",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student attempts to operate a standard step-down transformer (designed for 220 V 50 Hz AC) on a 12 V DC car battery. What is the predicted operational result?",
+      "options": [
+        "The secondary output voltage will be zero after an initial transient, and the primary winding will overheat from excessive DC current",
+        "The transformer will step down 12 V DC to 1.2 V DC smoothly",
+        "The transformer will convert the DC battery into 220 V AC electricity",
+        "The battery will immediately recharge itself to 100%"
+      ],
+      "correct_answer": "The secondary output voltage will be zero after an initial transient, and the primary winding will overheat from excessive DC current",
+      "explanation": "Steady DC lacks inductive reactance (X_L = 2πfL = 0). Only low ohmic resistance limits primary current, drawing massive current that overheats the coil while generating zero steady secondary EMF (dΦ/dt = 0)."
+    },
+    {
+      "id": "z04_f4_033",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An industrial facility considers replacing traditional lead-tin wire fuses with a modern Earth Leakage Circuit Breaker (ELCB / RCCB). What critical safety improvement justifies this evaluation?",
+      "options": [
+        "ELCB detects low-milliampere ground leakage currents (e.g. 30 mA) to prevent human fatal electrocution, which wire fuses cannot detect",
+        "ELCB eliminates electricity consumption from the factory",
+        "ELCB allows machines to run without any electrical power",
+        "Wire fuses conduct more current than circuit breakers"
+      ],
+      "correct_answer": "ELCB detects low-milliampere ground leakage currents (e.g. 30 mA) to prevent human fatal electrocution, which wire fuses cannot detect",
+      "explanation": "Fuses only blow on huge overcurrents (e.g. >15 A) and will not protect a person being electrocuted at 50–100 mA. An RCCB trips within 30 ms upon detecting tiny current imbalances (≥30 mA)."
+    },
+    {
+      "id": "z04_f4_034",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A consumer evaluates two light bulbs: a 10 W LED bulb producing 800 lumens versus a 60 W incandescent bulb producing 800 lumens. Over 5000 hours at 8 Taka per kWh, how much money does the LED save?",
+      "options": [
+        "2000 Taka",
+        "400 Taka",
+        "1600 Taka",
+        "2400 Taka"
+      ],
+      "correct_answer": "2000 Taka",
+      "explanation": "Power difference = 60 W - 10 W = 50 W = 0.05 kW. Energy saved = 0.05 kW × 5000 h = 250 kWh. Cost saved = 250 kWh × 8 Taka/kWh = 2000 Taka."
+    },
+    {
+      "id": "z04_f4_035",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An engineer tests a transformer core made of solid non-laminated cast steel. Compared to a laminated silicon-steel core of identical dimensions, what negative performance outcome occurs?",
+      "options": [
+        "Massive eddy current heating losses will severely reduce efficiency and cause the transformer to overheat",
+        "The secondary voltage will double",
+        "The transformer will operate with 100% efficiency",
+        "The solid core eliminates all magnetic hysteresis"
+      ],
+      "correct_answer": "Massive eddy current heating losses will severely reduce efficiency and cause the transformer to overheat",
+      "explanation": "Solid steel presents large unbroken cross-sections for induced eddy currents, generating huge I²R heating losses that degrade efficiency and threaten thermal breakdown of insulation."
+    },
+    {
+      "id": "z04_f4_036",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A technician assesses a circuit where a 12 V battery powers an uninsulated immersion heater submerged in distilled water versus saltwater. What difference in behavior will occur?",
+      "options": [
+        "Saltwater conducts current through dissolved ions, creating electrolysis and stray current leakage, whereas distilled water conducts almost nothing",
+        "Distilled water explodes upon contact with electric current",
+        "Saltwater has infinite electrical resistance and stops all current",
+        "Both waters behave identically as perfect insulators"
+      ],
+      "correct_answer": "Saltwater conducts current through dissolved ions, creating electrolysis and stray current leakage, whereas distilled water conducts almost nothing",
+      "explanation": "Pure distilled water lacks free charge carriers. Dissolved salt (NaCl) dissociates into mobile Na⁺ and Cl⁻ ions, turning the bath into an electrolyte with low electrical resistance."
+    },
+    {
+      "id": "z04_f4_037",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An inventor claims to have developed a DC generator that produces 500 W of electrical output while requiring only 300 W of mechanical shaft input power. How do you evaluate this claim?",
+      "options": [
+        "The claim violates the first law of thermodynamics (conservation of energy) and is impossible",
+        "The claim is possible if superconducting magnets are used",
+        "The claim is possible if the generator spins faster than 3000 RPM",
+        "The claim is valid because electromagnetic induction creates free energy"
+      ],
+      "correct_answer": "The claim violates the first law of thermodynamics (conservation of energy) and is impossible",
+      "explanation": "An output of 500 W from 300 W input implies an efficiency of 167%, which violates the law of conservation of energy. No device can generate more power than it consumes."
+    },
+    {
+      "id": "z04_f4_038",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "In evaluating home electrical safety, why is it critical that single-pole switches and circuit breakers are installed on the LIVE wire rather than the NEUTRAL wire?",
+      "options": [
+        "Opening the switch disconnects high voltage from the appliance; switching the neutral leaves the appliance live at 220 V even when turned off",
+        "Neutral wires cannot conduct current through a switch",
+        "Installing switches on the live wire halves the electricity bill",
+        "The neutral wire carries twice as much voltage as the live wire"
+      ],
+      "correct_answer": "Opening the switch disconnects high voltage from the appliance; switching the neutral leaves the appliance live at 220 V even when turned off",
+      "explanation": "If a switch is on the neutral wire, opening it stops current but leaves the entire internal appliance circuitry live at 220 V relative to earth. An unsuspecting user touching it risks severe shock."
+    },
+    {
+      "id": "z04_f4_039",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student measures the resistance of an incandescent bulb when cold with an ohmmeter (reads 40 Ω) and calculates its power at 220 V as P = V²/R = 220²/40 = 1210 W. However, the bulb is labeled 100 W. How do you evaluate this discrepancy?",
+      "options": [
+        "The calculation is flawed because tungsten's operating resistance at 2500°C is over 10 times higher (~484 Ω) than its cold resistance",
+        "The manufacturer mislabeled the bulb",
+        "Ohm's law does not apply to electric light bulbs",
+        "The ohmmeter damaged the bulb's filament"
+      ],
+      "correct_answer": "The calculation is flawed because tungsten's operating resistance at 2500°C is over 10 times higher (~484 Ω) than its cold resistance",
+      "explanation": "Metals exhibit positive temperature coefficients. Cold tungsten resistance is ~40 Ω, but white-hot operating resistance is R = V²/P = 220²/100 = 484 Ω. Evaluating power using cold resistance is invalid."
+    },
+    {
+      "id": "z04_f4_040",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An audio amplifier manufacturer evaluates using gold plating on audio jack connectors rather than bare copper. What technical justification supports this decision?",
+      "options": [
+        "Gold does not oxidize or tarnish in air, preserving low-resistance contact over years of use",
+        "Gold has much lower electrical resistivity than copper",
+        "Gold converts audio signals into laser beams",
+        "Gold amplifies the bass frequencies mechanically"
+      ],
+      "correct_answer": "Gold does not oxidize or tarnish in air, preserving low-resistance contact over years of use",
+      "explanation": "While copper is slightly more conductive than gold, copper readily oxidizes into resistive copper oxide. Chemically inert gold never tarnishes, ensuring corrosion-free audio contact."
+    },
+    {
+      "id": "z04_f4_041",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A solar microgrid installation evaluates connecting two 12 V, 100 Ah deep-cycle batteries in series versus parallel to power a 24 V inverter. What is the correct battery configuration?",
+      "options": [
+        "Series connection: voltages add to produce 24 V at 100 Ah capacity",
+        "Parallel connection: voltages add to produce 24 V at 200 Ah capacity",
+        "Parallel connection: produces 12 V at 100 Ah capacity",
+        "Series connection: produces 12 V at 200 Ah capacity"
+      ],
+      "correct_answer": "Series connection: voltages add to produce 24 V at 100 Ah capacity",
+      "explanation": "Connecting batteries in series adds their voltages (12 V + 12 V = 24 V) while capacity remains 100 Ah, perfectly matching the required 24 V inverter input."
+    },
+    {
+      "id": "z04_f4_042",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A safety auditor inspects an industrial motor installation and finds the metallic ground wire has an electrical resistance of 25 Ω. How do you evaluate this grounding installation?",
+      "options": [
+        "Defective and hazardous: ground resistance must be very low (< 1 to 5 Ω) so that fault currents can trip protective breakers instantly",
+        "Acceptable because high ground resistance saves electric power",
+        "Acceptable because ground resistance does not affect human safety",
+        "Defective because ground wires should have infinite resistance"
+      ],
+      "correct_answer": "Defective and hazardous: ground resistance must be very low (< 1 to 5 Ω) so that fault currents can trip protective breakers instantly",
+      "explanation": "If a live fault occurs on a frame with 25 Ω grounding, fault current to ground is only 220 V / 25 Ω ≈ 8.8 A—insufficient to instantly trip a 16 A breaker, leaving the frame at a lethal potential."
+    },
+    {
+      "id": "z04_f4_043",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An electronics design team evaluates using a silicon carbide (SiC) semiconductor switch instead of a standard silicon MOSFET for high-voltage electric vehicle inverters. What performance advantage justifies this evaluation?",
+      "options": [
+        "SiC has a much wider bandgap, allowing higher breakdown voltage, faster switching speeds, and operation at significantly higher temperatures",
+        "SiC eliminates the need for electric batteries in vehicles",
+        "SiC is an organic polymer that dissolves in water",
+        "SiC switches have zero electrical resistance at room temperature"
+      ],
+      "correct_answer": "SiC has a much wider bandgap, allowing higher breakdown voltage, faster switching speeds, and operation at significantly higher temperatures",
+      "explanation": "Wide-bandgap semiconductors (SiC and GaN) support 10× higher electric fields before breakdown, switching higher voltages with drastically lower conduction and switching losses."
+    },
+    {
+      "id": "z04_f4_044",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A hospital evaluates backup power solutions and decides to install an uninterruptible power supply (UPS) backed by a diesel generator. Why is the battery UPS essential rather than relying solely on the generator?",
+      "options": [
+        "The battery UPS provides instantaneous (< 10 ms) seamless power takeover, preventing life-support equipment from rebooting while the diesel generator starts up",
+        "The generator cannot produce 220 V alternating current",
+        "The battery UPS generates its own diesel fuel",
+        "Diesel generators only supply direct current"
+      ],
+      "correct_answer": "The battery UPS provides instantaneous (< 10 ms) seamless power takeover, preventing life-support equipment from rebooting while the diesel generator starts up",
+      "explanation": "Generators require 10 to 30 seconds to crank and reach steady operating speed. Battery-inverter UPS systems transfer in milliseconds, bridging the critical blackout window."
+    },
+    {
+      "id": "z04_f4_045",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A homeowner installs lightning protection on their house roof using a 1-meter pointed copper rod connected via a heavy copper down-conductor to a buried ground plate. How do you evaluate this installation?",
+      "options": [
+        "Proper and effective: the sharp point encourages corona discharge to neutralize clouds and provides a low-resistance path to Earth if struck",
+        "Ineffective: lightning rods attract all lightning from the entire city directly into the house",
+        "Ineffective: lightning rods must be made of plastic to repel electricity",
+        "Hazardous: the copper rod must be connected to the domestic live mains wire"
+      ],
+      "correct_answer": "Proper and effective: the sharp point encourages corona discharge to neutralize clouds and provides a low-resistance path to Earth if struck",
+      "explanation": "Franklin's design works by leaking charge from sharp points to prevent ionization, and providing a heavy copper conductor (≥50 mm²) to route any direct strike safely into the earth."
+    },
+    {
+      "id": "z04_f4_046",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A technician investigates why a 10 kW industrial DC motor slows down and loses torque under heavy load. What is the most plausible electrical diagnostic evaluation?",
+      "options": [
+        "Excessive voltage drop along thin power supply cables combined with worn commutator brushes reducing armature current",
+        "The motor has developed negative resistance",
+        "The Earth's magnetic field has reversed polarity",
+        "Electrons are colliding with air molecules inside the armature"
+      ],
+      "correct_answer": "Excessive voltage drop along thin power supply cables combined with worn commutator brushes reducing armature current",
+      "explanation": "Under high load, increased current causes large I·R cable voltage drops, starving motor terminals. Worn brushes create poor contact resistance, further dropping armature voltage and torque."
+    },
+    {
+      "id": "z04_f4_047",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An engineer evaluates whether a step-up transformer can be built with equal numbers of primary and secondary turns (Np = Ns) by making the secondary wire twice as thick. What is the outcome?",
+      "options": [
+        "The output voltage will equal the input voltage (Vs = Vp); it functions as an isolation transformer, not a step-up transformer",
+        "The output voltage will double because the wire is thicker",
+        "The output voltage will be halved",
+        "The transformer will catch fire immediately"
+      ],
+      "correct_answer": "The output voltage will equal the input voltage (Vs = Vp); it functions as an isolation transformer, not a step-up transformer",
+      "explanation": "Voltage ratio is determined strictly by the turns ratio: Vs / Vp = Ns / Np. Wire thickness affects current-carrying capacity, not voltage transformation."
+    },
+    {
+      "id": "z04_f4_048",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student connects three identical 12 V light bulbs in series to a 12 V battery. How does their total light output compare to connecting the same three bulbs in parallel to the same battery?",
+      "options": [
+        "The parallel configuration outputs 9 times more total light power than the series configuration",
+        "The series configuration outputs 3 times more light power",
+        "Both configurations produce identical total light output",
+        "The parallel configuration outputs 27 times more light power"
+      ],
+      "correct_answer": "The parallel configuration outputs 9 times more total light power than the series configuration",
+      "explanation": "Let bulb resistance be R. In series, R_s = 3R; P_series = V² / (3R). In parallel, R_p = R/3; P_parallel = V² / (R/3) = 3V² / R. Ratio P_parallel / P_series = (3V²/R) / (V²/3R) = 9."
+    },
+    {
+      "id": "z04_f4_049",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An electrical utility evaluates whether to use DC or AC for a new 1000-kilometer subsea undersea transmission cable (HVDC vs HVAC). Why is High Voltage Direct Current (HVDC) evaluated as superior for long subsea cables?",
+      "options": [
+        "Subsea AC cables suffer from enormous capacitive charging currents that choke power transfer, whereas DC suffers zero continuous capacitive reactive loss",
+        "DC travels twice as fast through seawater as AC",
+        "Direct current does not require copper or aluminum conductors",
+        "Transformers only operate on underwater direct current"
+      ],
+      "correct_answer": "Subsea AC cables suffer from enormous capacitive charging currents that choke power transfer, whereas DC suffers zero continuous capacitive reactive loss",
+      "explanation": "The large capacitance between cable conductor and seawater draws massive reactive charging current under AC (I_c = 2πfCV), limiting AC transmission to <50 km. HVDC eliminates steady-state capacitive reactance."
+    },
+    {
+      "id": "z04_f4_050",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student proposes that connecting an extra resistor in parallel across an existing circuit branch will increase the overall equivalent resistance of the network. How do you evaluate this proposition?",
+      "options": [
+        "The proposition is false: adding a parallel resistor always decreases equivalent resistance because it provides an additional conduction path",
+        "The proposition is true: all resistors add resistance to circuits regardless of how they are connected",
+        "The proposition is true only if the added resistor has a resistance greater than 1000 Ω",
+        "The proposition is true only in direct current circuits"
+      ],
+      "correct_answer": "The proposition is false: adding a parallel resistor always decreases equivalent resistance because it provides an additional conduction path",
+      "explanation": "In parallel, total conductance G_total = G_existing + 1/R_new > G_existing. Since equivalent resistance is R_eq = 1/G_total, adding any parallel branch strictly decreases equivalent resistance."
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+[gd_scene format=3 uid="uid://c6eqm74mee1sk"]
+
+[ext_resource type="Script" uid="uid://dblmxu5jwur3o" path="res://scripts/school/SchoolOpening.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://bvsp21p31pmoq" path="res://asset/sprites/Environment/classroom.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://eqy5q6luaxf2" path="res://asset/sprites/character/teacher_idle.png" id="3_teacher"]
+[ext_resource type="PackedScene" path="res://scenes/school/SeatedStudent.tscn" id="4_student"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="5_player"]
+[ext_resource type="Texture2D" uid="uid://cifve0er0enk7" path="res://asset/sprites/character/player backview.png" id="6_3rtdt"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="6_dialogue"]
+
+[sub_resource type="RectangleShape2D" id="Rect_wall_h"]
+size = Vector2(1920, 48)
+
+[sub_resource type="RectangleShape2D" id="Rect_wall_v"]
+size = Vector2(48, 1072)
+
+[sub_resource type="RectangleShape2D" id="Rect_wall_top_right"]
+size = Vector2(1600, 112)
+
+[sub_resource type="RectangleShape2D" id="Rect_teacher_desk"]
+size = Vector2(300, 130)
+
+[sub_resource type="RectangleShape2D" id="Rect_desk"]
+size = Vector2(158, 81)
+
+[node name="SchoolOpening" type="Node2D" unique_id=1368718118]
+y_sort_enabled = true
+script = ExtResource("1_script")
+start_delay_sec = 0.5
+
+[node name="ClassroomBackground" type="Sprite2D" parent="." unique_id=559518539]
+z_index = -10
+position = Vector2(2, 0)
+scale = Vector2(0.99895835, 1)
+texture = ExtResource("2_bg")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=81105765]
+position = Vector2(960, 536)
+zoom = Vector2(0.667, 0.667)
+
+[node name="Collision" type="Node2D" parent="." unique_id=736626776]
+
+[node name="Walls" type="Node2D" parent="Collision" unique_id=2033786016]
+
+[node name="WallBottom" type="StaticBody2D" parent="Collision/Walls" unique_id=447677204]
+position = Vector2(960, 1056)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Walls/WallBottom" unique_id=363408525]
+shape = SubResource("Rect_wall_h")
+
+[node name="WallLeft" type="StaticBody2D" parent="Collision/Walls" unique_id=1566139232]
+position = Vector2(278, 603)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Walls/WallLeft" unique_id=2000971069]
+position = Vector2(80, -43)
+shape = SubResource("Rect_wall_v")
+
+[node name="WallRight" type="StaticBody2D" parent="Collision/Walls" unique_id=1155389358]
+position = Vector2(1896, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Walls/WallRight" unique_id=165717330]
+position = Vector2(-321, 23)
+shape = SubResource("Rect_wall_v")
+
+[node name="WallTopRight" type="StaticBody2D" parent="Collision/Walls" unique_id=933561975]
+position = Vector2(1120, 24)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Walls/WallTopRight" unique_id=588735355]
+position = Vector2(251, 50)
+shape = SubResource("Rect_wall_top_right")
+
+[node name="TeacherDesk" type="StaticBody2D" parent="Collision" unique_id=894814469]
+position = Vector2(980, 290)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/TeacherDesk" unique_id=1083037976]
+position = Vector2(0, 14)
+shape = SubResource("Rect_teacher_desk")
+
+[node name="StudentDesks" type="Node2D" parent="Collision" unique_id=1022255323]
+position = Vector2(97, 101)
+
+[node name="Desk_R1C1" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=1145095212]
+position = Vector2(538, 430)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R1C1" unique_id=924969273]
+position = Vector2(-6, -21)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R1C2" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=1432847980]
+position = Vector2(806, 430)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R1C2" unique_id=667045735]
+position = Vector2(4, -21)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R1C3" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=264801899]
+position = Vector2(1075, 430)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R1C3" unique_id=1954884256]
+position = Vector2(14, -21)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R1C4" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=385043533]
+position = Vector2(1344, 430)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R1C4" unique_id=1633370895]
+position = Vector2(4, -11)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R2C1" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=64662961]
+position = Vector2(538, 580)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R2C1" unique_id=99287782]
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R2C2" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=1035751432]
+position = Vector2(804, 561)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Desk_R2C3" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=951005202]
+position = Vector2(1075, 580)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R2C3" unique_id=182673571]
+position = Vector2(21, 0)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R2C4" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=1323135667]
+position = Vector2(1344, 580)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R2C4" unique_id=1843978213]
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R3C1" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=1683053410]
+position = Vector2(538, 730)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R3C1" unique_id=1142552783]
+position = Vector2(-6, 39)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R3C2" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=669962376]
+position = Vector2(806, 730)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R3C2" unique_id=360714861]
+position = Vector2(10, 40)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R3C3" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=264911410]
+position = Vector2(1075, 730)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R3C3" unique_id=1214221965]
+position = Vector2(19, 29)
+shape = SubResource("Rect_desk")
+
+[node name="Desk_R3C4" type="StaticBody2D" parent="Collision/StudentDesks" unique_id=22743482]
+position = Vector2(1344, 730)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StudentDesks/Desk_R3C4" unique_id=873637007]
+position = Vector2(7, 40)
+shape = SubResource("Rect_desk")
+
+[node name="Teacher" type="Node2D" parent="." unique_id=470022499]
+z_index = 5
+position = Vector2(1152, 354)
+
+[node name="Sprite2D" type="Sprite2D" parent="Teacher" unique_id=546459146]
+position = Vector2(67.19502, -43.0988)
+scale = Vector2(0.31144533, 0.3475298)
+texture = ExtResource("3_teacher")
+offset = Vector2(0, -40)
+
+[node name="AmbientStudents" type="Node2D" parent="." unique_id=1541991766]
+z_index = 3
+y_sort_enabled = true
+
+[node name="Student_01" parent="AmbientStudents" unique_id=1580422887 instance=ExtResource("4_student")]
+position = Vector2(621, 553)
+scale = Vector2(2.5, 2.5)
+
+[node name="Student_02" parent="AmbientStudents" unique_id=1273420657 instance=ExtResource("4_student")]
+position = Vector2(1185, 541)
+scale = Vector2(2.5, 2.5)
+
+[node name="Student_03" parent="AmbientStudents" unique_id=654459399 instance=ExtResource("4_student")]
+position = Vector2(1441, 529)
+scale = Vector2(2.5, 2.5)
+face_left = true
+
+[node name="Student_04" parent="AmbientStudents" unique_id=2065023851 instance=ExtResource("4_student")]
+position = Vector2(625, 703)
+scale = Vector2(2.5, 2.5)
+
+[node name="Student_05" parent="AmbientStudents" unique_id=2048799287 instance=ExtResource("4_student")]
+position = Vector2(1181, 689)
+scale = Vector2(2.5, 2.5)
+face_left = true
+
+[node name="Student_06" parent="AmbientStudents" unique_id=112275915 instance=ExtResource("4_student")]
+position = Vector2(1448, 689)
+scale = Vector2(2.5, 2.5)
+
+[node name="Student_07" parent="AmbientStudents" unique_id=370644178 instance=ExtResource("4_student")]
+position = Vector2(629, 894)
+scale = Vector2(2.5, 2.5)
+
+[node name="Student_08" parent="AmbientStudents" unique_id=1577714189 instance=ExtResource("4_student")]
+position = Vector2(1182, 853)
+scale = Vector2(2.5, 2.5)
+face_left = true
+
+[node name="MainPlayer" parent="." unique_id=964263724 instance=ExtResource("5_player")]
+z_index = 4
+position = Vector2(815, 690)
+move_speed = 140.0
+sprite_scale = 0.13
+scripted_control = true
+start_seated = true
+
+[node name="playerSprite2D" type="Sprite2D" parent="MainPlayer" unique_id=2078852823]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("6_3rtdt")
+
+[node name="OpeningSequence" type="Node2D" parent="." unique_id=560949631]
+z_index = 20
+position = Vector2(372, 30)
+
+[node name="StandPoint" type="Marker2D" parent="OpeningSequence" unique_id=861777823]
+position = Vector2(418, 676)
+
+[node name="WalkPoint_01" type="Marker2D" parent="OpeningSequence" unique_id=200264575]
+position = Vector2(389, 419)
+
+[node name="WalkPoint_02" type="Marker2D" parent="OpeningSequence" unique_id=851753681]
+position = Vector2(278, 256)
+
+[node name="DoorPoint" type="Marker2D" parent="OpeningSequence" unique_id=170220964]
+position = Vector2(154, 150)
+
+[node name="ExitPoint" type="Marker2D" parent="OpeningSequence" unique_id=589857199]
+position = Vector2(167, 135)
+
+[node name="DialoguePanel" parent="." unique_id=745721267 instance=ExtResource("6_dialogue")]
+visible = false

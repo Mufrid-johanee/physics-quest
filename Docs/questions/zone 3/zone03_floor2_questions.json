@@ -1,0 +1,714 @@
+{
+  "zone": "03_wave_optics",
+  "floor": 2,
+  "bloom_levels": [
+    "understand",
+    "apply"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z03_f2_001",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is the focal length of a plane mirror considered to be infinite?",
+      "options": [
+        "A plane mirror has no curvature, so its radius of curvature is infinity",
+        "Parallel rays reflected from it cross at zero distance",
+        "Plane mirrors cannot form images of distant objects",
+        "The mirror completely transmits all incident light"
+      ],
+      "correct_answer": "A plane mirror has no curvature, so its radius of curvature is infinity",
+      "explanation": "Because a plane mirror is completely flat, r = ∞. Since f = r/2, its focal length f is infinity."
+    },
+    {
+      "id": "z03_f2_002",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the relationship between the angle of deviation (δ), angle of incidence (i), angle of emergence (e), and angle of prism (A)?",
+      "options": [
+        "δ = i + e - A",
+        "δ = i - e + A",
+        "δ = (i + e) / A",
+        "δ = i + e + A"
+      ],
+      "correct_answer": "δ = i + e - A",
+      "explanation": "For refraction through a triangular glass prism, the total deviation angle is given by δ = i + e - A."
+    },
+    {
+      "id": "z03_f2_003",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does an optical fiber transmit light signals with virtually no loss of intensity over kilometers?",
+      "options": [
+        "Light undergoes successive total internal reflections where 100% of the energy is reflected",
+        "The fiber has electrical amplifiers embedded inside every millimeter",
+        "Light converts into electrical voltage inside the core",
+        "The fiber core acts as a silvered concave mirror"
+      ],
+      "correct_answer": "Light undergoes successive total internal reflections where 100% of the energy is reflected",
+      "explanation": "In total internal reflection, no light is refracted or absorbed at the ideal boundary, resulting in 100% reflection without loss of light intensity."
+    },
+    {
+      "id": "z03_f2_004",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "When an object is placed between the center of curvature and principal focus of a concave mirror, what are the nature and position of the image?",
+      "options": [
+        "Real, inverted, magnified, beyond C",
+        "Real, inverted, diminished, between C and F",
+        "Virtual, erect, magnified, behind mirror",
+        "Real, inverted, same size, at C"
+      ],
+      "correct_answer": "Real, inverted, magnified, beyond C",
+      "explanation": "For an object between C and F of a concave mirror, the reflected rays converge beyond C, forming a real, inverted, and enlarged image."
+    },
+    {
+      "id": "z03_f2_005",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a pencil dipped obliquely in a beaker of water appear bent at the water surface?",
+      "options": [
+        "Light rays coming from the underwater part of the pencil bend away from the normal upon exiting into air",
+        "Water molecules mechanically bend the wood of the pencil",
+        "Light is completely absorbed by the surface layer of water",
+        "The surface of water behaves like a convex mirror"
+      ],
+      "correct_answer": "Light rays coming from the underwater part of the pencil bend away from the normal upon exiting into air",
+      "explanation": "Light from submerged points refracts away from the normal as it leaves the water, making those points appear raised relative to their true position."
+    },
+    {
+      "id": "z03_f2_006",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the nature of the image formed by a concave lens for any real object position?",
+      "options": [
+        "Always virtual, erect, and diminished",
+        "Always real, inverted, and magnified",
+        "Always real, erect, and same size",
+        "Can be real or virtual depending on object distance"
+      ],
+      "correct_answer": "Always virtual, erect, and diminished",
+      "explanation": "A concave lens diverges all incident light rays, so they always appear to originate from a point between the optical center and focus on the same side, creating an erect, diminished virtual image."
+    },
+    {
+      "id": "z03_f2_007",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does the speed of a wave change when it passes from deep water into shallow water?",
+      "options": [
+        "Speed decreases while frequency remains unchanged",
+        "Speed increases while frequency increases",
+        "Speed remains constant while frequency decreases",
+        "Speed doubles and wavelength triples"
+      ],
+      "correct_answer": "Speed decreases while frequency remains unchanged",
+      "explanation": "Frequency is determined solely by the wave source and does not change across media. In shallower water, wave speed decreases, causing wavelength to shorten."
+    },
+    {
+      "id": "z03_f2_008",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does an echo sound fainter than the original sound produced?",
+      "options": [
+        "Part of the sound energy is absorbed by the reflecting surface and spreads out spherically",
+        "Sound frequency drops below the audible range during reflection",
+        "The speed of sound decreases dramatically during reflection",
+        "Sound waves lose mass as they travel through air"
+      ],
+      "correct_answer": "Part of the sound energy is absorbed by the reflecting surface and spreads out spherically",
+      "explanation": "A portion of the acoustic wave energy is absorbed by the obstacle and the air, and spherical spreading over distance reduces sound intensity (inverse-square law)."
+    },
+    {
+      "id": "z03_f2_009",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the function of the ciliary muscles in accommodation of the human eye?",
+      "options": [
+        "They alter the curvature and focal length of the eye lens",
+        "They open and close the eyelid",
+        "They rotate the eyeball in its socket",
+        "They change the color sensitivity of retinal cones"
+      ],
+      "correct_answer": "They alter the curvature and focal length of the eye lens",
+      "explanation": "Ciliary muscles relax to flatten the lens for distant viewing and contract to make the lens thicker and more convex for focusing on near objects."
+    },
+    {
+      "id": "z03_f2_010",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does the diamond sparkle so brilliantly compared to an ordinary piece of cut glass?",
+      "options": [
+        "Diamond has a very high refractive index (2.42) and a very small critical angle (~24.4°)",
+        "Diamond is inherently radioactive and emits its own light",
+        "Diamond absorbs all colors of light except white",
+        "Diamond has a negative refractive index"
+      ],
+      "correct_answer": "Diamond has a very high refractive index (2.42) and a very small critical angle (~24.4°)",
+      "explanation": "A tiny critical angle of 24.4° ensures that almost any light entering a properly cut diamond suffers multiple total internal reflections before exiting through the top facets."
+    },
+    {
+      "id": "z03_f2_011",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "If a concave mirror has an object placed at its center of curvature (C), what is the linear magnification?",
+      "options": [
+        "-1 (same size, inverted)",
+        "+1 (same size, erect)",
+        "-2 (double size, inverted)",
+        "+0.5 (half size, erect)"
+      ],
+      "correct_answer": "-1 (same size, inverted)",
+      "explanation": "When the object is at C, the image also forms at C with equal height but inverted, giving m = -v/u = -(-2f)/(-2f) = -1."
+    },
+    {
+      "id": "z03_f2_012",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is red light used for danger signals on roads, towers, and railways?",
+      "options": [
+        "Red light has the longest wavelength in visible light and scatters least in fog and smoke",
+        "Red light travels twice as fast as blue light in air",
+        "Red light has the highest frequency of all colors",
+        "Red light cannot undergo reflection"
+      ],
+      "correct_answer": "Red light has the longest wavelength in visible light and scatters least in fog and smoke",
+      "explanation": "By Rayleigh scattering (scattering ∝ 1/λ⁴), red light's longer wavelength minimizes scattering by airborne dust and water droplets, allowing it to be seen over greatest distances."
+    },
+    {
+      "id": "z03_f2_013",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the relationship between power of combination of two thin lenses in contact, P1 and P2?",
+      "options": [
+        "P = P1 + P2",
+        "P = P1 × P2",
+        "P = P1 / P2",
+        "P = √(P1² + P2²)"
+      ],
+      "correct_answer": "P = P1 + P2",
+      "explanation": "When thin lenses are held in close contact, their net focal length is 1/f = 1/f1 + 1/f2, which directly means net power P = P1 + P2."
+    },
+    {
+      "id": "z03_f2_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sound wave has a frequency of 500 Hz and travels at 340 m/s. What is its wavelength?",
+      "options": [
+        "0.68 m",
+        "1.47 m",
+        "170 m",
+        "0.34 m"
+      ],
+      "correct_answer": "0.68 m",
+      "explanation": "λ = v / f = 340 m/s ÷ 500 Hz = 0.68 m."
+    },
+    {
+      "id": "z03_f2_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A radio transmitter broadcasts at a frequency of 100 MHz. What is the wavelength of the radio wave in vacuum? (c = 3 × 10⁸ m/s)",
+      "options": [
+        "3 m",
+        "30 m",
+        "0.3 m",
+        "300 m"
+      ],
+      "correct_answer": "3 m",
+      "explanation": "λ = c / f = (3 × 10⁸ m/s) / (100 × 10⁶ Hz) = 3 m."
+    },
+    {
+      "id": "z03_f2_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A tuning fork vibrates 256 times in one second. What is its period of oscillation?",
+      "options": [
+        "0.0039 s",
+        "0.0256 s",
+        "0.256 s",
+        "0.0019 s"
+      ],
+      "correct_answer": "0.0039 s",
+      "explanation": "T = 1 / f = 1 / 256 ≈ 0.0039 s."
+    },
+    {
+      "id": "z03_f2_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A person claps their hands near a tall cliff and hears the echo 1.2 seconds later. If the speed of sound is 340 m/s, how far is the cliff?",
+      "options": [
+        "204 m",
+        "408 m",
+        "102 m",
+        "283 m"
+      ],
+      "correct_answer": "204 m",
+      "explanation": "Sound travels to the cliff and back: 2d = v × t → d = (340 × 1.2) / 2 = 408 / 2 = 204 m."
+    },
+    {
+      "id": "z03_f2_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A ship's sonar emits an ultrasound pulse into the ocean and receives the reflected signal after 2.0 seconds. If sound travels at 1500 m/s in seawater, what is the water depth?",
+      "options": [
+        "1500 m",
+        "3000 m",
+        "750 m",
+        "2250 m"
+      ],
+      "correct_answer": "1500 m",
+      "explanation": "Depth d = (v × t) / 2 = (1500 m/s × 2.0 s) / 2 = 1500 m."
+    },
+    {
+      "id": "z03_f2_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A concave mirror has a radius of curvature of 40 cm. What is its focal length?",
+      "options": [
+        "20 cm",
+        "80 cm",
+        "40 cm",
+        "10 cm"
+      ],
+      "correct_answer": "20 cm",
+      "explanation": "Focal length f = r / 2 = 40 cm / 2 = 20 cm."
+    },
+    {
+      "id": "z03_f2_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An object is placed 30 cm in front of a concave mirror of focal length 15 cm. Where is the image formed?",
+      "options": [
+        "At 30 cm in front of the mirror",
+        "At 15 cm behind the mirror",
+        "At infinity",
+        "At 10 cm in front of the mirror"
+      ],
+      "correct_answer": "At 30 cm in front of the mirror",
+      "explanation": "Here u = -30 cm and f = -15 cm (object is at center of curvature C = 2f). The image forms at C: 1/v = 1/f - 1/u = -1/15 - (-1/30) = -1/30 → v = -30 cm (30 cm in front)."
+    },
+    {
+      "id": "z03_f2_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An object 4 cm tall is placed in front of a concave mirror, producing an inverted image 8 cm tall. What is the linear magnification?",
+      "options": [
+        "-2",
+        "+2",
+        "-0.5",
+        "+0.5"
+      ],
+      "correct_answer": "-2",
+      "explanation": "Magnification m = height of image / height of object = -8 cm / 4 cm = -2 (negative indicates inverted image)."
+    },
+    {
+      "id": "z03_f2_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Light travels from air into a transparent medium at an angle of incidence of 45°, and refracts at an angle of 30°. What is the refractive index of the medium?",
+      "options": [
+        "1.414",
+        "1.500",
+        "1.333",
+        "0.707"
+      ],
+      "correct_answer": "1.414",
+      "explanation": "Snell's law: n = sin(i) / sin(r) = sin(45°) / sin(30°) = (1/√2) / (1/2) = 2/√2 = √2 ≈ 1.414."
+    },
+    {
+      "id": "z03_f2_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "The speed of light in vacuum is 3 × 10⁸ m/s. What is the speed of light in a glass block with refractive index 1.5?",
+      "options": [
+        "2.0 × 10⁸ m/s",
+        "4.5 × 10⁸ m/s",
+        "1.5 × 10⁸ m/s",
+        "2.25 × 10⁸ m/s"
+      ],
+      "correct_answer": "2.0 × 10⁸ m/s",
+      "explanation": "v = c / n = (3 × 10⁸ m/s) / 1.5 = 2.0 × 10⁸ m/s."
+    },
+    {
+      "id": "z03_f2_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "What is the power of a convex lens with a focal length of +0.25 m?",
+      "options": [
+        "+4 D",
+        "+0.25 D",
+        "+2.5 D",
+        "-4 D"
+      ],
+      "correct_answer": "+4 D",
+      "explanation": "P = 1 / f = 1 / (+0.25 m) = +4 Diopters."
+    },
+    {
+      "id": "z03_f2_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A person wears eyeglasses with a power of -2.0 D. What type of lens is it and what is its focal length?",
+      "options": [
+        "Concave lens with focal length -0.5 m",
+        "Convex lens with focal length +0.5 m",
+        "Concave lens with focal length -2.0 m",
+        "Convex lens with focal length +2.0 m"
+      ],
+      "correct_answer": "Concave lens with focal length -0.5 m",
+      "explanation": "Negative power means a diverging (concave) lens. f = 1 / P = 1 / (-2.0 D) = -0.5 m (-50 cm)."
+    },
+    {
+      "id": "z03_f2_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A water tank is 4.0 meters deep. What is its apparent depth when viewed normally from above? (Refractive index of water = 4/3)",
+      "options": [
+        "3.0 m",
+        "5.33 m",
+        "2.5 m",
+        "1.33 m"
+      ],
+      "correct_answer": "3.0 m",
+      "explanation": "Apparent depth = real depth / n = 4.0 m / (4/3) = 3.0 m."
+    },
+    {
+      "id": "z03_f2_027",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sound wave of frequency 680 Hz travels at 340 m/s. What is the phase difference between two points separated by 0.25 m along the wave path?",
+      "options": [
+        "π radians (180°)",
+        "π/2 radians (90°)",
+        "2π radians (360°)",
+        "π/4 radians (45°)"
+      ],
+      "correct_answer": "π radians (180°)",
+      "explanation": "λ = v / f = 340 / 680 = 0.5 m. Phase difference Δφ = (2π / λ) × Δx = (2π / 0.5) × 0.25 = π radians (180°)."
+    },
+    {
+      "id": "z03_f2_028",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two thin lenses of powers +3.5 D and -1.5 D are placed in contact. What is the focal length of the combination?",
+      "options": [
+        "+0.5 m",
+        "+2.0 m",
+        "-0.5 m",
+        "+0.25 m"
+      ],
+      "correct_answer": "+0.5 m",
+      "explanation": "Net power P = P1 + P2 = +3.5 + (-1.5) = +2.0 D. Net focal length f = 1 / P = 1 / 2.0 = +0.5 m (50 cm)."
+    },
+    {
+      "id": "z03_f2_029",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A convex lens of focal length 20 cm produces a real image at a distance of 60 cm on the other side. What was the object distance?",
+      "options": [
+        "-30 cm",
+        "-40 cm",
+        "-15 cm",
+        "-20 cm"
+      ],
+      "correct_answer": "-30 cm",
+      "explanation": "Using lens formula 1/f = 1/v - 1/u → 1/20 = 1/60 - 1/u → 1/u = 1/60 - 1/20 = -2/60 = -1/30 → u = -30 cm."
+    },
+    {
+      "id": "z03_f2_030",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "If the critical angle for a glass-air boundary is 42°, what is the refractive index of the glass? (sin 42° ≈ 0.669)",
+      "options": [
+        "1.49",
+        "1.33",
+        "2.10",
+        "1.67"
+      ],
+      "correct_answer": "1.49",
+      "explanation": "n = 1 / sin(θc) = 1 / sin(42°) ≈ 1 / 0.669 ≈ 1.49."
+    },
+    {
+      "id": "z03_f2_031",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A person stands 1.5 m in front of a flat wall mirror. What is the distance between the person and their image?",
+      "options": [
+        "3.0 m",
+        "1.5 m",
+        "0.75 m",
+        "4.5 m"
+      ],
+      "correct_answer": "3.0 m",
+      "explanation": "In a plane mirror, image distance behind the mirror equals object distance in front (1.5 m). Total distance from person to image = 1.5 m + 1.5 m = 3.0 m."
+    },
+    {
+      "id": "z03_f2_032",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "If you walk towards a plane mirror at a speed of 1.2 m/s, at what speed does your image approach you?",
+      "options": [
+        "2.4 m/s",
+        "1.2 m/s",
+        "0.6 m/s",
+        "3.6 m/s"
+      ],
+      "correct_answer": "2.4 m/s",
+      "explanation": "Relative speed = speed of person + speed of image relative to mirror = 1.2 m/s + 1.2 m/s = 2.4 m/s."
+    },
+    {
+      "id": "z03_f2_033",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sound wave travels in water at 1480 m/s with a wavelength of 0.74 m. What is its frequency?",
+      "options": [
+        "2000 Hz",
+        "1095 Hz",
+        "500 Hz",
+        "4000 Hz"
+      ],
+      "correct_answer": "2000 Hz",
+      "explanation": "f = v / λ = 1480 m/s ÷ 0.74 m = 2000 Hz."
+    },
+    {
+      "id": "z03_f2_034",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A student standing between two parallel walls claps once. He hears the first echo after 0.4 s and the second echo after 0.6 s. What is the distance between the two walls? (Speed of sound = 340 m/s)",
+      "options": [
+        "170 m",
+        "340 m",
+        "85 m",
+        "204 m"
+      ],
+      "correct_answer": "170 m",
+      "explanation": "d1 = (340 × 0.4)/2 = 68 m; d2 = (340 × 0.6)/2 = 102 m. Total distance between walls = 68 + 102 = 170 m."
+    },
+    {
+      "id": "z03_f2_035",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A ray of light reflects from a plane mirror. If the angle between the incident ray and reflected ray is 80°, what is the angle of incidence?",
+      "options": [
+        "40°",
+        "80°",
+        "50°",
+        "20°"
+      ],
+      "correct_answer": "40°",
+      "explanation": "Angle between incident and reflected rays is i + r = 2i (since i = r). So 2i = 80° → i = 40°."
+    },
+    {
+      "id": "z03_f2_036",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "If a plane mirror is rotated by an angle of 15°, through what angle does the reflected ray turn?",
+      "options": [
+        "30°",
+        "15°",
+        "7.5°",
+        "45°"
+      ],
+      "correct_answer": "30°",
+      "explanation": "When a mirror is rotated through angle θ keeping the incident ray fixed, the reflected ray rotates by 2θ = 2 × 15° = 30°."
+    },
+    {
+      "id": "z03_f2_037",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An object 2 cm high is placed 10 cm in front of a convex lens of focal length 15 cm. What is the nature and size of the image?",
+      "options": [
+        "Virtual, erect, 6 cm high",
+        "Real, inverted, 6 cm high",
+        "Virtual, erect, 3 cm high",
+        "Real, inverted, 3 cm high"
+      ],
+      "correct_answer": "Virtual, erect, 6 cm high",
+      "explanation": "1/v = 1/f + 1/u = 1/15 + (-1/10) = -1/30 → v = -30 cm (virtual, behind object). Magnification m = v/u = (-30)/(-10) = +3. Image height = 3 × 2 cm = 6 cm erect."
+    },
+    {
+      "id": "z03_f2_038",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "What is the speed of light in water if the refractive index of water is 1.33? (c = 3.0 × 10⁸ m/s)",
+      "options": [
+        "2.25 × 10⁸ m/s",
+        "1.75 × 10⁸ m/s",
+        "2.50 × 10⁸ m/s",
+        "3.00 × 10⁸ m/s"
+      ],
+      "correct_answer": "2.25 × 10⁸ m/s",
+      "explanation": "v = c / n = (3.0 × 10⁸) / (4/3) = 2.25 × 10⁸ m/s."
+    },
+    {
+      "id": "z03_f2_039",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A concave shaving mirror has a radius of curvature of 50 cm. To see an upright, enlarged face, within what distance from the mirror must the user stand?",
+      "options": [
+        "Less than 25 cm",
+        "Between 25 cm and 50 cm",
+        "At exactly 50 cm",
+        "More than 50 cm"
+      ],
+      "correct_answer": "Less than 25 cm",
+      "explanation": "f = r/2 = 25 cm. To form an upright, magnified virtual image in a concave mirror, the object must be between the pole and focus (u < 25 cm)."
+    },
+    {
+      "id": "z03_f2_040",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sound wave has a wavelength of 0.2 m in air where speed is 340 m/s. When this sound enters water (speed = 1500 m/s), what will its new wavelength be?",
+      "options": [
+        "0.88 m",
+        "0.045 m",
+        "1.50 m",
+        "0.20 m"
+      ],
+      "correct_answer": "0.88 m",
+      "explanation": "Frequency f = v_air / λ_air = 340 / 0.2 = 1700 Hz (constant). λ_water = v_water / f = 1500 / 1700 ≈ 0.88 m."
+    },
+    {
+      "id": "z03_f2_041",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A person cannot see objects clearly beyond 80 cm. What lens power is needed to enable normal distant vision?",
+      "options": [
+        "-1.25 D",
+        "+1.25 D",
+        "-0.80 D",
+        "+0.80 D"
+      ],
+      "correct_answer": "-1.25 D",
+      "explanation": "For myopia with far point d = 80 cm (0.8 m), the corrective concave lens must have focal length f = -0.8 m. Power P = 1/f = 1 / (-0.8) = -1.25 D."
+    },
+    {
+      "id": "z03_f2_042",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A hypermetropic person has a near point of 75 cm. What lens power is required to read a book comfortably at 25 cm?",
+      "options": [
+        "+2.67 D",
+        "+4.00 D",
+        "-2.67 D",
+        "+1.33 D"
+      ],
+      "correct_answer": "+2.67 D",
+      "explanation": "Object distance u = -25 cm = -0.25 m; virtual image at near point v = -75 cm = -0.75 m. 1/f = 1/v - 1/u = -1/0.75 - (-1/0.25) = -1.333 + 4.0 = +2.67 D."
+    },
+    {
+      "id": "z03_f2_043",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A vibrating blade completes 120 cycles in 3 seconds. What is the frequency of its sound?",
+      "options": [
+        "40 Hz",
+        "360 Hz",
+        "0.025 Hz",
+        "20 Hz"
+      ],
+      "correct_answer": "40 Hz",
+      "explanation": "Frequency f = total cycles / total time = 120 / 3 s = 40 Hz."
+    },
+    {
+      "id": "z03_f2_044",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An ultrasound scanner operates at 2.5 MHz in human soft tissue where acoustic velocity is 1540 m/s. What is the ultrasound wavelength?",
+      "options": [
+        "0.616 mm",
+        "6.16 mm",
+        "0.0616 mm",
+        "1.62 mm"
+      ],
+      "correct_answer": "0.616 mm",
+      "explanation": "λ = v / f = (1540 m/s) / (2.5 × 10⁶ Hz) = 0.000616 m = 0.616 mm."
+    },
+    {
+      "id": "z03_f2_045",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A convex mirror on a bus has a radius of curvature of 2.0 m. If a car is 5.0 m behind the mirror, what is the image distance?",
+      "options": [
+        "+0.83 m behind the mirror",
+        "+1.25 m behind the mirror",
+        "-1.00 m in front",
+        "+2.50 m behind the mirror"
+      ],
+      "correct_answer": "+0.83 m behind the mirror",
+      "explanation": "f = +r/2 = +1.0 m, u = -5.0 m. 1/v = 1/f - 1/u = 1/1.0 - (-1/5.0) = 1 + 0.2 = 1.2 = 6/5 → v = +5/6 ≈ +0.83 m behind mirror."
+    },
+    {
+      "id": "z03_f2_046",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "What is the minimum height of a flat vertical mirror required for a 180 cm tall person to view their complete reflection?",
+      "options": [
+        "90 cm",
+        "180 cm",
+        "60 cm",
+        "120 cm"
+      ],
+      "correct_answer": "90 cm",
+      "explanation": "By geometry of similar triangles in reflection, the minimum mirror length to see one's full height is half the person's height: H/2 = 180 / 2 = 90 cm."
+    },
+    {
+      "id": "z03_f2_047",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A light ray strikes a glass plate with an angle of incidence of 60°. If the reflected ray and refracted ray are mutually perpendicular (90° apart), what is the refractive index of glass?",
+      "options": [
+        "1.732 (√3)",
+        "1.500",
+        "1.414",
+        "1.333"
+      ],
+      "correct_answer": "1.732 (√3)",
+      "explanation": "When reflected and refracted rays are perpendicular, Brewster's condition applies: n = tan(ip) = tan(60°) = √3 ≈ 1.732."
+    },
+    {
+      "id": "z03_f2_048",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A loudspeaker emits sound with an intensity that produces 60 dB at 10 m. If distance from the speaker increases to 20 m, what factor does the sound intensity drop by?",
+      "options": [
+        "Factor of 4 (drops to 1/4)",
+        "Factor of 2 (drops to 1/2)",
+        "Factor of 8 (drops to 1/8)",
+        "Remains unchanged"
+      ],
+      "correct_answer": "Factor of 4 (drops to 1/4)",
+      "explanation": "Sound intensity from a point source follows the inverse square law: I ∝ 1/r². Doubling distance from 10 m to 20 m reduces intensity by (1/2)² = 1/4."
+    },
+    {
+      "id": "z03_f2_049",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A beam of light traveling in water (n = 1.33) encounters an air boundary. What is the critical angle for water?",
+      "options": [
+        "48.8°",
+        "42.0°",
+        "60.0°",
+        "30.0°"
+      ],
+      "correct_answer": "48.8°",
+      "explanation": "sin(θc) = 1 / n = 1 / 1.333 = 0.75 → θc = arcsin(0.75) ≈ 48.75° ≈ 48.8°."
+    },
+    {
+      "id": "z03_f2_050",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A projector lens has a focal length of 10 cm and throws a sharp slide image onto a screen 210 cm away. What is the magnification of the image?",
+      "options": [
+        "20",
+        "21",
+        "10",
+        "25"
+      ],
+      "correct_answer": "20",
+      "explanation": "1/u = 1/v - 1/f = 1/210 - 1/10 = (1 - 21)/210 = -20/210 = -1/10.5 → u = -10.5 cm. Magnification m = |v/u| = 210 / 10.5 = 20."
+    }
+  ]
+}

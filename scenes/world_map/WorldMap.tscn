@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://dr4bx8msu8k38"]
+
+[ext_resource type="Script" uid="uid://cow1ep4gi1r46" path="res://scripts/world_map/WorldMap.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://b0hy8jgdwfgef" path="res://asset/sprites/Environment/worldmap/worldmap_background.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://eajoqjpvd7ni" path="res://asset/sprites/Environment/worldmap/factory.png" id="3_factory"]
+[ext_resource type="Texture2D" uid="uid://cguamxbxt8ghj" path="res://asset/sprites/Environment/worldmap/landmark_energy_refinery.png" id="4_z2"]
+[ext_resource type="Texture2D" uid="uid://b6n4comuku3gr" path="res://asset/sprites/Environment/worldmap/landmark_signal_station.png" id="5_z3"]
+[ext_resource type="Texture2D" uid="uid://cf3oo8miyjp4j" path="res://asset/sprites/Environment/worldmap/landmark_substation.png" id="6_z4"]
+[ext_resource type="Texture2D" uid="uid://bogwwu8kp4tdy" path="res://asset/sprites/Environment/worldmap/landmark_unrevealed.png" id="7_z5"]
+[ext_resource type="Script" path="res://scripts/world_map/MapClickTarget.gd" id="8_click"]
+
+[sub_resource type="RectangleShape2D" id="Rect_zone01_click"]
+size = Vector2(180, 140)
+
+[sub_resource type="RectangleShape2D" id="Rect_locked_click"]
+size = Vector2(200, 160)
+
+[node name="WorldMap" type="Node2D" unique_id=1716350586]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1537714019]
+z_index = -20
+texture = ExtResource("2_bg")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1897319015]
+position = Vector2(688, 384)
+zoom = Vector2(0.93, 0.93)
+
+[node name="Landmarks" type="Node2D" parent="." unique_id=1155511579]
+y_sort_enabled = true
+
+[node name="Zone01" type="Node2D" parent="Landmarks" unique_id=1001656684]
+z_index = 2
+position = Vector2(198, 520)
+
+[node name="PropArt" type="Sprite2D" parent="Landmarks/Zone01" unique_id=1554057051]
+position = Vector2(0, -11.842868)
+scale = Vector2(0.55, 0.5020532)
+texture = ExtResource("3_factory")
+offset = Vector2(0, -40)
+
+[node name="ClickArea" type="Area2D" parent="Landmarks/Zone01"]
+position = Vector2(0, 20)
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("8_click")
+landmark_id = "zone_01"
+is_locked = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Landmarks/Zone01/ClickArea"]
+shape = SubResource("Rect_zone01_click")
+
+[node name="Label" type="Label" parent="Landmarks/Zone01" unique_id=1484248426]
+offset_left = -70.0
+offset_top = -130.0
+offset_right = 90.0
+offset_bottom = -100.0
+theme_override_colors/font_color = Color(0.95, 0.95, 0.85, 1)
+theme_override_font_sizes/font_size = 16
+text = "Zone 01 — Factory"
+horizontal_alignment = 1
+
+[node name="Zone02_Locked" type="Node2D" parent="Landmarks" unique_id=128405698]
+modulate = Color(0.45, 0.45, 0.5, 1)
+position = Vector2(428, 260)
+scale = Vector2(0.55, 0.55)
+
+[node name="PropArt" type="Sprite2D" parent="Landmarks/Zone02_Locked" unique_id=139655310]
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("4_z2")
+
+[node name="ClickArea" type="Area2D" parent="Landmarks/Zone02_Locked"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("8_click")
+landmark_id = "zone_02"
+is_locked = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Landmarks/Zone02_Locked/ClickArea"]
+shape = SubResource("Rect_locked_click")
+
+[node name="Zone03_Locked" type="Node2D" parent="Landmarks" unique_id=1857922352]
+modulate = Color(0.45, 0.45, 0.5, 1)
+position = Vector2(690, 444)
+scale = Vector2(0.6, 0.6)
+
+[node name="PropArt" type="Sprite2D" parent="Landmarks/Zone03_Locked" unique_id=457863329]
+position = Vector2(2, -2)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("5_z3")
+
+[node name="ClickArea" type="Area2D" parent="Landmarks/Zone03_Locked"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("8_click")
+landmark_id = "zone_03"
+is_locked = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Landmarks/Zone03_Locked/ClickArea"]
+shape = SubResource("Rect_locked_click")
+
+[node name="Zone04_Locked" type="Node2D" parent="Landmarks" unique_id=2005565366]
+modulate = Color(0.45, 0.45, 0.5, 1)
+position = Vector2(850, 157)
+scale = Vector2(0.55, 0.55)
+
+[node name="PropArt" type="Sprite2D" parent="Landmarks/Zone04_Locked" unique_id=1673696818]
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("6_z4")
+
+[node name="ClickArea" type="Area2D" parent="Landmarks/Zone04_Locked"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("8_click")
+landmark_id = "zone_04"
+is_locked = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Landmarks/Zone04_Locked/ClickArea"]
+shape = SubResource("Rect_locked_click")
+
+[node name="Zone05_Locked" type="Node2D" parent="Landmarks" unique_id=2029313807]
+modulate = Color(0.45, 0.45, 0.5, 1)
+position = Vector2(1206, 356)
+scale = Vector2(0.5, 0.5)
+
+[node name="PropArt" type="Sprite2D" parent="Landmarks/Zone05_Locked" unique_id=676586086]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_z5")
+
+[node name="ClickArea" type="Area2D" parent="Landmarks/Zone05_Locked"]
+collision_layer = 16
+collision_mask = 0
+script = ExtResource("8_click")
+landmark_id = "zone_05"
+is_locked = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Landmarks/Zone05_Locked/ClickArea"]
+shape = SubResource("Rect_locked_click")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=791885239]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=430748915]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 20
+text = "Click a location"
+horizontal_alignment = 1

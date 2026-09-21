@@ -1,0 +1,714 @@
+{
+  "zone": "02_energy_power",
+  "floor": 2,
+  "bloom_levels": [
+    "understand",
+    "apply"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z02_f2_001",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A force of 20 N moves an object through a distance of 5 m in the direction of the force. How much work is done?",
+      "options": [
+        "100 J",
+        "25 J",
+        "4.0 J",
+        "200 J"
+      ],
+      "correct_answer": "100 J",
+      "explanation": "Work = Force x displacement = 20 N x 5 m = 100 J."
+    },
+    {
+      "id": "z02_f2_002",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A force of 50 N moves an object through a distance of 4 m in the direction of the force. How much work is done?",
+      "options": [
+        "200 J",
+        "54 J",
+        "12.5 J",
+        "400 J"
+      ],
+      "correct_answer": "200 J",
+      "explanation": "Work = Force x displacement = 50 N x 4 m = 200 J."
+    },
+    {
+      "id": "z02_f2_003",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A force of 15 N moves an object through a distance of 10 m in the direction of the force. How much work is done?",
+      "options": [
+        "150 J",
+        "25 J",
+        "1.5 J",
+        "300 J"
+      ],
+      "correct_answer": "150 J",
+      "explanation": "Work = Force x displacement = 15 N x 10 m = 150 J."
+    },
+    {
+      "id": "z02_f2_004",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A worker does 200 J of work moving a crate 8 m across the floor. What force did he apply (assuming force and displacement are in the same direction)?",
+      "options": [
+        "25 N",
+        "1600 N",
+        "0.04 N",
+        "50 N"
+      ],
+      "correct_answer": "25 N",
+      "explanation": "Force = Work / displacement = 200 J / 8 m = 25 N."
+    },
+    {
+      "id": "z02_f2_005",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A worker does 450 J of work moving a crate 15 m across the floor. What force did he apply (assuming force and displacement are in the same direction)?",
+      "options": [
+        "30 N",
+        "6750 N",
+        "0.0333333 N",
+        "60 N"
+      ],
+      "correct_answer": "30 N",
+      "explanation": "Force = Work / displacement = 450 J / 15 m = 30 N."
+    },
+    {
+      "id": "z02_f2_006",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A force of 60 N does 300 J of work on a box. Through what distance was the box moved (force and displacement in the same direction)?",
+      "options": [
+        "5 m",
+        "18000 m",
+        "0.2 m",
+        "10 m"
+      ],
+      "correct_answer": "5 m",
+      "explanation": "Distance = Work / Force = 300 J / 60 N = 5 m."
+    },
+    {
+      "id": "z02_f2_007",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A force of 30 N does 120 J of work on a box. Through what distance was the box moved (force and displacement in the same direction)?",
+      "options": [
+        "4 m",
+        "3600 m",
+        "0.25 m",
+        "8 m"
+      ],
+      "correct_answer": "4 m",
+      "explanation": "Distance = Work / Force = 120 J / 30 N = 4 m."
+    },
+    {
+      "id": "z02_f2_008",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 2 kg object moves with a velocity of 4 m/s. What is its kinetic energy?",
+      "options": [
+        "16 J",
+        "32 J",
+        "8 J",
+        "10.2 J"
+      ],
+      "correct_answer": "16 J",
+      "explanation": "KE = 1/2 mv^2 = 0.5 x 2 x 4^2 = 16 J."
+    },
+    {
+      "id": "z02_f2_009",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 5 kg object moves with a velocity of 6 m/s. What is its kinetic energy?",
+      "options": [
+        "90 J",
+        "180 J",
+        "30 J",
+        "45 J"
+      ],
+      "correct_answer": "90 J",
+      "explanation": "KE = 1/2 mv^2 = 0.5 x 5 x 6^2 = 90 J."
+    },
+    {
+      "id": "z02_f2_010",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 1 kg object moves with a velocity of 10 m/s. What is its kinetic energy?",
+      "options": [
+        "50 J",
+        "100 J",
+        "10 J",
+        "25 J"
+      ],
+      "correct_answer": "50 J",
+      "explanation": "KE = 1/2 mv^2 = 0.5 x 1 x 10^2 = 50 J."
+    },
+    {
+      "id": "z02_f2_011",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 2 kg object has a kinetic energy of 25 J. What is its speed?",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "2.5 m/s",
+        "12.5 m/s"
+      ],
+      "correct_answer": "5 m/s",
+      "explanation": "KE = 1/2 mv^2, so v = sqrt(2 x KE / m) = sqrt(2 x 25 / 2) = 5 m/s."
+    },
+    {
+      "id": "z02_f2_012",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 8 kg object has a kinetic energy of 100 J. What is its speed?",
+      "options": [
+        "5 m/s",
+        "10 m/s",
+        "2.5 m/s",
+        "12.5 m/s"
+      ],
+      "correct_answer": "5 m/s",
+      "explanation": "KE = 1/2 mv^2, so v = sqrt(2 x KE / m) = sqrt(2 x 100 / 8) = 5 m/s."
+    },
+    {
+      "id": "z02_f2_013",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An object moving at 5 m/s has a kinetic energy of 100 J. What is its mass?",
+      "options": [
+        "8 kg",
+        "16 kg",
+        "4 kg",
+        "20 kg"
+      ],
+      "correct_answer": "8 kg",
+      "explanation": "KE = 1/2 mv^2, so m = 2 x KE / v^2 = 2 x 100 / 5^2 = 8 kg."
+    },
+    {
+      "id": "z02_f2_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 3 kg object is raised to a height of 5 m. What is its gravitational potential energy? (g = 10 m/s^2)",
+      "options": [
+        "150 J",
+        "15 J",
+        "50 J",
+        "75 J"
+      ],
+      "correct_answer": "150 J",
+      "explanation": "PE = mgh = 3 x 10 x 5 = 150 J."
+    },
+    {
+      "id": "z02_f2_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 10 kg object is raised to a height of 2 m. What is its gravitational potential energy? (g = 10 m/s^2)",
+      "options": [
+        "200 J",
+        "20 J",
+        "24 J",
+        "100 J"
+      ],
+      "correct_answer": "200 J",
+      "explanation": "PE = mgh = 10 x 10 x 2 = 200 J."
+    },
+    {
+      "id": "z02_f2_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 0.5 kg object is raised to a height of 20 m. What is its gravitational potential energy? (g = 10 m/s^2)",
+      "options": [
+        "100 J",
+        "10 J",
+        "200 J",
+        "50 J"
+      ],
+      "correct_answer": "100 J",
+      "explanation": "PE = mgh = 0.5 x 10 x 20 = 100 J."
+    },
+    {
+      "id": "z02_f2_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 6 kg object is raised to a height of 4 m. What is its gravitational potential energy? (g = 10 m/s^2)",
+      "options": [
+        "240 J",
+        "24 J",
+        "40 J",
+        "120 J"
+      ],
+      "correct_answer": "240 J",
+      "explanation": "PE = mgh = 6 x 10 x 4 = 240 J."
+    },
+    {
+      "id": "z02_f2_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 2 kg object has a gravitational potential energy of 100 J. At what height above the ground is it? (g = 10 m/s^2)",
+      "options": [
+        "5 m",
+        "10 m",
+        "2.5 m",
+        "50 m"
+      ],
+      "correct_answer": "5 m",
+      "explanation": "PE = mgh, so h = PE / (mg) = 100 / (2 x 10) = 5 m."
+    },
+    {
+      "id": "z02_f2_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An object at a height of 5 m has 250 J of potential energy. What is its mass? (g = 10 m/s^2)",
+      "options": [
+        "5 kg",
+        "10 kg",
+        "2.5 kg",
+        "50 kg"
+      ],
+      "correct_answer": "5 kg",
+      "explanation": "PE = mgh, so m = PE / (gh) = 250 / (10 x 5) = 5 kg."
+    },
+    {
+      "id": "z02_f2_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine does 600 J of work in 30 seconds. What is its power output?",
+      "options": [
+        "20 W",
+        "18000 W",
+        "0.05 W",
+        "40 W"
+      ],
+      "correct_answer": "20 W",
+      "explanation": "Power = Work / time = 600 J / 30 s = 20 W."
+    },
+    {
+      "id": "z02_f2_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine does 1500 J of work in 25 seconds. What is its power output?",
+      "options": [
+        "60 W",
+        "37500 W",
+        "0.0166667 W",
+        "120 W"
+      ],
+      "correct_answer": "60 W",
+      "explanation": "Power = Work / time = 1500 J / 25 s = 60 W."
+    },
+    {
+      "id": "z02_f2_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine does 90 J of work in 15 seconds. What is its power output?",
+      "options": [
+        "6 W",
+        "1350 W",
+        "0.166667 W",
+        "12 W"
+      ],
+      "correct_answer": "6 W",
+      "explanation": "Power = Work / time = 90 J / 15 s = 6 W."
+    },
+    {
+      "id": "z02_f2_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A motor with a power rating of 200 W runs for 10 seconds. How much work does it do?",
+      "options": [
+        "2000 J",
+        "20 J",
+        "0.05 J",
+        "1000 J"
+      ],
+      "correct_answer": "2000 J",
+      "explanation": "Work = Power x time = 200 W x 10 s = 2000 J."
+    },
+    {
+      "id": "z02_f2_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A motor with a power rating of 50 W runs for 40 seconds. How much work does it do?",
+      "options": [
+        "2000 J",
+        "1.25 J",
+        "0.8 J",
+        "1000 J"
+      ],
+      "correct_answer": "2000 J",
+      "explanation": "Work = Power x time = 50 W x 40 s = 2000 J."
+    },
+    {
+      "id": "z02_f2_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A pump rated at 400 W is used to do 4000 J of work. How long does it take?",
+      "options": [
+        "10 s",
+        "0.1 s",
+        "1.6e+06 s",
+        "20 s"
+      ],
+      "correct_answer": "10 s",
+      "explanation": "Time = Work / Power = 4000 J / 400 W = 10 s."
+    },
+    {
+      "id": "z02_f2_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A car engine exerts a constant force of 2000 N while the car moves at a constant velocity of 15 m/s. What is the power developed?",
+      "options": [
+        "30000 W",
+        "133.333 W",
+        "0.0075 W",
+        "15000 W"
+      ],
+      "correct_answer": "30000 W",
+      "explanation": "For constant velocity, Power = Force x velocity = 2000 N x 15 m/s = 30000 W."
+    },
+    {
+      "id": "z02_f2_027",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A car engine exerts a constant force of 500 N while the car moves at a constant velocity of 8 m/s. What is the power developed?",
+      "options": [
+        "4000 W",
+        "62.5 W",
+        "0.016 W",
+        "2000 W"
+      ],
+      "correct_answer": "4000 W",
+      "explanation": "For constant velocity, Power = Force x velocity = 500 N x 8 m/s = 4000 W."
+    },
+    {
+      "id": "z02_f2_028",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine receives 100 J of input energy and produces 80 J of useful output energy. What is its efficiency?",
+      "options": [
+        "80%",
+        "125%",
+        "8000%",
+        "40%"
+      ],
+      "correct_answer": "80%",
+      "explanation": "Efficiency = (Useful output / Input) x 100% = (80/100) x 100% = 80%."
+    },
+    {
+      "id": "z02_f2_029",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine receives 200 J of input energy and produces 150 J of useful output energy. What is its efficiency?",
+      "options": [
+        "75%",
+        "133.3%",
+        "30000%",
+        "37.5%"
+      ],
+      "correct_answer": "75%",
+      "explanation": "Efficiency = (Useful output / Input) x 100% = (150/200) x 100% = 75%."
+    },
+    {
+      "id": "z02_f2_030",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine receives 150 J of input energy and produces 60 J of useful output energy. What is its efficiency?",
+      "options": [
+        "40%",
+        "250%",
+        "9000%",
+        "20%"
+      ],
+      "correct_answer": "40%",
+      "explanation": "Efficiency = (Useful output / Input) x 100% = (60/150) x 100% = 40%."
+    },
+    {
+      "id": "z02_f2_031",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine with 75% efficiency receives 400 J of input energy. How much useful output energy does it produce?",
+      "options": [
+        "300 J",
+        "100 J",
+        "5.33333 J",
+        "600 J"
+      ],
+      "correct_answer": "300 J",
+      "explanation": "Useful output = Efficiency x Input = (75/100) x 400 = 300 J."
+    },
+    {
+      "id": "z02_f2_032",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine with 50% efficiency receives 600 J of input energy. How much useful output energy does it produce?",
+      "options": [
+        "300 J",
+        "346 J",
+        "12 J",
+        "600 J"
+      ],
+      "correct_answer": "300 J",
+      "explanation": "Useful output = Efficiency x Input = (50/100) x 600 = 300 J."
+    },
+    {
+      "id": "z02_f2_033",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An engine is rated at 2 horsepower. What is its power in Watts? (1 hp = 746 W)",
+      "options": [
+        "1492 W",
+        "0.00268097 W",
+        "748 W",
+        "746 W"
+      ],
+      "correct_answer": "1492 W",
+      "explanation": "Power in Watts = horsepower x 746 = 2 x 746 = 1492 W."
+    },
+    {
+      "id": "z02_f2_034",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An engine is rated at 5 horsepower. What is its power in Watts? (1 hp = 746 W)",
+      "options": [
+        "3730 W",
+        "0.00670241 W",
+        "751 W",
+        "1865 W"
+      ],
+      "correct_answer": "3730 W",
+      "explanation": "Power in Watts = horsepower x 746 = 5 x 746 = 3730 W."
+    },
+    {
+      "id": "z02_f2_035",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An electric heater rated at 2 kW is used for 3 hours. How much electrical energy does it consume, in kWh?",
+      "options": [
+        "6 kWh",
+        "0.666667 kWh",
+        "1.5 kWh",
+        "12 kWh"
+      ],
+      "correct_answer": "6 kWh",
+      "explanation": "Energy (kWh) = Power (kW) x time (hours) = 2 x 3 = 6 kWh."
+    },
+    {
+      "id": "z02_f2_036",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An object is dropped from a height of 5 m. Using energy conservation (PE converts fully to KE), what is its speed just before hitting the ground? (g = 10 m/s^2)",
+      "options": [
+        "10 m/s",
+        "20 m/s",
+        "5 m/s",
+        "50 m/s"
+      ],
+      "correct_answer": "10 m/s",
+      "explanation": "By conservation of energy, mgh = 1/2 mv^2, so v = sqrt(2gh) = sqrt(2 x 10 x 5) = 10 m/s."
+    },
+    {
+      "id": "z02_f2_037",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much work is done in lifting a 4 kg object vertically to a height of 3 m at constant velocity? (g = 10 m/s^2)",
+      "options": [
+        "120 J",
+        "12 J",
+        "30 J",
+        "60 J"
+      ],
+      "correct_answer": "120 J",
+      "explanation": "Work done against gravity = mgh = 4 x 10 x 3 = 120 J, since the force needed equals the weight mg."
+    },
+    {
+      "id": "z02_f2_038",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A ball is dropped from a height and bounces back to a slightly lower height each time. What does this indicate about its mechanical energy?",
+      "options": [
+        "It is being created with each bounce",
+        "Some mechanical energy is being lost, mainly as heat and sound",
+        "Its potential energy alone increases",
+        "Its kinetic energy alone increases without limit"
+      ],
+      "correct_answer": "Some mechanical energy is being lost, mainly as heat and sound",
+      "explanation": "Each bounce is imperfect; some mechanical energy converts to heat and sound due to deformation and air resistance, so the ball never returns to its original height."
+    },
+    {
+      "id": "z02_f2_039",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Two machines take in the same amount of input energy, but Machine A has higher efficiency than Machine B. What can be concluded?",
+      "options": [
+        "Machine A wastes more energy than Machine B",
+        "Machine A produces more useful output energy than Machine B",
+        "Machine A takes longer to operate than Machine B",
+        "Efficiency has no relation to useful output"
+      ],
+      "correct_answer": "Machine A produces more useful output energy than Machine B",
+      "explanation": "Higher efficiency means a greater fraction of input energy is converted into useful output, so with equal input, Machine A produces more useful output than Machine B."
+    },
+    {
+      "id": "z02_f2_040",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A crane and a hand-operated pulley both lift the same load to the same height, but the crane finishes the job much faster. Which quantity differs the most between them?",
+      "options": [
+        "Work done",
+        "Power developed",
+        "Potential energy gained by the load",
+        "Force of gravity on the load"
+      ],
+      "correct_answer": "Power developed",
+      "explanation": "Since work done (mgh) and the final potential energy are the same in both cases, but the crane does it faster, the main difference lies in the power developed — power depends on time."
+    },
+    {
+      "id": "z02_f2_041",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is a hydroelectric dam considered a better long-term source of electrical energy than a coal power plant?",
+      "options": [
+        "Because water has more chemical energy than coal",
+        "Because flowing water is a renewable source that will not be exhausted",
+        "Because dams produce more heat than coal plants",
+        "Because coal cannot generate electricity at all"
+      ],
+      "correct_answer": "Because flowing water is a renewable source that will not be exhausted",
+      "explanation": "Water cycles naturally and is continuously replenished, making hydroelectric power a renewable source, unlike coal which is a finite, non-renewable fossil fuel."
+    },
+    {
+      "id": "z02_f2_042",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A spring is compressed and then released, launching a small ball into the air. Describe the sequence of energy transformations.",
+      "options": [
+        "Kinetic energy to chemical energy to elastic potential energy",
+        "Elastic potential energy to kinetic energy to gravitational potential energy",
+        "Gravitational potential energy to chemical energy to heat",
+        "Heat energy to elastic potential energy to kinetic energy"
+      ],
+      "correct_answer": "Elastic potential energy to kinetic energy to gravitational potential energy",
+      "explanation": "The compressed spring stores elastic potential energy, which converts to kinetic energy as it pushes the ball, and then to gravitational potential energy as the ball rises."
+    },
+    {
+      "id": "z02_f2_043",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A lamp converts electrical energy into light and heat energy. If most of the input energy becomes heat rather than light, what does this suggest about the lamp?",
+      "options": [
+        "It is very efficient at producing light",
+        "It has low efficiency for its intended purpose of producing light",
+        "It violates the law of conservation of energy",
+        "It uses no electrical energy at all"
+      ],
+      "correct_answer": "It has low efficiency for its intended purpose of producing light",
+      "explanation": "Since the useful output of a lamp is light, converting most energy to heat instead means a smaller fraction becomes useful output, indicating low efficiency for lighting."
+    },
+    {
+      "id": "z02_f2_044",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A pendulum swinging in air gradually loses height with each swing until it eventually stops. Where does its mechanical energy go?",
+      "options": [
+        "It disappears completely, violating conservation of energy",
+        "It converts into heat energy due to air resistance and friction at the pivot",
+        "It converts entirely into potential energy at the pivot",
+        "It transfers entirely to the string as elastic energy"
+      ],
+      "correct_answer": "It converts into heat energy due to air resistance and friction at the pivot",
+      "explanation": "Air resistance and friction at the pivot do negative work on the pendulum, converting its mechanical energy into heat, so the total energy is conserved overall but mechanical energy decreases."
+    },
+    {
+      "id": "z02_f2_045",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A student says, 'The engine with greater power will always do more total work.' Is this statement correct?",
+      "options": [
+        "Yes, power and total work are always equal",
+        "No, greater power means work is done faster, not necessarily more total work",
+        "Yes, because power is a form of stored energy",
+        "No, because power has nothing to do with work"
+      ],
+      "correct_answer": "No, greater power means work is done faster, not necessarily more total work",
+      "explanation": "Power indicates the rate of doing work. A more powerful engine can do the same or less total work but in less time; total work depends on both force and displacement, not on power alone."
+    },
+    {
+      "id": "z02_f2_046",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does lifting a load using a pulley system with a mechanical advantage reduce the required input force, even though the work done remains the same?",
+      "options": [
+        "Because pulleys create additional energy",
+        "Because the pulley increases the distance over which the smaller force is applied",
+        "Because pulleys eliminate the effect of gravity",
+        "Because the load's weight decreases when using a pulley"
+      ],
+      "correct_answer": "Because the pulley increases the distance over which the smaller force is applied",
+      "explanation": "Since work = force x distance stays constant, using a pulley to reduce the required force means the rope must be pulled through a proportionally greater distance."
+    },
+    {
+      "id": "z02_f2_047",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A battery-powered toy car converts stored chemical energy into motion. As the battery runs down, what is happening to the total chemical energy available?",
+      "options": [
+        "It is being created faster than it is used",
+        "It is being gradually converted into kinetic and other forms of energy",
+        "It remains constant regardless of use",
+        "It converts entirely into gravitational potential energy"
+      ],
+      "correct_answer": "It is being gradually converted into kinetic and other forms of energy",
+      "explanation": "As the toy runs, the chemical energy stored in the battery is transformed into kinetic energy of motion, along with some heat and sound, gradually depleting the stored chemical energy."
+    },
+    {
+      "id": "z02_f2_048",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why do wind turbines and solar panels both fall under the same broad category of energy sources, despite converting different original forms of energy?",
+      "options": [
+        "Because both convert nuclear energy directly into electricity",
+        "Because both rely on naturally replenished sources and are classified as renewable",
+        "Because both produce exactly the same amount of power",
+        "Because both require burning fuel to operate"
+      ],
+      "correct_answer": "Because both rely on naturally replenished sources and are classified as renewable",
+      "explanation": "Wind and sunlight are both naturally and continuously replenished, so despite different mechanisms, wind turbines and solar panels are both classified as renewable energy sources."
+    },
+    {
+      "id": "z02_f2_049",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A roller coaster car is pulled to the top of the first hill and then released to run the rest of the track without any engine. What principle allows it to complete the ride?",
+      "options": [
+        "Continuous input of electrical energy",
+        "Conservation and transformation of mechanical energy between potential and kinetic forms",
+        "Constant application of an external force",
+        "The car creates new energy at each hill"
+      ],
+      "correct_answer": "Conservation and transformation of mechanical energy between potential and kinetic forms",
+      "explanation": "After the initial lift, the car's motion is powered by the continual exchange between potential energy (at higher points) and kinetic energy (at lower points), with total mechanical energy roughly conserved aside from friction losses."
+    },
+    {
+      "id": "z02_f2_050",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Two identical electric motors lift different loads to the same height in the same amount of time; Motor A lifts a heavier load than Motor B. Which motor delivers more power?",
+      "options": [
+        "Motor B, because it moves faster",
+        "Motor A, because it does more work in the same time",
+        "Both deliver equal power since time is the same",
+        "Power cannot be compared without knowing efficiency"
+      ],
+      "correct_answer": "Motor A, because it does more work in the same time",
+      "explanation": "Since Motor A lifts a heavier load through the same height (more work, W = mgh) in the same time, it delivers greater power, as power = work/time."
+    }
+  ]
+}

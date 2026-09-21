@@ -1,0 +1,461 @@
+{
+  "zone": "01_mechanics",
+  "floor": 2,
+  "bloom_levels": ["understand", "apply"],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+	{
+	  "id": "z01_f2_001",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 5 kg object accelerates at 3 m/s². What is the net force acting on it?",
+	  "options": ["1.67 N", "8 N", "15 N", "25 N"],
+	  "correct_answer": "15 N",
+	  "explanation": "F = ma = 5 kg × 3 m/s² = 15 N. Always multiply mass by acceleration to find net force."
+	},
+	{
+	  "id": "z01_f2_002",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A force of 24 N acts on a 6 kg object. What is its acceleration?",
+	  "options": ["144 m/s²", "18 m/s²", "4 m/s²", "0.25 m/s²"],
+	  "correct_answer": "4 m/s²",
+	  "explanation": "a = F/m = 24 N ÷ 6 kg = 4 m/s². Rearrange F = ma to solve for acceleration."
+	},
+	{
+	  "id": "z01_f2_003",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "What is the momentum of a 3 kg ball moving at 8 m/s?",
+	  "options": ["11 kg·m/s", "2.67 kg·m/s", "24 kg·m/s", "0.375 kg·m/s"],
+	  "correct_answer": "24 kg·m/s",
+	  "explanation": "p = mv = 3 kg × 8 m/s = 24 kg·m/s."
+	},
+	{
+	  "id": "z01_f2_004",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A car of mass 1000 kg accelerates from 0 to 20 m/s in 10 seconds. What is the net force?",
+	  "options": ["100 N", "200 N", "2000 N", "20000 N"],
+	  "correct_answer": "2000 N",
+	  "explanation": "a = (v-u)/t = (20-0)/10 = 2 m/s². F = ma = 1000 × 2 = 2000 N."
+	},
+	{
+	  "id": "z01_f2_005",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A box of mass 8 kg is pushed with 40 N force. What is the acceleration?",
+	  "options": ["5 m/s²", "0.2 m/s²", "32 m/s²", "48 m/s²"],
+	  "correct_answer": "5 m/s²",
+	  "explanation": "a = F/m = 40 ÷ 8 = 5 m/s²."
+	},
+	{
+	  "id": "z01_f2_006",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "The coefficient of kinetic friction between a surface and a 10 kg block is 0.3. What is the friction force? (g = 10 m/s²)",
+	  "options": ["3 N", "13 N", "30 N", "300 N"],
+	  "correct_answer": "30 N",
+	  "explanation": "Friction force f = μmg = 0.3 × 10 × 10 = 30 N. Normal force on a flat surface equals mg."
+	},
+	{
+	  "id": "z01_f2_007",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 4 kg object moving at 5 m/s collides and joins a stationary 6 kg object. What is the combined velocity after collision?",
+	  "options": ["5 m/s", "3 m/s", "2 m/s", "0.5 m/s"],
+	  "correct_answer": "2 m/s",
+	  "explanation": "Conservation of momentum: m₁v₁ = (m₁+m₂)v₂ → 4×5 = (4+6)×v₂ → 20 = 10v₂ → v₂ = 2 m/s."
+	},
+	{
+	  "id": "z01_f2_008",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A truck of mass 2000 kg travels at 15 m/s. What is its momentum?",
+	  "options": ["30 000 kg·m/s", "133 kg·m/s", "3000 kg·m/s", "15 000 kg·m/s"],
+	  "correct_answer": "30 000 kg·m/s",
+	  "explanation": "p = mv = 2000 × 15 = 30 000 kg·m/s."
+	},
+	{
+	  "id": "z01_f2_009",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 50 N force decelerates a 10 kg object. What is the magnitude of deceleration?",
+	  "options": ["500 m/s²", "0.2 m/s²", "5 m/s²", "40 m/s²"],
+	  "correct_answer": "5 m/s²",
+	  "explanation": "a = F/m = 50 ÷ 10 = 5 m/s². The deceleration magnitude is 5 m/s²."
+	},
+	{
+	  "id": "z01_f2_010",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "An object starts from rest and reaches 30 m/s in 6 seconds. What is its acceleration?",
+	  "options": ["180 m/s²", "5 m/s²", "24 m/s²", "0.2 m/s²"],
+	  "correct_answer": "5 m/s²",
+	  "explanation": "a = (v − u)/t = (30 − 0)/6 = 5 m/s²."
+	},
+	{
+	  "id": "z01_f2_011",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 15 kg box rests on a surface with μ = 0.4. What minimum force is needed to start it moving? (g = 10 m/s²)",
+	  "options": ["37.5 N", "60 N", "150 N", "6 N"],
+	  "correct_answer": "60 N",
+	  "explanation": "Static friction force = μmg = 0.4 × 15 × 10 = 60 N. The applied force must exceed this to start motion."
+	},
+	{
+	  "id": "z01_f2_012",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "If friction is removed from a surface, what happens to the minimum force needed to move an object?",
+	  "options": ["It increases", "It stays the same", "It decreases to zero", "It becomes equal to weight"],
+	  "correct_answer": "It decreases to zero",
+	  "explanation": "Friction is the only horizontal resistance on a flat surface. Without friction, any infinitesimally small force could theoretically accelerate the object."
+	},
+	{
+	  "id": "z01_f2_013",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 200 g ball (0.2 kg) is thrown at 15 m/s. What is its momentum?",
+	  "options": ["75 kg·m/s", "15.2 kg·m/s", "3 kg·m/s", "0.013 kg·m/s"],
+	  "correct_answer": "3 kg·m/s",
+	  "explanation": "p = mv = 0.2 × 15 = 3 kg·m/s. Remember to convert grams to kilograms first."
+	},
+	{
+	  "id": "z01_f2_014",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "An object with momentum 60 kg·m/s decelerates to rest in 3 seconds. What is the braking force?",
+	  "options": ["20 N", "63 N", "180 N", "57 N"],
+	  "correct_answer": "20 N",
+	  "explanation": "Force = change in momentum ÷ time = 60 ÷ 3 = 20 N. This uses the impulse-momentum theorem: F = Δp/t."
+	},
+	{
+	  "id": "z01_f2_015",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why does a gun recoil backward when a bullet is fired forward?",
+	  "options": ["The explosion pushes everything outward equally", "Newton's Third Law — the gun and bullet exert equal and opposite forces on each other", "The bullet is lighter so the gun moves more", "Air pressure causes the recoil"],
+	  "correct_answer": "Newton's Third Law — the gun and bullet exert equal and opposite forces on each other",
+	  "explanation": "The gun pushes the bullet forward; the bullet pushes the gun backward with equal force. Conservation of momentum also explains this: total momentum stays zero."
+	},
+	{
+	  "id": "z01_f2_016",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A car decelerates from 25 m/s to 5 m/s in 4 seconds. What is the deceleration?",
+	  "options": ["5 m/s²", "6.25 m/s²", "20 m/s²", "100 m/s²"],
+	  "correct_answer": "5 m/s²",
+	  "explanation": "a = (v − u)/t = (5 − 25)/4 = −20/4 = −5 m/s². The deceleration magnitude is 5 m/s²."
+	},
+	{
+	  "id": "z01_f2_017",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "What force is needed to give a 2000 kg car an acceleration of 0.5 m/s²?",
+	  "options": ["4000 N", "2500 N", "1000 N", "400 N"],
+	  "correct_answer": "1000 N",
+	  "explanation": "F = ma = 2000 × 0.5 = 1000 N."
+	},
+	{
+	  "id": "z01_f2_018",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A car and a motorcycle collide. Which experiences the greater force of impact?",
+	  "options": ["The car — it is heavier", "The motorcycle — it is lighter", "Both experience equal force", "The one moving faster"],
+	  "correct_answer": "Both experience equal force",
+	  "explanation": "Newton's Third Law: action and reaction forces are always equal in magnitude. The car and motorcycle exert equal forces on each other — the difference is in their resulting accelerations."
+	},
+	{
+	  "id": "z01_f2_019",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 10 kg object is on a surface with μ = 0.5. A 60 N force is applied. What is the net force? (g = 10 m/s²)",
+	  "options": ["60 N", "50 N", "10 N", "110 N"],
+	  "correct_answer": "10 N",
+	  "explanation": "Friction = μmg = 0.5 × 10 × 10 = 50 N. Net force = Applied − Friction = 60 − 50 = 10 N."
+	},
+	{
+	  "id": "z01_f2_020",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "An object moves at constant 12 m/s. What is its acceleration?",
+	  "options": ["12 m/s²", "1 m/s²", "0 m/s²", "Cannot be determined"],
+	  "correct_answer": "0 m/s²",
+	  "explanation": "Constant velocity means no change in speed or direction. Acceleration = change in velocity ÷ time = 0 ÷ t = 0 m/s²."
+	},
+	{
+	  "id": "z01_f2_021",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 500 g ball (0.5 kg) hits a wall at 10 m/s and bounces back at 10 m/s. What is the change in momentum?",
+	  "options": ["0 kg·m/s", "5 kg·m/s", "10 kg·m/s", "20 kg·m/s"],
+	  "correct_answer": "10 kg·m/s",
+	  "explanation": "Change in momentum = m(v₂ − v₁) = 0.5 × (10 − (−10)) = 0.5 × 20 = 10 kg·m/s. Direction reverses so velocities have opposite signs."
+	},
+	{
+	  "id": "z01_f2_022",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Two objects have the same momentum. Object A has greater mass than Object B. Which has greater velocity?",
+	  "options": ["Object A", "Object B", "They have equal velocity", "Impossible to determine"],
+	  "correct_answer": "Object B",
+	  "explanation": "p = mv. If p is the same for both but A has greater mass, then A must have smaller velocity. B has smaller mass so it must have greater velocity."
+	},
+	{
+	  "id": "z01_f2_023",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 3 kg object at rest is pushed with 12 N. Friction is 3 N. What is the acceleration?",
+	  "options": ["5 m/s²", "4 m/s²", "3 m/s²", "1 m/s²"],
+	  "correct_answer": "3 m/s²",
+	  "explanation": "Net force = 12 − 3 = 9 N. a = F/m = 9 ÷ 3 = 3 m/s²."
+	},
+	{
+	  "id": "z01_f2_024",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "What mass would accelerate at 6 m/s² under a net force of 42 N?",
+	  "options": ["7 kg", "252 kg", "36 kg", "0.14 kg"],
+	  "correct_answer": "7 kg",
+	  "explanation": "m = F/a = 42 ÷ 6 = 7 kg."
+	},
+	{
+	  "id": "z01_f2_025",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A ball of mass 2 kg falls freely from rest for 3 seconds. What is its velocity just before hitting the ground? (g = 10 m/s²)",
+	  "options": ["6 m/s", "20 m/s", "30 m/s", "60 m/s"],
+	  "correct_answer": "30 m/s",
+	  "explanation": "v = u + at = 0 + 10 × 3 = 30 m/s. In free fall, acceleration equals g."
+	},
+	{
+	  "id": "z01_f2_026",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why does doubling speed have more impact on stopping distance than doubling mass?",
+	  "options": ["Speed affects friction more than mass does", "Kinetic energy depends on v², so doubling speed quadruples it", "Mass does not affect stopping distance at all", "Speed increases momentum while mass decreases it"],
+	  "correct_answer": "Kinetic energy depends on v², so doubling speed quadruples it",
+	  "explanation": "KE = ½mv². If v doubles, KE quadruples. If m doubles, KE only doubles. Stopping distance is proportional to kinetic energy, so speed has a greater impact."
+	},
+	{
+	  "id": "z01_f2_027",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 12 N force acts on a 4 kg object for 5 seconds. What is the change in momentum?",
+	  "options": ["2.4 kg·m/s", "60 kg·m/s", "17 kg·m/s", "9.6 kg·m/s"],
+	  "correct_answer": "60 kg·m/s",
+	  "explanation": "Impulse = Force × time = 12 × 5 = 60 N·s = 60 kg·m/s. Impulse equals change in momentum."
+	},
+	{
+	  "id": "z01_f2_028",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "An object decelerates from 20 m/s to rest under friction of 10 N. If mass is 5 kg, how long does it take to stop?",
+	  "options": ["2 s", "10 s", "50 s", "100 s"],
+	  "correct_answer": "10 s",
+	  "explanation": "a = F/m = 10/5 = 2 m/s². Time = (v−u)/a = (0−20)/(−2) = 10 s."
+	},
+	{
+	  "id": "z01_f2_029",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A boat moves forward when oars push water backward. Which law explains this?",
+	  "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Conservation of Energy"],
+	  "correct_answer": "Newton's Third Law",
+	  "explanation": "The oars exert a backward force on water (action); water exerts an equal forward force on the boat (reaction). Newton's Third Law pairs always act on different objects."
+	},
+	{
+	  "id": "z01_f2_030",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 20 kg crate is pushed with 80 N. The coefficient of kinetic friction is 0.2. What is the net force? (g = 10 m/s²)",
+	  "options": ["40 N", "60 N", "80 N", "100 N"],
+	  "correct_answer": "40 N",
+	  "explanation": "Friction = μmg = 0.2 × 20 × 10 = 40 N. Net force = 80 − 40 = 40 N."
+	},
+	{
+	  "id": "z01_f2_031",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "What is the acceleration of the 20 kg crate in the previous question?",
+	  "options": ["0.5 m/s²", "1 m/s²", "2 m/s²", "4 m/s²"],
+	  "correct_answer": "2 m/s²",
+	  "explanation": "a = F_net/m = 40 ÷ 20 = 2 m/s²."
+	},
+	{
+	  "id": "z01_f2_032",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A heavier and lighter car brake with the same force. Which stops in a shorter distance?",
+	  "options": ["The heavier car", "The lighter car", "Both stop in the same distance", "It depends on their speed"],
+	  "correct_answer": "The lighter car",
+	  "explanation": "Same braking force on a lighter car gives it greater deceleration (a = F/m). Greater deceleration means shorter stopping distance at the same initial speed."
+	},
+	{
+	  "id": "z01_f2_033",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 7 kg object accelerates at 4 m/s². What net force acts on it?",
+	  "options": ["1.75 N", "11 N", "28 N", "3 N"],
+	  "correct_answer": "28 N",
+	  "explanation": "F = ma = 7 × 4 = 28 N."
+	},
+	{
+	  "id": "z01_f2_034",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 1500 kg car brakes from 30 m/s to rest in 10 s. What braking force is applied?",
+	  "options": ["150 N", "4500 N", "1500 N", "45 000 N"],
+	  "correct_answer": "4500 N",
+	  "explanation": "a = (0−30)/10 = −3 m/s². F = ma = 1500 × 3 = 4500 N."
+	},
+	{
+	  "id": "z01_f2_035",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why do we bend our knees when landing after a jump?",
+	  "options": ["To increase the impact force", "To extend the time of impact and reduce the force", "To increase momentum on landing", "To reduce our weight momentarily"],
+	  "correct_answer": "To extend the time of impact and reduce the force",
+	  "explanation": "F = Δp/t. If the same momentum change occurs over a longer time (bent knees), the force is smaller. This is why airbags, cushioned shoes, and crash mats all work."
+	},
+	{
+	  "id": "z01_f2_036",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "An object of mass 9 kg has a momentum of 45 kg·m/s. What is its velocity?",
+	  "options": ["5 m/s", "0.2 m/s", "405 m/s", "36 m/s"],
+	  "correct_answer": "5 m/s",
+	  "explanation": "v = p/m = 45 ÷ 9 = 5 m/s."
+	},
+	{
+	  "id": "z01_f2_037",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 6 kg object moves at 4 m/s. A 2 N friction force acts on it. How long before it stops?",
+	  "options": ["3 s", "6 s", "12 s", "48 s"],
+	  "correct_answer": "12 s",
+	  "explanation": "a = F/m = 2/6 = 0.333 m/s². t = v/a = 4/0.333 = 12 s."
+	},
+	{
+	  "id": "z01_f2_038",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "If a net force acts on an object at right angles to its velocity, what happens?",
+	  "options": ["The object speeds up", "The object slows down", "The object changes direction without changing speed", "The object stops"],
+	  "correct_answer": "The object changes direction without changing speed",
+	  "explanation": "A force perpendicular to velocity changes direction but not speed — like circular motion. The force affects direction, not the magnitude of velocity."
+	},
+	{
+	  "id": "z01_f2_039",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "Two forces act on an object: 30 N rightward and 18 N leftward. Mass is 4 kg. What is the acceleration?",
+	  "options": ["3 m/s²", "7.5 m/s²", "12 m/s²", "4.5 m/s²"],
+	  "correct_answer": "3 m/s²",
+	  "explanation": "Net force = 30 − 18 = 12 N rightward. a = F/m = 12 ÷ 4 = 3 m/s² rightward."
+	},
+	{
+	  "id": "z01_f2_040",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 0.1 kg bullet is fired at 400 m/s from a 2 kg gun. What is the recoil velocity of the gun?",
+	  "options": ["20 m/s", "40 m/s", "80 m/s", "4 m/s"],
+	  "correct_answer": "20 m/s",
+	  "explanation": "Conservation of momentum: 0 = m_b × v_b + m_g × v_g → 0 = 0.1×400 + 2×v_g → v_g = −40/2 = −20 m/s. Recoil speed is 20 m/s."
+	},
+	{
+	  "id": "z01_f2_041",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "When is friction a useful force rather than a nuisance?",
+	  "options": ["When sliding boxes across a floor", "When braking a vehicle or gripping a surface", "When lubricating machine parts", "When an object falls through air"],
+	  "correct_answer": "When braking a vehicle or gripping a surface",
+	  "explanation": "Friction is essential for braking, walking, gripping, and writing. Without it, wheels would spin and we couldn't stop or start moving."
+	},
+	{
+	  "id": "z01_f2_042",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 500 kg elevator accelerates upward at 2 m/s². What is the tension in the cable? (g = 10 m/s²)",
+	  "options": ["5000 N", "5400 N", "6000 N", "1000 N"],
+	  "correct_answer": "6000 N",
+	  "explanation": "T − mg = ma → T = m(g + a) = 500 × (10 + 2) = 500 × 12 = 6000 N."
+	},
+	{
+	  "id": "z01_f2_043",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "What is the weight of a 25 kg object on Earth? (g = 10 m/s²)",
+	  "options": ["2.5 N", "25 N", "250 N", "2500 N"],
+	  "correct_answer": "250 N",
+	  "explanation": "Weight = mg = 25 × 10 = 250 N."
+	},
+	{
+	  "id": "z01_f2_044",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why does a parachute help slow a skydiver's fall?",
+	  "options": ["It increases the skydiver's mass", "It increases air resistance, reducing net downward force", "It removes gravity from the skydiver", "It increases the skydiver's momentum"],
+	  "correct_answer": "It increases air resistance, reducing net downward force",
+	  "explanation": "The parachute increases drag (air resistance). This upward force partially balances gravity, reducing net downward force and therefore deceleration."
+	},
+	{
+	  "id": "z01_f2_045",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 3 kg object is dropped from rest. What is its momentum after 4 seconds? (g = 10 m/s²)",
+	  "options": ["7 kg·m/s", "30 kg·m/s", "40 kg·m/s", "120 kg·m/s"],
+	  "correct_answer": "120 kg·m/s",
+	  "explanation": "v = gt = 10 × 4 = 40 m/s. p = mv = 3 × 40 = 120 kg·m/s."
+	},
+	{
+	  "id": "z01_f2_046",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 10 kg trolley moving at 6 m/s collides with a stationary 5 kg trolley and they move together. What is the final velocity?",
+	  "options": ["6 m/s", "4 m/s", "3 m/s", "2 m/s"],
+	  "correct_answer": "4 m/s",
+	  "explanation": "p_initial = 10×6 = 60 kg·m/s. p_final = (10+5)×v → v = 60/15 = 4 m/s."
+	},
+	{
+	  "id": "z01_f2_047",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "An object's velocity changes from 5 m/s east to 5 m/s west. Has its momentum changed?",
+	  "options": ["No — the speed is the same", "Yes — direction has reversed so momentum has changed", "Only if a force acted on it", "Momentum cannot change without changing mass"],
+	  "correct_answer": "Yes — direction has reversed so momentum has changed",
+	  "explanation": "Momentum is a vector. Changing direction changes momentum even if speed stays the same. Change in momentum = m×(−5) − m×(5) = −10m."
+	},
+	{
+	  "id": "z01_f2_048",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 4 kg block accelerates at 3 m/s². Friction is 4 N. What applied force is needed?",
+	  "options": ["8 N", "12 N", "16 N", "7 N"],
+	  "correct_answer": "16 N",
+	  "explanation": "F_net = ma = 4 × 3 = 12 N. Applied force = F_net + friction = 12 + 4 = 16 N."
+	},
+	{
+	  "id": "z01_f2_049",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "In a collision, why does the lighter vehicle suffer more damage than the heavier one?",
+	  "options": ["It has more momentum", "The same force causes greater acceleration in the lighter vehicle", "It moves faster after the collision", "It has less friction"],
+	  "correct_answer": "The same force causes greater acceleration in the lighter vehicle",
+	  "explanation": "From a = F/m: the same impact force produces greater acceleration (and deceleration) on the lighter vehicle, causing more structural damage."
+	},
+	{
+	  "id": "z01_f2_050",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 2 kg object moving at 10 m/s is brought to rest by a constant force in 0.5 seconds. What is the magnitude of the force?",
+	  "options": ["1 N", "4 N", "20 N", "40 N"],
+	  "correct_answer": "40 N",
+	  "explanation": "Δp = m×Δv = 2×(0−10) = −20 kg·m/s. F = Δp/t = 20/0.5 = 40 N."
+	}
+  ]
+}

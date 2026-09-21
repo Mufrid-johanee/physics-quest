@@ -1,0 +1,307 @@
+[gd_scene format=3 uid="uid://bkdy4mp72o8ok"]
+
+[ext_resource type="Script" uid="uid://dmpdkuujfnf2t" path="res://scripts/minigames/zone03/MiniGame03FiberEscape.gd" id="1_fe"]
+
+[node name="MiniGame03_FiberEscape" type="Control" unique_id=1618628690]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fe")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1696868457]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.06, 0.09, 0.14, 1)
+
+[node name="Playfield" type="Control" parent="." unique_id=921578601]
+clip_contents = true
+anchors_preset = 0
+offset_left = 240.0
+offset_top = 100.0
+offset_right = 1040.0
+offset_bottom = 580.0
+mouse_filter = 2
+
+[node name="FieldWash" type="ColorRect" parent="Playfield" unique_id=1940474675]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.08, 0.12, 0.18, 0.92)
+
+[node name="HazardLayer" type="Node2D" parent="Playfield" unique_id=1773395595]
+
+[node name="BeamLayer" type="Node2D" parent="Playfield" unique_id=426762897]
+
+[node name="ObstacleLayer" type="Node2D" parent="Playfield" unique_id=361104568]
+
+[node name="GhostLayer" type="Node2D" parent="Playfield" unique_id=106473271]
+
+[node name="Emitter" type="Sprite2D" parent="Playfield" unique_id=716410017]
+position = Vector2(70, 240)
+
+[node name="Sensor" type="Sprite2D" parent="Playfield" unique_id=1638007452]
+position = Vector2(730, 240)
+
+[node name="WaypointLayer" type="Node2D" parent="Playfield" unique_id=1420702863]
+
+[node name="BeamHead" type="Sprite2D" parent="Playfield" unique_id=33460540]
+visible = false
+z_index = 5
+
+[node name="ParticleLayer" type="Node2D" parent="Playfield" unique_id=167941869]
+z_index = 6
+
+[node name="HUD" type="Control" parent="." unique_id=1787103608]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TitleLabel" type="Label" parent="HUD" unique_id=703411202]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 12.0
+offset_right = 700.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 26
+text = "FIBER ESCAPE"
+
+[node name="CriticalLabel" type="Label" parent="HUD" unique_id=562288105]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 48.0
+offset_right = 500.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 16
+text = "Critical angle θc = 55°"
+
+[node name="StatusIcon" type="TextureRect" parent="HUD" unique_id=5457261]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 600.0
+offset_right = 64.0
+offset_bottom = 640.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StatusLabel" type="Label" parent="HUD" unique_id=775033597]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 596.0
+offset_right = 900.0
+offset_bottom = 660.0
+theme_override_font_sizes/font_size = 15
+text = "Route status"
+autowrap_mode = 3
+
+[node name="StageTabs" type="HBoxContainer" parent="HUD" unique_id=650017275]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 12.0
+offset_right = 1040.0
+offset_bottom = 72.0
+theme_override_constants/separation = 12
+
+[node name="Tab1" type="TextureButton" parent="HUD/StageTabs" unique_id=584244003]
+custom_minimum_size = Vector2(140, 56)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Tab1Label" type="Label" parent="HUD/StageTabs/Tab1" unique_id=1778586052]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "1 SERVER"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Tab2" type="TextureButton" parent="HUD/StageTabs" unique_id=1470739628]
+custom_minimum_size = Vector2(140, 56)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Tab2Label" type="Label" parent="HUD/StageTabs/Tab2" unique_id=1376903424]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "2 CABLE"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Buttons" type="VBoxContainer" parent="HUD" unique_id=993133870]
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 100.0
+offset_right = 1260.0
+offset_bottom = 560.0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="FireButton" type="TextureButton" parent="HUD/Buttons" unique_id=1999399731]
+custom_minimum_size = Vector2(160, 64)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="FireLabel" type="Label" parent="HUD/Buttons/FireButton" unique_id=1487456702]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 14
+text = "FIRE"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="UndoButton" type="TextureButton" parent="HUD/Buttons" unique_id=1376749760]
+custom_minimum_size = Vector2(160, 56)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="UndoLabel" type="Label" parent="HUD/Buttons/UndoButton" unique_id=599359015]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 13
+text = "UNDO"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="ClearButton" type="TextureButton" parent="HUD/Buttons" unique_id=348844503]
+custom_minimum_size = Vector2(160, 56)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ClearLabel" type="Label" parent="HUD/Buttons/ClearButton" unique_id=1282889359]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 13
+text = "CLEAR"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Hint1Button" type="TextureButton" parent="HUD/Buttons" unique_id=330053402]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Hint1Label" type="Label" parent="HUD/Buttons/Hint1Button" unique_id=2084552198]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "HINT 1"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Hint2Button" type="TextureButton" parent="HUD/Buttons" unique_id=887311382]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Hint2Label" type="Label" parent="HUD/Buttons/Hint2Button" unique_id=2036408134]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "HINT 2"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Hint3Button" type="TextureButton" parent="HUD/Buttons" unique_id=471332244]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Hint3Label" type="Label" parent="HUD/Buttons/Hint3Button" unique_id=920069054]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 12
+text = "HINT 3"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="ResultLayer" type="CanvasLayer" parent="." unique_id=270741743]
+layer = 20
+visible = false
+
+[node name="Dim" type="ColorRect" parent="ResultLayer" unique_id=994222362]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="Center" type="CenterContainer" parent="ResultLayer" unique_id=1537944158]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="ResultLayer/Center" unique_id=2033865769]
+custom_minimum_size = Vector2(420, 0)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ResultLabel" type="Label" parent="ResultLayer/Center/VBox" unique_id=453378417]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "RESULT"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="ResultButton" type="Button" parent="ResultLayer/Center/VBox" unique_id=915714291]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+text = "RETRY"

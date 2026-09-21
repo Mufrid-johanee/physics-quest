@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://k33o1gyhnmww"]
+
+[ext_resource type="Texture2D" uid="uid://dc4i0hp0p77t1" path="res://scenes/Hall of  legends/hall of legends.jpg" id="1_pqm32"]
+
+[node name="HallOfLegends" type="Node2D" unique_id=743117960]
+
+[node name="HallOfLegends" type="Sprite2D" parent="." unique_id=1447580793]
+position = Vector2(639.5, 368)
+scale = Vector2(0.92659885, 0.90494794)
+texture = ExtResource("1_pqm32")

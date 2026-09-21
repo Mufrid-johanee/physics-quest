@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cm3i6olehfrwm"]
+
+[ext_resource type="Script" uid="uid://cy3jaxqohbxaa" path="res://scripts/zone04/Zone04Exterior.gd" id="1_y1s5d"]
+[ext_resource type="Texture2D" uid="uid://hw8svmplxesv" path="res://asset/sprites/Environment/zone 5/zone 5 exterior.jpg" id="2_emnxt"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="10_vcsud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[node name="Zone04_Exterior" type="Node2D" unique_id=551093517]
+y_sort_enabled = true
+script = ExtResource("1_y1s5d")
+
+[node name="Background" type="Node2D" parent="." unique_id=2123760237]
+z_index = -20
+
+[node name="Sprite2D" type="Sprite2D" parent="Background" unique_id=171379601]
+position = Vector2(698, 401)
+texture = ExtResource("2_emnxt")
+
+[node name="Collision" type="Node2D" parent="." unique_id=1798715689]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision" unique_id=2042188060]
+position = Vector2(960, 20)
+collision_layer = 2
+collision_mask = 0
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision" unique_id=92459567]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="NPCs" type="Node2D" parent="." unique_id=1499114527]
+y_sort_enabled = true
+scale = Vector2(1.6, 1.6)
+
+[node name="Doors" type="Node2D" parent="." unique_id=2098748859]
+
+[node name="DialoguePanel" parent="." unique_id=40177631 instance=ExtResource("10_vcsud")]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1096325877]
+layer = 10
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]

@@ -1,0 +1,292 @@
+[gd_scene format=3 uid="uid://tppeonfc5qxe"]
+
+[ext_resource type="Script" uid="uid://ciebc72t8g0sd" path="res://scripts/zone02/Zone02Floor4.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://ps624i5w1khb" path="res://asset/sprites/Environment/zone 2/energy_control_room.png" id="2_room"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="3_player"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="4_npc"]
+[ext_resource type="Texture2D" uid="uid://b5pox6ghd51sd" path="res://asset/sprites/character/worker 5.png" id="5_8scnt"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="5_dialogue"]
+[ext_resource type="Texture2D" uid="uid://bxfyg5qaiokjb" path="res://asset/sprites/character/director 1.png" id="7_dir"]
+[ext_resource type="PackedScene" path="res://scenes/ui/QuizPanel.tscn" id="8_quiz"]
+[ext_resource type="Script" uid="uid://c4w1hfb0xn10y" path="res://scripts/quiz/QuizController.gd" id="9_quizctl"]
+[ext_resource type="Script" uid="uid://3607pr7eqqgy" path="res://scripts/npc/AmbientProximity.gd" id="amb1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1920, 40)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(200, 1072)
+
+[sub_resource type="RectangleShape2D" id="Rect_furniture_a"]
+size = Vector2(1403, 361)
+
+[sub_resource type="RectangleShape2D" id="Rect_furniture_b"]
+size = Vector2(534.5, 167)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veatc"]
+size = Vector2(279, 217.5)
+
+[sub_resource type="RectangleShape2D" id="Rect_director_detect"]
+size = Vector2(140, 160)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_99cc8319"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_4ad8e04b"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_mg"]
+size = Vector2(200, 153)
+
+[node name="Zone02_Floor4" type="Node2D" unique_id=1603993097]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=2021020032]
+z_index = -20
+
+[node name="RoomArt" type="Sprite2D" parent="Background" unique_id=702721603]
+scale = Vector2(1.4382716, 1)
+texture = ExtResource("2_room")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=555123717]
+position = Vector2(960, 536)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Collision" type="Node2D" parent="." unique_id=177179844]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision" unique_id=670089549]
+position = Vector2(960, 20)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundTop" unique_id=282879304]
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision" unique_id=460763972]
+position = Vector2(960, 1052)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundBottom" unique_id=16193510]
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision" unique_id=2044896041]
+position = Vector2(20, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=701729598]
+position = Vector2(80, 0)
+shape = SubResource("Rect_bound_v")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision" unique_id=254706003]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=1148081544]
+position = Vector2(-96, -13)
+shape = SubResource("Rect_bound_v")
+
+[node name="FurnitureA" type="StaticBody2D" parent="Collision" unique_id=1526314535]
+position = Vector2(420, 360)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/FurnitureA" unique_id=461477599]
+position = Vector2(470.5, -127.5)
+shape = SubResource("Rect_furniture_a")
+
+[node name="FurnitureB" type="StaticBody2D" parent="Collision" unique_id=57251920]
+position = Vector2(1497, 436)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/FurnitureB" unique_id=805863293]
+position = Vector2(-523, 126.5)
+shape = SubResource("Rect_furniture_b")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Collision" unique_id=70387863]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/StaticBody2D" unique_id=1782040449]
+position = Vector2(366, 787.75)
+shape = SubResource("RectangleShape2D_veatc")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=115920986]
+y_sort_enabled = true
+scale = Vector2(1.6, 1.6)
+
+[node name="Director" parent="NPCs" unique_id=1407358486 instance=ExtResource("4_npc")]
+z_index = 5
+position = Vector2(896.24994, 326.875)
+display_name = "Director"
+sprite_texture = ExtResource("7_dir")
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Director" unique_id=1957779453]
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Director/InteractionArea" unique_id=419309113]
+position = Vector2(0, 48)
+shape = SubResource("Rect_director_detect")
+
+[node name="Label" type="Label" parent="NPCs/Director" unique_id=1483203409]
+offset_left = -24.374922
+offset_top = -85.62499
+offset_right = 51.250076
+offset_bottom = -53.124992
+text = "Director"
+
+[node name="Worker5" type="Sprite2D" parent="NPCs" unique_id=1565864735]
+position = Vector2(232.49998, 290.62497)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("5_8scnt")
+
+[node name="BodyCollision" type="StaticBody2D" parent="NPCs/Worker5" unique_id=1638141920]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Worker5/BodyCollision" unique_id=87470573]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_99cc8319")
+
+[node name="AmbientProximity" type="Area2D" parent="NPCs/Worker5" unique_id=2098045339]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Worker5/AmbientProximity" unique_id=207897100]
+shape = SubResource("Rect_amb_prox_4ad8e04b")
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1884179836]
+position = Vector2(960, 900)
+
+[node name="Player" parent="." unique_id=1115082995 instance=ExtResource("3_player")]
+z_index = 8
+position = Vector2(960, 900)
+scale = Vector2(1.9, 1.9)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="DialoguePanel" parent="." unique_id=2034601064 instance=ExtResource("5_dialogue")]
+visible = false
+
+[node name="QuizController" type="Node" parent="." unique_id=149653980]
+script = ExtResource("9_quizctl")
+
+[node name="QuizPanel" parent="." unique_id=1411307383 instance=ExtResource("8_quiz")]
+visible = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=884399717]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=37920735]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+text = "Press E / F"
+horizontal_alignment = 1
+
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]
+[node name="MiniGameArea" type="Area2D" parent="." unique_id=1198368880]
+position = Vector2(978, 580)
+collision_layer = 0
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MiniGameArea" unique_id=488802875]
+position = Vector2(0, 16.5)
+shape = SubResource("Rect_mg")
+
+[node name="Label" type="Label" parent="MiniGameArea" unique_id=64731071]
+offset_left = -98.0
+offset_top = -21.0
+offset_right = 102.0
+offset_bottom = 19.0
+theme_override_font_sizes/font_size = 18
+text = "Mini-Game Area"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DemoCompleteUI" type="CanvasLayer" parent="." unique_id=313320193]
+layer = 20
+
+[node name="Root" type="Control" parent="DemoCompleteUI" unique_id=1267173487]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="DemoCompleteUI/Root" unique_id=1916632874]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="Center" type="CenterContainer" parent="DemoCompleteUI/Root" unique_id=1077302760]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="DemoCompleteUI/Root/Center" unique_id=228000201]
+custom_minimum_size = Vector2(480, 280)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="DemoCompleteUI/Root/Center/Panel" unique_id=1502535869]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="DemoCompleteUI/Root/Center/Panel/Margin" unique_id=127028256]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=518164318]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Mini-Game Area"
+horizontal_alignment = 1
+
+[node name="BadgeLabel" type="Label" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1547283890]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Placeholder"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="PlayMiniGame1Button" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1325929067]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "PLAY MINI-GAME 1"
+
+[node name="ReturnToWorldMapButton" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1330207382]
+visible = false
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+text = "RETURN TO THE WORLD MAP"

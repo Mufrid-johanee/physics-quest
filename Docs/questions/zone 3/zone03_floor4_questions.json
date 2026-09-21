@@ -1,0 +1,695 @@
+{
+  "zone": "03_wave_optics",
+  "floor": 4,
+  "bloom_levels": [
+    "analyze",
+    "evaluate"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 20,
+  "mcq_count": 12,
+  "one_word_count": 8,
+  "pass_threshold": 0.75,
+  "questions": [
+    {
+      "id": "z03_f4_001",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A fiber optic communication link suffers pulse broadening because different light rays take different zigzag paths along the core. What specific type of dispersion is this?",
+      "correct_answer": "modal dispersion",
+      "accepted_answers": [
+        "modal dispersion",
+        "intermodal dispersion",
+        "multimode dispersion"
+      ],
+      "explanation": "In multimode fibers, rays entering at various angles travel paths of different lengths, causing pulse broadening known as modal (or intermodal) dispersion."
+    },
+    {
+      "id": "z03_f4_002",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "An optical engineer wants to completely eliminate spherical aberration in a large astronomical telescope primary reflector. What non-spherical mirror profile should they fabricate?",
+      "correct_answer": "parabolic",
+      "accepted_answers": [
+        "parabolic",
+        "paraboloid",
+        "parabolic mirror"
+      ],
+      "explanation": "Parabolic mirrors reflect all parallel rays to a single focal point without spherical aberration, unlike spherical mirrors which suffer from marginal ray blurring."
+    },
+    {
+      "id": "z03_f4_003",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "Acoustic panels lined with porous fiberglass are installed across cinema walls. Which physical process do these panels primarily rely on to suppress flutter echoes?",
+      "correct_answer": "absorption",
+      "accepted_answers": [
+        "absorption",
+        "sound absorption",
+        "acoustic absorption"
+      ],
+      "explanation": "Porous acoustic absorbers dissipate sound wave energy into microscopic friction and heat within the air pores, preventing unwanted specular reflection."
+    },
+    {
+      "id": "z03_f4_004",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A driver notices that a vehicle 10 meters away appears very small and distant in their convex side mirror. What primary geometric optical advantage justifies this reduced image size?",
+      "correct_answer": "field of view",
+      "accepted_answers": [
+        "field of view",
+        "wider field of view",
+        "wide field of view"
+      ],
+      "explanation": "Convex mirrors curve outwards to gather rays from a wide angle, sacrificing image size to provide the driver with a broader panoramic field of view."
+    },
+    {
+      "id": "z03_f4_005",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A technician proposes replacing the glass core of an optical fiber (n = 1.5) with a cheaper polymer (n = 1.35) while retaining air (n = 1.0) as the cladding. Will the critical angle increase or decrease? Answer increase or decrease.",
+      "correct_answer": "increase",
+      "accepted_answers": [
+        "increase",
+        "increases"
+      ],
+      "explanation": "sin(θc) = n_clad / n_core. With n_core dropping from 1.5 to 1.35, the ratio 1.0/1.35 = 0.741 exceeds 1.0/1.50 = 0.667. A higher sine value means the critical angle increases (from ~41.8° to ~47.8°)."
+    },
+    {
+      "id": "z03_f4_006",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "An optometrist considers prescribing a +2.5 D convex lens for a patient who cannot see distant road signs clearly. Is this lens prescription appropriate? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "Difficulty seeing distant signs indicates myopia (short-sightedness), which requires a diverging (concave, negative power) lens. A convex lens (+2.5 D) worsens distant vision by converging rays even more in front of the retina."
+    },
+    {
+      "id": "z03_f4_007",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A student claims that an echo can be heard distinctly inside a small rectangular study room measuring 3 meters by 4 meters. Is this claim valid under normal room temperature? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "To resolve an echo distinctly from the original sound, the minimum reflecting distance is ~17 m (round trip ~34 m). In a 3×4 m room, the reflection returns in ~0.02 s (< 0.1 s persistence of hearing), producing reverberation rather than an echo."
+    },
+    {
+      "id": "z03_f4_008",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "An audio engineer assesses whether sound travels faster through a helium gas balloon than through ambient air at the same temperature and pressure. Does helium provide a higher sound speed? Answer yes or no.",
+      "correct_answer": "yes",
+      "accepted_answers": [
+        "yes"
+      ],
+      "explanation": "Speed of sound in ideal gas is v = √(γRT/M). Helium has a molar mass of 4 g/mol compared to ~29 g/mol for air. Its much lower molecular mass yields a dramatically higher acoustic velocity (~965 m/s vs ~340 m/s)."
+    },
+    {
+      "id": "z03_f4_009",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A researcher assesses two optical prisms: Crown glass (dispersive power 0.035) and Flint glass (dispersive power 0.060). To create an achromatic prism combination that deviates light without color dispersion, which glass requires the larger refracting angle? Answer crown or flint.",
+      "correct_answer": "crown",
+      "accepted_answers": [
+        "crown",
+        "crown glass"
+      ],
+      "explanation": "For achromatic deviation, net dispersion = ω1δ1 + ω2δ2 = 0. Since flint has a higher dispersive power ω, crown glass must provide a larger deviation angle (and hence larger refracting angle) to balance the dispersion."
+    },
+    {
+      "id": "z03_f4_010",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A diver submerged in a calm swimming pool looks straight up at an angle of 60° relative to the surface normal. Can the diver see the sky above the water surface at this angle? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "The critical angle for water-air is ~48.8°. An angle of incidence of 60° exceeds the critical angle, causing total internal reflection back into the water. The diver sees the reflected pool floor, not the sky."
+    },
+    {
+      "id": "z03_f4_011",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a concave mirror exhibit spherical aberration when large-aperture incident light beams are used?",
+      "options": [
+        "Marginal rays focus closer to the mirror pole than paraxial rays",
+        "Marginal rays are completely absorbed by the silver coating",
+        "Light rays reflect backwards through the mirror center",
+        "The focal length increases for light of shorter wavelengths"
+      ],
+      "correct_answer": "Marginal rays focus closer to the mirror pole than paraxial rays",
+      "explanation": "In a spherical mirror, rays striking the outer edges (marginal rays) bend more sharply and converge closer to the mirror vertex than rays near the principal axis (paraxial rays), creating a blurred focal region."
+    },
+    {
+      "id": "z03_f4_012",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the physical mechanism behind the formation of a secondary rainbow in the sky?",
+      "options": [
+        "Two refractions and two internal reflections inside each spherical raindrop",
+        "Two refractions and one internal reflection inside each raindrop",
+        "Diffraction through ice crystals in cirrus clouds",
+        "Total external reflection off the bottom of dense storm clouds"
+      ],
+      "correct_answer": "Two refractions and two internal reflections inside each spherical raindrop",
+      "explanation": "A primary rainbow involves two refractions and one internal reflection; a secondary rainbow involves two refractions and two internal reflections, reversing the order of colors and reducing brightness."
+    },
+    {
+      "id": "z03_f4_013",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A sound wave travels from air into steel. How do its speed, wavelength, and frequency change?",
+      "options": [
+        "Speed and wavelength increase substantially; frequency remains constant",
+        "Speed increases; wavelength and frequency decrease",
+        "Speed, wavelength, and frequency all increase proportionally",
+        "Speed decreases; wavelength increases; frequency is halved"
+      ],
+      "correct_answer": "Speed and wavelength increase substantially; frequency remains constant",
+      "explanation": "Frequency is invariant across boundaries. Acoustic velocity jumps from ~340 m/s in air to ~5120 m/s in steel (~15-fold increase). From λ = v/f, wavelength λ increases by the exact same ratio."
+    },
+    {
+      "id": "z03_f4_014",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does chromatic aberration occur in glass lenses but NEVER in curved mirrors?",
+      "options": [
+        "Lenses rely on refraction which varies with wavelength, whereas mirrors obey the law of reflection which is wavelength-independent",
+        "Lenses absorb violet light whereas mirrors absorb red light",
+        "Mirrors are made of opaque metal that equalizes photon energies",
+        "Lenses have two surfaces whereas mirrors only have one"
+      ],
+      "correct_answer": "Lenses rely on refraction which varies with wavelength, whereas mirrors obey the law of reflection which is wavelength-independent",
+      "explanation": "The law of reflection (i = r) is independent of light wavelength. In lenses, Snell's law depends on n(λ), causing different colors to refract at different angles and focus at different points."
+    },
+    {
+      "id": "z03_f4_015",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does the resonant acoustic frequency of an open-ended organ pipe compare to that of a closed-ended pipe of the same physical length?",
+      "options": [
+        "The fundamental frequency of the open pipe is twice that of the closed pipe",
+        "The fundamental frequency of the open pipe is half that of the closed pipe",
+        "Both pipes have identical fundamental frequencies",
+        "The open pipe produces only even harmonics while the closed pipe produces all harmonics"
+      ],
+      "correct_answer": "The fundamental frequency of the open pipe is twice that of the closed pipe",
+      "explanation": "For an open pipe, λ = 2L → f_open = v/2L. For a closed pipe, λ = 4L → f_closed = v/4L. Thus, f_open = 2 × f_closed."
+    },
+    {
+      "id": "z03_f4_016",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An optical engineer notices that a convex lens produces an image where the red focus lies further from the lens than the blue focus. What explains this observation?",
+      "options": [
+        "Blue light has a higher refractive index and refracts more sharply than red light",
+        "Red light has a higher frequency and travels slower in glass",
+        "Glass lenses filter out green light",
+        "The focal length of a lens is directly proportional to wave frequency"
+      ],
+      "correct_answer": "Blue light has a higher refractive index and refracts more sharply than red light",
+      "explanation": "By Cauchy's equation, n_blue > n_red. Since 1/f = (n - 1)(1/R1 - 1/R2), a larger n yields a shorter focal length, focusing blue rays closer to the lens than red rays."
+    },
+    {
+      "id": "z03_f4_017",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a person standing near the edge of a deep lake see fish swimming at depths that appear roughly 3/4 of their actual depth?",
+      "options": [
+        "Apparent depth equals real depth divided by the refractive index of water (d' = d / 1.33 ≈ 0.75d)",
+        "Water reflects 25% of all incident sunlight",
+        "The eye lens loses converging power when looking at water",
+        "Fish emit blue light that bends toward the normal"
+      ],
+      "correct_answer": "Apparent depth equals real depth divided by the refractive index of water (d' = d / 1.33 ≈ 0.75d)",
+      "explanation": "For near-normal viewing, d' = d / n_water = d / (4/3) = 0.75d, meaning the submerged object appears 25% closer to the surface than its true location."
+    },
+    {
+      "id": "z03_f4_018",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In total internal reflection, what happens to the electric field of light at the boundary in the rarer medium?",
+      "options": [
+        "An evanescent wave penetrates a fraction of a wavelength into the rarer medium with exponential amplitude decay",
+        "The electric field drops strictly to zero instantaneously at the boundary",
+        "The electric field transforms into acoustic compressions",
+        "Light creates a standing electromagnetic wave of infinite energy"
+      ],
+      "correct_answer": "An evanescent wave penetrates a fraction of a wavelength into the rarer medium with exponential amplitude decay",
+      "explanation": "Even though net time-averaged power reflected is 100%, Maxwell's boundary equations require an evanescent field whose amplitude decays exponentially away from the boundary."
+    },
+    {
+      "id": "z03_f4_019",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does the human eye have blind spots where vision is completely absent?",
+      "options": [
+        "The region where the optic nerve exits the retina contains no photoreceptor cells (rods or cones)",
+        "Blood vessels completely block light near the fovea centralis",
+        "The cornea has an optical knot that scatters light",
+        "The pupil casts a shadow directly onto the retina"
+      ],
+      "correct_answer": "The region where the optic nerve exits the retina contains no photoreceptor cells (rods or cones)",
+      "explanation": "The optic disc is the anatomical exit point of retinal nerve fibers into the optic nerve. Because it lacks photoreceptors, any light focused on it produces no visual sensation."
+    },
+    {
+      "id": "z03_f4_020",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What enables a bat to distinguish between a stationary wall and a flying moth during echolocation?",
+      "options": [
+        "The reflected echo from a fluttering moth contains Doppler frequency shifts and amplitude modulations",
+        "The moth reflects radio waves while the wall reflects sound",
+        "The bat uses infrared vision alongside sound",
+        "Ultrasonic waves pass through stationary walls but bounce off insects"
+      ],
+      "correct_answer": "The reflected echo from a fluttering moth contains Doppler frequency shifts and amplitude modulations",
+      "explanation": "Wing flutters cause periodic Doppler shifts and amplitude glints in the reflected echo, enabling the bat's auditory cortex to detect moth movement against stationary clutter."
+    },
+    {
+      "id": "z03_f4_021",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why are ultrasound pulses used rather than audible sound waves for non-destructive testing of structural steel beams?",
+      "options": [
+        "Ultrasound has much shorter wavelengths, enabling detection of microscopic cracks without extensive diffraction",
+        "Ultrasound waves travel ten times faster than audible sound in steel",
+        "Audible sound waves cannot penetrate metals at all",
+        "Ultrasound magnetizes internal metal defects"
+      ],
+      "correct_answer": "Ultrasound has much shorter wavelengths, enabling detection of microscopic cracks without extensive diffraction",
+      "explanation": "Wavelength determines defect resolution limit (λ ≈ v/f). High-frequency ultrasound (MHz range) has sub-millimeter wavelengths, enabling sharp reflection from tiny internal voids and hairline fractures."
+    },
+    {
+      "id": "z03_f4_022",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A student views an object through two identical plane glass slabs placed back-to-back with a thin air gap between them. How does the total lateral displacement compare to a single slab of double thickness?",
+      "options": [
+        "The total lateral displacement is identical in both cases",
+        "The air gap cancels lateral displacement entirely",
+        "The two slabs double the lateral displacement compared to the single thick slab",
+        "No light can cross the air gap due to total internal reflection"
+      ],
+      "correct_answer": "The total lateral displacement is identical in both cases",
+      "explanation": "Because refraction angles depend only on the initial and final media across parallel boundaries, the ray trajectories through glass segments are parallel, yielding the same net lateral shift."
+    },
+    {
+      "id": "z03_f4_023",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a whispering gallery such as St. Paul's Cathedral dome, whispers travel clearly across a 30-meter diameter room. What wave acoustic phenomenon explains this?",
+      "options": [
+        "Continuous grazing-incidence reflections along the smooth concave boundary curve",
+        "Constructive interference at the center of the floor",
+        "Diffraction around the dome pillars",
+        "Resonance of the air column acting as an open organ pipe"
+      ],
+      "correct_answer": "Continuous grazing-incidence reflections along the smooth concave boundary curve",
+      "explanation": "Sound waves directed tangentially along the curving circular wall undergo repeated low-loss specular reflections that guide sound along the circumference without spreading into the dome center."
+    },
+    {
+      "id": "z03_f4_024",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a magnifying glass (simple microscope) provide a larger angular size when the virtual image is formed at the eye's near point (D = 25 cm) rather than at infinity?",
+      "options": [
+        "Magnifying power is m = 1 + D/f at the near point versus m = D/f at infinity",
+        "The lens power increases as the eye strains",
+        "Light rays travel faster when entering the eye at close range",
+        "The image formed at the near point is real and inverted"
+      ],
+      "correct_answer": "Magnifying power is m = 1 + D/f at the near point versus m = D/f at infinity",
+      "explanation": "When adjusting the virtual image to the least distance of distinct vision D, angular magnification is m = 1 + D/f, which is greater by 1 than the relaxed-eye magnification m = D/f."
+    },
+    {
+      "id": "z03_f4_025",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "When white light is incident on a soap bubble, vibrant colorful bands are seen across its surface. What causes these colors?",
+      "options": [
+        "Thin-film interference between light waves reflected from the outer and inner surfaces of the soap film",
+        "Dispersion through prismatic crystallization of soap molecules",
+        "Scattering of blue light by soap surfactants",
+        "Emission of fluorescence photons by glycerin"
+      ],
+      "correct_answer": "Thin-film interference between light waves reflected from the outer and inner surfaces of the soap film",
+      "explanation": "Light reflects from both the top air-film interface and the bottom film-air interface. Path differences depending on film thickness and angle cause constructive interference for specific visible wavelengths."
+    },
+    {
+      "id": "z03_f4_026",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an acoustic shock wave (sonic boom) form when an aircraft exceeds the speed of sound (Mach > 1)?",
+      "options": [
+        "Spherical wavefronts emitted by the aircraft overlap constructively along a conical Mach envelope",
+        "The aircraft's jet engine sound doubles in frequency",
+        "Air molecules are split into plasma by friction",
+        "Sound waves are reflected backward into the aircraft fuel tanks"
+      ],
+      "correct_answer": "Spherical wavefronts emitted by the aircraft overlap constructively along a conical Mach envelope",
+      "explanation": "When v_source > v_sound, acoustic wavefronts cannot outrun the source and pile up along a conical envelope (Mach cone), producing a sudden pressure jump perceived as a sonic boom."
+    },
+    {
+      "id": "z03_f4_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the optical function of the graded-index (GRIN) profile in modern telecommunication fiber optics?",
+      "options": [
+        "Refractive index decreases parabolically from core axis to cladding, equalizing travel times of different optical modes",
+        "It increases the critical angle to 90°",
+        "It converts visible light into electrical current inside the core",
+        "It absorbs infrared signals to prevent eavesdropping"
+      ],
+      "correct_answer": "Refractive index decreases parabolically from core axis to cladding, equalizing travel times of different optical modes",
+      "explanation": "Rays taking wider paths travel through outer regions of lower refractive index where light speed is faster, balancing transit times with on-axis rays and reducing modal dispersion."
+    },
+    {
+      "id": "z03_f4_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does astigmatism arise in the human eye and how is it corrected optically?",
+      "options": [
+        "Cornea or lens has unequal curvatures in different meridians; corrected by a cylindrical lens",
+        "Eyeball is too long horizontally; corrected by a bifocal convex lens",
+        "Eye lens becomes clouded with age; corrected by surgery only",
+        "Pupil cannot contract in sunlight; corrected by tinted spherical lenses"
+      ],
+      "correct_answer": "Cornea or lens has unequal curvatures in different meridians; corrected by a cylindrical lens",
+      "explanation": "In astigmatism, asymmetric corneal curvature focuses horizontal and vertical rays at different depths. A cylindrical lens provides refractive power in one meridian only to compensate."
+    },
+    {
+      "id": "z03_f4_029",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a flute produce a softer, purer tone than a violin playing the exact same pitch and loudness?",
+      "options": [
+        "The flute tone consists almost entirely of the fundamental harmonic with few overtones, whereas a violin produces rich higher harmonics",
+        "Flute sound waves travel faster in air than violin sound waves",
+        "Violin sound waves are transverse in air while flute waves are longitudinal",
+        "The violin operates on ultrasound frequencies"
+      ],
+      "correct_answer": "The flute tone consists almost entirely of the fundamental harmonic with few overtones, whereas a violin produces rich higher harmonics",
+      "explanation": "Acoustic quality (timbre) depends on the harmonic spectrum. Bowed violin strings excite numerous strong higher harmonics, creating a bright timbre, whereas a flute approximates a pure sine wave."
+    },
+    {
+      "id": "z03_f4_030",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An architect designs an auditorium and plans to place smooth marble on the back wall and ceiling. What acoustic defect will this design cause, and what is the best remedy?",
+      "options": [
+        "Severe echo and prolonged reverberation; remedy by installing acoustic absorption tiles and diffusers",
+        "Complete cancellation of sound; remedy by removing all seats",
+        "Unwanted resonance of high frequencies; remedy by increasing room temperature",
+        "Doppler shifts in speech; remedy by curving the floor downward"
+      ],
+      "correct_answer": "Severe echo and prolonged reverberation; remedy by installing acoustic absorption tiles and diffusers",
+      "explanation": "Hard, non-porous marble reflects nearly 100% of sound energy, creating flutter echoes and muddy reverberation. Replacing or covering it with sound-absorbing materials restores speech clarity."
+    },
+    {
+      "id": "z03_f4_031",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A driver replaces the factory convex side-view mirror with a flat plane mirror of the exact same physical dimensions. What trade-off has the driver made?",
+      "options": [
+        "True-scale distance perception is gained, but a dangerous blind spot is created due to a narrower field of view",
+        "Field of view is expanded, but images become inverted",
+        "Image size is magnified tenfold, eliminating glare",
+        "The mirror stops functioning in rainy weather"
+      ],
+      "correct_answer": "True-scale distance perception is gained, but a dangerous blind spot is created due to a narrower field of view",
+      "explanation": "Plane mirrors show objects at true size (m = 1) without perspective distortion, but their field of view is drastically smaller than convex mirrors, creating hazardous blind spots."
+    },
+    {
+      "id": "z03_f4_032",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student claims that an underwater diver looking up can see a full 180° hemispherical panorama of the world above compressed into a cone of roughly 97.5°. Is this evaluation correct?",
+      "options": [
+        "Yes, Snell's window compresses the entire 180° above-water hemisphere into a cone of twice the critical angle (2 × 48.8° ≈ 97.6°)",
+        "No, total internal reflection prevents any light from entering the water from above",
+        "No, the diver only sees a narrow pinhole cone of less than 10°",
+        "Yes, but only if the water is heated to 100°C"
+      ],
+      "correct_answer": "Yes, Snell's window compresses the entire 180° above-water hemisphere into a cone of twice the critical angle (2 × 48.8° ≈ 97.6°)",
+      "explanation": "Rays grazing the water surface at 90° refract at the critical angle (~48.8°). All incoming light from the sky is compressed into a circle subtending 2θc ≈ 97.6°, known as Snell's window."
+    },
+    {
+      "id": "z03_f4_033",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A high-school lab claims to have built an optical fiber that transmits signals using total internal reflection with a core of water (n = 1.33) and a cladding of glass (n = 1.50). How do you evaluate this claim?",
+      "options": [
+        "The claim is impossible: TIR requires light to travel from a denser medium to a rarer medium (n_core must exceed n_cladding)",
+        "The claim is correct and provides higher bandwidth than standard silica glass fibers",
+        "The claim is correct, but only works with red laser light",
+        "The claim is possible only when sound waves travel through the water simultaneously"
+      ],
+      "correct_answer": "The claim is impossible: TIR requires light to travel from a denser medium to a rarer medium (n_core must exceed n_cladding)",
+      "explanation": "Total internal reflection strictly requires n_core > n_cladding. With n_water (1.33) < n_glass (1.50), light entering the glass cladding refracts towards the normal and escapes, preventing waveguiding."
+    },
+    {
+      "id": "z03_f4_034",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "To design an achromatic doublet lens that eliminates chromatic aberration for two target wavelengths, which design strategy is scientifically valid?",
+      "options": [
+        "Combine a convex lens of crown glass with a concave lens of flint glass having opposite dispersive powers",
+        "Stack two identical convex lenses made of the exact same glass type",
+        "Paint the outer edge of a single concave lens with black opaque paint",
+        "Increase the thickness of a single glass lens to 10 cm"
+      ],
+      "correct_answer": "Combine a convex lens of crown glass with a concave lens of flint glass having opposite dispersive powers",
+      "explanation": "An achromatic doublet pairs a converging lens (crown glass, lower dispersion) with a diverging lens (flint glass, higher dispersion). The opposite dispersions cancel while leaving net converging power."
+    },
+    {
+      "id": "z03_f4_035",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An optical engineer evaluates two candidate materials for road safety reflectors: glass beads (n = 1.9) versus acrylic plastic (n = 1.49). Why do high-refractive-index glass beads provide superior retroreflection?",
+      "options": [
+        "A refractive index close to 2.0 focuses incoming parallel rays directly onto the back surface of the bead, maximizing retroreflected intensity",
+        "Acrylic plastic absorbs all red and yellow visible light",
+        "High-refractive-index glass generates its own light through phosphorescence",
+        "Acrylic plastic has zero critical angle"
+      ],
+      "correct_answer": "A refractive index close to 2.0 focuses incoming parallel rays directly onto the back surface of the bead, maximizing retroreflected intensity",
+      "explanation": "For a sphere in air, the focal length from the front surface is f = nR / (2(n - 1)). When n ≈ 2.0, f ≈ 2R (the back surface of the sphere), reflecting light directly back toward the oncoming vehicle headlights."
+    },
+    {
+      "id": "z03_f4_036",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student claims that an ultrasound transducer operating at 10 MHz will produce clearer, higher-resolution anatomical images than a 2 MHz transducer. Under what condition is this evaluation correct?",
+      "options": [
+        "Correct for shallow structures, but 10 MHz suffers from much higher tissue attenuation, limiting imaging depth",
+        "Correct for all depths without any penalty or limitation",
+        "Incorrect, because 2 MHz has a shorter wavelength than 10 MHz",
+        "Incorrect, because 10 MHz ultrasound cannot travel through soft human tissue"
+      ],
+      "correct_answer": "Correct for shallow structures, but 10 MHz suffers from much higher tissue attenuation, limiting imaging depth",
+      "explanation": "Higher frequency gives shorter wavelength and superior axial resolution, but acoustic attenuation increases proportionally with frequency, severely restricting 10 MHz penetration depth."
+    },
+    {
+      "id": "z03_f4_037",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "In assessing safety at dangerous hairpin mountain turns, which mirror configuration provides drivers the most reliable visibility around blind corners?",
+      "options": [
+        "Large outdoor convex mirrors mounted at 45° to the road intersection",
+        "Large concave shaving mirrors",
+        "Narrow flat plane mirrors mounted vertically",
+        "Dark sunglasses placed on roadside poles"
+      ],
+      "correct_answer": "Large outdoor convex mirrors mounted at 45° to the road intersection",
+      "explanation": "Convex mirrors diverge reflected rays, capturing a wide panoramic field of view that allows drivers on both sides of a blind hairpin turn to see oncoming vehicles well in advance."
+    },
+    {
+      "id": "z03_f4_038",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A factory worker assesses two ear protection options against continuous 100 dB industrial machinery noise: foam earplugs (Noise Reduction Rating NRR = 30 dB) versus open earmuffs (NRR = 10 dB). What acoustic exposure does the worker experience with the foam earplugs?",
+      "options": [
+        "Sound level drops to ~70 dB, bringing noise down to a safe long-term exposure threshold",
+        "Sound level drops to 0 dB, creating absolute silence",
+        "Sound level is halved from 100 dB to 50 dB",
+        "Sound level increases to 130 dB due to acoustic resonance in the ear canal"
+      ],
+      "correct_answer": "Sound level drops to ~70 dB, bringing noise down to a safe long-term exposure threshold",
+      "explanation": "Effective sound level = 100 dB - 30 dB = 70 dB. Because 85 dB is the widely recognized occupational danger threshold, 70 dB protects hearing from industrial noise-induced damage."
+    },
+    {
+      "id": "z03_f4_039",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A clinician considers whether to use a concave lens or a convex lens to examine the vocal cords via an indirect laryngoscope. Which mirror/lens configuration provides the best view?",
+      "options": [
+        "A small angled concave mirror to converge light onto the larynx and form a magnified view",
+        "A diverging concave lens that shrinks the vocal cords",
+        "A convex mirror that reduces image size by 90%",
+        "A triangular glass prism that disperses light into rainbow bands"
+      ],
+      "correct_answer": "A small angled concave mirror to converge light onto the larynx and form a magnified view",
+      "explanation": "A concave mirror can focus an illuminating light beam directly down the throat while reflecting an upright, magnified virtual image of the vocal cords when held close to the structure."
+    },
+    {
+      "id": "z03_f4_040",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A telescope designer assesses whether to build a giant 10-meter optical telescope using a single glass lens (refractor) or segmented curved mirrors (reflector). Why is the reflector design evaluated as overwhelmingly superior?",
+      "options": [
+        "Mirrors can be supported across their entire back surface, avoid chromatic aberration, and do not require flawless internal glass homogeneity",
+        "Mirrors are lighter than air and float inside the dome",
+        "Lenses cannot focus light from stars outside our solar system",
+        "Mirrors eliminate the Doppler effect completely"
+      ],
+      "correct_answer": "Mirrors can be supported across their entire back surface, avoid chromatic aberration, and do not require flawless internal glass homogeneity",
+      "explanation": "Heavy lenses sag under gravity when supported only by edges, absorb light internally, and cause severe chromatic aberration. Reflecting mirrors eliminate all these physical failure modes."
+    },
+    {
+      "id": "z03_f4_041",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An environmental engineer evaluates whether sound barriers along highways are more effective if made of smooth concrete or perforated recycled rubber composite. Which is superior and why?",
+      "options": [
+        "Perforated composite is superior because it absorbs acoustic energy rather than reflecting traffic noise toward homes across the highway",
+        "Smooth concrete is superior because it amplifies sound into the sky",
+        "Both are identical because sound waves pass straight through all solid barriers",
+        "Smooth concrete is superior because it completely destroys sound waves upon contact"
+      ],
+      "correct_answer": "Perforated composite is superior because it absorbs acoustic energy rather than reflecting traffic noise toward homes across the highway",
+      "explanation": "Hard concrete reflects sound back across the opposite lanes. Absorptive porous composites trap acoustic vibrations in micro-cavities, converting acoustic energy into thermal dissipation."
+    },
+    {
+      "id": "z03_f4_042",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A photographer evaluates using an f/2.8 lens versus an f/16 aperture setting for capturing a landscape scene with flowers in the foreground and mountains in the distance. Which choice is correct?",
+      "options": [
+        "f/16 provides a much larger depth of field, keeping both foreground flowers and distant mountains sharp",
+        "f/2.8 provides a larger depth of field and eliminates background blur",
+        "f/16 causes all light to reflect away from the sensor",
+        "Aperture settings have no effect on depth of field in photography"
+      ],
+      "correct_answer": "f/16 provides a much larger depth of field, keeping both foreground flowers and distant mountains sharp",
+      "explanation": "A smaller physical aperture (higher f-number such as f/16) produces narrower light cones, decreasing the circles of confusion and rendering objects across deep distances simultaneously in focus."
+    },
+    {
+      "id": "z03_f4_043",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student proposes that since speed of sound in air is v = √(γP/ρ), increasing atmospheric pressure P on a calm day at constant temperature will increase the speed of sound. How do you evaluate this proposal?",
+      "options": [
+        "The proposal is incorrect: by Boyle's law, pressure is directly proportional to density at constant temperature, keeping P/ρ constant",
+        "The proposal is correct: doubling pressure doubles the acoustic velocity",
+        "The proposal is correct only if air humidity is 100%",
+        "The proposal is incorrect because sound speed in air is always zero"
+      ],
+      "correct_answer": "The proposal is incorrect: by Boyle's law, pressure is directly proportional to density at constant temperature, keeping P/ρ constant",
+      "explanation": "From the ideal gas law P = ρRT/M, P/ρ = RT/M. At constant temperature, an increase in pressure produces an identical proportional increase in density ρ, leaving sound speed unchanged."
+    },
+    {
+      "id": "z03_f4_044",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An optical engineer evaluates replacing a multi-mode stepped-index fiber link with a single-mode optical fiber (core diameter ~8 μm). What performance upgrade justifies this change?",
+      "options": [
+        "Modal dispersion is virtually eliminated, enabling gigabit data transmission over dozens of kilometers without signal degradation",
+        "Single-mode fibers allow visible red light to travel ten times faster than speed of light in vacuum",
+        "Single-mode fibers do not require cladding",
+        "Single-mode fibers generate their own laser power internally"
+      ],
+      "correct_answer": "Modal dispersion is virtually eliminated, enabling gigabit data transmission over dozens of kilometers without signal degradation",
+      "explanation": "With a core diameter close to the wavelength of light, only a single electromagnetic mode can propagate along the axis, eliminating modal path differences and dispersion."
+    },
+    {
+      "id": "z03_f4_045",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A patient with severe myopia (-6.0 D) considers wearing +1.5 D reading glasses to correct their distant vision. What is the clinical evaluation of this action?",
+      "options": [
+        "It will severely worsen distance vision by shifting the focal point even further in front of the retina",
+        "It will completely cure their myopia within two weeks",
+        "It will have no effect whatsoever on image focus",
+        "It will convert myopia into normal vision"
+      ],
+      "correct_answer": "It will severely worsen distance vision by shifting the focal point even further in front of the retina",
+      "explanation": "A -6.0 D myopic eye already converges light excessively. Adding a +1.5 D converging lens increases total eye power from +6.0 D excess to +7.5 D excess, making distant objects even more blurred."
+    },
+    {
+      "id": "z03_f4_046",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "In evaluating noise pollution outside an airport, an acoustic consultant measures 110 dB during jet takeoff. If the legal nighttime community limit is 50 dB, by what factor must the acoustic sound intensity be reduced?",
+      "options": [
+        "1,000,000 times (10⁶)",
+        "60 times",
+        "6 times",
+        "1,000 times (10³)"
+      ],
+      "correct_answer": "1,000,000 times (10⁶)",
+      "explanation": "ΔL = 10 log10(I1 / I2) → 110 dB - 50 dB = 60 dB = 10 log10(I1 / I2) → log10(I1 / I2) = 6 → I1 / I2 = 10⁶ = 1,000,000."
+    },
+    {
+      "id": "z03_f4_047",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student attempts to construct a periscope using two plane mirrors. To ensure an observer sees an upright image over an obstacle, how must the two mirrors be aligned?",
+      "options": [
+        "Parallel to each other, inclined at 45° to the path of incoming light",
+        "Perpendicular to each other, facing in opposite directions",
+        "Facing each other horizontally at 90°",
+        "At an angle of 30° and 60° respectively"
+      ],
+      "correct_answer": "Parallel to each other, inclined at 45° to the path of incoming light",
+      "explanation": "Each mirror deflects the beam by 90° (total 180° inversion and re-inversion). Keeping them parallel at 45° to the vertical column produces an upright virtual image shifted vertically."
+    },
+    {
+      "id": "z03_f4_048",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A diamond cutter evaluates whether altering the pavilion cut angle of a diamond from 41° to 50° will enhance its brilliance. What is the optical outcome?",
+      "options": [
+        "Brilliance is ruined because light strikes pavilion facets below the critical angle (24.4°) and leaks out the bottom",
+        "Brilliance is doubled because light bounces more times",
+        "The diamond turns into an optical fiber and stops reflecting light",
+        "The diamond becomes completely opaque"
+      ],
+      "correct_answer": "Brilliance is ruined because light strikes pavilion facets below the critical angle (24.4°) and leaks out the bottom",
+      "explanation": "Properly proportioned brilliant-cut diamonds ensure that rays hitting the pavilion exceed the critical angle (24.4°), reflecting back up to the crown. Poor angles cause light to escape out the back."
+    },
+    {
+      "id": "z03_f4_049",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An eye surgeon evaluates whether laser-assisted in situ keratomileusis (LASIK) can correct myopia. What corneal reshaping does the surgeon perform?",
+      "options": [
+        "Flattens the central cornea to reduce its excessive converging refractive power",
+        "Steepens the cornea to increase its refractive power",
+        "Removes the cornea and replaces it with a glass window",
+        "Thickens the cornea by injecting saline fluid"
+      ],
+      "correct_answer": "Flattens the central cornea to reduce its excessive converging refractive power",
+      "explanation": "Myopia stems from excessive converging power. Excimer lasers ablate corneal tissue to reduce its surface curvature (flattening it), moving the focal point back onto the retina."
+    },
+    {
+      "id": "z03_f4_050",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An audio engineer claims that placing an open subwoofer against a solid room corner increases perceived low-frequency bass output by up to 9 dB compared to placing it in the room center. How do you evaluate this claim?",
+      "options": [
+        "The claim is valid: corner boundaries restrict radiation into 1/8th of a sphere (π/2 steradians), acoustically loading the speaker and boosting bass",
+        "The claim is false: corners absorb all sound frequencies below 100 Hz",
+        "The claim is false: placing speakers near walls creates immediate destructive interference for all frequencies",
+        "The claim is valid only if the room walls are made of rubber"
+      ],
+      "correct_answer": "The claim is valid: corner boundaries restrict radiation into 1/8th of a sphere (π/2 steradians), acoustically loading the speaker and boosting bass",
+      "explanation": "Corner loading (pi-half space) reflects bass waves in phase with the driver, boosting acoustic efficiency and perceived sound pressure level by up to 9 dB (three boundary image reinforcements)."
+    }
+  ]
+}

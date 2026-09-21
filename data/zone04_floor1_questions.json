@@ -1,0 +1,714 @@
+{
+  "zone": "04_electricity_magnetism",
+  "floor": 1,
+  "bloom_levels": [
+    "remember",
+    "understand"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z04_f1_001",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of electric charge?",
+      "options": [
+        "Coulomb",
+        "Ampere",
+        "Volt",
+        "Ohm"
+      ],
+      "correct_answer": "Coulomb",
+      "explanation": "The SI unit of electric charge is the Coulomb (C), named after Charles-Augustin de Coulomb."
+    },
+    {
+      "id": "z04_f1_002",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of electric current?",
+      "options": [
+        "Ampere",
+        "Coulomb",
+        "Volt",
+        "Watt"
+      ],
+      "correct_answer": "Ampere",
+      "explanation": "The SI unit of electric current is the Ampere (A), defined as 1 Coulomb of charge flowing per second (1 A = 1 C/s)."
+    },
+    {
+      "id": "z04_f1_003",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of electrical potential difference?",
+      "options": [
+        "Volt",
+        "Ampere",
+        "Joule",
+        "Watt"
+      ],
+      "correct_answer": "Volt",
+      "explanation": "Potential difference is measured in Volts (V), where 1 Volt = 1 Joule per Coulomb (1 V = 1 J/C)."
+    },
+    {
+      "id": "z04_f1_004",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of electrical resistance?",
+      "options": [
+        "Ohm",
+        "Siemens",
+        "Farad",
+        "Henry"
+      ],
+      "correct_answer": "Ohm",
+      "explanation": "Electrical resistance is measured in Ohms (Ω), named in honor of Georg Simon Ohm."
+    },
+    {
+      "id": "z04_f1_005",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the mathematical formulation of Ohm's Law?",
+      "options": [
+        "V = IR",
+        "V = I/R",
+        "V = I²R",
+        "V = R/I"
+      ],
+      "correct_answer": "V = IR",
+      "explanation": "Ohm's law states that potential difference V across a conductor is directly proportional to current I at constant temperature: V = IR."
+    },
+    {
+      "id": "z04_f1_006",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for electric power in terms of voltage (V) and current (I)?",
+      "options": [
+        "P = VI",
+        "P = V/I",
+        "P = I/V",
+        "P = V²I"
+      ],
+      "correct_answer": "P = VI",
+      "explanation": "Electric power is the rate at which electrical energy is converted: P = VI (or P = I²R = V²/R)."
+    },
+    {
+      "id": "z04_f1_007",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of electrical capacitance?",
+      "options": [
+        "Farad",
+        "Henry",
+        "Tesla",
+        "Weber"
+      ],
+      "correct_answer": "Farad",
+      "explanation": "Capacitance is measured in Farads (F), named after Michael Faraday (1 F = 1 C/V)."
+    },
+    {
+      "id": "z04_f1_008",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the commercial unit of electrical energy (1 Board of Trade unit)?",
+      "options": [
+        "Kilowatt-hour (kWh)",
+        "Watt-second",
+        "Joule-second",
+        "Mega-ampere"
+      ],
+      "correct_answer": "Kilowatt-hour (kWh)",
+      "explanation": "The commercial unit of electric energy is the kilowatt-hour (kWh), where 1 kWh = 3.6 × 10⁶ J."
+    },
+    {
+      "id": "z04_f1_009",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the value of Coulomb's electrostatic constant k in vacuum?",
+      "options": [
+        "9 × 10⁹ N·m²/C²",
+        "6.67 × 10⁻¹¹ N·m²/C²",
+        "8.85 × 10⁻¹² C²/N·m²",
+        "3 × 10⁸ N·m²/C²"
+      ],
+      "correct_answer": "9 × 10⁹ N·m²/C²",
+      "explanation": "In vacuum, Coulomb's constant k = 1 / (4πε₀) ≈ 9 × 10⁹ N·m²/C²."
+    },
+    {
+      "id": "z04_f1_010",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What instrument is used to detect the presence and nature of electric charge on a body?",
+      "options": [
+        "Gold-leaf electroscope",
+        "Voltmeter",
+        "Ammeter",
+        "Galvanometer"
+      ],
+      "correct_answer": "Gold-leaf electroscope",
+      "explanation": "A gold-leaf electroscope is an electrostatic instrument used to detect electric charge and identify whether it is positive or negative."
+    },
+    {
+      "id": "z04_f1_011",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Who discovered that an electric current creates a magnetic field around itself?",
+      "options": [
+        "Hans Christian Oersted",
+        "Michael Faraday",
+        "James Clerk Maxwell",
+        "Isaac Newton"
+      ],
+      "correct_answer": "Hans Christian Oersted",
+      "explanation": "In 1820, Danish physicist Hans Christian Oersted discovered that a current-carrying wire deflects a nearby magnetic compass needle."
+    },
+    {
+      "id": "z04_f1_012",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which rule gives the direction of the magnetic field around a straight current-carrying wire?",
+      "options": [
+        "Right-Hand Grip Rule",
+        "Fleming's Left-Hand Rule",
+        "Fleming's Right-Hand Rule",
+        "Lenz's Law"
+      ],
+      "correct_answer": "Right-Hand Grip Rule",
+      "explanation": "According to the Right-Hand Grip Rule, if the right thumb points along current, the curled fingers indicate the direction of magnetic field lines."
+    },
+    {
+      "id": "z04_f1_013",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which device converts electrical energy into mechanical energy?",
+      "options": [
+        "Electric motor",
+        "Electric generator",
+        "Transformer",
+        "Capacitor"
+      ],
+      "correct_answer": "Electric motor",
+      "explanation": "An electric motor utilizes magnetic forces on a current-carrying coil to convert electrical energy into mechanical rotation."
+    },
+    {
+      "id": "z04_f1_014",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which device converts mechanical energy into electrical energy?",
+      "options": [
+        "Electric generator",
+        "Electric motor",
+        "Voltmeter",
+        "Rheostat"
+      ],
+      "correct_answer": "Electric generator",
+      "explanation": "An electric generator (or dynamo) rotates a coil inside a magnetic field to convert mechanical work into electrical energy."
+    },
+    {
+      "id": "z04_f1_015",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of magnetic field strength (magnetic flux density)?",
+      "options": [
+        "Tesla",
+        "Weber",
+        "Henry",
+        "Gauss"
+      ],
+      "correct_answer": "Tesla",
+      "explanation": "The SI unit of magnetic flux density B is the Tesla (T), where 1 T = 1 N / (A·m) = 1 Wb/m²."
+    },
+    {
+      "id": "z04_f1_016",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What component in a DC motor reverses the current in the coil every half rotation?",
+      "options": [
+        "Split-ring commutator",
+        "Slip rings",
+        "Carbon brushes",
+        "Armature core"
+      ],
+      "correct_answer": "Split-ring commutator",
+      "explanation": "The split-ring commutator acts as a mechanical switch that reverses current flow through the armature loop every 180° to sustain continuous unidirectional rotation."
+    },
+    {
+      "id": "z04_f1_017",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which law states that the direction of an induced EMF always opposes the change in magnetic flux producing it?",
+      "options": [
+        "Lenz's Law",
+        "Faraday's Law",
+        "Ohm's Law",
+        "Coulomb's Law"
+      ],
+      "correct_answer": "Lenz's Law",
+      "explanation": "Lenz's Law states that the polarity of induced EMF creates an induced current whose magnetic field opposes the original flux change."
+    },
+    {
+      "id": "z04_f1_018",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What type of transformer increases alternating voltage from primary to secondary?",
+      "options": [
+        "Step-up transformer",
+        "Step-down transformer",
+        "Isolation transformer",
+        "Auto-transformer"
+      ],
+      "correct_answer": "Step-up transformer",
+      "explanation": "A step-up transformer has more secondary turns than primary turns (Ns > Np), increasing output voltage (Vs > Vp)."
+    },
+    {
+      "id": "z04_f1_019",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What type of transformer decreases alternating voltage from primary to secondary?",
+      "options": [
+        "Step-down transformer",
+        "Step-up transformer",
+        "Resonant transformer",
+        "DC converter"
+      ],
+      "correct_answer": "Step-down transformer",
+      "explanation": "A step-down transformer has fewer turns on the secondary than on the primary coil (Ns < Np), reducing secondary voltage."
+    },
+    {
+      "id": "z04_f1_020",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for the turns and voltage ratio of an ideal transformer?",
+      "options": [
+        "Vp / Vs = Np / Ns",
+        "Vp / Vs = Ns / Np",
+        "Vp × Vs = Np × Ns",
+        "Vp / Np = Ns / Vs"
+      ],
+      "correct_answer": "Vp / Vs = Np / Ns",
+      "explanation": "For an ideal transformer, the voltage ratio equals the turns ratio: Vp / Vs = Np / Ns."
+    },
+    {
+      "id": "z04_f1_021",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of electrical resistivity?",
+      "options": [
+        "Ohm-meter (Ω·m)",
+        "Ohm per meter (Ω/m)",
+        "Siemens per meter",
+        "Ohm-second"
+      ],
+      "correct_answer": "Ohm-meter (Ω·m)",
+      "explanation": "From R = ρL/A, resistivity ρ = RA/L, giving SI units of (Ω × m²) / m = Ω·m."
+    },
+    {
+      "id": "z04_f1_022",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What safety device in household circuits melts and breaks the circuit when current exceeds a safe threshold?",
+      "options": [
+        "Electric fuse",
+        "Capacitor",
+        "Galvanometer",
+        "Voltmeter"
+      ],
+      "correct_answer": "Electric fuse",
+      "explanation": "A fuse contains a thin wire with a low melting point that melts by Joule heating when current exceeds the rated limit, opening the circuit."
+    },
+    {
+      "id": "z04_f1_023",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the charge of a single electron in Coulombs?",
+      "options": [
+        "-1.6 × 10⁻¹⁹ C",
+        "-1.6 × 10⁻¹⁶ C",
+        "+1.6 × 10⁻¹⁹ C",
+        "-9.1 × 10⁻³¹ C"
+      ],
+      "correct_answer": "-1.6 × 10⁻¹⁹ C",
+      "explanation": "The elementary charge carried by an electron is approximately -1.602 × 10⁻¹⁹ Coulombs."
+    },
+    {
+      "id": "z04_f1_024",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which material is traditionally used for the soft core of an electromagnet?",
+      "options": [
+        "Soft iron",
+        "Steel",
+        "Copper",
+        "Aluminum"
+      ],
+      "correct_answer": "Soft iron",
+      "explanation": "Soft iron is used because it has high magnetic permeability and low retentivity, magnetizing strongly under current and quickly demagnetizing when current ceases."
+    },
+    {
+      "id": "z04_f1_025",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the electrical potential of the Earth conventionally assumed to be?",
+      "options": [
+        "Zero Volts",
+        "100 Volts",
+        "220 Volts",
+        "Infinite Volts"
+      ],
+      "correct_answer": "Zero Volts",
+      "explanation": "Because of its enormous capacitance and volume, adding or removing charge does not alter the Earth's potential, so it is taken as reference zero potential (0 V)."
+    },
+    {
+      "id": "z04_f1_026",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a glass rod become positively charged when rubbed with a silk cloth?",
+      "options": [
+        "Electrons transfer from the glass rod to the silk cloth",
+        "Protons transfer from the silk cloth to the glass rod",
+        "Friction creates brand new positive charges in the glass",
+        "The glass rod absorbs neutrons from the air"
+      ],
+      "correct_answer": "Electrons transfer from the glass rod to the silk cloth",
+      "explanation": "Glass has a lower electron affinity than silk. During rubbing, loosely bound electrons migrate from glass to silk, leaving the glass with a net deficit of electrons (positive charge)."
+    },
+    {
+      "id": "z04_f1_027",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why do the leaves of a charged gold-leaf electroscope diverge?",
+      "options": [
+        "Like charges on both leaves repel each other",
+        "Unlike charges on the leaves attract each other",
+        "Gravitational force pushes the gold leaves upward",
+        "Air molecules wedge themselves between the leaves"
+      ],
+      "correct_answer": "Like charges on both leaves repel each other",
+      "explanation": "Both gold leaves acquire the same sign of electric charge from the stem, and mutual electrostatic repulsion forces them apart."
+    },
+    {
+      "id": "z04_f1_028",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens to the electrostatic force between two point charges if the distance between them is doubled?",
+      "options": [
+        "The force decreases to one-fourth of its original value",
+        "The force decreases to half",
+        "The force doubles",
+        "The force quadruples"
+      ],
+      "correct_answer": "The force decreases to one-fourth of its original value",
+      "explanation": "By Coulomb's law, F ∝ 1/r². Doubling distance r quadruples r² in the denominator, reducing the force to F/4."
+    },
+    {
+      "id": "z04_f1_029",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why can electric field lines never intersect each other in space?",
+      "options": [
+        "At an intersection point, the electric field would have two different directions simultaneously, which is impossible",
+        "Electric field lines always repel each other like physical wires",
+        "Electric field lines can only exist in two dimensions",
+        "Intersection would create infinite negative charge"
+      ],
+      "correct_answer": "At an intersection point, the electric field would have two different directions simultaneously, which is impossible",
+      "explanation": "The tangent to an electric field line specifies the unique direction of electric force at that point. If lines crossed, a single point would have two conflicting force vectors."
+    },
+    {
+      "id": "z04_f1_030",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does conventional current direction relate to the actual flow of conduction electrons in a metal wire?",
+      "options": [
+        "Conventional current flows from positive to negative, while electrons drift from negative to positive",
+        "Both flow in the exact same direction from negative to positive",
+        "Both flow in the exact same direction from positive to negative",
+        "Conventional current flows radially inward while electrons travel circularly"
+      ],
+      "correct_answer": "Conventional current flows from positive to negative, while electrons drift from negative to positive",
+      "explanation": "Historically, current was defined as the flow of positive charge (from high potential + to low potential -). Negatively charged electrons actually drift toward the positive terminal."
+    },
+    {
+      "id": "z04_f1_031",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does the electrical resistance of a metallic conductor change when its temperature rises?",
+      "options": [
+        "Resistance increases because vibrating lattice ions scatter drifting electrons more frequently",
+        "Resistance decreases because heat creates extra electrons",
+        "Resistance drops to zero immediately",
+        "Resistance remains strictly constant regardless of temperature"
+      ],
+      "correct_answer": "Resistance increases because vibrating lattice ions scatter drifting electrons more frequently",
+      "explanation": "Thermal energy increases lattice vibrations in the metal. The increased vibrational amplitude impedes electron drift, shortening relaxation time and increasing resistance."
+    },
+    {
+      "id": "z04_f1_032",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the difference between electromotive force (EMF) and potential difference across battery terminals during discharge?",
+      "options": [
+        "EMF is the open-circuit voltage; terminal potential difference is less than EMF due to internal resistance drop (Ir)",
+        "EMF is always smaller than terminal voltage",
+        "EMF is measured in Newtons, whereas potential difference is measured in Volts",
+        "EMF is only present in alternating current circuits"
+      ],
+      "correct_answer": "EMF is the open-circuit voltage; terminal potential difference is less than EMF due to internal resistance drop (Ir)",
+      "explanation": "EMF is the energy per unit charge supplied by the chemical reaction. When current I flows, internal resistance r causes a voltage drop Ir, so terminal voltage V = E - Ir."
+    },
+    {
+      "id": "z04_f1_033",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why are household electrical appliances connected in parallel rather than in series?",
+      "options": [
+        "Each appliance receives the full supply voltage and can be switched on or off independently",
+        "Parallel connection requires less copper wiring throughout the house",
+        "Parallel connection eliminates electric current completely",
+        "If one appliance fails, all other appliances in parallel turn off automatically"
+      ],
+      "correct_answer": "Each appliance receives the full supply voltage and can be switched on or off independently",
+      "explanation": "In parallel, every branch experiences the same 220 V line voltage and operates independently; switching off one device does not break the circuit for others."
+    },
+    {
+      "id": "z04_f1_034",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a bird perching with both feet on a single uninsulated 11,000 V high-voltage wire not get electrocuted?",
+      "options": [
+        "Both feet rest on the same wire, so the potential difference across its body is virtually zero",
+        "Birds have thick rubbery scales that provide infinite electrical insulation",
+        "High-voltage alternating current cannot flow through living organisms",
+        "The bird is grounded directly to the clouds"
+      ],
+      "correct_answer": "Both feet rest on the same wire, so the potential difference across its body is virtually zero",
+      "explanation": "Current requires a potential difference (V = IR). Because the bird's feet touch points on the wire separated by millimeters, ΔV is negligible and virtually no current flows through the bird."
+    },
+    {
+      "id": "z04_f1_035",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the primary function of the third (earth/ground) pin in a standard domestic 3-pin plug?",
+      "options": [
+        "It connects the metal chassis of the appliance safely to the ground to prevent shock during a fault",
+        "It delivers additional electric current to boost appliance power",
+        "It filters out electrical noise from the utility grid",
+        "It acts as a return path for neutral current during normal operation"
+      ],
+      "correct_answer": "It connects the metal chassis of the appliance safely to the ground to prevent shock during a fault",
+      "explanation": "If a live wire touches the metal casing, the low-resistance earth wire carries the fault current safely to the ground, blowing the fuse or tripping the MCB instead of shocking a user."
+    },
+    {
+      "id": "z04_f1_036",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a solenoid behave like a bar magnet when an electric current passes through it?",
+      "options": [
+        "Circular magnetic fields from individual turns add constructively inside the solenoid, creating magnetic poles at its ends",
+        "The electric current magnetizes air molecules inside the coil into iron atoms",
+        "The copper wire turns into permanent neodymium metal when heated",
+        "The battery supplies magnetic fluid directly through the circuit"
+      ],
+      "correct_answer": "Circular magnetic fields from individual turns add constructively inside the solenoid, creating magnetic poles at its ends",
+      "explanation": "Current in adjacent loops produces magnetic field vectors that reinforce each other along the central axis, creating a uniform interior field with distinct North and South poles at opposite ends."
+    },
+    {
+      "id": "z04_f1_037",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What role does Fleming's Left-Hand Rule play in electric motors?",
+      "options": [
+        "It determines the direction of the mechanical force on a current-carrying conductor in a magnetic field",
+        "It determines the direction of induced current in a generator",
+        "It calculates the resistance of the armature coil",
+        "It measures the battery voltage required to rotate the motor"
+      ],
+      "correct_answer": "It determines the direction of the mechanical force on a current-carrying conductor in a magnetic field",
+      "explanation": "Fleming's Left-Hand Rule relates field (Forefinger), Current (Middle finger), and mechanical Force/Motion (Thumb) in motors."
+    },
+    {
+      "id": "z04_f1_038",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why cannot a transformer be operated with a steady, direct current (DC) power source?",
+      "options": [
+        "A steady DC current produces a static magnetic flux, so no changing flux exists to induce an EMF in the secondary coil",
+        "DC current reverses direction too rapidly for the iron core",
+        "DC voltages are always too high for transformer copper windings",
+        "Transformers only have one coil and cannot conduct DC"
+      ],
+      "correct_answer": "A steady DC current produces a static magnetic flux, so no changing flux exists to induce an EMF in the secondary coil",
+      "explanation": "Faraday's law requires a time-varying magnetic flux (dΦ/dt ≠ 0). A steady DC source creates a constant magnetic field, resulting in zero secondary induced EMF and potentially burning the primary."
+    },
+    {
+      "id": "z04_f1_039",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is electrical power transmitted over long cross-country distances at ultra-high voltages?",
+      "options": [
+        "Stepping up voltage reduces current, drastically decreasing I²R Joule heating losses along transmission cables",
+        "High voltage pushes electricity faster than the speed of light",
+        "Cables can only conduct current when voltage exceeds 100,000 V",
+        "High voltage keeps the wires warm to prevent birds from landing"
+      ],
+      "correct_answer": "Stepping up voltage reduces current, drastically decreasing I²R Joule heating losses along transmission cables",
+      "explanation": "For a given transmitted power P = VI, increasing V reduces current I proportionally. Heat dissipation in cables is P_loss = I²R; reducing I by a factor of 10 cuts power loss by 100."
+    },
+    {
+      "id": "z04_f1_040",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is the core of a transformer laminated into thin sheets insulated from one another?",
+      "options": [
+        "To minimize energy losses caused by circulating eddy currents",
+        "To make the transformer lighter and cheaper to manufacture",
+        "To prevent magnetic flux from leaving the primary coil",
+        "To insulate the iron core against lightning strikes"
+      ],
+      "correct_answer": "To minimize energy losses caused by circulating eddy currents",
+      "explanation": "Alternating magnetic flux induces eddy currents in the bulk iron core. Lamination into thin varnished sheets breaks up conduction loops, vastly reducing eddy current heating losses."
+    },
+    {
+      "id": "z04_f1_041",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does Lenz's law reflect the fundamental principle of conservation of energy?",
+      "options": [
+        "The mechanical work done against the opposing induced magnetic force is converted into electrical energy",
+        "Lenz's law allows electrical energy to be created from nothing",
+        "Induced EMF destroys magnetic fields to create kinetic motion",
+        "Conservation of energy applies only to static charges, not magnetic fields"
+      ],
+      "correct_answer": "The mechanical work done against the opposing induced magnetic force is converted into electrical energy",
+      "explanation": "If induced EMF aided the flux change instead of opposing it, a tiny push would trigger runaway magnetic amplification without external work, violating energy conservation."
+    },
+    {
+      "id": "z04_f1_042",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens when two identical resistors are connected in parallel compared to their series connection?",
+      "options": [
+        "The equivalent resistance in parallel is one-fourth of the series resistance",
+        "The parallel resistance is equal to the series resistance",
+        "The parallel resistance is half the series resistance",
+        "The parallel resistance is four times the series resistance"
+      ],
+      "correct_answer": "The equivalent resistance in parallel is one-fourth of the series resistance",
+      "explanation": "For two resistors R: in series R_s = 2R; in parallel R_p = R/2. Therefore, R_p / R_s = (R/2) / (2R) = 1/4."
+    },
+    {
+      "id": "z04_f1_043",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a lightning conductor protect tall buildings from lightning strikes?",
+      "options": [
+        "Its sharp metal spikes neutralize storm cloud charge by point discharge and safely ground any direct strike",
+        "It reflects lightning flashes back into the upper stratosphere",
+        "It turns lightning into household alternating current",
+        "It is made of rubber that repels electric charges"
+      ],
+      "correct_answer": "Its sharp metal spikes neutralize storm cloud charge by point discharge and safely ground any direct strike",
+      "explanation": "A lightning rod's pointed spikes leak ions to neutralize induced charges on the roof (corona discharge) and provide a thick copper low-resistance path to direct any strike harmlessly to ground."
+    },
+    {
+      "id": "z04_f1_044",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is an ammeter always connected in series in an electrical circuit, whereas a voltmeter is connected in parallel?",
+      "options": [
+        "An ammeter measures current flowing through a branch (low resistance); a voltmeter measures potential difference across components (high resistance)",
+        "An ammeter has very high resistance to block current",
+        "A voltmeter draws all the current to prevent overloading",
+        "Connecting an ammeter in series causes it to act as a battery"
+      ],
+      "correct_answer": "An ammeter measures current flowing through a branch (low resistance); a voltmeter measures potential difference across components (high resistance)",
+      "explanation": "Ammeters have negligible internal resistance so they don't impede the branch current. Voltmeters have enormous resistance so they draw virtually zero current when placed across a component."
+    },
+    {
+      "id": "z04_f1_045",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens to the magnetic field strength inside a solenoid if the number of turns per unit length is doubled while current is kept constant?",
+      "options": [
+        "The magnetic field strength doubles",
+        "The magnetic field strength is halved",
+        "The magnetic field strength quadruples",
+        "The magnetic field strength remains unchanged"
+      ],
+      "correct_answer": "The magnetic field strength doubles",
+      "explanation": "The magnetic field inside an ideal solenoid is B = μ₀nI. Doubling the turn density n directly doubles the magnetic field strength B."
+    },
+    {
+      "id": "z04_f1_046",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does inserting a dielectric material between the plates of an isolated charged capacitor increase its capacitance?",
+      "options": [
+        "The dielectric polarizes, reducing the net electric field and potential difference for a given charge",
+        "The dielectric conducts charge between the plates",
+        "The dielectric eliminates all electric flux lines",
+        "The dielectric generates extra electrons on the positive plate"
+      ],
+      "correct_answer": "The dielectric polarizes, reducing the net electric field and potential difference for a given charge",
+      "explanation": "Dipoles in the dielectric align against the applied field, reducing net E and voltage V between the plates. From C = Q/V, a smaller V for the same charge Q means increased capacitance C = κC₀."
+    },
+    {
+      "id": "z04_f1_047",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does a galvanometer differ from an ammeter?",
+      "options": [
+        "A galvanometer detects tiny currents and their direction; an ammeter is a modified galvanometer with a low-resistance shunt to measure larger currents",
+        "A galvanometer measures voltage only",
+        "An ammeter cannot detect current direction",
+        "A galvanometer has a higher current carrying capacity than an industrial ammeter"
+      ],
+      "correct_answer": "A galvanometer detects tiny currents and their direction; an ammeter is a modified galvanometer with a low-resistance shunt to measure larger currents",
+      "explanation": "A galvanometer is a sensitive pointer instrument that deflects with microamperes. Adding a parallel low-resistance shunt resistor converts it into an ammeter capable of measuring amperes."
+    },
+    {
+      "id": "z04_f1_048",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the physical meaning of an electric field at a given point in space?",
+      "options": [
+        "The electrostatic force experienced per unit positive test charge placed at that point (E = F/q)",
+        "The total electric charge present in a 1-meter radius",
+        "The speed of electrons drifting through that location",
+        "The magnetic flux passing through a unit square meter"
+      ],
+      "correct_answer": "The electrostatic force experienced per unit positive test charge placed at that point (E = F/q)",
+      "explanation": "Electric field intensity is defined as force per unit positive test charge: E = F/q. It is a vector pointing in the direction of force on a positive charge."
+    },
+    {
+      "id": "z04_f1_049",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does the brightness of a bulb diminish when several identical bulbs are added in series to the same voltage source?",
+      "options": [
+        "Total resistance increases, reducing circuit current and dividing the voltage equally among bulbs",
+        "Series connection causes each bulb to draw maximum current from the battery",
+        "Each bulb absorbs electric charge permanently",
+        "The battery's chemical energy is turned into magnetic field lines"
+      ],
+      "correct_answer": "Total resistance increases, reducing circuit current and dividing the voltage equally among bulbs",
+      "explanation": "In series, R_total = nR, so current drops to I = V/(nR). Power in each bulb is P = I²R = V²/(n²R), which falls off rapidly as n increases, dimming every bulb."
+    },
+    {
+      "id": "z04_f1_050",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does an electric heater's connecting cord remain cool while its heating element glows red hot?",
+      "options": [
+        "The heating element has much higher resistance than the copper connecting cord, dissipating nearly all I²Rt heat",
+        "The connecting cord is hollow and filled with cooling liquid",
+        "Current only flows through the heating element and skips the cord",
+        "The connecting cord is made of ceramic insulator"
+      ],
+      "correct_answer": "The heating element has much higher resistance than the copper connecting cord, dissipating nearly all I²Rt heat",
+      "explanation": "By Joule's law H = I²Rt, the same series current flows through both. The nichrome element has much higher resistivity and resistance than copper wire, concentrating heat generation in the element."
+    }
+  ]
+}

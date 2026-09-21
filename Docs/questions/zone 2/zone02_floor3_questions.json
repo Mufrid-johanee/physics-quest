@@ -1,0 +1,705 @@
+{
+  "zone": "02_energy_power",
+  "floor": 3,
+  "bloom_levels": [
+    "apply",
+    "analyze"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 10,
+  "one_word_count": 5,
+  "questions": [
+    {
+      "id": "z02_f3_001",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A 4 kg object falls freely from rest through a height of 5 m. What is its kinetic energy just before hitting the ground? (g = 10 m/s^2)",
+      "correct_answer": "200 J",
+      "accepted_answers": [
+        "200 J",
+        "200J",
+        "200"
+      ],
+      "explanation": "By conservation of energy, KE at the bottom equals PE lost = mgh = 4 x 10 x 5 = 200 J."
+    },
+    {
+      "id": "z02_f3_002",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A machine does 2000 J of work in 4 seconds. What is its power output?",
+      "correct_answer": "500 W",
+      "accepted_answers": [
+        "500 W",
+        "500W",
+        "500"
+      ],
+      "explanation": "Power = Work / time = 2000 J / 4 s = 500 W."
+    },
+    {
+      "id": "z02_f3_003",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A 3 kg ball moving at 4 m/s has how much kinetic energy?",
+      "correct_answer": "24 J",
+      "accepted_answers": [
+        "24 J",
+        "24J",
+        "24"
+      ],
+      "explanation": "KE = 1/2 mv^2 = 0.5 x 3 x 4^2 = 24 J."
+    },
+    {
+      "id": "z02_f3_004",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A motor rated at 1492 W is how many horsepower? (1 hp = 746 W)",
+      "correct_answer": "2 hp",
+      "accepted_answers": [
+        "2 hp",
+        "2hp",
+        "2"
+      ],
+      "explanation": "Horsepower = Watts / 746 = 1492 / 746 = 2 hp."
+    },
+    {
+      "id": "z02_f3_005",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A crate is pushed 6 m by a 30 N force acting in the direction of motion. How much work is done?",
+      "correct_answer": "180 J",
+      "accepted_answers": [
+        "180 J",
+        "180J",
+        "180"
+      ],
+      "explanation": "Work = Force x distance = 30 N x 6 m = 180 J."
+    },
+    {
+      "id": "z02_f3_006",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "In an isolated system with no friction, as a pendulum bob swings, kinetic energy and potential energy constantly change, but which quantity stays constant?",
+      "correct_answer": "mechanical energy",
+      "accepted_answers": [
+        "mechanical energy",
+        "total mechanical energy",
+        "total energy"
+      ],
+      "explanation": "In the absence of friction and air resistance, total mechanical energy (KE + PE) remains constant, even as it converts between kinetic and potential forms."
+    },
+    {
+      "id": "z02_f3_007",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A machine's efficiency is less than 100%. Besides useful work, into what form is most of the lost energy typically converted?",
+      "correct_answer": "heat",
+      "accepted_answers": [
+        "heat",
+        "heat energy",
+        "thermal energy"
+      ],
+      "explanation": "In most real machines, energy losses due to friction and resistance are mainly converted into heat, which is why efficiency is always below 100%."
+    },
+    {
+      "id": "z02_f3_008",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "Comparing two identical objects raised to the same height, one lifted quickly and one slowly, which quantity differs between the two processes even though work done is equal?",
+      "correct_answer": "power",
+      "accepted_answers": [
+        "power",
+        "power output"
+      ],
+      "explanation": "Since work done (mgh) is identical for both, but time taken differs, the power developed (P = W/t) is what differs between the fast and slow lift."
+    },
+    {
+      "id": "z02_f3_009",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "When a moving car's speed doubles, by what factor does its kinetic energy increase?",
+      "correct_answer": "4",
+      "accepted_answers": [
+        "4",
+        "four",
+        "4 times",
+        "x4",
+        "4x"
+      ],
+      "explanation": "KE is proportional to v^2. Doubling speed means KE increases by a factor of 2^2 = 4, since KE = 1/2 mv^2."
+    },
+    {
+      "id": "z02_f3_010",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A ball rolling down a rough incline has less kinetic energy at the bottom than an identical ball on a frictionless incline of the same height. What quantity accounts for this difference?",
+      "correct_answer": "friction",
+      "accepted_answers": [
+        "friction",
+        "frictional heat loss",
+        "energy lost to friction"
+      ],
+      "explanation": "On the rough incline, some of the potential energy converts into heat due to friction instead of into kinetic energy, so less mechanical energy remains as KE at the bottom."
+    },
+    {
+      "id": "z02_f3_011",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 2 kg object is dropped from a height of 10 m. What is its kinetic energy after it has fallen 5 m? (g = 10 m/s^2, ignore air resistance)",
+      "options": [
+        "100 J",
+        "200 J",
+        "116 J",
+        "231 J"
+      ],
+      "correct_answer": "100 J",
+      "explanation": "KE gained equals PE lost over the fallen distance: KE = mg(height fallen) = 2 x 10 x 5 = 100 J."
+    },
+    {
+      "id": "z02_f3_012",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 5 kg object is dropped from a height of 8 m. What is its kinetic energy after it has fallen 2 m? (g = 10 m/s^2, ignore air resistance)",
+      "options": [
+        "100 J",
+        "400 J",
+        "300 J",
+        "200 J"
+      ],
+      "correct_answer": "100 J",
+      "explanation": "KE gained equals PE lost over the fallen distance: KE = mg(height fallen) = 5 x 10 x 2 = 100 J."
+    },
+    {
+      "id": "z02_f3_013",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A pulley system lifts a 20 kg load to a height of 5 m in 10 seconds. What is the power developed? (g = 10 m/s^2)",
+      "options": [
+        "100 W",
+        "1000 W",
+        "10000 W",
+        "200 W"
+      ],
+      "correct_answer": "100 W",
+      "explanation": "Work done = mgh = 20 x 10 x 5 = 1000 J. Power = Work/time = 1000 / 10 = 100 W."
+    },
+    {
+      "id": "z02_f3_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A pulley system lifts a 50 kg load to a height of 3 m in 5 seconds. What is the power developed? (g = 10 m/s^2)",
+      "options": [
+        "300 W",
+        "1500 W",
+        "7500 W",
+        "600 W"
+      ],
+      "correct_answer": "300 W",
+      "explanation": "Work done = mgh = 50 x 10 x 3 = 1500 J. Power = Work/time = 1500 / 5 = 300 W."
+    },
+    {
+      "id": "z02_f3_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine receives 500 J of input energy and operates at 80% efficiency. How much energy is wasted (lost) during the process?",
+      "options": [
+        "100 J",
+        "400 J",
+        "500 J",
+        "200 J"
+      ],
+      "correct_answer": "100 J",
+      "explanation": "Useful output = 80% of 500 = 400 J. Energy lost = Input - Useful output = 500 - 400 = 100 J."
+    },
+    {
+      "id": "z02_f3_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A machine receives 1000 J of input energy and operates at 60% efficiency. How much energy is wasted (lost) during the process?",
+      "options": [
+        "400 J",
+        "600 J",
+        "1000 J",
+        "800 J"
+      ],
+      "correct_answer": "400 J",
+      "explanation": "Useful output = 60% of 1000 = 600 J. Energy lost = Input - Useful output = 1000 - 600 = 400 J."
+    },
+    {
+      "id": "z02_f3_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 4 kg cart speeds up from 2 m/s to 6 m/s. By how much does its kinetic energy increase?",
+      "options": [
+        "64 J",
+        "72 J",
+        "8 J",
+        "128 J"
+      ],
+      "correct_answer": "64 J",
+      "explanation": "KE1 = 1/2 x 4 x 2^2 = 8 J. KE2 = 1/2 x 4 x 6^2 = 72 J. Increase = 72 - 8 = 64 J."
+    },
+    {
+      "id": "z02_f3_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 2 kg cart speeds up from 3 m/s to 5 m/s. By how much does its kinetic energy increase?",
+      "options": [
+        "16 J",
+        "25 J",
+        "9 J",
+        "32 J"
+      ],
+      "correct_answer": "16 J",
+      "explanation": "KE1 = 1/2 x 2 x 3^2 = 9 J. KE2 = 1/2 x 2 x 5^2 = 25 J. Increase = 25 - 9 = 16 J."
+    },
+    {
+      "id": "z02_f3_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A ball is dropped from a height of 20 m. What is its speed after falling through 50% of that height? (g = 10 m/s^2)",
+      "options": [
+        "14.1421 m/s",
+        "20 m/s",
+        "7.07107 m/s",
+        "28.2843 m/s"
+      ],
+      "correct_answer": "14.1421 m/s",
+      "explanation": "Height fallen = 50% of 20 = 10 m. Using v = sqrt(2 x g x height fallen) = sqrt(2 x 10 x 10) = 14.1421 m/s."
+    },
+    {
+      "id": "z02_f3_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two machines each do 600 J of work. Machine A takes 12 s and Machine B takes 6 s. How much greater is Machine B's power than Machine A's?",
+      "options": [
+        "50 W",
+        "58.5 W",
+        "100 W",
+        "116 W"
+      ],
+      "correct_answer": "50 W",
+      "explanation": "P(A) = 600/12 = 50 W. P(B) = 600/6 = 100 W. Difference = 100 - 50 = 50 W."
+    },
+    {
+      "id": "z02_f3_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An appliance rated at 2 kW runs for 5 hours a day. If electricity costs Tk 8 per kWh, what is the cost for one day?",
+      "options": [
+        "Tk 80",
+        "Tk 10",
+        "Tk 8",
+        "Tk 160"
+      ],
+      "correct_answer": "Tk 80",
+      "explanation": "Energy used = Power x time = 2 x 5 = 10 kWh. Cost = 10 x Tk 8 = Tk 80."
+    },
+    {
+      "id": "z02_f3_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "1000 J of energy is fed into Machine 1 (efficiency 80%), whose output becomes the input for Machine 2 (efficiency 50%). What is the final useful output energy?",
+      "options": [
+        "400 J",
+        "800 J",
+        "650 J",
+        "921 J"
+      ],
+      "correct_answer": "400 J",
+      "explanation": "Output of Machine 1 = 1000 x 80/100 = 800 J. This becomes input to Machine 2: Output = 800 x 50/100 = 400 J."
+    },
+    {
+      "id": "z02_f3_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A force of 50 N is applied at an angle of 60 degrees to the direction of motion, moving an object 4 m. How much work is done?",
+      "options": [
+        "100.0 J",
+        "200 J",
+        "173.2 J",
+        "200.0 J"
+      ],
+      "correct_answer": "100.0 J",
+      "explanation": "W = Fs cos(theta) = 50 x 4 x cos(60) = 100.0 J. Only the component of force along the displacement does work."
+    },
+    {
+      "id": "z02_f3_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Water flows over a dam at a rate of 50 kg per second, falling through a height of 20 m. What is the power generated, assuming all potential energy converts to electrical power? (g = 10 m/s^2)",
+      "options": [
+        "10000 W",
+        "1000 W",
+        "200 W",
+        "20000 W"
+      ],
+      "correct_answer": "10000 W",
+      "explanation": "Power = (mass per second) x g x h = 50 x 10 x 20 = 10000 W, since power is energy delivered per unit time."
+    },
+    {
+      "id": "z02_f3_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 1000 kg car moving at 20 m/s is brought to rest by a braking force of 5000 N. Using work-energy relations, what distance is needed to stop it?",
+      "options": [
+        "40 m",
+        "200000 m",
+        "0.025 m",
+        "80 m"
+      ],
+      "correct_answer": "40 m",
+      "explanation": "KE = 1/2 mv^2 = 0.5 x 1000 x 20^2 = 200000 J. This must equal the work done by the brakes: Force x distance, so distance = KE / Force = 200000 / 5000 = 40 m."
+    },
+    {
+      "id": "z02_f3_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 1500 W appliance is used for 4 hours every day for 10 days. How much total energy does it consume, in kWh?",
+      "options": [
+        "60 kWh",
+        "60000 kWh",
+        "6000 kWh",
+        "120 kWh"
+      ],
+      "correct_answer": "60 kWh",
+      "explanation": "Total energy = Power x time = 1500 W x 4 h/day x 10 days = 60000 Wh = 60 kWh."
+    },
+    {
+      "id": "z02_f3_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A ball is released from the top of a frictionless ramp and a second identical ball is released from the top of a rough ramp of the same height. At the bottom, how do their kinetic energies compare?",
+      "options": [
+        "Both have equal kinetic energy",
+        "The ball on the frictionless ramp has more kinetic energy",
+        "The ball on the rough ramp has more kinetic energy",
+        "Neither ball has any kinetic energy"
+      ],
+      "correct_answer": "The ball on the frictionless ramp has more kinetic energy",
+      "explanation": "On the rough ramp, some potential energy is converted to heat by friction instead of kinetic energy, so less KE remains at the bottom compared to the frictionless case."
+    },
+    {
+      "id": "z02_f3_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A student analyzing a pendulum's motion notices that its speed is greatest at the lowest point of the swing. What does this indicate about the energy distribution at that point?",
+      "options": [
+        "Potential energy is at its maximum and kinetic energy is zero",
+        "Kinetic energy is at its maximum and potential energy is at its minimum",
+        "Both energies are zero at that point",
+        "Both energies are at their maximum simultaneously"
+      ],
+      "correct_answer": "Kinetic energy is at its maximum and potential energy is at its minimum",
+      "explanation": "At the lowest point, height (and thus potential energy) is minimum, so nearly all the mechanical energy has converted into kinetic energy, giving maximum speed."
+    },
+    {
+      "id": "z02_f3_029",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Two identical cars are moving at the same speed, but Car A has twice the mass of Car B. Which requires a greater braking force to stop in the same distance?",
+      "options": [
+        "Car B, because it is lighter",
+        "Car A, because it has greater kinetic energy to dissipate",
+        "Both require equal force since speed is the same",
+        "Neither requires any force to stop"
+      ],
+      "correct_answer": "Car A, because it has greater kinetic energy to dissipate",
+      "explanation": "Since KE = 1/2 mv^2, Car A with double the mass has double the kinetic energy at the same speed. To stop in the same distance, a proportionally greater force (and thus more work) is needed to remove that extra energy."
+    },
+    {
+      "id": "z02_f3_030",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a hydroelectric plant, engineers find that the electrical power output is consistently less than the calculated potential energy of the falling water per second. What best explains this gap?",
+      "options": [
+        "The law of conservation of energy is being violated",
+        "Some energy is lost to friction, turbulence, and heat during conversion",
+        "The water loses mass as it falls",
+        "Electrical energy has a different unit than mechanical energy"
+      ],
+      "correct_answer": "Some energy is lost to friction, turbulence, and heat during conversion",
+      "explanation": "No real energy conversion process is 100% efficient; friction in turbines, water turbulence, and generator losses convert some input energy into heat rather than electricity, without violating conservation of energy overall."
+    },
+    {
+      "id": "z02_f3_031",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A worker claims, 'Since Machine X has higher power rating than Machine Y, Machine X must always do more total work.' Under what condition would this claim be false?",
+      "options": [
+        "When Machine X operates for less time than Machine Y",
+        "When Machine X and Machine Y have equal efficiency",
+        "When both machines lift the same mass",
+        "This claim is always true regardless of conditions"
+      ],
+      "correct_answer": "When Machine X operates for less time than Machine Y",
+      "explanation": "Total work = Power x time. Even if Machine X has higher power, if it runs for a much shorter time than Machine Y, its total work done could be less. Power alone does not determine total work."
+    },
+    {
+      "id": "z02_f3_032",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A spring-loaded toy launches a ball into the air. If the spring is compressed twice as much (assuming the force needed is proportional to compression), how would you expect the ball's launch height to change, assuming energy transfers are similar?",
+      "options": [
+        "It stays the same",
+        "It decreases",
+        "It increases by more than double",
+        "It exactly doubles"
+      ],
+      "correct_answer": "It increases by more than double",
+      "explanation": "Elastic potential energy in an ideal spring increases with the square of compression. Doubling compression roughly quadruples stored energy, so the resulting height (proportional to that energy) increases by more than double."
+    },
+    {
+      "id": "z02_f3_033",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An engineer compares two energy sources: coal and wind. Which factor is most relevant when classifying them as non-renewable versus renewable?",
+      "options": [
+        "The amount of energy each releases per kilogram",
+        "Whether the source is naturally replenished within a human timescale",
+        "The cost of extracting or harnessing the source",
+        "The color and physical appearance of the source"
+      ],
+      "correct_answer": "Whether the source is naturally replenished within a human timescale",
+      "explanation": "Renewable versus non-renewable classification depends on whether a source is naturally and continuously replenished (like wind) or takes geological timescales to form and is finite (like coal)."
+    },
+    {
+      "id": "z02_f3_034",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A roller coaster car has less speed at the second hill than predicted by pure energy conservation from the first hill's height. What is the most likely explanation?",
+      "options": [
+        "The car gained extra mass during the ride",
+        "Energy was lost to friction and air resistance along the track",
+        "The second hill is taller than the first",
+        "Gravity became weaker during the ride"
+      ],
+      "correct_answer": "Energy was lost to friction and air resistance along the track",
+      "explanation": "In reality, some mechanical energy is always lost to friction between the car and track and to air resistance, so the car has less energy (and speed) than ideal frictionless calculations predict."
+    },
+    {
+      "id": "z02_f3_035",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Comparing a hand-cranked flashlight and a battery-powered flashlight, which best describes the underlying energy transformation difference?",
+      "options": [
+        "The hand-cranked one uses stored chemical energy while the battery uses mechanical energy",
+        "The hand-cranked one converts mechanical energy from cranking into electrical energy, while the battery converts stored chemical energy into electrical energy",
+        "Both convert the same original form of energy into light",
+        "Neither involves any energy transformation"
+      ],
+      "correct_answer": "The hand-cranked one converts mechanical energy from cranking into electrical energy, while the battery converts stored chemical energy into electrical energy",
+      "explanation": "A hand-crank generator transforms the mechanical energy of turning the crank into electrical energy, whereas a battery releases energy stored chemically, both eventually producing light via the bulb."
+    },
+    {
+      "id": "z02_f3_036",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A student is asked to identify which quantity — work, energy, or power — best explains why climbing a hill quickly is more tiring per second than climbing it slowly, even though the total energy spent is the same.",
+      "options": [
+        "Work, because climbing changes with distance",
+        "Energy, because more calories are burned when moving quickly",
+        "Power, because it reflects the rate at which energy is expended",
+        "None of these quantities relate to tiredness"
+      ],
+      "correct_answer": "Power, because it reflects the rate at which energy is expended",
+      "explanation": "Since total work (and hence total energy spent) is the same either way, the difference in exertion per second is best explained by power — climbing quickly means energy is expended at a higher rate."
+    },
+    {
+      "id": "z02_f3_037",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A ball's kinetic energy vs. time graph while falling shows a curve that becomes steeper over time. What does this pattern best indicate?",
+      "options": [
+        "The ball's speed is decreasing over time",
+        "The ball's speed is increasing, causing KE to grow faster since KE depends on v^2",
+        "The ball's mass is increasing while falling",
+        "The graph shows a measurement error"
+      ],
+      "correct_answer": "The ball's speed is increasing, causing KE to grow faster since KE depends on v^2",
+      "explanation": "As a falling ball speeds up under constant gravity, its kinetic energy (proportional to v^2) increases at an accelerating rate, producing a steepening curve on a KE-time graph."
+    },
+    {
+      "id": "z02_f3_038",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Two ramps of different angles but the same height are used to slide a block down (assume frictionless). How do the final kinetic energies at the bottom of each ramp compare?",
+      "options": [
+        "The steeper ramp gives more kinetic energy",
+        "The gentler ramp gives more kinetic energy",
+        "Both give the same kinetic energy since height is equal",
+        "Kinetic energy cannot be determined without ramp length"
+      ],
+      "correct_answer": "Both give the same kinetic energy since height is equal",
+      "explanation": "In a frictionless case, KE at the bottom depends only on the height dropped (via PE = mgh converting fully to KE), not on the angle or path taken, so both ramps yield equal kinetic energy."
+    },
+    {
+      "id": "z02_f3_039",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An electric kettle is rated at high power but its heating element wears out and its efficiency drops over time. What effect would this have, assuming the power rating stays the same?",
+      "options": [
+        "It would boil water faster than before",
+        "It would take longer to boil the same amount of water, since more input energy is wasted as it ages",
+        "It would use less electrical energy to boil the same water",
+        "Efficiency has no effect on boiling time"
+      ],
+      "correct_answer": "It would take longer to boil the same amount of water, since more input energy is wasted as it ages",
+      "explanation": "Lower efficiency means a smaller fraction of the same input power actually goes into heating the water, so more time (and total energy) is needed to deliver the same useful heat output."
+    },
+    {
+      "id": "z02_f3_040",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A cyclist going uphill at constant speed suddenly encounters a steeper section but maintains the same speed. What must change to keep the speed constant?",
+      "options": [
+        "The cyclist's kinetic energy must increase",
+        "The cyclist must supply more power, since more work per second is needed against gravity",
+        "The cyclist's weight must decrease",
+        "No change is needed since speed is constant"
+      ],
+      "correct_answer": "The cyclist must supply more power, since more work per second is needed against gravity",
+      "explanation": "A steeper slope means more work is done against gravity per metre travelled. To maintain the same speed (same distance per second), the cyclist must increase power output to supply this extra work rate."
+    },
+    {
+      "id": "z02_f3_041",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Comparing two lightbulbs of equal power rating, one incandescent and one LED, the LED is known to be far more efficient at producing light. What does this imply about their heat output for the same electrical input?",
+      "options": [
+        "The incandescent bulb produces less heat than the LED",
+        "The incandescent bulb converts a larger fraction of input energy into heat rather than light",
+        "Both bulbs convert all input energy into light with none lost as heat",
+        "Efficiency has no relation to heat output"
+      ],
+      "correct_answer": "The incandescent bulb converts a larger fraction of input energy into heat rather than light",
+      "explanation": "Since the LED is more efficient at producing light for the same input power, the incandescent bulb must be converting a greater share of its input energy into heat instead of useful light."
+    },
+    {
+      "id": "z02_f3_042",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A system uses a series of pulleys to lift a load with a smaller applied force than the load's weight. Analyzing this system with the work-energy principle, why doesn't this violate conservation of energy?",
+      "options": [
+        "Because pulleys create extra energy from friction",
+        "Because the force is applied over a proportionally longer distance, keeping total work the same",
+        "Because the load's actual weight decreases when pulleys are used",
+        "Because pulleys operate outside the laws of physics"
+      ],
+      "correct_answer": "Because the force is applied over a proportionally longer distance, keeping total work the same",
+      "explanation": "Since work = force x distance, using pulleys to reduce the applied force means the rope must be pulled a proportionally greater distance, so total work input still equals (or slightly exceeds, due to losses) the work output."
+    },
+    {
+      "id": "z02_f3_043",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A power vs. time graph for a moving car shows a spike at the moment of overtaking, followed by a drop back to a steady lower value. What does this pattern most likely represent?",
+      "options": [
+        "The car's mass suddenly changed",
+        "The driver briefly increased engine power for rapid acceleration, then returned to cruising power",
+        "The car stopped completely during the spike",
+        "The graph indicates a measurement error, since power cannot change"
+      ],
+      "correct_answer": "The driver briefly increased engine power for rapid acceleration, then returned to cruising power",
+      "explanation": "A temporary spike in power typically reflects a burst of extra work done per second (e.g., for rapid acceleration to overtake), after which the car returns to a lower, steady power for constant-speed cruising."
+    },
+    {
+      "id": "z02_f3_044",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A researcher measures that a certain machine's efficiency decreases as its operating speed increases. What is the most reasonable analytical explanation?",
+      "options": [
+        "Higher speed reduces the machine's input energy requirement",
+        "Higher speed likely increases frictional and resistive losses, wasting more energy as heat",
+        "Efficiency is unrelated to operating speed in any machine",
+        "The machine begins violating the law of conservation of energy"
+      ],
+      "correct_answer": "Higher speed likely increases frictional and resistive losses, wasting more energy as heat",
+      "explanation": "In many real machines, friction and air/fluid resistance increase with speed, converting a larger share of input energy into heat rather than useful output, thus lowering efficiency at higher speeds."
+    },
+    {
+      "id": "z02_f3_045",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Two identical weights are lifted to the same height by two different pulley systems: System A requires less effort force than System B. What must be true about the distance the effort moves in each system?",
+      "options": [
+        "The effort in System A moves a shorter distance than in System B",
+        "The effort in System A moves a longer distance than in System B",
+        "Both effort distances are exactly equal",
+        "Distance cannot be compared without knowing the load's mass"
+      ],
+      "correct_answer": "The effort in System A moves a longer distance than in System B",
+      "explanation": "Since work input (force x distance) must equal roughly the same work output (lifting the same weight to the same height) in both systems, a smaller effort force in System A requires the effort to move over a longer distance."
+    },
+    {
+      "id": "z02_f3_046",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A physics student evaluates two claims: (1) 'A heavier object always has more energy than a lighter one' and (2) 'A faster object always has more kinetic energy than a slower one of the same mass.' Which claim is valid?",
+      "options": [
+        "Only claim (1) is valid",
+        "Only claim (2) is valid",
+        "Both claims are valid in all cases",
+        "Neither claim is valid"
+      ],
+      "correct_answer": "Only claim (2) is valid",
+      "explanation": "Claim (2) is valid since KE = 1/2 mv^2 with fixed mass increases with speed. Claim (1) is false because energy depends on more than mass alone — a heavier stationary object can have less energy than a lighter fast-moving one."
+    },
+    {
+      "id": "z02_f3_047",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A block is pushed up a frictionless incline and then allowed to slide back down to its starting height. Analyzing the energy at the top versus the bottom (ignoring air resistance), what can be concluded?",
+      "options": [
+        "The block has more kinetic energy at the top than at the bottom",
+        "The block's kinetic energy at the bottom equals its kinetic energy when it started, since mechanical energy is conserved",
+        "The block loses all its energy at the top",
+        "The block gains extra energy from the incline"
+      ],
+      "correct_answer": "The block's kinetic energy at the bottom equals its kinetic energy when it started, since mechanical energy is conserved",
+      "explanation": "With no friction or air resistance, total mechanical energy is conserved throughout the round trip, so the kinetic energy when the block returns to its starting height equals its initial kinetic energy."
+    },
+    {
+      "id": "z02_f3_048",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An investigator compares the energy transformation chains of a wind turbine and a coal power plant generating the same electrical output. Which best characterizes a key structural difference?",
+      "options": [
+        "The wind turbine converts kinetic energy of air directly to electrical energy, while the coal plant converts chemical energy to heat, then to kinetic energy, then to electrical energy",
+        "Both use exactly the same number of transformation steps",
+        "The coal plant has fewer energy transformation steps than the wind turbine",
+        "Neither system involves any energy transformation"
+      ],
+      "correct_answer": "The wind turbine converts kinetic energy of air directly to electrical energy, while the coal plant converts chemical energy to heat, then to kinetic energy, then to electrical energy",
+      "explanation": "Wind turbines directly convert the kinetic energy of moving air into electrical energy via a generator, while coal plants require more steps: burning coal (chemical to heat), boiling water to spin turbines (heat to kinetic), then generating electricity (kinetic to electrical)."
+    },
+    {
+      "id": "z02_f3_049",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A machine is found to input 500 J and output 500 J of useful energy, apparently showing 100% efficiency. What should an analytical reviewer be most skeptical of?",
+      "options": [
+        "That the machine actually exists",
+        "Whether all energy losses (heat, sound, friction) were accurately measured, since real machines are never perfectly efficient",
+        "That the units of energy were measured in Joules",
+        "That energy was conserved during the process"
+      ],
+      "correct_answer": "Whether all energy losses (heat, sound, friction) were accurately measured, since real machines are never perfectly efficient",
+      "explanation": "In practice, no real machine achieves exactly 100% efficiency due to unavoidable losses like friction and heat; an apparent 100% reading suggests measurement error or unaccounted losses rather than a truly perfect machine."
+    },
+    {
+      "id": "z02_f3_050",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A pendulum swinging in a vacuum chamber (no air resistance) versus one swinging in open air are compared over many swings. What difference would be observed, and why?",
+      "options": [
+        "Both pendulums swing forever with no difference",
+        "The one in air gradually loses amplitude and mechanical energy due to air resistance, while the vacuum one conserves energy far longer",
+        "The vacuum pendulum loses energy faster because there is no air to support it",
+        "Amplitude is unrelated to energy loss in either case"
+      ],
+      "correct_answer": "The one in air gradually loses amplitude and mechanical energy due to air resistance, while the vacuum one conserves energy far longer",
+      "explanation": "Air resistance does negative work on the swinging pendulum in open air, converting mechanical energy to heat and gradually reducing amplitude, whereas in a vacuum this loss mechanism is largely absent, so energy is conserved much longer."
+    }
+  ]
+}

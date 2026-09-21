@@ -1,0 +1,709 @@
+{
+  "zone": "03_wave_optics",
+  "floor": 3,
+  "bloom_levels": [
+    "apply",
+    "analyze"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 10,
+  "one_word_count": 5,
+  "questions": [
+    {
+      "id": "z03_f3_001",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A sound wave travels at 340 m/s with a frequency of 170 Hz. What is its wavelength in meters?",
+      "correct_answer": "2 m",
+      "accepted_answers": [
+        "2 m",
+        "2m",
+        "2",
+        "2.0 m",
+        "2.0"
+      ],
+      "explanation": "λ = v / f = 340 m/s ÷ 170 Hz = 2 m."
+    },
+    {
+      "id": "z03_f3_002",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "At 0°C the speed of sound in air is 332 m/s. What minimum distance in meters from a reflecting wall is required to hear a distinct echo? (Persistence of hearing = 0.1 s)",
+      "correct_answer": "16.6 m",
+      "accepted_answers": [
+        "16.6 m",
+        "16.6m",
+        "16.6",
+        "17 m",
+        "17"
+      ],
+      "explanation": "Minimum echo distance d = (v × t) / 2 = (332 × 0.1) / 2 = 16.6 m."
+    },
+    {
+      "id": "z03_f3_003",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A convex lens has a focal length of +50 cm. What is its power in diopters?",
+      "correct_answer": "+2 D",
+      "accepted_answers": [
+        "+2 D",
+        "2 D",
+        "2D",
+        "+2D",
+        "+2",
+        "2"
+      ],
+      "explanation": "f = 50 cm = 0.5 m. Power P = 1 / f = 1 / 0.5 = +2 D."
+    },
+    {
+      "id": "z03_f3_004",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "An object placed 20 cm in front of a concave mirror produces a real inverted image at 20 cm. What is the focal length of the mirror in cm? (Give numerical magnitude)",
+      "correct_answer": "10 cm",
+      "accepted_answers": [
+        "10 cm",
+        "10cm",
+        "10",
+        "-10 cm",
+        "-10"
+      ],
+      "explanation": "When u = v = 20 cm, the object is at center of curvature (r = 20 cm). Focal length f = r / 2 = 10 cm."
+    },
+    {
+      "id": "z03_f3_005",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "Light travels from vacuum (c = 3 × 10⁸ m/s) into a medium where its speed is 1.5 × 10⁸ m/s. What is the refractive index of this medium?",
+      "correct_answer": "2",
+      "accepted_answers": [
+        "2",
+        "2.0",
+        "2.00"
+      ],
+      "explanation": "n = c / v = (3.0 × 10⁸) / (1.5 × 10⁸) = 2."
+    },
+    {
+      "id": "z03_f3_006",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "Which optical property of light remains strictly invariant when a monochromatic light ray refracts from air into glass?",
+      "correct_answer": "frequency",
+      "accepted_answers": [
+        "frequency"
+      ],
+      "explanation": "Frequency depends exclusively on the emitting source oscillating mechanism and does not change across material interfaces, whereas speed and wavelength decrease."
+    },
+    {
+      "id": "z03_f3_007",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A patient cannot focus distant objects because their eyeball is elongated. What single type of lens corrects this condition?",
+      "correct_answer": "concave lens",
+      "accepted_answers": [
+        "concave lens",
+        "concave",
+        "diverging lens"
+      ],
+      "explanation": "In myopia caused by an elongated eyeball, rays focus in front of the retina. A diverging (concave) lens spreads the rays slightly before entering the eye."
+    },
+    {
+      "id": "z03_f3_008",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A sonar operator receives an echo pulse 3 seconds after transmission. If acoustic velocity in sea water is 1500 m/s, what is the target depth in meters?",
+      "correct_answer": "2250 m",
+      "accepted_answers": [
+        "2250 m",
+        "2250m",
+        "2250"
+      ],
+      "explanation": "Depth = (v × t) / 2 = (1500 × 3) / 2 = 4500 / 2 = 2250 m."
+    },
+    {
+      "id": "z03_f3_009",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What phenomenon occurs when the angle of incidence in a denser medium exceeds the critical angle?",
+      "correct_answer": "total internal reflection",
+      "accepted_answers": [
+        "total internal reflection",
+        "tir"
+      ],
+      "explanation": "When light reaches a rarer medium boundary at an incident angle greater than the critical angle, all light reflects back into the denser medium by total internal reflection."
+    },
+    {
+      "id": "z03_f3_010",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "If an object is placed exactly at the principal focus of a convex lens, at what location will the image be formed?",
+      "correct_answer": "infinity",
+      "accepted_answers": [
+        "infinity",
+        "at infinity"
+      ],
+      "explanation": "Rays originating from the focal point of a convex lens emerge parallel after refraction, intersecting only at infinity."
+    },
+    {
+      "id": "z03_f3_011",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A wave traveling along a stretched rope has an amplitude of 0.05 m, a frequency of 50 Hz, and a speed of 20 m/s. What is the distance between a crest and the adjacent trough?",
+      "options": [
+        "0.2 m",
+        "0.4 m",
+        "0.1 m",
+        "0.05 m"
+      ],
+      "correct_answer": "0.2 m",
+      "explanation": "λ = v / f = 20 / 50 = 0.4 m. The distance between an adjacent crest and trough is half a wavelength: λ / 2 = 0.4 / 2 = 0.2 m."
+    },
+    {
+      "id": "z03_f3_012",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sound wave of frequency 512 Hz travels in iron at 5120 m/s. How far does the wave travel in the time the source makes 100 complete vibrations?",
+      "options": [
+        "1000 m",
+        "100 m",
+        "512 m",
+        "51.2 m"
+      ],
+      "correct_answer": "1000 m",
+      "explanation": "Time for 1 vibration T = 1/512 s. For 100 vibrations t = 100/512 s. Distance d = v × t = 5120 × (100 / 512) = 1000 m."
+    },
+    {
+      "id": "z03_f3_013",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An object 5 cm high is positioned 15 cm in front of a concave mirror with a radius of curvature of 20 cm. What is the height of the image formed?",
+      "options": [
+        "-10 cm",
+        "+10 cm",
+        "-5 cm",
+        "-2.5 cm"
+      ],
+      "correct_answer": "-10 cm",
+      "explanation": "f = -10 cm, u = -15 cm. 1/v = 1/f - 1/u = -1/10 - (-1/15) = -1/30 → v = -30 cm. Magnification m = -v/u = -(-30)/(-15) = -2. Image height = -2 × 5 cm = -10 cm."
+    },
+    {
+      "id": "z03_f3_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A ray of light traveling in air strikes an equilateral glass prism (apex angle A = 60°) symmetrically at an angle of minimum deviation of 30°. What is the refractive index of the prism material?",
+      "options": [
+        "1.414 (√2)",
+        "1.500",
+        "1.732 (√3)",
+        "1.333"
+      ],
+      "correct_answer": "1.414 (√2)",
+      "explanation": "n = sin((A + δm)/2) / sin(A/2) = sin((60° + 30°)/2) / sin(30°) = sin(45°) / sin(30°) = (1/√2) / (1/2) = √2 ≈ 1.414."
+    },
+    {
+      "id": "z03_f3_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A converging lens of focal length 12 cm produces an erect image three times the size of the object. What is the object distance?",
+      "options": [
+        "-8 cm",
+        "-16 cm",
+        "-4 cm",
+        "-24 cm"
+      ],
+      "correct_answer": "-8 cm",
+      "explanation": "For an erect image in a lens, m = +3 = v/u → v = 3u. 1/f = 1/v - 1/u → 1/12 = 1/(3u) - 1/u = -2/(3u) → 3u = -24 → u = -8 cm."
+    },
+    {
+      "id": "z03_f3_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A coin rests at the bottom of a glass container filled with liquid of refractive index 1.6 to a depth of 8 cm. By how much does the coin appear raised?",
+      "options": [
+        "3.0 cm",
+        "5.0 cm",
+        "2.0 cm",
+        "1.6 cm"
+      ],
+      "correct_answer": "3.0 cm",
+      "explanation": "Apparent depth = real depth / n = 8 cm / 1.6 = 5 cm. Apparent upward shift = real depth - apparent depth = 8 - 5 = 3 cm."
+    },
+    {
+      "id": "z03_f3_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A student standing at a distance d from a cliff shouts. After hearing the echo, he steps back 85 m and shouts again, hearing the second echo 0.5 s after the first. What is the speed of sound?",
+      "options": [
+        "340 m/s",
+        "330 m/s",
+        "350 m/s",
+        "300 m/s"
+      ],
+      "correct_answer": "340 m/s",
+      "explanation": "The extra round-trip distance is 2 × 85 m = 170 m. Time delay Δt = 0.5 s. Speed of sound v = 2Δd / Δt = 170 m / 0.5 s = 340 m/s."
+    },
+    {
+      "id": "z03_f3_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two thin convex lenses with focal lengths 20 cm and 30 cm are placed in optical contact. What is the power of the combination?",
+      "options": [
+        "+8.33 D",
+        "+5.00 D",
+        "+1.20 D",
+        "+10.00 D"
+      ],
+      "correct_answer": "+8.33 D",
+      "explanation": "P1 = 1 / 0.2 m = +5 D; P2 = 1 / 0.3 m = +3.33 D. Combined power P = P1 + P2 = 5 + 3.33 = +8.33 D."
+    },
+    {
+      "id": "z03_f3_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A convex mirror with focal length 20 cm forms an image that is 1/4 the size of the object. Where is the object located?",
+      "options": [
+        "60 cm in front of mirror",
+        "80 cm in front of mirror",
+        "40 cm in front of mirror",
+        "20 cm in front of mirror"
+      ],
+      "correct_answer": "60 cm in front of mirror",
+      "explanation": "For convex mirror, m = +1/4 = -v/u → v = -u/4. Mirror formula: 1/f = 1/v + 1/u → 1/20 = -4/u + 1/u = -3/u → u = -60 cm."
+    },
+    {
+      "id": "z03_f3_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Light takes 2.0 × 10⁻⁸ seconds to pass normally through a transparent glass slab of thickness 4.0 meters. What is the refractive index of this glass? (c = 3.0 × 10⁸ m/s)",
+      "options": [
+        "1.5",
+        "1.33",
+        "1.6",
+        "1.8"
+      ],
+      "correct_answer": "1.5",
+      "explanation": "Speed in glass v = distance / time = 4.0 m / (2.0 × 10⁻⁸ s) = 2.0 × 10⁸ m/s. Refractive index n = c / v = 3.0 × 10⁸ / 2.0 × 10⁸ = 1.5."
+    },
+    {
+      "id": "z03_f3_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A person with presbyopia cannot read print closer than 50 cm. What spectacle lens power is needed to restore normal reading at 25 cm?",
+      "options": [
+        "+2.0 D",
+        "+4.0 D",
+        "-2.0 D",
+        "+1.0 D"
+      ],
+      "correct_answer": "+2.0 D",
+      "explanation": "u = -25 cm = -0.25 m; v = -50 cm = -0.5 m. Power P = 1/v - 1/u = -1/0.5 - (-1/0.25) = -2.0 + 4.0 = +2.0 D."
+    },
+    {
+      "id": "z03_f3_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In a ripple tank, water waves have crests separated by 4 cm and travel at 24 cm/s. What is the frequency of the paddle vibrator?",
+      "options": [
+        "6 Hz",
+        "96 Hz",
+        "0.167 Hz",
+        "12 Hz"
+      ],
+      "correct_answer": "6 Hz",
+      "explanation": "f = v / λ = 24 cm/s ÷ 4 cm = 6 Hz."
+    },
+    {
+      "id": "z03_f3_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sound source emits waves with wavelength 0.85 m into air where temperature is such that sound speed is 340 m/s. What is the period of this sound wave?",
+      "options": [
+        "0.0025 s",
+        "0.0050 s",
+        "0.025 s",
+        "0.00125 s"
+      ],
+      "correct_answer": "0.0025 s",
+      "explanation": "f = v / λ = 340 / 0.85 = 400 Hz. Time period T = 1 / f = 1 / 400 = 0.0025 s."
+    },
+    {
+      "id": "z03_f3_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A microscope objective lens has a focal length of 10 mm. If a tiny specimen is placed 11 mm in front of the lens, what is the image distance?",
+      "options": [
+        "110 mm",
+        "100 mm",
+        "55 mm",
+        "220 mm"
+      ],
+      "correct_answer": "110 mm",
+      "explanation": "1/v = 1/f + 1/u = 1/10 - 1/11 = 1/110 → v = 110 mm."
+    },
+    {
+      "id": "z03_f3_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A girl stands 4 m from a wall mirror. She then walks 1.5 m closer to the mirror. What is the new distance between her and her image?",
+      "options": [
+        "5 m",
+        "2.5 m",
+        "3 m",
+        "6 m"
+      ],
+      "correct_answer": "5 m",
+      "explanation": "Initial distance to mirror = 4 m. New distance to mirror = 4 - 1.5 = 2.5 m. Total distance to virtual image = 2 × 2.5 m = 5 m."
+    },
+    {
+      "id": "z03_f3_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A light ray travels from water (n = 1.33) into glass (n = 1.50) with an angle of incidence of 30°. What is the angle of refraction in the glass?",
+      "options": [
+        "26.3°",
+        "34.5°",
+        "22.5°",
+        "40.2°"
+      ],
+      "correct_answer": "26.3°",
+      "explanation": "n1 × sin(i) = n2 × sin(r) → 1.33 × sin(30°) = 1.50 × sin(r) → sin(r) = (1.33 × 0.5) / 1.50 = 0.4433 → r = arcsin(0.4433) ≈ 26.3°."
+    },
+    {
+      "id": "z03_f3_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does the pitch of an ambulance siren appear higher as it approaches an observer and lower as it recedes?",
+      "options": [
+        "Wavefronts are compressed ahead of the source and stretched behind it (Doppler effect)",
+        "The siren's internal motor rotates faster when the vehicle is moving",
+        "Sound travels faster through air in the direction of the moving car",
+        "Air friction absorbs low frequencies during the approach"
+      ],
+      "correct_answer": "Wavefronts are compressed ahead of the source and stretched behind it (Doppler effect)",
+      "explanation": "The motion of the sound source compresses wavefronts ahead, increasing the frequency perceived by a stationary observer, and elongates them behind, lowering the perceived frequency."
+    },
+    {
+      "id": "z03_f3_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "If a diverging lens is immersed in a liquid whose refractive index is GREATER than that of the lens material, how will the lens behave?",
+      "options": [
+        "It will behave as a converging lens",
+        "It will become completely transparent and lose all refractive power",
+        "It will behave as an even stronger diverging lens",
+        "It will behave as a plane mirror"
+      ],
+      "correct_answer": "It will behave as a converging lens",
+      "explanation": "By the Lens Maker's Formula 1/f = (n_lens/n_med - 1)(1/R1 - 1/R2), if n_med > n_lens, the term (n_lens/n_med - 1) changes sign, reversing the optical character from diverging to converging."
+    },
+    {
+      "id": "z03_f3_029",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A photographer covers the bottom half of a camera's convex lens with black opaque tape. How does this affect the photograph formed on the sensor?",
+      "options": [
+        "The full image is still formed, but its brightness (intensity) is reduced by half",
+        "The top half of the photograph is completely cut off",
+        "The bottom half of the photograph is completely cut off",
+        "The photograph becomes completely blurry and unrecognizable"
+      ],
+      "correct_answer": "The full image is still formed, but its brightness (intensity) is reduced by half",
+      "explanation": "Every section of a lens focuses light from the entire object onto the image plane. Covering half the aperture cuts incoming light flux by 50% without truncating the field of view."
+    },
+    {
+      "id": "z03_f3_030",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does sound travel faster on a hot summer afternoon than on a cold winter morning?",
+      "options": [
+        "Acoustic speed in a gas is directly proportional to the square root of absolute temperature (v ∝ √T)",
+        "Hot air is denser than cold air, providing more particles per unit volume",
+        "Atmospheric pressure is always twice as high in summer",
+        "Sound frequency increases proportionally with ambient temperature"
+      ],
+      "correct_answer": "Acoustic speed in a gas is directly proportional to the square root of absolute temperature (v ∝ √T)",
+      "explanation": "In gases, v = √(γRT/M). As absolute temperature T increases, the thermal root-mean-square speed of gas molecules rises, allowing faster transmission of vibrational acoustic pulses."
+    },
+    {
+      "id": "z03_f3_031",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does an increase in air humidity affect the speed of sound propagation?",
+      "options": [
+        "Speed increases because humid air is less dense than dry air at the same temperature and pressure",
+        "Speed decreases because water vapor makes air heavier and sluggish",
+        "Speed remains completely unaffected because humidity only alters wave frequency",
+        "Sound cannot travel in humid air due to acoustic absorption"
+      ],
+      "correct_answer": "Speed increases because humid air is less dense than dry air at the same temperature and pressure",
+      "explanation": "Water vapor (molar mass ~18 g/mol) is lighter than diatomic nitrogen and oxygen (~29 g/mol). Adding moisture reduces the overall density ρ of air, increasing sound speed since v = √(γP/ρ)."
+    },
+    {
+      "id": "z03_f3_032",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What happens to the critical angle of a glass-liquid boundary if the refractive index of the surrounding liquid is increased towards that of glass?",
+      "options": [
+        "The critical angle increases towards 90°",
+        "The critical angle decreases towards 0°",
+        "The critical angle remains constant at 42°",
+        "Total internal reflection becomes impossible regardless of angle"
+      ],
+      "correct_answer": "The critical angle increases towards 90°",
+      "explanation": "Since sin(θc) = n_liquid / n_glass, as n_liquid increases towards n_glass, the ratio approaches 1, meaning θc approaches arcsin(1) = 90°."
+    },
+    {
+      "id": "z03_f3_033",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a concave mirror produce a sharp real image of a distant star at its principal focus, but a flat mirror cannot?",
+      "options": [
+        "A concave mirror converges incoming parallel stellar rays to a common focal point",
+        "A flat mirror absorbs all light coming from stars",
+        "A flat mirror reflects light at angles greater than 90°",
+        "A concave mirror magnifies light waves by converting them to radio waves"
+      ],
+      "correct_answer": "A concave mirror converges incoming parallel stellar rays to a common focal point",
+      "explanation": "Starlight arrives as parallel rays; a concave mirror's curvature directs all parallel incident rays through its focal point, concentrating light into a sharp real image."
+    },
+    {
+      "id": "z03_f3_034",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why do stars twinkle when observed from the surface of Earth, whereas planets do not twinkle appreciably?",
+      "options": [
+        "Stars are point sources whose rays deviate significantly through shifting atmospheric layers; planets are extended disks that average out fluctuations",
+        "Stars actively pulse in brightness, whereas planets reflect constant sunlight",
+        "Planets are closer than the atmosphere, so their light does not traverse air",
+        "Earth's magnetic field deflects starlight but not planetary light"
+      ],
+      "correct_answer": "Stars are point sources whose rays deviate significantly through shifting atmospheric layers; planets are extended disks that average out fluctuations",
+      "explanation": "Atmospheric turbulence continually shifts the narrow beam from a point source (star). Extended disks of nearby planets act as numerous point sources whose random variations cancel out."
+    },
+    {
+      "id": "z03_f3_035",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "When a sound wave reflects from a rigid wall back into the air, what phase change does the displacement wave undergo?",
+      "options": [
+        "π radians (180°) phase reversal",
+        "Zero phase change",
+        "π/2 radians (90°) phase advance",
+        "2π radians phase shift"
+      ],
+      "correct_answer": "π radians (180°) phase reversal",
+      "explanation": "Reflection of a mechanical displacement wave from a denser/rigid boundary results in a phase inversion of π radians (180°), creating a displacement node at the wall."
+    },
+    {
+      "id": "z03_f3_036",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is the core of an optical fiber manufactured with a higher refractive index than the surrounding cladding?",
+      "options": [
+        "To satisfy the condition that light travels from a denser to a rarer medium for total internal reflection",
+        "To prevent electrical sparks from leaking out of the glass",
+        "To make the outer cladding more mechanically flexible",
+        "To absorb stray red photons and enhance blue signals"
+      ],
+      "correct_answer": "To satisfy the condition that light travels from a denser to a rarer medium for total internal reflection",
+      "explanation": "TIR requires n_core > n_cladding so that light hitting the core-cladding interface at angles exceeding the critical angle is confined entirely within the core."
+    },
+    {
+      "id": "z03_f3_037",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the key functional difference between regular (specular) reflection and diffuse reflection?",
+      "options": [
+        "Specular reflection reflects parallel rays in a single direction off smooth surfaces; diffuse scatters rays in all directions off rough surfaces",
+        "Specular reflection obeys the law of reflection, but diffuse reflection violates it",
+        "Diffuse reflection only happens with colored light",
+        "Specular reflection produces sound waves along with reflected light"
+      ],
+      "correct_answer": "Specular reflection reflects parallel rays in a single direction off smooth surfaces; diffuse scatters rays in all directions off rough surfaces",
+      "explanation": "Both obey i = r at each local normal, but microscopic irregularities on a rough surface present normals in random directions, scattering parallel incident light diffusely."
+    },
+    {
+      "id": "z03_f3_038",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A person looks at their reflection in a large spherical mirror and finds their image is always upright and smaller regardless of how far they stand. What mirror is this?",
+      "options": [
+        "Convex mirror",
+        "Concave mirror",
+        "Plane mirror",
+        "Parabolic concave mirror"
+      ],
+      "correct_answer": "Convex mirror",
+      "explanation": "A convex mirror always forms a virtual, erect, and diminished image behind the mirror for all real object distances."
+    },
+    {
+      "id": "z03_f3_039",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In an experiment, red light and blue light are passed through the same glass prism. Which light ray undergoes greater deviation and why?",
+      "options": [
+        "Blue light deviates more because glass has a higher refractive index for shorter wavelengths",
+        "Red light deviates more because red light has higher energy",
+        "Both deviate equally because angle of prism is constant",
+        "Red light deviates more because it travels faster in vacuum"
+      ],
+      "correct_answer": "Blue light deviates more because glass has a higher refractive index for shorter wavelengths",
+      "explanation": "Due to optical dispersion, the refractive index of glass is higher for shorter wavelengths (n_blue > n_red). From δ ≈ (n - 1)A, blue light suffers a larger deviation."
+    },
+    {
+      "id": "z03_f3_040",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does the sun appear slightly oval or flattened near the horizon at sunrise and sunset?",
+      "options": [
+        "Atmospheric refraction bends light from the lower edge of the solar disk more than from the upper edge",
+        "The sun physically compresses due to earth's gravitational pull",
+        "Hot air near the ground reflects the lower part of the sun",
+        "Dust particles in the horizon block light selectively"
+      ],
+      "correct_answer": "Atmospheric refraction bends light from the lower edge of the solar disk more than from the upper edge",
+      "explanation": "Rays from the lower limb of the sun pass through denser air layers and refract upwards more strongly than rays from the upper limb, vertically compressing the apparent solar disk."
+    },
+    {
+      "id": "z03_f3_041",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a reverberant empty auditorium, speech becomes indistinct and muddy. What acoustic phenomenon causes this issue?",
+      "options": [
+        "Excessive reverberation due to repeated reflections from bare hard surfaces",
+        "Total absorption of high frequencies by the concrete floor",
+        "Destructive interference eliminating all sound waves",
+        "Doppler shifts created by stationary walls"
+      ],
+      "correct_answer": "Excessive reverberation due to repeated reflections from bare hard surfaces",
+      "explanation": "Reverberation is the persistence of sound due to multiple diffuse reflections; if the reverberation time is too long, successive syllables overlap and garble speech."
+    },
+    {
+      "id": "z03_f3_042",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the optical reason behind the advance sunrise and delayed sunset by about 2 minutes each?",
+      "options": [
+        "Atmospheric refraction bends sunlight around Earth's curvature",
+        "Light accelerates when traveling into Earth's gravitational field",
+        "Sunlight reflects off clouds in the upper stratosphere",
+        "Earth rotates slower at dusk and dawn"
+      ],
+      "correct_answer": "Atmospheric refraction bends sunlight around Earth's curvature",
+      "explanation": "Earth's atmosphere bends sunlight downwards, allowing the sun to be seen when it is geometrically about 0.5° below the horizon, lengthening daylight by ~4 minutes daily."
+    },
+    {
+      "id": "z03_f3_043",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why are two tuning forks of frequencies 256 Hz and 512 Hz sounded together perceived as an octave rather than discordant noise?",
+      "options": [
+        "Their frequencies are in an exact 1:2 integer ratio, producing harmonious periodic beat patterns",
+        "Both tuning forks produce identical wavelengths in air",
+        "Their sound amplitudes cancel each other out completely",
+        "They share the exact same speed of sound"
+      ],
+      "correct_answer": "Their frequencies are in an exact 1:2 integer ratio, producing harmonious periodic beat patterns",
+      "explanation": "A 2:1 frequency ratio represents an acoustic octave, where harmonics align perfectly without producing dissonant acoustic roughness."
+    },
+    {
+      "id": "z03_f3_044",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A ray of light enters a rectangular glass block at an angle of 45° and exits into air. What is the relationship between the incident ray and the emergent ray?",
+      "options": [
+        "The emergent ray is parallel to the incident ray but laterally displaced",
+        "The emergent ray is perpendicular to the incident ray",
+        "The emergent ray converges towards the normal at 90°",
+        "The emergent ray is completely absorbed inside the block"
+      ],
+      "correct_answer": "The emergent ray is parallel to the incident ray but laterally displaced",
+      "explanation": "Because opposite faces of a rectangular slab are parallel, the angle of emergence equals the angle of incidence (e = i), so the ray exits parallel but shifted sideways by lateral displacement."
+    },
+    {
+      "id": "z03_f3_045",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a convex lens act as a burning glass when held in bright sunlight?",
+      "options": [
+        "It converges parallel solar rays carrying thermal energy onto a tiny focal spot",
+        "The lens material generates heat through nuclear fusion",
+        "The glass amplifies the frequency of sunlight into infrared rays",
+        "It traps sunlight using total internal reflection"
+      ],
+      "correct_answer": "It converges parallel solar rays carrying thermal energy onto a tiny focal spot",
+      "explanation": "Parallel rays from the sun converge at the principal focus of the convex lens, concentrating solar power per unit area sufficiently to ignite paper."
+    },
+    {
+      "id": "z03_f3_046",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why can longitudinal waves travel through gases, liquids, and solids, whereas transverse mechanical waves propagate only through solids?",
+      "options": [
+        "Transverse mechanical waves require shear elasticity, which fluids lack",
+        "Fluids cannot support volume compression",
+        "Longitudinal waves do not transmit mechanical energy",
+        "Particles in solids cannot oscillate back and forth"
+      ],
+      "correct_answer": "Transverse mechanical waves require shear elasticity, which fluids lack",
+      "explanation": "Fluids yield continuously to shear stress and have no shear modulus, so shear (transverse) mechanical waves cannot propagate through the bulk of liquids or gases."
+    },
+    {
+      "id": "z03_f3_047",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does wearing anti-reflective coating on eyeglasses reduce glare and improve clarity?",
+      "options": [
+        "Destructive interference cancels light reflected from the front and back coating interfaces",
+        "The coating polarizes incoming light into ultrasound waves",
+        "The coating reflects 100% of visible light back outward",
+        "The coating absorbs all ultraviolet and visible light completely"
+      ],
+      "correct_answer": "Destructive interference cancels light reflected from the front and back coating interfaces",
+      "explanation": "A coating of optical thickness λ/4 creates a path difference of λ/2 between reflections from its outer and inner boundaries, causing destructive interference that minimizes reflected glare."
+    },
+    {
+      "id": "z03_f3_048",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "If a student wants to see an upright, enlarged image of their face using a mirror, which mirror and positioning should they choose?",
+      "options": [
+        "Concave mirror with face placed inside the focal length (u < f)",
+        "Convex mirror with face placed at center of curvature (u = 2f)",
+        "Concave mirror with face placed beyond center of curvature (u > 2f)",
+        "Plane mirror placed 10 meters away"
+      ],
+      "correct_answer": "Concave mirror with face placed inside the focal length (u < f)",
+      "explanation": "Only a concave mirror can produce a magnified virtual image, and it does so exclusively when the object is located between the pole and the principal focus (u < f)."
+    },
+    {
+      "id": "z03_f3_049",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is ultrasound preferred over X-rays for monitoring fetal development during pregnancy?",
+      "options": [
+        "Ultrasound uses non-ionizing mechanical sound waves that pose no radiation hazard to the fetus",
+        "Ultrasound produces higher resolution images of bone structures than X-rays",
+        "X-rays cannot penetrate amniotic fluid at all",
+        "Ultrasound destroys harmful bacteria in the womb"
+      ],
+      "correct_answer": "Ultrasound uses non-ionizing mechanical sound waves that pose no radiation hazard to the fetus",
+      "explanation": "Ultrasound relies on high-frequency mechanical vibrations without ionizing radiation, making it completely safe for delicate fetal tissue compared to potentially mutagenic X-rays."
+    },
+    {
+      "id": "z03_f3_050",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a physics lab, light passing through two different liquids A and B has critical angles 45° and 30° relative to air. Which liquid has a higher optical density?",
+      "options": [
+        "Liquid B has a higher optical density because a smaller critical angle corresponds to a higher refractive index",
+        "Liquid A has a higher optical density because it has a larger critical angle",
+        "Both liquids have identical optical density",
+        "Optical density cannot be deduced from critical angles"
+      ],
+      "correct_answer": "Liquid B has a higher optical density because a smaller critical angle corresponds to a higher refractive index",
+      "explanation": "Refractive index n = 1 / sin(θc). For A, n_A = 1/sin(45°) = 1.414; for B, n_B = 1/sin(30°) = 2.0. Higher refractive index means higher optical density."
+    }
+  ]
+}

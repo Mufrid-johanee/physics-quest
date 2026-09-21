@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://co2yuyuqfv7lg"
+path="res://.godot/imported/sfx_school_bell (2).ogg-7232d7f1ad9d4605f9432418df2ebbaa.oggvorbisstr"
+
+[deps]
+
+source_file="res://asset/music/sfx_school_bell (2).ogg"
+dest_files=["res://.godot/imported/sfx_school_bell (2).ogg-7232d7f1ad9d4605f9432418df2ebbaa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

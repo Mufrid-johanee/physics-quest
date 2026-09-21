@@ -1,0 +1,694 @@
+{
+  "zone": "05_thermodynamics_modern_physics",
+  "floor": 4,
+  "bloom_levels": [
+    "analyze",
+    "evaluate"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 20,
+  "mcq_count": 12,
+  "one_word_count": 8,
+  "pass_threshold": 0.75,
+  "questions": [
+    {
+      "id": "z05_f4_001",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A hydraulic press has an input piston area of 5 cm² and an output piston area of 250 cm². What is the ideal mechanical advantage of this press?",
+      "correct_answer": "50",
+      "accepted_answers": [
+        "50",
+        "50:1"
+      ],
+      "explanation": "Mechanical advantage MA = A2 / A1 = 250 cm² / 5 cm² = 50."
+    },
+    {
+      "id": "z05_f4_002",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A hydrometer is placed in milk to determine if water has been added. What physical property of the liquid does the hydrometer measure directly?",
+      "correct_answer": "density",
+      "accepted_answers": [
+        "density",
+        "relative density",
+        "specific gravity"
+      ],
+      "explanation": "A hydrometer floats deeper in lower-density liquids and higher in denser liquids, measuring density (or relative density) based on the law of floatation."
+    },
+    {
+      "id": "z05_f4_003",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What medical instrument records the mechanical contraction and pumping performance of heart valves in real time using reflected ultrasound?",
+      "correct_answer": "echocardiogram",
+      "accepted_answers": [
+        "echocardiogram",
+        "echocardiography",
+        "echo"
+      ],
+      "explanation": "An echocardiogram (cardiac ultrasound) pulses ultrasound into the thoracic cavity to record dynamic wall motion, valve functioning, and blood chamber volumes."
+    },
+    {
+      "id": "z05_f4_004",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What radioactive dating method is used to determine the geological age of rocks and minerals formed billions of years ago?",
+      "correct_answer": "radiometric dating",
+      "accepted_answers": [
+        "radiometric dating",
+        "uranium-lead dating",
+        "potassium-argon dating",
+        "uranium dating"
+      ],
+      "explanation": "Long-lived isotopes such as Uranium-238 (half-life 4.5 billion years) or Potassium-40 are utilized in radiometric dating to determine the age of primordial rocks and meteorites."
+    },
+    {
+      "id": "z05_f4_005",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A biomedical technician evaluates whether an MRI scanner is safe for a patient with an older ferromagnetic steel cardiac pacemaker implant. Is this scan safe to proceed? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "Strong static and gradient magnetic fields exert dangerous torque and mechanical displacement forces on ferromagnetic implants, and RF pulses induce currents that can cause thermal burns or device failure."
+    },
+    {
+      "id": "z05_f4_006",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A civil engineer evaluates whether steel is superior to aluminum as a reinforcement bar (rebar) inside concrete structures because steel shares nearly the exact same thermal expansion coefficient as concrete. Is this evaluation correct? Answer yes or no.",
+      "correct_answer": "yes",
+      "accepted_answers": [
+        "yes"
+      ],
+      "explanation": "Steel and concrete share nearly identical linear expansion coefficients (α ≈ 1.2 × 10⁻⁵ K⁻¹), preventing internal shearing and cracking during seasonal temperature swings."
+    },
+    {
+      "id": "z05_f4_007",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A student claims that an iceberg floating in a glass of water will cause the water level in the glass to overflow when the iceberg melts completely. Is this claim correct? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "A floating iceberg displaces a volume of water whose weight equals the iceberg's total weight. When it melts into liquid water, its mass is unchanged, filling the exact displaced submerged cavity without changing water level."
+    },
+    {
+      "id": "z05_f4_008",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "An emergency department assesses whether to perform a full-body CT scan on a pregnant patient with minor ankle pain. Is this choice clinically justifiable over a targeted plain radiograph or ultrasound? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "Full-body CT delivers substantial unnecessary ionizing radiation to the developing fetus. The ALARA principle (As Low As Reasonably Achievable) requires non-ionizing ultrasound or localized minimal-dose radiography."
+    },
+    {
+      "id": "z05_f4_009",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A thermal power plant engineer proposes using alcohol instead of water as the primary circulating steam turbine working fluid because alcohol boils at 78°C. Does water remain superior due to its much higher latent heat of vaporization? Answer yes or no.",
+      "correct_answer": "yes",
+      "accepted_answers": [
+        "yes"
+      ],
+      "explanation": "Water's immense latent heat of vaporization (2.26 × 10⁶ J/kg vs ~0.85 × 10⁶ J/kg for ethanol) allows steam cycles to carry vastly more enthalpy and thermodynamic work per kilogram of circulating fluid."
+    },
+    {
+      "id": "z05_f4_010",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A researcher assesses two radiation shields against a pure energetic beta-emitter (Strontium-90): a 10 mm sheet of low-Z plastic (Lucite) versus a 10 mm block of high-Z lead. To minimize hazardous secondary bremsstrahlung X-ray generation, which shield should be used first? Answer plastic or lead.",
+      "correct_answer": "plastic",
+      "accepted_answers": [
+        "plastic",
+        "lucite"
+      ],
+      "explanation": "Deceleration of fast beta electrons in high-Z materials (lead) generates penetrating secondary bremsstrahlung X-rays. Low-Z plastic absorbs beta particles without producing significant bremsstrahlung."
+    },
+    {
+      "id": "z05_f4_011",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an enclosed gas exert pressure uniformly on the interior walls of its container?",
+      "options": [
+        "Countless gas molecules in continuous random motion collide elastically with the walls, transferring momentum per unit area",
+        "Gas molecules attract container atoms through gravitational pull",
+        "The container walls continuously push inward on stationary gas particles",
+        "Gas molecules undergo spontaneous nuclear fission on the wall surfaces"
+      ],
+      "correct_answer": "Countless gas molecules in continuous random motion collide elastically with the walls, transferring momentum per unit area",
+      "explanation": "By kinetic molecular theory, gas pressure originates from the time-averaged rate of momentum transfer (Δp/Δt = F) as trillions of gas molecules incessantly bombard every unit area of the vessel walls."
+    },
+    {
+      "id": "z05_f4_012",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a clinical X-ray tube have its interior evacuated to an ultra-high vacuum (< 10⁻⁵ torr)?",
+      "options": [
+        "To prevent thermionically emitted electrons from colliding with residual gas molecules on their path to the anode",
+        "To keep the glass envelope from melting under atmospheric pressure",
+        "To turn the tungsten target into a superconductor",
+        "To prevent visible light from entering the room"
+      ],
+      "correct_answer": "To prevent thermionically emitted electrons from colliding with residual gas molecules on their path to the anode",
+      "explanation": "Residual gas molecules would scatter electrons, causing ionization, tube arcing, filament oxidation, and severe loss of kinetic energy before electrons impact the tungsten target."
+    },
+    {
+      "id": "z05_f4_013",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What causes the characteristic peak spikes superimposed on the continuous bremsstrahlung spectrum in an X-ray emission graph?",
+      "options": [
+        "High-speed projectile electrons eject inner-shell (K or L) target electrons, and outer-shell electrons transition down to fill the vacancies",
+        "Nuclear fission of tungsten nuclei",
+        "Thermal radiation from the glass tube casing",
+        "Mechanical vibrations of the rotating anode"
+      ],
+      "correct_answer": "High-speed projectile electrons eject inner-shell (K or L) target electrons, and outer-shell electrons transition down to fill the vacancies",
+      "explanation": "Characteristic X-rays occur when incoming electrons knock out inner-shell (e.g. K-shell) electrons. When outer-shell electrons drop down to fill the vacancy, they emit photons of discrete characteristic energies (E = E_initial - E_final)."
+    },
+    {
+      "id": "z05_f4_014",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an air bubble rising from the bottom of a deep lake expand in diameter as it approaches the surface?",
+      "options": [
+        "Hydrostatic pressure P = hρg decreases as depth decreases, allowing the trapped gas volume to expand according to Boyle's law (P1V1 = P2V2)",
+        "Water temperature at the lake surface is 100°C",
+        "The air bubble absorbs liquid water through osmosis",
+        "Surface water has zero density"
+      ],
+      "correct_answer": "Hydrostatic pressure P = hρg decreases as depth decreases, allowing the trapped gas volume to expand according to Boyle's law (P1V1 = P2V2)",
+      "explanation": "Total pressure acting on the bubble drops from P_atm + hρg at the bottom to P_atm at the surface. By Boyle's Law, gas volume is inversely proportional to pressure at constant temperature, so the bubble expands."
+    },
+    {
+      "id": "z05_f4_015",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is the half-life of a radioactive isotope completely unaffected by extreme physical and chemical conditions (like boiling, high pressure, or chemical bonding)?",
+      "options": [
+        "Radioactivity is governed by the strong nuclear force inside the tiny nucleus (~10⁻¹⁵ m), isolated from atomic electron shell interactions",
+        "Radioactive atoms are surrounded by lead membranes",
+        "The nucleus has infinite energy and cannot be altered",
+        "Half-life only changes when placed in an electric field"
+      ],
+      "correct_answer": "Radioactivity is governed by the strong nuclear force inside the tiny nucleus (~10⁻¹⁵ m), isolated from atomic electron shell interactions",
+      "explanation": "Chemical reactions, temperature, and pressure involve valence electron energies (~few eV). Spontaneous radioactive decay is dictated by nuclear forces and binding energies in the MeV range, rendering T₁/₂ invariant."
+    },
+    {
+      "id": "z05_f4_016",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does a modern ultrasound transducer generate high-frequency acoustic waves from electrical signals?",
+      "options": [
+        "Via the reverse piezoelectric effect: applying an alternating radiofrequency voltage deforms piezoelectric crystal elements at resonant frequencies",
+        "By boiling microscopic water droplets inside the probe head",
+        "By spinning a tiny steel fan at 10 million RPM",
+        "By focusing visible light onto acoustic diaphragms"
+      ],
+      "correct_answer": "Via the reverse piezoelectric effect: applying an alternating radiofrequency voltage deforms piezoelectric crystal elements at resonant frequencies",
+      "explanation": "Piezoelectric crystals (e.g. lead zirconate titanate, PZT) mechanically expand and contract in response to alternating electric voltages, transforming electrical pulses into high-frequency pressure waves."
+    },
+    {
+      "id": "z05_f4_017",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a piece of ice at -10°C take longer to convert into water at 10°C than water at 10°C takes to heat up to 30°C for equal masses and equal heating rates?",
+      "options": [
+        "Melting involves absorbing the massive latent heat of fusion (336,000 J/kg), which far exceeds sensible specific heat capacities",
+        "Ice reflects 90% of heat back into the stove",
+        "The specific heat capacity of ice is 10 times that of liquid water",
+        "Water molecules stop moving when melting"
+      ],
+      "correct_answer": "Melting involves absorbing the massive latent heat of fusion (336,000 J/kg), which far exceeds sensible specific heat capacities",
+      "explanation": "Sensible heating of water by 20°C requires Q = msΔT = 1 × 4200 × 20 = 84,000 J. Melting alone requires Q = mL_f = 336,000 J (four times greater), dominating the total heating duration."
+    },
+    {
+      "id": "z05_f4_018",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why are gamma cameras in nuclear medicine imaging equipped with a heavy lead multi-hole collimator in front of the scintillation crystal?",
+      "options": [
+        "To absorb scattered oblique gamma photons and ensure that only parallel, perpendicular rays reach the crystal to preserve spatial resolution",
+        "To prevent gamma rays from leaving the patient's body",
+        "To amplify the brightness of emitted gamma photons",
+        "To convert gamma rays into audible sound waves"
+      ],
+      "correct_answer": "To absorb scattered oblique gamma photons and ensure that only parallel, perpendicular rays reach the crystal to preserve spatial resolution",
+      "explanation": "Because high-energy gamma rays cannot be focused by lenses, a lead collimator absorbs all photons except those traveling parallel to its channels, mapping radiation emission coordinates accurately."
+    },
+    {
+      "id": "z05_f4_019",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the reason why a steel block sinks in pure water (ρ = 1000 kg/m³) but floats on liquid mercury (ρ = 13,600 kg/m³)?",
+      "options": [
+        "Steel density (~7850 kg/m³) is greater than water but significantly less than liquid mercury",
+        "Mercury has zero surface tension",
+        "Steel and mercury chemically fuse together",
+        "Liquid mercury exerts an electrostatic repulsive force on iron"
+      ],
+      "correct_answer": "Steel density (~7850 kg/m³) is greater than water but significantly less than liquid mercury",
+      "explanation": "By Archimedes' principle and the law of floatation, an object floats if its density is less than the liquid. Since ρ_water (1000) < ρ_steel (7850) < ρ_mercury (13600), steel sinks in water but floats on mercury."
+    },
+    {
+      "id": "z05_f4_020",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an Electrocardiogram (ECG) monitor show an elevated ST segment during an acute myocardial infarction (heart attack)?",
+      "options": [
+        "Ischemic heart muscle remains partially depolarized, setting up abnormal injury currents between healthy and damaged ventricular tissue",
+        "The heart valve clatters against the chest wall",
+        "The patient's blood pressure drops to absolute zero",
+        "The ECG electrodes become magnetically polarized"
+      ],
+      "correct_answer": "Ischemic heart muscle remains partially depolarized, setting up abnormal injury currents between healthy and damaged ventricular tissue",
+      "explanation": "Ischemic cardiac cells lose ATP and cannot maintain normal membrane resting potentials, generating a voltage difference (injury current) during ventricular electrical recovery seen as ST elevation."
+    },
+    {
+      "id": "z05_f4_021",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a pressure cooker cook tough meat in roughly one-third the time needed in an ordinary open boiling pot?",
+      "options": [
+        "Steam pressure raises the boiling temperature of water from 100°C to approximately 120°C–125°C, drastically accelerating chemical cooking reactions",
+        "High pressure forces meat molecules to expand into steam",
+        "The pressure cooker generates microwaves inside the pot",
+        "High pressure prevents steam from escaping, eliminating heat loss"
+      ],
+      "correct_answer": "Steam pressure raises the boiling temperature of water from 100°C to approximately 120°C–125°C, drastically accelerating chemical cooking reactions",
+      "explanation": "By Arrhenius chemical reaction kinetics, reaction rates roughly double for every 10°C increase. Raising cooking water temperature from 100°C to 121°C accelerates protein breakdown and collagen softening by roughly 4×."
+    },
+    {
+      "id": "z05_f4_022",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why do beta particles exhibit continuous energy spectra during radioactive decay, which historically led to the prediction of the neutrino?",
+      "options": [
+        "The fixed decay energy is shared unpredictably between the emitted beta electron and an undetected antineutrino",
+        "Beta electrons collide with air molecules inside the nucleus",
+        "The mass of the parent nucleus changes during the decay",
+        "Beta particles are composed of different subatomic quarks"
+      ],
+      "correct_answer": "The fixed decay energy is shared unpredictably between the emitted beta electron and an undetected antineutrino",
+      "explanation": "In three-body beta decay (X → Y + e⁻ + ν_e), total transition energy is partitioned variably between electron and antineutrino, producing a smooth continuous beta energy spectrum up to E_max."
+    },
+    {
+      "id": "z05_f4_023",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a metal wire become warm and eventually undergo plastic deformation when stretched beyond its elastic limit?",
+      "options": [
+        "Dislocations slip permanently across crystal lattice planes, dissipating mechanical strain energy as internal heat",
+        "Electrons stop moving in the metal",
+        "The metal turns into an organic liquid",
+        "Atmospheric air enters microscopic cracks in the wire"
+      ],
+      "correct_answer": "Dislocations slip permanently across crystal lattice planes, dissipating mechanical strain energy as internal heat",
+      "explanation": "Beyond the yield point, atomic planes shear irreversibly through dislocation glide. Because the work done is non-conservative plastic deformation, mechanical work converts directly into internal thermal energy."
+    },
+    {
+      "id": "z05_f4_024",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In pulse-echo ultrasound imaging, why does a strong acoustic reflection occur at tissue-bone interfaces, while very weak reflection occurs between muscle and fat?",
+      "options": [
+        "The acoustic impedance mismatch between soft tissue and dense cortical bone is massive, whereas muscle and fat have similar acoustic impedances",
+        "Bone absorbs all sound waves like a black hole",
+        "Muscle tissue reflects sound waves at 90° angles",
+        "Fat cells destroy high-frequency sound energy"
+      ],
+      "correct_answer": "The acoustic impedance mismatch between soft tissue and dense cortical bone is massive, whereas muscle and fat have similar acoustic impedances",
+      "explanation": "Reflectivity R = [(Z2 - Z1)/(Z2 + Z1)]². Soft tissues have similar Z (~1.4–1.7 × 10⁶ kg/m²s), reflecting <1% of beam energy. Dense bone has Z ≈ 7.8 × 10⁶, reflecting >60% and casting an acoustic shadow."
+    },
+    {
+      "id": "z05_f4_025",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a modern microprocessor chip containing billions of transistors require a heat sink and active cooling fan?",
+      "options": [
+        "Dynamic capacitive switching and static leakage current across billions of transistors generate substantial I²R Joule heating per square centimeter",
+        "The silicon crystal generates nuclear energy during calculation",
+        "The cooling fan creates electric current for the CPU",
+        "Computers cannot compute binary numbers above room temperature"
+      ],
+      "correct_answer": "Dynamic capacitive switching and static leakage current across billions of transistors generate substantial I²R Joule heating per square centimeter",
+      "explanation": "Every clock cycle charges and discharges gate capacitances (P_dynamic = C·V²·f). Summed over billions of transistors at gigahertz frequencies, power density reaches 50–150 W/cm², risking thermal runaway without active cooling."
+    },
+    {
+      "id": "z05_f4_026",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a clinical glass barometer show a concave downward (depressed) meniscus for mercury, but a concave upward meniscus for water in a glass tube?",
+      "options": [
+        "For mercury, cohesive forces between mercury atoms exceed adhesive forces with glass; for water, adhesive forces with glass exceed cohesion",
+        "Mercury has negative mass",
+        "Water is attracted to gravity while mercury is repelled",
+        "Glass contains chemical oils that push mercury downward"
+      ],
+      "correct_answer": "For mercury, cohesive forces between mercury atoms exceed adhesive forces with glass; for water, adhesive forces with glass exceed cohesion",
+      "explanation": "Mercury cohesion > adhesion (contact angle θ > 90°), causing capillary depression and a convex/downward meniscus. Water adhesion > cohesion (θ < 90°), wetting the glass and producing capillary rise."
+    },
+    {
+      "id": "z05_f4_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does the T wave in an ECG point in the same positive direction as the QRS complex in most healthy leads, even though it represents repolarization rather than depolarization?",
+      "options": [
+        "Ventricular repolarization proceeds in the opposite anatomical direction (epicardium to endocardium) relative to depolarization (endocardium to epicardium)",
+        "The ECG machine inverts all negative waves automatically",
+        "Repolarization involves positive protons instead of electrons",
+        "The heart valve closes with a positive electrical charge"
+      ],
+      "correct_answer": "Ventricular repolarization proceeds in the opposite anatomical direction (epicardium to endocardium) relative to depolarization (endocardium to epicardium)",
+      "explanation": "A negative electrical event (repolarization) traveling in the opposite spatial direction produces a positive vector deflection, yielding an upright T wave matching the QRS polarity."
+    },
+    {
+      "id": "z05_f4_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why do engineers use invar alloy (64% Fe, 36% Ni) for manufacturing precision pendulum clocks, measuring tapes, and optical mounts?",
+      "options": [
+        "Invar has a near-zero coefficient of thermal expansion near room temperature, ensuring dimensions remain stable across seasons",
+        "Invar is completely weightless in air",
+        "Invar cannot be scratched by any abrasive material",
+        "Invar turns into a semiconductor when polished"
+      ],
+      "correct_answer": "Invar has a near-zero coefficient of thermal expansion near room temperature, ensuring dimensions remain stable across seasons",
+      "explanation": "Invar's magnetic volume contraction balances its thermal lattice expansion over 0°C to 100°C (α ≈ 1.2 × 10⁻⁶ K⁻¹), eliminating clock timing drift and measuring tape errors."
+    },
+    {
+      "id": "z05_f4_029",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the physical mechanism by which high-intensity focused ultrasound (HIFU) destroys localized prostate or uterine tumors non-invasively?",
+      "options": [
+        "Ultrasound beams converge to a pinpoint focal zone, elevating local tissue temperature above 65°C to induce coagulative thermal necrosis",
+        "Ultrasound freezes the tumor into dry ice",
+        "Ultrasound ionizes tumor atoms into radioactive isotopes",
+        "Ultrasound emits laser beams from inside the body"
+      ],
+      "correct_answer": "Ultrasound beams converge to a pinpoint focal zone, elevating local tissue temperature above 65°C to induce coagulative thermal necrosis",
+      "explanation": "A concave acoustic transducer focuses high-power acoustic waves at depth. Acoustic energy absorption creates instantaneous focal hyperthermia (>60°C) and cavitation, destroying targeted cells while sparing intervening tissues."
+    },
+    {
+      "id": "z05_f4_030",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An engineer evaluates replacing steel rebar with aluminum rebar inside load-bearing reinforced concrete bridge columns. What failure mode will occur?",
+      "options": [
+        "Aluminum's thermal expansion coefficient (2.3 × 10⁻⁵ K⁻¹) is double that of concrete (1.2 × 10⁻⁵ K⁻¹), causing massive thermal stresses and spalling cracks",
+        "Aluminum will react with concrete to form radioactive uranium",
+        "Aluminum is too dense and will sink through the wet concrete",
+        "The bridge will become magnetized by Earth's field"
+      ],
+      "correct_answer": "Aluminum's thermal expansion coefficient (2.3 × 10⁻⁵ K⁻¹) is double that of concrete (1.2 × 10⁻⁵ K⁻¹), causing massive thermal stresses and spalling cracks",
+      "explanation": "Severe thermal expansion mismatch (α_Al ≈ 2× α_concrete) means temperature shifts will create tremendous cyclic shear stresses at the rebar-concrete interface, shattering the bond and failing the structure."
+    },
+    {
+      "id": "z05_f4_031",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A hospital evaluating equipment purchases considers whether a CT scanner or an MRI scanner is superior for urgent diagnosis of acute intracranial hemorrhage (brain bleeding) in an unstable trauma patient. What is the clinical evaluation?",
+      "options": [
+        "Non-contrast CT is superior: it takes under 60 seconds, readily detects fresh acute bleeding, and accommodates metal monitoring equipment safely",
+        "MRI is superior because it uses zero electricity",
+        "Both modalities are identical in scan speed and trauma handling",
+        "Ultrasound is preferred because it can see through the adult skull bone easily"
+      ],
+      "correct_answer": "Non-contrast CT is superior: it takes under 60 seconds, readily detects fresh acute bleeding, and accommodates metal monitoring equipment safely",
+      "explanation": "In acute trauma, speed is paramount. CT scans take seconds, vividly delineate hyperdense acute blood against brain parenchyma, and avoid MRI projectile hazards with emergency metallic resuscitation gear."
+    },
+    {
+      "id": "z05_f4_032",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student claims that a heavy submarine can dive to any depth in the ocean because water is completely incompressible and buoyant force will always increase with depth. How do you evaluate this claim?",
+      "options": [
+        "The claim is false: buoyant force depends on displaced volume (F_B = Vρg) which stays constant, while hull compression from hydrostatic pressure eventually causes catastrophic implosion",
+        "The claim is true: buoyant force doubles every 10 meters of depth",
+        "The claim is true only in Arctic waters",
+        "The claim is false because water density drops to zero at deep levels"
+      ],
+      "correct_answer": "The claim is false: buoyant force depends on displaced volume (F_B = Vρg) which stays constant, while hull compression from hydrostatic pressure eventually causes catastrophic implosion",
+      "explanation": "Buoyant force depends on liquid density and hull volume, which do not increase. Hydrostatic pressure P = hρg mounts relentlessly, crushing the hull past its crush depth limit."
+    },
+    {
+      "id": "z05_f4_033",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "In assessing radioactive waste disposal, a nuclear engineer compares Strontium-90 (half-life 29 years) with Uranium-238 (half-life 4.5 billion years). Which isotope poses the higher short-term radiological hazard per mole, and why?",
+      "options": [
+        "Strontium-90 is vastly more hazardous: its much shorter half-life produces an enormously higher activity (disintegrations per second) per mole (A = λN)",
+        "Uranium-238 is more hazardous because it has a higher atomic number",
+        "Both pose identical radiological hazard per mole",
+        "Uranium-238 is more hazardous because 4.5 billion is a larger number"
+      ],
+      "correct_answer": "Strontium-90 is vastly more hazardous: its much shorter half-life produces an enormously higher activity (disintegrations per second) per mole (A = λN)",
+      "explanation": "Activity A = (ln 2 / T₁/₂) × N. Shorter half-life means much higher decay constant λ. Strontium-90 decays ~150 million times faster than U-238, emitting millions of times more radiation per second."
+    },
+    {
+      "id": "z05_f4_034",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An engineer evaluates whether a hydraulic jack filled with compressible air can lift a 2000 kg vehicle as effectively as one filled with hydraulic oil. What is the evaluation?",
+      "options": [
+        "Ineffective and dangerous: air compresses significantly under load, absorbing stroke displacement and making the lift spongy, unstable, and prone to sudden collapse",
+        "Air is superior because it is lighter and completely free of cost",
+        "Both fluid jacks perform with identical mechanical efficiency",
+        "Air is superior because air cannot leak through seals"
+      ],
+      "correct_answer": "Ineffective and dangerous: air compresses significantly under load, absorbing stroke displacement and making the lift spongy, unstable, and prone to sudden collapse",
+      "explanation": "Hydraulics relies on high liquid incompressibility (bulk modulus ~10⁹ Pa). Gaseous air has low bulk modulus; pumping compresses the air volume before lifting load, storing dangerous pneumatic energy."
+    },
+    {
+      "id": "z05_f4_035",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A clinician evaluates whether an X-ray radiograph or an Endoscopy is superior for detecting early superficial gastric ulcers in a patient with abdominal pain. What is the clinical evaluation?",
+      "options": [
+        "Endoscopy is superior: high-resolution fiber optic illumination allows direct visual inspection of mucosal color, erosions, and immediate biopsy sampling",
+        "X-ray radiograph is superior because X-rays see through the stomach wall",
+        "Both are completely incapable of diagnosing gastric ulcers",
+        "X-ray is superior because it cures the ulcer during exposure"
+      ],
+      "correct_answer": "Endoscopy is superior: high-resolution fiber optic illumination allows direct visual inspection of mucosal color, erosions, and immediate biopsy sampling",
+      "explanation": "Plain radiographs cannot differentiate mucosal soft-tissue texture. Flexible video endoscopy visualizes subtle epithelial redness, active bleeding, and allows histological biopsy of suspicious lesions."
+    },
+    {
+      "id": "z05_f4_036",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A cook evaluates boiling potatoes in water at high altitude (3000 m where boiling point is 90°C) versus at sea level (100°C). What occurs to the cooking time, and why?",
+      "options": [
+        "Cooking takes significantly longer at high altitude because cooking speed is governed by water temperature (90°C), not the vigor of boiling",
+        "Cooking is faster at high altitude because water boils sooner",
+        "Cooking time is identical because boiling always cooks at the same rate",
+        "Potatoes cannot be cooked at high altitude under any circumstance"
+      ],
+      "correct_answer": "Cooking takes significantly longer at high altitude because cooking speed is governed by water temperature (90°C), not the vigor of boiling",
+      "explanation": "Chemical starch softening depends exponentially on temperature. Even vigorous boiling cannot exceed the 90°C boiling plateau, dramatically prolonging cooking time unless a pressure cooker is used."
+    },
+    {
+      "id": "z05_f4_037",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A diagnostic clinic evaluates replacing its analog film X-ray system with a digital radiography (DR) flat-panel detector. What justification supports this decision?",
+      "options": [
+        "Digital systems have higher detective quantum efficiency (DQE), reducing patient radiation dose by up to 50% with instant digital image preview",
+        "Digital X-ray eliminates the need for electricity",
+        "Analog film can only record images in three dimensions",
+        "Digital detectors eliminate the need for X-ray tubes"
+      ],
+      "correct_answer": "Digital systems have higher detective quantum efficiency (DQE), reducing patient radiation dose by up to 50% with instant digital image preview",
+      "explanation": "Flat-panel DR detectors have superior dynamic range and quantum efficiency compared to chemical film-screen cassettes, lowering patient exposure dose while eliminating darkroom chemical waste."
+    },
+    {
+      "id": "z05_f4_038",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An engineer assesses why ice skates glide with remarkably low friction across solid ice. What is the current accepted scientific explanation?",
+      "options": [
+        "A quasi-liquid disordered molecular premelting layer exists naturally on ice surfaces, supplemented by frictional heating during blade sliding",
+        "Skate blades melt ice through nuclear fission",
+        "Ice is made of dry lubricating graphite",
+        "The skater floats on a layer of compressed air"
+      ],
+      "correct_answer": "A quasi-liquid disordered molecular premelting layer exists naturally on ice surfaces, supplemented by frictional heating during blade sliding",
+      "explanation": "Early theories attributed sliding solely to pressure melting, but pressures are insufficient at -10°C. Surface premelting provides a microscopic liquid-like layer, which frictional heating lubricates further."
+    },
+    {
+      "id": "z05_f4_039",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An electronics firm evaluates using carbon nanotubes or graphene instead of copper for ultra-dense chip interconnects. What physical advantage justifies this evaluation?",
+      "options": [
+        "Graphene supports ballistic electron transport with extraordinarily high electrical and thermal conductivity, avoiding electromigration failure",
+        "Graphene costs zero dollars to manufacture",
+        "Carbon nanotubes eliminate the need for transistors",
+        "Copper stops conducting current at small scales"
+      ],
+      "correct_answer": "Graphene supports ballistic electron transport with extraordinarily high electrical and thermal conductivity, avoiding electromigration failure",
+      "explanation": "At sub-5 nm scales, copper suffers severe resistivity increases from surface electron scattering and voids from electromigration. Carbon nanotubes carry 1000× higher current density ballistically without degradation."
+    },
+    {
+      "id": "z05_f4_040",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A radiation safety officer inspects a medical clinic that stores a Technetium-99m tracer source in an ordinary glass bottle on an open shelf. How do you evaluate this practice?",
+      "options": [
+        "Unsafe and non-compliant: Technetium-99m emits 140 keV gamma rays that easily penetrate glass; it must be kept inside a thick lead pig container",
+        "Safe because glass blocks all gamma radiation completely",
+        "Safe because Technetium-99m has no radioactivity",
+        "Unsafe only if the room temperature exceeds 50°C"
+      ],
+      "correct_answer": "Unsafe and non-compliant: Technetium-99m emits 140 keV gamma rays that easily penetrate glass; it must be kept inside a thick lead pig container",
+      "explanation": "Tc-99m emits penetrating 140 keV gamma photons with a half-value layer of ~0.25 mm lead. Thin glass provides negligible attenuation, exposing clinic personnel to continuous unshielded radiation."
+    },
+    {
+      "id": "z05_f4_041",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student proposes designing a ship hull that floats with 100% of its volume out of the water to eliminate hydrodynamic skin drag entirely. How do you evaluate this proposal under Archimedes' principle?",
+      "options": [
+        "Physically impossible: floating requires displacing a volume of fluid whose weight equals the ship's weight; if V_submerged = 0, buoyant force is zero",
+        "Possible if the ship is painted with hydrophobic wax",
+        "Possible if the ship travels at supersonic speeds",
+        "Possible if seawater is replaced with freshwater"
+      ],
+      "correct_answer": "Physically impossible: floating requires displacing a volume of fluid whose weight equals the ship's weight; if V_submerged = 0, buoyant force is zero",
+      "explanation": "By Archimedes' principle F_B = V_submerged × ρ × g. If V_submerged is zero, buoyant force is zero, meaning gravitational weight cannot be balanced without external aerodynamic lift (like an airplane)."
+    },
+    {
+      "id": "z05_f4_042",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A laboratory compares the effectiveness of water versus ethyl alcohol for filling high-temperature thermometers up to 250°C. What is the evaluation?",
+      "options": [
+        "Neither liquid is suitable: both alcohol (boiling point 78°C) and water (boiling point 100°C) vaporize well below 250°C; mercury or synthetic silicon oils must be used",
+        "Water is superior because it expands linearly up to 500°C",
+        "Alcohol is superior because it never boils",
+        "Both liquids can measure temperatures up to 1000°C"
+      ],
+      "correct_answer": "Neither liquid is suitable: both alcohol (boiling point 78°C) and water (boiling point 100°C) vaporize well below 250°C; mercury or synthetic silicon oils must be used",
+      "explanation": "Thermometric liquids must remain in the liquid phase across the measured range. Alcohol boils at ~78°C and water at 100°C at 1 atm, whereas mercury has a high boiling point of 357°C."
+    },
+    {
+      "id": "z05_f4_043",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A patient with severe knee ligament damage requires imaging. Why does the orthopedic specialist request an MRI rather than a standard knee X-ray?",
+      "options": [
+        "MRI provides superior contrast for soft tissues like cruciate ligaments, meniscus cartilage, and synovial fluid, which are nearly transparent on plain X-rays",
+        "X-rays destroy knee cartilage permanently",
+        "MRI costs less than a plain X-ray",
+        "X-rays only work on patients under 20 years old"
+      ],
+      "correct_answer": "MRI provides superior contrast for soft tissues like cruciate ligaments, meniscus cartilage, and synovial fluid, which are nearly transparent on plain X-rays",
+      "explanation": "Plain X-rays visualize radiopaque calcified bone structures. Non-mineralized ligaments and menisci have low X-ray contrast. MRI maps proton relaxation, clearly revealing ligament tears and edema."
+    },
+    {
+      "id": "z05_f4_044",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A petroleum engineer evaluates pipeline design in permafrost tundra where winter temperatures plunge to -45°C. What happens if crude oil lines are built with rigid welded joints without expansion loops?",
+      "options": [
+        "Thermal contraction (ΔL = α L ΔT) creates massive tensile stresses that will snap the pipeline, spilling crude oil",
+        "The pipeline will expand and burst outward",
+        "The oil inside will turn into gaseous helium",
+        "The pipeline will generate high-voltage sparks"
+      ],
+      "correct_answer": "Thermal contraction (ΔL = α L ΔT) creates massive tensile stresses that will snap the pipeline, spilling crude oil",
+      "explanation": "Extreme winter cooling contracts steel pipelines. If rigid ends prevent contraction, thermal tensile stress σ = Y·α·ΔT exceeds the yield strength of steel, fracturing pipe joints."
+    },
+    {
+      "id": "z05_f4_045",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "In evaluating sports hydration, a coach recommends drinking water over sweet carbonated sodas during a marathon. What physical-biological evaluation justifies this?",
+      "options": [
+        "Pure water has lower osmolarity, being absorbed rapidly across intestinal membranes without drawing body water into the gut by reverse osmosis",
+        "Sodas cause water to freeze inside the stomach",
+        "Carbonated bubbles increase the runner's body density, making them heavy",
+        "Water turns into glycogen directly inside muscles"
+      ],
+      "correct_answer": "Pure water has lower osmolarity, being absorbed rapidly across intestinal membranes without drawing body water into the gut by reverse osmosis",
+      "explanation": "Hypertonic high-sugar beverages draw fluid into the intestinal lumen via osmosis, delaying rehydration and promoting dehydration and gastric cramps during intense endurance exercise."
+    },
+    {
+      "id": "z05_f4_046",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An emergency department physician evaluates an ECG showing absent P waves, irregular baseline fibrillatory waves, and an irregularly irregular QRS rhythm. What life-threatening arrhythmia is diagnosed?",
+      "options": [
+        "Atrial Fibrillation",
+        "Normal Sinus Rhythm",
+        "Complete Heart Block",
+        "First Degree Heart Block"
+      ],
+      "correct_answer": "Atrial Fibrillation",
+      "explanation": "Atrial fibrillation is characterized by disorganized chaotic atrial electrical activity (no discrete P waves) resulting in irregular, erratic conduction through the AV node and an irregularly irregular ventricular response."
+    },
+    {
+      "id": "z05_f4_047",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An oncologist evaluates using Proton Beam Therapy instead of conventional Cobalt-60 gamma teletherapy for pediatric brain tumors. What physical advantage justifies the massive capital cost of proton therapy?",
+      "options": [
+        "Protons exhibit a Bragg peak, depositing maximum radiation dose precisely within the tumor and stopping with zero exit dose behind it, sparing developing brain tissue",
+        "Proton beams cost zero dollars to run",
+        "Proton beams are made of visible white light",
+        "Protons convert cancer cells into healthy neurons"
+      ],
+      "correct_answer": "Protons exhibit a Bragg peak, depositing maximum radiation dose precisely within the tumor and stopping with zero exit dose behind it, sparing developing brain tissue",
+      "explanation": "Unlike exponentially attenuating photons that irradiate normal tissues throughout their path, heavy charged protons lose most energy at the end of their range (Bragg peak) with zero exit dose, sparing healthy brain tissue."
+    },
+    {
+      "id": "z05_f4_048",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A materials scientist tests whether a new ceramic material can replace titanium in orthopedic artificial hip implants. The ceramic shows high compressive strength but very low tensile toughness (brittleness). What is the evaluation?",
+      "options": [
+        "Unsuitable for high-impact joint replacement: brittle ceramics risk catastrophic sudden shattering under bending and shear stresses during walking or falling",
+        "Perfect for all joint replacements because ceramics never wear down",
+        "Suitable only if the patient avoids drinking water",
+        "Unsuitable because ceramics are radioactive"
+      ],
+      "correct_answer": "Unsuitable for high-impact joint replacement: brittle ceramics risk catastrophic sudden shattering under bending and shear stresses during walking or falling",
+      "explanation": "Hip prostheses endure cyclic tensile and bending moments. Materials with low fracture toughness propagate microcracks catastrophically without plastic deformation, making ductile titanium/cobalt alloys superior."
+    },
+    {
+      "id": "z05_f4_049",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A dairy plant tests two pasteurization methods: Low Temperature Long Time (LTLT: 63°C for 30 min) versus High Temperature Short Time (HTST: 72°C for 15 sec). Why is HTST evaluated as commercially superior?",
+      "options": [
+        "HTST destroys pathogenic bacteria with equal efficacy while preserving milk vitamins, flavor, and processing continuous high fluid volumes",
+        "LTLT makes milk radioactive",
+        "HTST turns milk into solid cheese instantly",
+        "LTLT requires zero thermal energy"
+      ],
+      "correct_answer": "HTST destroys pathogenic bacteria with equal efficacy while preserving milk vitamins, flavor, and processing continuous high fluid volumes",
+      "explanation": "Thermal bacterial death follows higher activation energy than chemical denaturing of nutrients and milk flavor. Brief high-temperature exposure achieves microbial inactivation with minimal nutritional degradation in continuous flow."
+    },
+    {
+      "id": "z05_f4_050",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A safety engineer evaluates whether liquid nitrogen at -196°C can be safely transported in a sealed, rigid, non-vented steel container. How do you evaluate this proposal?",
+      "options": [
+        "Extremely dangerous: ambient heat leakage will vaporize the liquid into gas with a 700:1 expansion ratio, building thousands of atmospheres of pressure and causing a catastrophic explosion",
+        "Safe and recommended to prevent nitrogen from spilling",
+        "Safe because steel containers can withstand infinite internal pressure",
+        "Dangerous only if nitrogen catches fire"
+      ],
+      "correct_answer": "Extremely dangerous: ambient heat leakage will vaporize the liquid into gas with a 700:1 expansion ratio, building thousands of atmospheres of pressure and causing a catastrophic explosion",
+      "explanation": "Liquid nitrogen has a liquid-to-gas expansion ratio of ~1:694 at 20°C. In a sealed non-vented vessel, inevitable heat ingress drives vaporization, creating extreme pressure (>2000 atm) that shatters the steel container (BLEVE explosion)."
+    }
+  ]
+}

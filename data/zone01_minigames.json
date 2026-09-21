@@ -1,0 +1,122 @@
+{
+  "zone": "01_mechanics",
+  "gravity_used": 10,
+  "minigames": {
+    "mg01_brake": {
+      "yes_scenarios": [
+        {
+          "id": "mg01_yes_1",
+          "surface_label": "Steel block on rough concrete",
+          "block_mass_kg": 40,
+          "mu": 0.50,
+          "required_stop_force_n": 150,
+          "friction_sufficient": true,
+          "correct_additional_force_n": 0,
+          "distractor_forces_n": [],
+          "countdown_seconds": 12
+        },
+        {
+          "id": "mg01_yes_2",
+          "surface_label": "Steel block on rubber-coated floor",
+          "block_mass_kg": 50,
+          "mu": 0.60,
+          "required_stop_force_n": 250,
+          "friction_sufficient": true,
+          "correct_additional_force_n": 0,
+          "distractor_forces_n": [],
+          "countdown_seconds": 12
+        },
+        {
+          "id": "mg01_yes_3",
+          "surface_label": "Steel block on textured steel plate",
+          "block_mass_kg": 60,
+          "mu": 0.45,
+          "required_stop_force_n": 240,
+          "friction_sufficient": true,
+          "correct_additional_force_n": 0,
+          "distractor_forces_n": [],
+          "countdown_seconds": 12
+        },
+        {
+          "id": "mg01_yes_4",
+          "surface_label": "Steel block on gritty ramp surface",
+          "block_mass_kg": 30,
+          "mu": 0.70,
+          "required_stop_force_n": 180,
+          "friction_sufficient": true,
+          "correct_additional_force_n": 0,
+          "distractor_forces_n": [],
+          "countdown_seconds": 12
+        },
+        {
+          "id": "mg01_yes_5",
+          "surface_label": "Steel block on dry concrete",
+          "block_mass_kg": 80,
+          "mu": 0.40,
+          "required_stop_force_n": 300,
+          "friction_sufficient": true,
+          "correct_additional_force_n": 0,
+          "distractor_forces_n": [],
+          "countdown_seconds": 12
+        }
+      ],
+      "no_scenarios": [
+        {
+          "id": "mg01_no_1",
+          "surface_label": "Steel block on concrete ramp",
+          "block_mass_kg": 40,
+          "mu": 0.35,
+          "required_stop_force_n": 360,
+          "friction_sufficient": false,
+          "correct_additional_force_n": 220,
+          "distractor_forces_n": [360, 140],
+          "countdown_seconds": 15
+        },
+        {
+          "id": "mg01_no_2",
+          "surface_label": "Steel block on oily steel plate",
+          "block_mass_kg": 50,
+          "mu": 0.30,
+          "required_stop_force_n": 400,
+          "friction_sufficient": false,
+          "correct_additional_force_n": 250,
+          "distractor_forces_n": [400, 150],
+          "countdown_seconds": 15
+        },
+        {
+          "id": "mg01_no_3",
+          "surface_label": "Steel block on wet concrete",
+          "block_mass_kg": 60,
+          "mu": 0.20,
+          "required_stop_force_n": 320,
+          "friction_sufficient": false,
+          "correct_additional_force_n": 200,
+          "distractor_forces_n": [320, 120],
+          "countdown_seconds": 15
+        },
+        {
+          "id": "mg01_no_4",
+          "surface_label": "Steel block on polished factory floor",
+          "block_mass_kg": 20,
+          "mu": 0.40,
+          "required_stop_force_n": 260,
+          "friction_sufficient": false,
+          "correct_additional_force_n": 180,
+          "distractor_forces_n": [260, 80],
+          "countdown_seconds": 15
+        },
+        {
+          "id": "mg01_no_5",
+          "surface_label": "Steel block on icy loading dock",
+          "block_mass_kg": 80,
+          "mu": 0.25,
+          "required_stop_force_n": 500,
+          "friction_sufficient": false,
+          "correct_additional_force_n": 300,
+          "distractor_forces_n": [500, 200],
+          "countdown_seconds": 15
+        }
+      ]
+    }
+  }
+}

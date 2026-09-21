@@ -1,0 +1,714 @@
+{
+  "zone": "05_thermodynamics_modern_physics",
+  "floor": 1,
+  "bloom_levels": [
+    "remember",
+    "understand"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z05_f1_001",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of pressure?",
+      "options": [
+        "Pascal",
+        "Newton",
+        "Joule",
+        "Bar"
+      ],
+      "correct_answer": "Pascal",
+      "explanation": "The SI unit of pressure is the Pascal (Pa), defined as 1 Newton per square meter (1 Pa = 1 N/m²)."
+    },
+    {
+      "id": "z05_f1_002",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for pressure (P) in terms of thrust force (F) and area (A)?",
+      "options": [
+        "P = F / A",
+        "P = F × A",
+        "P = A / F",
+        "P = F / A²"
+      ],
+      "correct_answer": "P = F / A",
+      "explanation": "Pressure is defined as the perpendicular force (thrust) per unit surface area: P = F / A."
+    },
+    {
+      "id": "z05_f1_003",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for liquid pressure at depth h in a liquid of density ρ under gravity g?",
+      "options": [
+        "P = hρg",
+        "P = h / (ρg)",
+        "P = ρg / h",
+        "P = 1/2 hρg²"
+      ],
+      "correct_answer": "P = hρg",
+      "explanation": "The hydrostatic pressure exerted by a liquid column is directly given by P = hρg."
+    },
+    {
+      "id": "z05_f1_004",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which principle states that an enclosed liquid transmits applied pressure equally in all directions?",
+      "options": [
+        "Pascal's Principle",
+        "Archimedes' Principle",
+        "Hooke's Law",
+        "Bernoulli's Principle"
+      ],
+      "correct_answer": "Pascal's Principle",
+      "explanation": "Pascal's Principle states that pressure applied to an enclosed fluid is transmitted undiminished to every portion of the fluid and the vessel walls."
+    },
+    {
+      "id": "z05_f1_005",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which principle states that the buoyant force on a submerged body equals the weight of the fluid it displaces?",
+      "options": [
+        "Archimedes' Principle",
+        "Pascal's Principle",
+        "Hooke's Law",
+        "Coulomb's Law"
+      ],
+      "correct_answer": "Archimedes' Principle",
+      "explanation": "Archimedes' Principle states that a body wholly or partially submerged in a fluid experiences an upthrust equal to the weight of the displaced fluid."
+    },
+    {
+      "id": "z05_f1_006",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of Young's modulus of elasticity?",
+      "options": [
+        "Pascal (N/m²)",
+        "Newton",
+        "Meter",
+        "Dimensionless"
+      ],
+      "correct_answer": "Pascal (N/m²)",
+      "explanation": "Young's modulus is the ratio of tensile stress (N/m²) to longitudinal strain (dimensionless), so its SI unit is N/m² or Pascal (Pa)."
+    },
+    {
+      "id": "z05_f1_007",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of specific heat capacity?",
+      "options": [
+        "J/(kg·K)",
+        "J/kg",
+        "J/K",
+        "W/(m·K)"
+      ],
+      "correct_answer": "J/(kg·K)",
+      "explanation": "Specific heat capacity is the heat energy required to raise the temperature of 1 kg of a substance by 1 Kelvin: J/(kg·K)."
+    },
+    {
+      "id": "z05_f1_008",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the specific heat capacity of pure liquid water approximately?",
+      "options": [
+        "4200 J/(kg·K)",
+        "2100 J/(kg·K)",
+        "336 J/(kg·K)",
+        "1000 J/(kg·K)"
+      ],
+      "correct_answer": "4200 J/(kg·K)",
+      "explanation": "Liquid water has a remarkably high specific heat capacity of approximately 4200 J/(kg·K) (or 4186 J/(kg·K))."
+    },
+    {
+      "id": "z05_f1_009",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "At what temperature does pure water exhibit its maximum density?",
+      "options": [
+        "4°C",
+        "0°C",
+        "100°C",
+        "-4°C"
+      ],
+      "correct_answer": "4°C",
+      "explanation": "Due to anomalous expansion, water reaches its maximum density of approximately 1000 kg/m³ at 4°C."
+    },
+    {
+      "id": "z05_f1_010",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the latent heat of fusion of ice at 0°C?",
+      "options": [
+        "3.36 × 10⁵ J/kg",
+        "2.26 × 10⁶ J/kg",
+        "4.2 × 10³ J/kg",
+        "3.36 × 10³ J/kg"
+      ],
+      "correct_answer": "3.36 × 10⁵ J/kg",
+      "explanation": "The specific latent heat required to melt 1 kg of ice into water at 0°C without changing temperature is approximately 3.36 × 10⁵ J/kg."
+    },
+    {
+      "id": "z05_f1_011",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the latent heat of vaporization of water at 100°C?",
+      "options": [
+        "2.26 × 10⁶ J/kg",
+        "3.36 × 10⁵ J/kg",
+        "4.2 × 10⁶ J/kg",
+        "1.0 × 10⁵ J/kg"
+      ],
+      "correct_answer": "2.26 × 10⁶ J/kg",
+      "explanation": "The specific latent heat needed to convert 1 kg of boiling water into steam at 100°C is approximately 2.26 × 10⁶ J/kg."
+    },
+    {
+      "id": "z05_f1_012",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Who discovered natural radioactivity in uranium salts in 1896?",
+      "options": [
+        "Henri Becquerel",
+        "Marie Curie",
+        "Ernest Rutherford",
+        "Wilhelm Roentgen"
+      ],
+      "correct_answer": "Henri Becquerel",
+      "explanation": "French physicist Henri Becquerel discovered radioactivity in 1896 when uranium salts exposed wrapped photographic plates in darkness."
+    },
+    {
+      "id": "z05_f1_013",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is an alpha (α) particle composed of?",
+      "options": [
+        "2 protons and 2 neutrons (Helium nucleus)",
+        "High-speed electron",
+        "High-energy electromagnetic photon",
+        "Single proton"
+      ],
+      "correct_answer": "2 protons and 2 neutrons (Helium nucleus)",
+      "explanation": "An alpha particle is identical to a Helium-4 nucleus (⁴₂He), consisting of two protons and two neutrons with a +2e charge."
+    },
+    {
+      "id": "z05_f1_014",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is a beta (β⁻) particle emitted during radioactive decay?",
+      "options": [
+        "A high-speed electron",
+        "A helium nucleus",
+        "An electromagnetic photon",
+        "A neutral neutron"
+      ],
+      "correct_answer": "A high-speed electron",
+      "explanation": "A beta-minus particle is an energetic electron emitted from the nucleus when a neutron decays into a proton."
+    },
+    {
+      "id": "z05_f1_015",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is a gamma (γ) ray?",
+      "options": [
+        "High-energy electromagnetic radiation of very short wavelength",
+        "A stream of positively charged protons",
+        "A beam of heavy ions",
+        "An acoustic shock wave"
+      ],
+      "correct_answer": "High-energy electromagnetic radiation of very short wavelength",
+      "explanation": "Gamma rays are neutral, high-energy electromagnetic photons emitted when an excited nucleus drops to a lower nuclear energy state."
+    },
+    {
+      "id": "z05_f1_016",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of radioactive activity?",
+      "options": [
+        "Becquerel (Bq)",
+        "Curie (Ci)",
+        "Roentgen (R)",
+        "Sievert (Sv)"
+      ],
+      "correct_answer": "Becquerel (Bq)",
+      "explanation": "The SI unit of radioactivity is the Becquerel (Bq), defined as one nuclear disintegration per second (1 Bq = 1 dps)."
+    },
+    {
+      "id": "z05_f1_017",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Who discovered X-rays in 1895?",
+      "options": [
+        "Wilhelm Roentgen",
+        "Henri Becquerel",
+        "J.J. Thomson",
+        "Niels Bohr"
+      ],
+      "correct_answer": "Wilhelm Roentgen",
+      "explanation": "German physicist Wilhelm Conrad Roentgen discovered X-radiation in November 1895 while experimenting with cathode ray tubes."
+    },
+    {
+      "id": "z05_f1_018",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What medical diagnostic technique uses high-frequency sound waves typically between 1 MHz and 10 MHz?",
+      "options": [
+        "Ultrasonography (USG)",
+        "X-ray radiography",
+        "CT scan",
+        "PET scan"
+      ],
+      "correct_answer": "Ultrasonography (USG)",
+      "explanation": "Ultrasonography relies on ultrasound pulses (1–10 MHz) produced and detected by piezoelectric transducers to image soft tissues."
+    },
+    {
+      "id": "z05_f1_019",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What does the abbreviation MRI stand for in medical physics?",
+      "options": [
+        "Magnetic Resonance Imaging",
+        "Medical Radiation Instrument",
+        "Molecular Radiology Indicator",
+        "Microscopic Resonance Inspection"
+      ],
+      "correct_answer": "Magnetic Resonance Imaging",
+      "explanation": "MRI stands for Magnetic Resonance Imaging, which utilizes powerful magnetic fields and radio waves to map hydrogen density in bodily tissues."
+    },
+    {
+      "id": "z05_f1_020",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What does an Electrocardiogram (ECG) record?",
+      "options": [
+        "The electrical activity of the heart muscle over time",
+        "The electrical activity of the brain",
+        "The blood pressure in major arteries",
+        "The oxygen level in lungs"
+      ],
+      "correct_answer": "The electrical activity of the heart muscle over time",
+      "explanation": "An ECG (or EKG) records electrical voltage potentials generated by the polarization and depolarization of cardiac muscle tissue."
+    },
+    {
+      "id": "z05_f1_021",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What does an Electroencephalogram (EEG) measure?",
+      "options": [
+        "The electrical activity of neurons in the brain",
+        "The mechanical pulse rate of arteries",
+        "The acoustic sound of heart valves",
+        "The bone mineral density of the skull"
+      ],
+      "correct_answer": "The electrical activity of neurons in the brain",
+      "explanation": "An EEG records electrophysiological brain wave patterns using electrodes attached to the scalp."
+    },
+    {
+      "id": "z05_f1_022",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which medical instrument uses bundles of optical fibers to view the interior of hollow organs like the stomach without surgery?",
+      "options": [
+        "Endoscope",
+        "Stethoscope",
+        "Otoscope",
+        "Sphygmomanometer"
+      ],
+      "correct_answer": "Endoscope",
+      "explanation": "An endoscope guides illuminating and imaging light through flexible optical fiber bundles via total internal reflection to inspect internal organs."
+    },
+    {
+      "id": "z05_f1_023",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which radioactive isotope is commonly used in radiotherapy to treat deep cancerous tumors?",
+      "options": [
+        "Cobalt-60",
+        "Carbon-14",
+        "Uranium-238",
+        "Potassium-40"
+      ],
+      "correct_answer": "Cobalt-60",
+      "explanation": "Cobalt-60 (⁶⁰Co) is a powerful gamma-ray emitter widely utilized in teletherapy radiation machines to target and destroy malignant tumor cells."
+    },
+    {
+      "id": "z05_f1_024",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What radioactive isotope is utilized in radiocarbon dating to determine the age of ancient organic archaeological samples?",
+      "options": [
+        "Carbon-14",
+        "Carbon-12",
+        "Nitrogen-14",
+        "Uranium-235"
+      ],
+      "correct_answer": "Carbon-14",
+      "explanation": "Carbon-14 (¹⁴C, half-life ~5730 years) is used to estimate the time elapsed since the death of biological organic materials."
+    },
+    {
+      "id": "z05_f1_025",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the three-terminal semiconductor device that revolutionized modern electronics by functioning as an amplifier and switch?",
+      "options": [
+        "Transistor",
+        "Diode",
+        "Capacitor",
+        "Thermistor"
+      ],
+      "correct_answer": "Transistor",
+      "explanation": "The transistor (bipolar or field-effect) possesses three terminals (emitter, base, collector or source, gate, drain) and acts as an amplifier and switch."
+    },
+    {
+      "id": "z05_f1_026",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why do sharp knives cut food much more easily than dull knives when the same downward force is applied?",
+      "options": [
+        "The sharp blade has a much smaller edge area, creating a vastly higher cutting pressure (P = F/A)",
+        "Sharp knives are made of denser metal that exerts extra gravitational pull",
+        "Dull knives absorb the applied downward force as heat",
+        "Sharp blades chemically dissolve food molecules"
+      ],
+      "correct_answer": "The sharp blade has a much smaller edge area, creating a vastly higher cutting pressure (P = F/A)",
+      "explanation": "Pressure is inversely proportional to contact area (P = F/A). The razor-thin edge concentrates applied force over a tiny area, producing high pressure that easily pierces food."
+    },
+    {
+      "id": "z05_f1_027",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does atmospheric pressure decrease as altitude above sea level increases?",
+      "options": [
+        "The weight of the overlying air column decreases and air density drops with increasing altitude",
+        "Earth's gravity reverses direction in the upper atmosphere",
+        "Solar radiation destroys air molecules at high elevations",
+        "Winds blow all air molecules downward toward valleys"
+      ],
+      "correct_answer": "The weight of the overlying air column decreases and air density drops with increasing altitude",
+      "explanation": "Atmospheric pressure is caused by the weight of air above a unit surface. Higher up, there is less atmospheric column above, and gravity compresses gas less, lowering pressure."
+    },
+    {
+      "id": "z05_f1_028",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does an iron needle sink in water while a massive ship made of iron floats easily on the ocean?",
+      "options": [
+        "The ship's hollow hull displaces a volume of water whose weight is equal to the total weight of the ship",
+        "Seawater contains salt that repels the iron of the ship",
+        "Iron needles are made of a different chemical element than ships",
+        "Air currents continually push the ship upward against gravity"
+      ],
+      "correct_answer": "The ship's hollow hull displaces a volume of water whose weight is equal to the total weight of the ship",
+      "explanation": "The average density of the hollow ship (iron plus trapped air) is less than water. Its broad hull displaces enough water weight to equal its own weight, achieving equilibrium by Archimedes' principle."
+    },
+    {
+      "id": "z05_f1_029",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why do dams have walls that are much thicker at the bottom than at the top?",
+      "options": [
+        "Liquid pressure increases linearly with water depth (P = hρg), exerting the greatest lateral force near the base",
+        "Fish swim predominantly near the bottom and push against the wall",
+        "Dams are built wider at the bottom solely for architectural aesthetics",
+        "The water is colder at the bottom and freezes the concrete"
+      ],
+      "correct_answer": "Liquid pressure increases linearly with water depth (P = hρg), exerting the greatest lateral force near the base",
+      "explanation": "Hydrostatic pressure P = hρg depends directly on depth h. Because pressure reaches its maximum at the reservoir bed, the dam foundation must be thickest at the bottom to resist bursting forces."
+    },
+    {
+      "id": "z05_f1_030",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the ecological importance of the anomalous expansion of water for aquatic life in cold climates?",
+      "options": [
+        "Water at 4°C is densest and sinks to the lake bottom, allowing a floating surface ice layer to insulate life below at 4°C",
+        "Anomalous expansion heats the entire lake to 50°C during winter",
+        "Ice generates oxygen as it freezes from the bottom up",
+        "Water expansion prevents winter snowfall from landing on lakes"
+      ],
+      "correct_answer": "Water at 4°C is densest and sinks to the lake bottom, allowing a floating surface ice layer to insulate life below at 4°C",
+      "explanation": "As water cools below 4°C, it expands and becomes lighter, so freezing occurs at the surface. The floating ice sheet insulates the denser 4°C water beneath, keeping fish and organisms alive."
+    },
+    {
+      "id": "z05_f1_031",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why are small gaps deliberately left between consecutive steel rail tracks on railway lines?",
+      "options": [
+        "To allow space for linear thermal expansion of steel during hot summer days, preventing tracks from buckling",
+        "To allow rain water to drain away into the gravel ballast",
+        "To save steel manufacturing costs",
+        "To create rhythmic clicking sounds that alert station masters"
+      ],
+      "correct_answer": "To allow space for linear thermal expansion of steel during hot summer days, preventing tracks from buckling",
+      "explanation": "Steel rails expand when heated (ΔL = α L ΔT). Without expansion gaps, high thermal compressive stress in summer would cause railway tracks to buckle and derail trains."
+    },
+    {
+      "id": "z05_f1_032",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does evaporation cause cooling of the remaining liquid?",
+      "options": [
+        "Molecules with the highest kinetic energy escape from the surface, lowering the average kinetic energy and temperature of the liquid",
+        "Evaporation creates cold wind blowing directly into the liquid",
+        "Water molecules absorb coldness from the surrounding air",
+        "The remaining molecules undergo nuclear fusion"
+      ],
+      "correct_answer": "Molecules with the highest kinetic energy escape from the surface, lowering the average kinetic energy and temperature of the liquid",
+      "explanation": "Temperature measures average molecular kinetic energy. The fastest molecules overcome intermolecular forces and escape into vapor, leaving behind slower, lower-energy molecules (lower temperature)."
+    },
+    {
+      "id": "z05_f1_033",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does steam at 100°C produce much more severe burns on human skin than boiling water at 100°C?",
+      "options": [
+        "Steam releases an enormous extra amount of latent heat of vaporization (2.26 × 10⁶ J/kg) as it condenses on skin",
+        "Steam is composed of acidic vapor molecules",
+        "Steam travels faster than water drops",
+        "Steam is at a significantly higher temperature than 100°C"
+      ],
+      "correct_answer": "Steam releases an enormous extra amount of latent heat of vaporization (2.26 × 10⁶ J/kg) as it condenses on skin",
+      "explanation": "Both are at 100°C, but each kilogram of condensing steam dumps 2,260,000 Joules of latent heat onto skin before cooling as 100°C liquid water, delivering dramatically more thermal damage."
+    },
+    {
+      "id": "z05_f1_034",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a hydraulic lift multiply applied force?",
+      "options": [
+        "Pressure applied on a small piston is transmitted undiminished to a larger piston, yielding F2 = F1 × (A2 / A1)",
+        "Hydraulic oil contains microscopic springs that push pistons upward",
+        "The hydraulic fluid generates extra energy through chemical reactions",
+        "Pascal's law eliminates gravitational forces inside the cylinder"
+      ],
+      "correct_answer": "Pressure applied on a small piston is transmitted undiminished to a larger piston, yielding F2 = F1 × (A2 / A1)",
+      "explanation": "By Pascal's principle, P1 = P2 → F1 / A1 = F2 / A2 → F2 = F1 × (A2 / A1). If the output piston has 50 times the area of the input piston, output force is amplified 50-fold."
+    },
+    {
+      "id": "z05_f1_035",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How do alpha, beta, and gamma radiations compare in their ionizing power?",
+      "options": [
+        "Alpha has the highest ionizing power, beta is intermediate, and gamma has the lowest",
+        "Gamma has the highest ionizing power, followed by beta and alpha",
+        "Beta has the highest ionizing power, while alpha has none",
+        "All three radiations have identical ionizing power"
+      ],
+      "correct_answer": "Alpha has the highest ionizing power, beta is intermediate, and gamma has the lowest",
+      "explanation": "Alpha particles are relatively massive and carry double charge (+2e), interacting intensely to ionize atoms (~10,000 ions/mm). Beta has single charge and smaller mass (~100 ions/mm). Neutral gamma photons ionize least (~1 ion/mm)."
+    },
+    {
+      "id": "z05_f1_036",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How do alpha, beta, and gamma radiations compare in their penetrating power?",
+      "options": [
+        "Gamma has the greatest penetrating power, beta is intermediate, and alpha has the least",
+        "Alpha has the greatest penetrating power, while gamma is stopped by paper",
+        "Beta penetrates thick lead whereas gamma is stopped by skin",
+        "All three radiations have identical penetration depths in all materials"
+      ],
+      "correct_answer": "Gamma has the greatest penetrating power, beta is intermediate, and alpha has the least",
+      "explanation": "Alpha is stopped by a single sheet of paper or skin. Beta penetrates paper but is stopped by a few millimeters of aluminum. Uncharged gamma rays require several centimeters of lead or meters of concrete to attenuate."
+    },
+    {
+      "id": "z05_f1_037",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is meant by the half-life of a radioactive isotope?",
+      "options": [
+        "The time required for half of the radioactive nuclei in a sample to decay",
+        "Half the time until all radioactivity disappears completely",
+        "The time it takes for a nucleus to split into two equal halves",
+        "The time needed for an isotope to lose half of its physical mass"
+      ],
+      "correct_answer": "The time required for half of the radioactive nuclei in a sample to decay",
+      "explanation": "Half-life (T₁/₂) is the characteristic duration during which 50% of the unstable radioactive parent nuclei in a sample spontaneously disintegrate into daughter products."
+    },
+    {
+      "id": "z05_f1_038",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why do bones appear bright white on an X-ray radiograph while soft tissues appear dark or grey?",
+      "options": [
+        "Dense bones contain high atomic-number calcium that absorbs X-rays strongly, casting a shadow on the detector",
+        "Bones actively emit their own visible white light when irradiated",
+        "Soft muscle tissues reflect X-rays back to the generator",
+        "X-rays convert marrow inside bones into phosphorescent chemicals"
+      ],
+      "correct_answer": "Dense bones contain high atomic-number calcium that absorbs X-rays strongly, casting a shadow on the detector",
+      "explanation": "X-ray attenuation depends steeply on atomic number (photoelectric absorption ∝ Z³). Calcium-rich bone absorbs X-rays, preventing them from exposing the film/detector, leaving an unexposed white shadow."
+    },
+    {
+      "id": "z05_f1_039",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is Ultrasonography (USG) considered safer than CT scanning for monitoring unborn fetuses?",
+      "options": [
+        "Ultrasound uses non-ionizing sound waves, whereas CT scans use ionizing X-radiation that can damage fetal DNA",
+        "Ultrasound waves warm the amniotic fluid to keep the fetus comfortable",
+        "CT scans take 24 hours to acquire a single image",
+        "Sound waves can destroy cancer cells in the womb"
+      ],
+      "correct_answer": "Ultrasound uses non-ionizing sound waves, whereas CT scans use ionizing X-radiation that can damage fetal DNA",
+      "explanation": "Ultrasound is purely mechanical vibration without ionizing potential. CT scanning delivers multiple high-dose X-ray exposures, carrying risk of chromosomal damage and childhood leukemia."
+    },
+    {
+      "id": "z05_f1_040",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does Magnetic Resonance Imaging (MRI) produce detailed anatomical images without using ionizing radiation?",
+      "options": [
+        "It aligns hydrogen proton nuclear spins with a strong magnetic field and detects radio-frequency signals emitted as they relax",
+        "It fires high-speed neutrons into soft tissue",
+        "It measures the electrical resistance of skin using surface electrodes",
+        "It passes infrared laser beams through the human skull"
+      ],
+      "correct_answer": "It aligns hydrogen proton nuclear spins with a strong magnetic field and detects radio-frequency signals emitted as they relax",
+      "explanation": "Human tissue is rich in water (H₂O). Strong B-fields align hydrogen proton magnetic moments. RF pulses tip these spins; as they relax back to equilibrium, they emit radio signals that computers map into cross-sectional images."
+    },
+    {
+      "id": "z05_f1_041",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the difference between an intrinsic semiconductor and an extrinsic semiconductor?",
+      "options": [
+        "Intrinsic is pure semiconductor crystal; extrinsic is doped with deliberate impurities to boost conductivity",
+        "Intrinsic conducts only at absolute zero; extrinsic conducts only at boiling temperatures",
+        "Intrinsic semiconductors contain only protons",
+        "Extrinsic semiconductors are made of biological tissue"
+      ],
+      "correct_answer": "Intrinsic is pure semiconductor crystal; extrinsic is doped with deliberate impurities to boost conductivity",
+      "explanation": "An intrinsic semiconductor (e.g. pure Si) has very low conductivity at room temperature. Doping with pentavalent or trivalent impurities creates extrinsic n-type or p-type semiconductors with tailored carrier densities."
+    },
+    {
+      "id": "z05_f1_042",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is a bimetallic strip made of brass and iron curved into an arc when heated?",
+      "options": [
+        "Brass has a higher coefficient of linear expansion than iron, expanding more and forcing the strip to bend toward iron",
+        "Iron expands while brass contracts when heated",
+        "Heat melts the solder joint between the two metals",
+        "Electric currents circulate between the two metals"
+      ],
+      "correct_answer": "Brass has a higher coefficient of linear expansion than iron, expanding more and forcing the strip to bend toward iron",
+      "explanation": "Linear expansivity α_brass > α_iron. When bonded together and heated, the greater lengthening of the brass outer layer forces the strip into a curve with brass on the convex side, used in thermostats."
+    },
+    {
+      "id": "z05_f1_043",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does cooking take longer at high mountain altitudes in an open pot, and why does a pressure cooker solve this?",
+      "options": [
+        "Lower atmospheric pressure lowers water's boiling point below 100°C; a pressure cooker traps steam to raise pressure and boiling point above 120°C",
+        "Mountain air contains less oxygen, cooling the fire",
+        "Water evaporates instantly without boiling on mountains",
+        "Pressure cookers eliminate the need for thermal heat energy"
+      ],
+      "correct_answer": "Lower atmospheric pressure lowers water's boiling point below 100°C; a pressure cooker traps steam to raise pressure and boiling point above 120°C",
+      "explanation": "Boiling occurs when vapor pressure equals atmospheric pressure. At high altitudes, low pressure drops the boiling point (e.g. ~80°C on Everest), slowing cooking. A pressure cooker raises internal pressure to ~2 atm, boosting boiling temperature to ~121°C."
+    },
+    {
+      "id": "z05_f1_044",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the P wave in an Electrocardiogram (ECG) tracing associated with?",
+      "options": [
+        "Atrial depolarization (contraction of the atria)",
+        "Ventricular depolarization (contraction of the ventricles)",
+        "Ventricular repolarization (relaxation of the ventricles)",
+        "Closing of the aortic valve"
+      ],
+      "correct_answer": "Atrial depolarization (contraction of the atria)",
+      "explanation": "In a standard ECG waveform, the P wave represents the electrical wave of atrial depolarization triggering atrial contraction. The QRS complex represents ventricular depolarization."
+    },
+    {
+      "id": "z05_f1_045",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why do dentists and orthopedic surgeons wear lead aprons when operating X-ray equipment?",
+      "options": [
+        "Lead has a high atomic number (Z = 82) and high density, absorbing harmful scatter X-rays efficiently",
+        "Lead reflects X-rays back into the patient's body",
+        "Lead aprons keep the medical staff warm in chilled clinics",
+        "Lead prevents magnetic fields from reaching pacemakers"
+      ],
+      "correct_answer": "Lead has a high atomic number (Z = 82) and high density, absorbing harmful scatter X-rays efficiently",
+      "explanation": "X-ray attenuation is proportional to ρ·Z³. Lead's high density (11.3 g/cm³) and high atomic number (82) make even a 0.5 mm lead equivalent apron an effective barrier against scattered ionizing photons."
+    },
+    {
+      "id": "z05_f1_046",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does a Computed Tomography (CT) scan differ from a conventional plain X-ray radiograph?",
+      "options": [
+        "CT uses a rotating X-ray tube and computer algorithms to reconstruct 2D/3D cross-sectional tomographic slices",
+        "CT uses magnetic fields and sound waves rather than X-rays",
+        "Conventional X-rays are 3D while CT scans are strictly 1D lines",
+        "CT scans do not use any detectors"
+      ],
+      "correct_answer": "CT uses a rotating X-ray tube and computer algorithms to reconstruct 2D/3D cross-sectional tomographic slices",
+      "explanation": "Plain radiographs superimpose all anatomical structures along a 2D projection. CT rotates narrow X-ray beams 360° around the patient, computing attenuation in individual voxels to render cross-sectional slices."
+    },
+    {
+      "id": "z05_f1_047",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does blowing air over a hot cup of tea cool it down more rapidly?",
+      "options": [
+        "It sweeps away the saturated vapor layer above the liquid, accelerating the rate of evaporative cooling",
+        "Air molecules absorb water from the tea chemically",
+        "Blowing air slows down molecular vibrations in liquid water",
+        "Blowing decreases atmospheric pressure to zero"
+      ],
+      "correct_answer": "It sweeps away the saturated vapor layer above the liquid, accelerating the rate of evaporative cooling",
+      "explanation": "Airflow replaces the humid, vapor-saturated boundary layer above the cup with drier air, maintaining a steep concentration gradient that dramatically enhances evaporation and heat loss."
+    },
+    {
+      "id": "z05_f1_048",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is mercury preferred over water in traditional Torricellian liquid barometers?",
+      "options": [
+        "Mercury has a very high density (13,600 kg/m³), allowing a compact ~76 cm column compared to a unwieldy ~10.3 m column for water",
+        "Water does not respond to atmospheric pressure",
+        "Mercury evaporates faster than water",
+        "Mercury is completely transparent, making readings easier"
+      ],
+      "correct_answer": "Mercury has a very high density (13,600 kg/m³), allowing a compact ~76 cm column compared to a unwieldy ~10.3 m column for water",
+      "explanation": "From P = hρg, height h = P / (ρg). Standard atmospheric pressure supports ~0.76 m of dense mercury (ρ = 13,600 kg/m³), whereas a water barometer would require an unmanageable height of 10.3 meters."
+    },
+    {
+      "id": "z05_f1_049",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why are gamma rays instead of alpha particles used to sterilize pre-packaged disposable medical syringes?",
+      "options": [
+        "Gamma rays easily penetrate cardboard and plastic packaging to kill microbes throughout the product without opening it",
+        "Alpha particles turn plastic into radioactive poison",
+        "Gamma rays make the syringes glow in dark hospital rooms",
+        "Alpha particles cannot kill bacteria"
+      ],
+      "correct_answer": "Gamma rays easily penetrate cardboard and plastic packaging to kill microbes throughout the product without opening it",
+      "explanation": "Alpha particles cannot penetrate plastic wraps or paper cartons. Highly penetrating gamma rays traverse sealed boxes, breaking microbial DNA throughout the product without leaving chemical residues or induced radioactivity."
+    },
+    {
+      "id": "z05_f1_050",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the physical principle behind the Doppler Ultrasound technique in cardiology and vascular medicine?",
+      "options": [
+        "Ultrasound reflected from moving red blood cells shifts in frequency proportionally to blood flow velocity",
+        "Ultrasound heats the blood to make vessels glow in the dark",
+        "Ultrasound magnetizes hemoglobin in circulating blood",
+        "Red blood cells absorb ultrasound and emit radioactive gamma rays"
+      ],
+      "correct_answer": "Ultrasound reflected from moving red blood cells shifts in frequency proportionally to blood flow velocity",
+      "explanation": "By the acoustic Doppler effect, sound waves reflected by flowing erythrocytes undergo a frequency shift Δf = (2 f v cos θ) / c, enabling real-time color mapping of blood direction and velocity."
+    }
+  ]
+}

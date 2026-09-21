@@ -1,0 +1,217 @@
+[gd_scene format=3 uid="uid://bxlsetbjt6w1y"]
+
+[ext_resource type="Script" uid="uid://chkvltf0losys" path="res://scripts/minigames/zone01/MiniGame01Brake.gd" id="1_hfr54"]
+[ext_resource type="Texture2D" uid="uid://plyaqfhp5d34" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/mg01_brake_bg.png" id="2_idpbq"]
+[ext_resource type="Texture2D" uid="uid://cg71db67f4e1h" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/mg01_steel_block.png" id="3_4k86f"]
+[ext_resource type="Texture2D" uid="uid://lyg3jaa0js8b" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/crash_burst_spritesheet.png" id="4_dr47g"]
+[ext_resource type="Texture2D" uid="uid://cjn4qyggjs1jt" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/countdown_bar.png" id="5_l17mx"]
+[ext_resource type="Texture2D" uid="uid://cixcgdq13oswh" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/button_yes.png" id="6_d831x"]
+[ext_resource type="Texture2D" uid="uid://cxlcga8e5h5fe" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/button_no.png" id="7_r5ic6"]
+[ext_resource type="Texture2D" uid="uid://cdb4v2yfblhi" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/force_option_button.png" id="8_qubqu"]
+[ext_resource type="Texture2D" uid="uid://cqoosy0pe8n3t" path="res://asset/minigame asset/zone 1 mini game/mini game 1 asset/reference_card_friction.png" id="9_euchx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kv8yp"]
+atlas = ExtResource("8_qubqu")
+region = Rect2(173, 182, 78, 29)
+
+[node name="MiniGame01_Brake" type="Control" unique_id=1981423042]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource("1_hfr54")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1143354351]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource("2_idpbq")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BlockSprite" type="Sprite2D" parent="." unique_id=796002206]
+z_index = 12
+position = Vector2(289.81293, 189.53119)
+rotation = 0.23322798
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_4k86f")
+region_enabled = true
+region_rect = Rect2(214.56042, 183.02295, 1108.6144, 746.6183)
+
+[node name="CrashBurst" type="Sprite2D" parent="." unique_id=2026587679]
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("4_dr47g")
+hframes = 6
+
+[node name="HUD" type="Control" parent="." unique_id=292422113]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="InfoLabel" type="Label" parent="HUD" unique_id=866115658]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 544.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.95, 0.95, 0.9, 1)
+theme_override_font_sizes/font_size = 18
+
+[node name="QuestionLabel" type="Label" parent="HUD" unique_id=569929436]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 120.0
+offset_right = 1040.0
+offset_bottom = 168.0
+theme_override_colors/font_color = Color(1, 1, 0.85, 1)
+theme_override_font_sizes/font_size = 26
+horizontal_alignment = 1
+
+[node name="CountdownBar" type="TextureProgressBar" parent="HUD" unique_id=2136666804]
+layout_mode = 0
+offset_left = 340.0
+offset_top = -220.0
+offset_right = 940.0
+offset_bottom = 66.5
+scale = Vector2(1, 2)
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("5_l17mx")
+
+[node name="YesButton" type="TextureButton" parent="HUD" unique_id=264495466]
+custom_minimum_size = Vector2(200, 90)
+layout_mode = 0
+offset_left = 264.00003
+offset_top = 323.00003
+offset_right = 464.00003
+offset_bottom = 413.00003
+scale = Vector2(7, 7)
+texture_normal = ExtResource("6_d831x")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="NoButton" type="TextureButton" parent="HUD" unique_id=667886486]
+custom_minimum_size = Vector2(200, 90)
+layout_mode = 0
+offset_left = 466.0
+offset_top = 321.00003
+offset_right = 666.0
+offset_bottom = 411.00003
+scale = Vector2(7, 7)
+texture_normal = ExtResource("7_r5ic6")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="ForceBox" type="HBoxContainer" parent="HUD" unique_id=745586714]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 520.0
+offset_right = 1000.0
+offset_bottom = 620.0
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="Force1" type="TextureButton" parent="HUD/ForceBox" unique_id=1567840264]
+custom_minimum_size = Vector2(200, 72)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_kv8yp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="HUD/ForceBox/Force1" unique_id=1489447351]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_colors/font_color = Color(0.95, 0.92, 0.75, 1)
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Force2" type="TextureButton" parent="HUD/ForceBox" unique_id=170712239]
+custom_minimum_size = Vector2(200, 72)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_kv8yp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="HUD/ForceBox/Force2" unique_id=1615648841]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_colors/font_color = Color(0.95, 0.92, 0.75, 1)
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Force3" type="TextureButton" parent="HUD/ForceBox" unique_id=890766781]
+custom_minimum_size = Vector2(200, 72)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_kv8yp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="HUD/ForceBox/Force3" unique_id=1090495433]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_colors/font_color = Color(0.95, 0.92, 0.75, 1)
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReferenceToggle" type="Button" parent="HUD" unique_id=30039400]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 613.0
+offset_right = 251.0
+offset_bottom = 680.0
+text = "Formulas"
+
+[node name="ReferenceCard" type="TextureRect" parent="HUD" unique_id=1953896363]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 225.0
+offset_right = 920.0
+offset_bottom = 560.0
+texture = ExtResource("9_euchx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ResultLabel" type="Label" parent="HUD" unique_id=523821819]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 280.0
+offset_right = 1040.0
+offset_bottom = 344.0
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+
+[node name="GameOverLayer" type="CanvasLayer" parent="." unique_id=2064818305]
+layer = 20
+visible = false
+
+[node name="Dim" type="ColorRect" parent="GameOverLayer" unique_id=1540580452]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0, 0, 0, 0.75)
+
+[node name="Center" type="CenterContainer" parent="GameOverLayer" unique_id=1602281076]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBox" type="VBoxContainer" parent="GameOverLayer/Center" unique_id=1574308291]
+layout_mode = 2
+
+[node name="GameOverLabel" type="Label" parent="GameOverLayer/Center/VBox" unique_id=448748344]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.35, 0.3, 1)
+theme_override_font_sizes/font_size = 48
+text = "FACTORY DAMAGED"
+horizontal_alignment = 1

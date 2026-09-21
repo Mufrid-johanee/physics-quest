@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://d3ddxoad72oqf"
+path="res://.godot/imported/sfx_paper_rustle (2).ogg-3658d16acfe2de6316158018e30b455f.oggvorbisstr"
+
+[deps]
+
+source_file="res://asset/music/sfx_paper_rustle (2).ogg"
+dest_files=["res://.godot/imported/sfx_paper_rustle (2).ogg-3658d16acfe2de6316158018e30b455f.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,225 @@
+[gd_scene format=3 uid="uid://3xkhsq1m1dwm"]
+
+[ext_resource type="Script" uid="uid://c7s7u7wgt0yrv" path="res://scripts/zone03/Zone03Floor1.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://c4anyaubxpffn" path="res://asset/sprites/Environment/zone 3/signal_station_deck1_waves.png" id="2_room"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="3_player"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="4_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="5_dialogue"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="6_interact"]
+[ext_resource type="Texture2D" uid="uid://b1taj8yi61yd8" path="res://asset/sprites/character/worker 7.png" id="7_2jo5o"]
+[ext_resource type="Texture2D" uid="uid://3ailhiyt2uu3" path="res://asset/sprites/character/character zone 3/char_farid_idle.png" id="7_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/QuizPanel.tscn" id="8_quiz"]
+[ext_resource type="Script" uid="uid://c4w1hfb0xn10y" path="res://scripts/quiz/QuizController.gd" id="9_quizctl"]
+[ext_resource type="Texture2D" uid="uid://d3nm7jnriap41" path="res://asset/sprites/character/rina fornt view.png" id="11_4y351"]
+[ext_resource type="Script" uid="uid://3607pr7eqqgy" path="res://scripts/npc/AmbientProximity.gd" id="amb1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1920, 425)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(121.5, 1072)
+
+[sub_resource type="RectangleShape2D" id="Rect_npc_detect"]
+size = Vector2(140, 310.25)
+
+[sub_resource type="RectangleShape2D" id="Rect_exit"]
+size = Vector2(465, 100)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_1db9548f"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_cadaea41"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_a5355dde"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_0b0c254c"]
+size = Vector2(300, 350)
+
+[node name="Zone03_Floor1" type="Node2D" unique_id=1567084438]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=1981540657]
+z_index = -20
+
+[node name="RoomArt" type="Sprite2D" parent="Background" unique_id=1868379975]
+scale = Vector2(1.7935185, 1)
+texture = ExtResource("2_room")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1965183687]
+position = Vector2(903, 528)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Collision" type="Node2D" parent="." unique_id=2119521173]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision" unique_id=924506536]
+position = Vector2(960, 20)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundTop" unique_id=189292002]
+position = Vector2(0, 192.5)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision" unique_id=868132556]
+position = Vector2(960, 1052)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundBottom" unique_id=1795821093]
+position = Vector2(-15, 132)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision" unique_id=2132071431]
+position = Vector2(20, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=1856284464]
+position = Vector2(10.5, 0)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=522116851]
+position = Vector2(1582, 333)
+scale = Vector2(4, 0.2)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=947599514]
+position = Vector2(934, 30)
+scale = Vector2(4, 0.2)
+shape = SubResource("Rect_bound_v")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision" unique_id=1484300440]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=567617631]
+shape = SubResource("Rect_bound_v")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=692081110]
+y_sort_enabled = true
+scale = Vector2(1.6, 1.6)
+
+[node name="Farid" parent="NPCs" unique_id=536228265 instance=ExtResource("4_npc")]
+z_index = 5
+position = Vector2(845.6251, 325.625)
+scale = Vector2(0.8, 0.8)
+display_name = "Farid"
+sprite_texture = ExtResource("7_npc")
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Farid" unique_id=2146574471]
+position = Vector2(-2.3439407, 0)
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Farid/InteractionArea" unique_id=2045558151]
+position = Vector2(0, 85.56247)
+scale = Vector2(0.49999997, 0.49999997)
+shape = SubResource("Rect_npc_detect")
+
+[node name="Label" type="Label" parent="NPCs/Farid" unique_id=735672941]
+offset_left = -49.21894
+offset_top = -154.6875
+offset_right = 328.12457
+offset_bottom = -17.1875
+theme_override_font_sizes/font_size = 23
+text = "Farid"
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1072523415]
+position = Vector2(960, 900)
+
+[node name="Player" parent="." unique_id=1225230004 instance=ExtResource("3_player")]
+z_index = 8
+position = Vector2(960, 900)
+scale = Vector2(2.7, 2.7)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="Interactions" type="Node2D" parent="." unique_id=1484468491]
+
+[node name="ExteriorExit" type="Area2D" parent="Interactions" unique_id=2032565623]
+position = Vector2(960, 1000)
+collision_layer = 8
+script = ExtResource("6_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit" unique_id=126035537]
+position = Vector2(10.5, 0)
+shape = SubResource("Rect_exit")
+
+[node name="Worker7" type="Sprite2D" parent="Interactions/ExteriorExit" unique_id=1177866616]
+position = Vector2(-369, -411)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("7_2jo5o")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Interactions/ExteriorExit/Worker7" unique_id=1087429076]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit/Worker7/BodyCollision" unique_id=279776166]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_1db9548f")
+
+[node name="AmbientProximity" type="Area2D" parent="Interactions/ExteriorExit/Worker7" unique_id=925993673]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit/Worker7/AmbientProximity" unique_id=1055749742]
+shape = SubResource("Rect_amb_prox_cadaea41")
+
+[node name="DialoguePanel" parent="." unique_id=1675848937 instance=ExtResource("5_dialogue")]
+visible = false
+
+[node name="QuizController" type="Node" parent="." unique_id=879041373]
+script = ExtResource("9_quizctl")
+
+[node name="QuizPanel" parent="." unique_id=594090098 instance=ExtResource("8_quiz")]
+visible = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1163626725]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=537512974]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+text = "Press E / F"
+horizontal_alignment = 1
+
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]
+[node name="RinaForntView" type="Sprite2D" parent="." unique_id=2036837357]
+position = Vector2(1657, 615)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("11_4y351")
+
+[node name="BodyCollision" type="StaticBody2D" parent="RinaForntView" unique_id=1866364205]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RinaForntView/BodyCollision" unique_id=1529291677]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_a5355dde")
+
+[node name="AmbientProximity" type="Area2D" parent="RinaForntView" unique_id=367988610]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+speaker_name = "Rina"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RinaForntView/AmbientProximity" unique_id=1557200053]
+shape = SubResource("Rect_amb_prox_0b0c254c")

@@ -1,0 +1,714 @@
+{
+  "zone": "03_wave_optics",
+  "floor": 1,
+  "bloom_levels": [
+    "remember",
+    "understand"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z03_f1_001",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of frequency?",
+      "options": [
+        "Hertz",
+        "Second",
+        "Meter",
+        "Decibel"
+      ],
+      "correct_answer": "Hertz",
+      "explanation": "The SI unit of frequency is the Hertz (Hz), which equals one cycle per second (1 Hz = 1 s⁻¹)."
+    },
+    {
+      "id": "z03_f1_002",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What type of wave is a sound wave in air?",
+      "options": [
+        "Longitudinal wave",
+        "Transverse wave",
+        "Electromagnetic wave",
+        "Surface wave"
+      ],
+      "correct_answer": "Longitudinal wave",
+      "explanation": "Sound waves in air are longitudinal waves because the particles of the medium vibrate parallel to the direction of wave propagation."
+    },
+    {
+      "id": "z03_f1_003",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the relationship between wave velocity (v), frequency (f), and wavelength (λ)?",
+      "options": [
+        "v = fλ",
+        "v = f/λ",
+        "v = λ/f",
+        "v = f + λ"
+      ],
+      "correct_answer": "v = fλ",
+      "explanation": "Wave velocity is the product of frequency and wavelength: v = fλ."
+    },
+    {
+      "id": "z03_f1_004",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the normal audible frequency range for human hearing?",
+      "options": [
+        "20 Hz to 20,000 Hz",
+        "10 Hz to 10,000 Hz",
+        "50 Hz to 50,000 Hz",
+        "200 Hz to 2,000 Hz"
+      ],
+      "correct_answer": "20 Hz to 20,000 Hz",
+      "explanation": "The human ear can detect sound frequencies ranging from 20 Hz up to 20,000 Hz (20 kHz)."
+    },
+    {
+      "id": "z03_f1_005",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Sound frequencies below 20 Hz are called what?",
+      "options": [
+        "Infrasonic sound",
+        "Ultrasonic sound",
+        "Supersonic sound",
+        "Audible sound"
+      ],
+      "correct_answer": "Infrasonic sound",
+      "explanation": "Frequencies below the lower threshold of human hearing (20 Hz) are known as infrasonic sound (infrasound)."
+    },
+    {
+      "id": "z03_f1_006",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Sound frequencies above 20,000 Hz are known as what?",
+      "options": [
+        "Ultrasonic sound",
+        "Infrasonic sound",
+        "Audible sound",
+        "Subsonic sound"
+      ],
+      "correct_answer": "Ultrasonic sound",
+      "explanation": "Sound with a frequency greater than 20,000 Hz (20 kHz) is referred to as ultrasound or ultrasonic sound."
+    },
+    {
+      "id": "z03_f1_007",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the relationship between time period (T) and frequency (f)?",
+      "options": [
+        "T = 1/f",
+        "T = f",
+        "T = f²",
+        "T = 2πf"
+      ],
+      "correct_answer": "T = 1/f",
+      "explanation": "Time period is the reciprocal of frequency: T = 1/f, representing the time required for one complete oscillation."
+    },
+    {
+      "id": "z03_f1_008",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of wavelength?",
+      "options": [
+        "Meter",
+        "Hertz",
+        "Second",
+        "Watt"
+      ],
+      "correct_answer": "Meter",
+      "explanation": "Wavelength is a measure of spatial distance between successive crests or troughs, so its SI unit is the meter (m)."
+    },
+    {
+      "id": "z03_f1_009",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the focal length of a spherical mirror with radius of curvature r?",
+      "options": [
+        "f = r/2",
+        "f = 2r",
+        "f = r",
+        "f = r²"
+      ],
+      "correct_answer": "f = r/2",
+      "explanation": "For a spherical mirror with a small aperture, the focal length is half the radius of curvature: f = r/2."
+    },
+    {
+      "id": "z03_f1_010",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "According to the first law of reflection, what is the relationship between angle of incidence (i) and angle of reflection (r)?",
+      "options": [
+        "i = r",
+        "i > r",
+        "i + r = 90°",
+        "i < r"
+      ],
+      "correct_answer": "i = r",
+      "explanation": "The first law of reflection states that the angle of incidence equals the angle of reflection (i = r)."
+    },
+    {
+      "id": "z03_f1_011",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which type of mirror is commonly used as a rear-view mirror in vehicles?",
+      "options": [
+        "Convex mirror",
+        "Concave mirror",
+        "Plane mirror",
+        "Parabolic concave mirror"
+      ],
+      "correct_answer": "Convex mirror",
+      "explanation": "Convex mirrors always form erect, diminished images and provide a much wider field of view, making them ideal for vehicle rear-view mirrors."
+    },
+    {
+      "id": "z03_f1_012",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What kind of mirror is used by dentists to inspect teeth?",
+      "options": [
+        "Concave mirror",
+        "Convex mirror",
+        "Plane mirror",
+        "Cylindrical mirror"
+      ],
+      "correct_answer": "Concave mirror",
+      "explanation": "When an object is placed between the pole and focus of a concave mirror, it forms an upright, enlarged virtual image, helping dentists view teeth."
+    },
+    {
+      "id": "z03_f1_013",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "3 × 10⁸ m/s",
+        "3 × 10⁶ m/s",
+        "332 m/s",
+        "3 × 10¹⁰ m/s"
+      ],
+      "correct_answer": "3 × 10⁸ m/s",
+      "explanation": "In a vacuum, light travels at approximately 3 × 10⁸ meters per second (c = 3 × 10⁸ m/s)."
+    },
+    {
+      "id": "z03_f1_014",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of power of a lens?",
+      "options": [
+        "Diopter",
+        "Meter",
+        "Watt",
+        "Candela"
+      ],
+      "correct_answer": "Diopter",
+      "explanation": "The power of a lens is measured in Diopters (D), where 1 D = 1 m⁻¹."
+    },
+    {
+      "id": "z03_f1_015",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the least distance of distinct vision for a healthy adult human eye?",
+      "options": [
+        "25 cm",
+        "10 cm",
+        "50 cm",
+        "Infinity"
+      ],
+      "correct_answer": "25 cm",
+      "explanation": "The near point or least distance of distinct vision for an average healthy adult human eye is approximately 25 cm."
+    },
+    {
+      "id": "z03_f1_016",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which defect of vision is also known as short-sightedness?",
+      "options": [
+        "Myopia",
+        "Hypermetropia",
+        "Presbyopia",
+        "Cataract"
+      ],
+      "correct_answer": "Myopia",
+      "explanation": "Myopia is short-sightedness, where nearby objects are seen clearly but distant objects appear blurred."
+    },
+    {
+      "id": "z03_f1_017",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which type of lens is used to correct myopia?",
+      "options": [
+        "Concave lens",
+        "Convex lens",
+        "Bifocal lens",
+        "Cylindrical lens"
+      ],
+      "correct_answer": "Concave lens",
+      "explanation": "A concave (diverging) lens is used to correct myopia because it diverges incoming parallel rays so they focus onto the retina."
+    },
+    {
+      "id": "z03_f1_018",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which defect of vision is also known as long-sightedness?",
+      "options": [
+        "Hypermetropia",
+        "Myopia",
+        "Astigmatism",
+        "Glaucoma"
+      ],
+      "correct_answer": "Hypermetropia",
+      "explanation": "Hypermetropia is long-sightedness, where distant objects are seen clearly but nearby objects cannot be focused sharply."
+    },
+    {
+      "id": "z03_f1_019",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which type of lens is used to correct hypermetropia?",
+      "options": [
+        "Convex lens",
+        "Concave lens",
+        "Plano-concave lens",
+        "Diverging lens"
+      ],
+      "correct_answer": "Convex lens",
+      "explanation": "A convex (converging) lens provides the additional converging power needed to focus rays from nearby objects onto the retina."
+    },
+    {
+      "id": "z03_f1_020",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for the power of a lens (P) in terms of its focal length in meters (f)?",
+      "options": [
+        "P = 1/f",
+        "P = f",
+        "P = 100f",
+        "P = f²"
+      ],
+      "correct_answer": "P = 1/f",
+      "explanation": "Power of a lens is defined as the reciprocal of its focal length expressed in meters: P = 1/f (in meters)."
+    },
+    {
+      "id": "z03_f1_021",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the refractive index of water approximately?",
+      "options": [
+        "1.33",
+        "1.00",
+        "1.50",
+        "2.42"
+      ],
+      "correct_answer": "1.33",
+      "explanation": "The refractive index of pure water relative to air is approximately 1.33 (or 4/3)."
+    },
+    {
+      "id": "z03_f1_022",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the refractive index of ordinary crown glass approximately?",
+      "options": [
+        "1.50",
+        "1.33",
+        "1.00",
+        "2.42"
+      ],
+      "correct_answer": "1.50",
+      "explanation": "Crown glass typically has a refractive index of approximately 1.50 (or 3/2)."
+    },
+    {
+      "id": "z03_f1_023",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What phenomenon allows optical fibers to transmit light signals over long distances?",
+      "options": [
+        "Total internal reflection",
+        "Diffraction",
+        "Dispersion",
+        "Polarization"
+      ],
+      "correct_answer": "Total internal reflection",
+      "explanation": "Optical fibers guide light along their core using total internal reflection occurring at the core-cladding boundary."
+    },
+    {
+      "id": "z03_f1_024",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the persistence of hearing in human ears?",
+      "options": [
+        "0.1 second",
+        "1.0 second",
+        "0.01 second",
+        "0.5 second"
+      ],
+      "correct_answer": "0.1 second",
+      "explanation": "The sensation of sound persists in the human brain for approximately 0.1 second (1/10th of a second)."
+    },
+    {
+      "id": "z03_f1_025",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which characteristic of a musical sound depends primarily on its frequency?",
+      "options": [
+        "Pitch",
+        "Loudness",
+        "Quality",
+        "Intensity"
+      ],
+      "correct_answer": "Pitch",
+      "explanation": "Pitch is the sensation determined primarily by the frequency of the sound wave; higher frequency results in a higher pitch."
+    },
+    {
+      "id": "z03_f1_026",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why can sound waves NOT propagate through a vacuum?",
+      "options": [
+        "Sound requires a material medium to vibrate particles",
+        "Sound waves are electromagnetic waves",
+        "Sound has too much energy to travel in vacuum",
+        "Gravity is absent in a vacuum"
+      ],
+      "correct_answer": "Sound requires a material medium to vibrate particles",
+      "explanation": "Sound is a mechanical wave that propagates via vibrations of particles in a medium; in a vacuum with no particles, sound cannot travel."
+    },
+    {
+      "id": "z03_f1_027",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens to the wavelength of a wave if its frequency doubles while speed remains constant?",
+      "options": [
+        "It is halved",
+        "It doubles",
+        "It quadruples",
+        "It remains unchanged"
+      ],
+      "correct_answer": "It is halved",
+      "explanation": "From v = fλ, if v is constant, λ = v/f. Doubling frequency (f) cuts wavelength (λ) in half."
+    },
+    {
+      "id": "z03_f1_028",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does the speed of sound increase with an increase in air temperature?",
+      "options": [
+        "Gas molecules move faster and collide more frequently at higher temperatures",
+        "The density of air increases with temperature",
+        "The frequency of the sound source increases automatically",
+        "Air molecules become heavier when heated"
+      ],
+      "correct_answer": "Gas molecules move faster and collide more frequently at higher temperatures",
+      "explanation": "At higher temperatures, gas molecules have higher average kinetic energy and transfer vibrational energy between particles more rapidly, increasing the speed of sound (v ∝ √T)."
+    },
+    {
+      "id": "z03_f1_029",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does an echo differ from the original sound?",
+      "options": [
+        "An echo is the reflected sound heard distinctly after the original sound ceases",
+        "An echo has a completely different frequency than the original sound",
+        "An echo only occurs in a vacuum",
+        "An echo travels twice as fast as the original sound"
+      ],
+      "correct_answer": "An echo is the reflected sound heard distinctly after the original sound ceases",
+      "explanation": "An echo is a separate, reflected sound wave heard after an obstacle reflects the incident sound with a delay greater than 0.1 s."
+    },
+    {
+      "id": "z03_f1_030",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is the image formed by a plane mirror called a virtual image?",
+      "options": [
+        "Because light rays only appear to diverge from it and cannot be projected onto a screen",
+        "Because the image is upside down",
+        "Because it is formed on the front surface of the mirror",
+        "Because light rays physically intersect at the image location"
+      ],
+      "correct_answer": "Because light rays only appear to diverge from it and cannot be projected onto a screen",
+      "explanation": "A virtual image is formed where reflected rays appear to meet when traced backwards; no actual light passes through that point, so it cannot be captured on a screen."
+    },
+    {
+      "id": "z03_f1_031",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is lateral inversion as observed in a plane mirror?",
+      "options": [
+        "The right side of the object appears as the left side of the image",
+        "The object appears upside down",
+        "The object appears smaller than its actual size",
+        "The colors of the object are reversed"
+      ],
+      "correct_answer": "The right side of the object appears as the left side of the image",
+      "explanation": "Lateral inversion is the apparent sideways reversal of an object in a plane mirror, where left and right exchange positions."
+    },
+    {
+      "id": "z03_f1_032",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "When light travels from an optically rarer medium to a denser medium, how does it bend?",
+      "options": [
+        "It bends towards the normal",
+        "It bends away from the normal",
+        "It travels straight without any bending",
+        "It reflects back entirely into the first medium"
+      ],
+      "correct_answer": "It bends towards the normal",
+      "explanation": "Light slows down upon entering an optically denser medium, causing the wavefront to bend towards the normal."
+    },
+    {
+      "id": "z03_f1_033",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "When light travels from an optically denser medium into a rarer medium, how does it bend?",
+      "options": [
+        "It bends away from the normal",
+        "It bends towards the normal",
+        "It continues along the normal",
+        "It stops completely at the interface"
+      ],
+      "correct_answer": "It bends away from the normal",
+      "explanation": "Because light speeds up in an optically rarer medium, the angle of refraction is greater than the angle of incidence, bending the ray away from the normal."
+    },
+    {
+      "id": "z03_f1_034",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What are the two necessary conditions for total internal reflection to occur?",
+      "options": [
+        "Light must travel from denser to rarer medium, and angle of incidence must exceed critical angle",
+        "Light must travel from rarer to denser medium, and angle of incidence must equal 90°",
+        "Light must travel in a vacuum, and angle of incidence must be 0°",
+        "Light must be monochromatic, and travel through a concave mirror"
+      ],
+      "correct_answer": "Light must travel from denser to rarer medium, and angle of incidence must exceed critical angle",
+      "explanation": "Total internal reflection occurs only when light originates in a denser medium heading towards a rarer medium, and the angle of incidence exceeds the critical angle (i > θc)."
+    },
+    {
+      "id": "z03_f1_035",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a swimming pool appear shallower than its actual depth?",
+      "options": [
+        "Light rays from the pool bottom bend away from the normal upon leaving water",
+        "Light reflects completely from the surface of the water",
+        "Water absorbs all red light rays",
+        "The pool floor acts as a concave mirror"
+      ],
+      "correct_answer": "Light rays from the pool bottom bend away from the normal upon leaving water",
+      "explanation": "Rays emerging from water into air bend away from the normal, so their backward extensions meet at a virtual point above the real bottom, creating an apparent depth d' = d/n."
+    },
+    {
+      "id": "z03_f1_036",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the critical angle for a given medium boundary?",
+      "options": [
+        "The angle of incidence in the denser medium for which the angle of refraction is 90°",
+        "The angle of incidence that produces zero reflection",
+        "The maximum angle of reflection possible in a mirror",
+        "The angle of incidence in the rarer medium when light stops"
+      ],
+      "correct_answer": "The angle of incidence in the denser medium for which the angle of refraction is 90°",
+      "explanation": "The critical angle is defined as the angle of incidence in the denser medium that produces an angle of refraction of exactly 90° along the boundary."
+    },
+    {
+      "id": "z03_f1_037",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a convex lens have a positive focal length while a concave lens has a negative focal length?",
+      "options": [
+        "Convex lenses converge parallel rays to a real focus; concave lenses diverge rays from a virtual focus",
+        "Convex lenses are thicker at the edges than in the middle",
+        "Convex lenses are always made of glass with positive charge",
+        "Concave lenses absorb light instead of transmitting it"
+      ],
+      "correct_answer": "Convex lenses converge parallel rays to a real focus; concave lenses diverge rays from a virtual focus",
+      "explanation": "By the Cartesian sign convention, the real focus of a converging (convex) lens lies on the opposite side (positive), whereas a diverging (concave) lens has a virtual focus on the same side (negative)."
+    },
+    {
+      "id": "z03_f1_038",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "In the human eye, which part acts as the screen where images are formed?",
+      "options": [
+        "Retina",
+        "Cornea",
+        "Iris",
+        "Pupil"
+      ],
+      "correct_answer": "Retina",
+      "explanation": "The retina is the light-sensitive back inner lining of the eye where real, inverted optical images are focused onto photoreceptor cells (rods and cones)."
+    },
+    {
+      "id": "z03_f1_039",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What role does the iris play in the human eye?",
+      "options": [
+        "It controls the size of the pupil to regulate the amount of light entering",
+        "It focuses light rays onto the retina",
+        "It converts light into electrical impulses",
+        "It protects the eyeball from mechanical injury"
+      ],
+      "correct_answer": "It controls the size of the pupil to regulate the amount of light entering",
+      "explanation": "The iris is a pigmented muscular ring that expands or contracts to adjust the diameter of the central opening (pupil) based on ambient light intensity."
+    },
+    {
+      "id": "z03_f1_040",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does an object placed at the principal focus of a concave mirror produce an image at infinity?",
+      "options": [
+        "Reflected rays emerge parallel to each other",
+        "Reflected rays diverge widely from each other",
+        "No light rays reflect from the mirror",
+        "All light rays are absorbed by the mirror surface"
+      ],
+      "correct_answer": "Reflected rays emerge parallel to each other",
+      "explanation": "Light rays originating from the focal point strike the concave mirror and reflect parallel to the principal axis, intersecting only at infinity."
+    },
+    {
+      "id": "z03_f1_041",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What causes the natural phenomenon of a mirage in hot deserts?",
+      "options": [
+        "Refraction and total internal reflection of light through layers of air of varying temperatures",
+        "Scattering of light by airborne sand grains",
+        "Diffuse reflection from underground water reservoirs",
+        "Interference between sound and light waves"
+      ],
+      "correct_answer": "Refraction and total internal reflection of light through layers of air of varying temperatures",
+      "explanation": "Near the hot ground, air is hotter and less dense than upper air layers. Light from the sky curves upward through successive refraction and total internal reflection, creating the optical illusion of water."
+    },
+    {
+      "id": "z03_f1_042",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does sound travel faster in water than in air?",
+      "options": [
+        "Water has a much higher bulk modulus (elasticity) relative to its density than air",
+        "Water is less dense than air",
+        "Water molecules do not collide with each other",
+        "Sound waves become transverse waves in liquids"
+      ],
+      "correct_answer": "Water has a much higher bulk modulus (elasticity) relative to its density than air",
+      "explanation": "Wave speed in fluids is determined by v = √(B/ρ). Although water is denser than air, its bulk modulus B is roughly 15,000 times greater, making sound travel ~4.5 times faster in water (~1498 m/s vs ~340 m/s)."
+    },
+    {
+      "id": "z03_f1_043",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the physical cause of myopia (short-sightedness)?",
+      "options": [
+        "The eyeball is elongated or the lens is excessively curved",
+        "The eyeball is too short from front to back",
+        "The cornea has lost its curvature completely",
+        "The ciliary muscles cannot contract at all"
+      ],
+      "correct_answer": "The eyeball is elongated or the lens is excessively curved",
+      "explanation": "In myopia, parallel rays from distant objects converge in front of the retina because the eye lens is overly converging or the eyeball is too long."
+    },
+    {
+      "id": "z03_f1_044",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the physical cause of hypermetropia (long-sightedness)?",
+      "options": [
+        "The eyeball is shortened or the focal length of the eye lens is too long",
+        "The eyeball is abnormally elongated",
+        "The cornea becomes completely opaque",
+        "The retina moves closer to the lens during aging"
+      ],
+      "correct_answer": "The eyeball is shortened or the focal length of the eye lens is too long",
+      "explanation": "In hypermetropia, the converging power of the eye is insufficient (or the eyeball is too short), so rays from a nearby object focus behind the retina."
+    },
+    {
+      "id": "z03_f1_045",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How can you distinguish between pitch and loudness of a sound?",
+      "options": [
+        "Pitch depends on frequency; loudness depends on amplitude",
+        "Pitch depends on amplitude; loudness depends on frequency",
+        "Both pitch and loudness depend solely on wave speed",
+        "Pitch depends on the medium; loudness depends on wave period"
+      ],
+      "correct_answer": "Pitch depends on frequency; loudness depends on amplitude",
+      "explanation": "Pitch relates to how high or low a note sounds and is governed by frequency, whereas loudness relates to perceived acoustic volume and is determined by wave amplitude."
+    },
+    {
+      "id": "z03_f1_046",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens to the path of a light ray when it strikes a glass surface perpendicularly (angle of incidence = 0°)?",
+      "options": [
+        "It passes straight through without any deviation",
+        "It reflects back along the same path only",
+        "It bends at 90° along the boundary",
+        "It splits into seven rainbow colors"
+      ],
+      "correct_answer": "It passes straight through without any deviation",
+      "explanation": "When angle of incidence i = 0°, from Snell's law sin(r) = (n1/n2)sin(0°) = 0, so r = 0°. The light slows down but does not deviate in direction."
+    },
+    {
+      "id": "z03_f1_047",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why do bats emit ultrasonic sound waves during flight?",
+      "options": [
+        "To navigate and detect prey through echolocation",
+        "To warm up the air ahead of their flight path",
+        "To stun flying insects from a long distance",
+        "To communicate with aquatic animals"
+      ],
+      "correct_answer": "To navigate and detect prey through echolocation",
+      "explanation": "Bats produce high-frequency ultrasound pulses and listen for reflected echoes, allowing them to map obstacles and flying insects in total darkness."
+    },
+    {
+      "id": "z03_f1_048",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the principal focus of a convex mirror?",
+      "options": [
+        "A point behind the mirror from which parallel incident rays appear to diverge after reflection",
+        "A point in front of the mirror where all incident rays converge physically",
+        "The geometric center of the reflecting sphere",
+        "The midpoint of the mirror's aperture"
+      ],
+      "correct_answer": "A point behind the mirror from which parallel incident rays appear to diverge after reflection",
+      "explanation": "Parallel rays hitting a convex mirror diverge; when traced backward, their extensions intersect at a virtual focal point behind the mirror."
+    },
+    {
+      "id": "z03_f1_049",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does dispersion happen when white light passes through a glass prism?",
+      "options": [
+        "Different colors of light travel at different speeds and thus have different refractive indices in glass",
+        "The prism absorbs all colors except white",
+        "The prism adds color pigments to the passing light",
+        "Light changes into sound waves inside the prism"
+      ],
+      "correct_answer": "Different colors of light travel at different speeds and thus have different refractive indices in glass",
+      "explanation": "In glass, violet light travels slower than red light, so n_violet > n_red. By Snell's law, violet bends more than red, separating white light into its constituent spectrum."
+    },
+    {
+      "id": "z03_f1_050",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does increasing the tension of a guitar string affect the pitch of the sound produced?",
+      "options": [
+        "It increases the pitch because wave speed and frequency increase",
+        "It decreases the pitch because the string becomes thicker",
+        "It leaves the pitch unchanged but doubles the volume",
+        "It turns the sound wave into an electromagnetic wave"
+      ],
+      "correct_answer": "It increases the pitch because wave speed and frequency increase",
+      "explanation": "Tension increases the propagation speed of transverse waves on the string (v = √(T/μ)), leading to a higher fundamental frequency (f = v/2L) and therefore a higher pitch."
+    }
+  ]
+}

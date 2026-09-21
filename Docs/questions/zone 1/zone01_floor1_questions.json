@@ -1,0 +1,461 @@
+{
+  "zone": "01_mechanics",
+  "floor": 1,
+  "bloom_levels": ["remember", "understand"],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+	{
+	  "id": "z01_f1_001",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the SI unit of force?",
+	  "options": ["Joule", "Newton", "Pascal", "Watt"],
+	  "correct_answer": "Newton",
+	  "explanation": "Force is measured in Newtons (N), named after Sir Isaac Newton. 1 N = 1 kg·m/s²."
+	},
+	{
+	  "id": "z01_f1_002",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the SI unit of mass?",
+	  "options": ["Newton", "Gram", "Kilogram", "Pound"],
+	  "correct_answer": "Kilogram",
+	  "explanation": "The SI unit of mass is the kilogram (kg). It is one of the seven base SI units."
+	},
+	{
+	  "id": "z01_f1_003",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "Which of the following is a vector quantity?",
+	  "options": ["Mass", "Speed", "Temperature", "Velocity"],
+	  "correct_answer": "Velocity",
+	  "explanation": "Velocity is a vector quantity because it has both magnitude and direction. Speed is scalar — it has magnitude only."
+	},
+	{
+	  "id": "z01_f1_004",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What does Newton's First Law of Motion describe?",
+	  "options": ["The relationship between force and acceleration", "The law of universal gravitation", "The tendency of an object to resist changes in its state of motion", "The conservation of momentum"],
+	  "correct_answer": "The tendency of an object to resist changes in its state of motion",
+	  "explanation": "Newton's First Law states that an object remains at rest or in uniform motion unless acted upon by an external force. This property is called inertia."
+	},
+	{
+	  "id": "z01_f1_005",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the formula for momentum?",
+	  "options": ["p = Ft", "p = ma", "p = mv", "p = Fd"],
+	  "correct_answer": "p = mv",
+	  "explanation": "Momentum (p) is the product of mass (m) and velocity (v). Its SI unit is kg·m/s."
+	},
+	{
+	  "id": "z01_f1_006",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "Which of the following is a scalar quantity?",
+	  "options": ["Force", "Displacement", "Acceleration", "Distance"],
+	  "correct_answer": "Distance",
+	  "explanation": "Distance is a scalar quantity — it has magnitude only. Displacement is its vector equivalent, having both magnitude and direction."
+	},
+	{
+	  "id": "z01_f1_007",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the unit of speed?",
+	  "options": ["kg·m/s", "m/s²", "m/s", "N/m"],
+	  "correct_answer": "m/s",
+	  "explanation": "Speed is distance per unit time. Its SI unit is metres per second (m/s)."
+	},
+	{
+	  "id": "z01_f1_008",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What property of matter resists a change in its state of motion?",
+	  "options": ["Gravity", "Inertia", "Friction", "Momentum"],
+	  "correct_answer": "Inertia",
+	  "explanation": "Inertia is the property of matter that resists changes in motion. Greater mass means greater inertia."
+	},
+	{
+	  "id": "z01_f1_009",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the formula for acceleration?",
+	  "options": ["a = mv", "a = F/m", "a = Ft", "a = v/F"],
+	  "correct_answer": "a = F/m",
+	  "explanation": "From Newton's Second Law: F = ma, which rearranges to a = F/m. Acceleration is directly proportional to force and inversely proportional to mass."
+	},
+	{
+	  "id": "z01_f1_010",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "Which law states that every action has an equal and opposite reaction?",
+	  "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Conservation of Energy"],
+	  "correct_answer": "Newton's Third Law",
+	  "explanation": "Newton's Third Law states: for every action force, there is an equal and opposite reaction force acting on a different object."
+	},
+	{
+	  "id": "z01_f1_011",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the SI unit of acceleration?",
+	  "options": ["m/s", "kg/m", "m/s²", "N·s"],
+	  "correct_answer": "m/s²",
+	  "explanation": "Acceleration is the rate of change of velocity. Its SI unit is metres per second squared (m/s²)."
+	},
+	{
+	  "id": "z01_f1_012",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What type of friction acts on a stationary object being pushed?",
+	  "options": ["Kinetic friction", "Rolling friction", "Static friction", "Fluid friction"],
+	  "correct_answer": "Static friction",
+	  "explanation": "Static friction acts on objects that are not moving. It must be overcome before the object begins to slide."
+	},
+	{
+	  "id": "z01_f1_013",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "Which of the following correctly defines displacement?",
+	  "options": ["Total path length travelled", "Rate of change of speed", "Change in position in a specific direction", "Speed multiplied by time"],
+	  "correct_answer": "Change in position in a specific direction",
+	  "explanation": "Displacement is a vector quantity defined as the shortest straight-line distance from start to end point, with direction specified."
+	},
+	{
+	  "id": "z01_f1_014",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What happens to the inertia of an object when its mass doubles?",
+	  "options": ["Inertia halves", "Inertia stays the same", "Inertia doubles", "Inertia becomes zero"],
+	  "correct_answer": "Inertia doubles",
+	  "explanation": "Inertia is directly proportional to mass. Doubling the mass doubles the inertia — the object becomes twice as hard to accelerate or decelerate."
+	},
+	{
+	  "id": "z01_f1_015",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the unit of momentum?",
+	  "options": ["N/s", "kg/m", "kg·m/s", "N·m"],
+	  "correct_answer": "kg·m/s",
+	  "explanation": "Momentum = mass × velocity = kg × m/s = kg·m/s. It can also be expressed as N·s."
+	},
+	{
+	  "id": "z01_f1_016",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A car moves at constant speed on a flat road. What is the net force acting on it?",
+	  "options": ["Greater than zero in the direction of motion", "Less than zero", "Equal to zero", "Equal to the engine force only"],
+	  "correct_answer": "Equal to zero",
+	  "explanation": "Constant speed means no acceleration. By Newton's Second Law (F = ma), if a = 0 then net force = 0. Engine force equals friction force."
+	},
+	{
+	  "id": "z01_f1_017",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why does a heavier object have more inertia than a lighter one?",
+	  "options": ["Because it moves faster", "Because inertia depends on mass", "Because gravity acts more on it", "Because it has more volume"],
+	  "correct_answer": "Because inertia depends on mass",
+	  "explanation": "Inertia is the resistance to change in motion and is directly proportional to mass. More mass = more inertia, regardless of size or gravity."
+	},
+	{
+	  "id": "z01_f1_018",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A ball is thrown upward. At the highest point, what is its velocity?",
+	  "options": ["Maximum", "Equal to the initial velocity", "Zero", "Negative and increasing"],
+	  "correct_answer": "Zero",
+	  "explanation": "At the highest point, the ball momentarily stops before falling back. Its vertical velocity is zero at that instant, though gravity still acts on it."
+	},
+	{
+	  "id": "z01_f1_019",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why do passengers lurch forward when a bus brakes suddenly?",
+	  "options": ["The brakes push them forward", "Gravity pulls them toward the front", "Their inertia keeps them moving forward while the bus slows", "Friction between them and the seat increases"],
+	  "correct_answer": "Their inertia keeps them moving forward while the bus slows",
+	  "explanation": "Newton's First Law: passengers tend to continue moving forward at the original speed when the bus decelerates suddenly — this is inertia."
+	},
+	{
+	  "id": "z01_f1_020",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Which pair of quantities are both vectors?",
+	  "options": ["Speed and mass", "Distance and time", "Force and velocity", "Temperature and energy"],
+	  "correct_answer": "Force and velocity",
+	  "explanation": "Both force and velocity have magnitude AND direction, making them vector quantities. Speed, mass, distance, time, temperature, and energy are all scalars."
+	},
+	{
+	  "id": "z01_f1_021",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A 10 kg box and a 2 kg box fall from the same height in a vacuum. Which hits the ground first?",
+	  "options": ["The 10 kg box — it is heavier", "The 2 kg box — it is lighter", "They hit at the same time", "It depends on their shape"],
+	  "correct_answer": "They hit at the same time",
+	  "explanation": "In a vacuum, all objects fall with the same gravitational acceleration (g = 9.8 m/s²) regardless of mass. Air resistance is the only factor that would change this."
+	},
+	{
+	  "id": "z01_f1_022",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "What does the slope of a distance-time graph represent?",
+	  "options": ["Acceleration", "Force", "Speed", "Momentum"],
+	  "correct_answer": "Speed",
+	  "explanation": "On a distance-time graph, slope = distance ÷ time = speed. A steeper slope means higher speed."
+	},
+	{
+	  "id": "z01_f1_023",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "If the net force on an object is doubled while mass stays the same, what happens to acceleration?",
+	  "options": ["It halves", "It stays the same", "It doubles", "It becomes zero"],
+	  "correct_answer": "It doubles",
+	  "explanation": "From F = ma, if F doubles and m is constant, then a must double. Acceleration is directly proportional to net force."
+	},
+	{
+	  "id": "z01_f1_024",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why is it harder to stop a loaded truck than an empty one moving at the same speed?",
+	  "options": ["The loaded truck moves faster", "The loaded truck has more mass and therefore more momentum", "The empty truck has more friction", "The loaded truck has a bigger engine"],
+	  "correct_answer": "The loaded truck has more mass and therefore more momentum",
+	  "explanation": "Momentum = mv. At the same speed, greater mass means greater momentum. More momentum requires more force or more time to bring the truck to rest."
+	},
+	{
+	  "id": "z01_f1_025",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A 5 N force and a 3 N force act on an object in the same direction. What is the net force?",
+	  "options": ["2 N", "5 N", "8 N", "15 N"],
+	  "correct_answer": "8 N",
+	  "explanation": "Forces in the same direction add together. Net force = 5 + 3 = 8 N in that direction."
+	},
+	{
+	  "id": "z01_f1_026",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "What does a flat horizontal line on a velocity-time graph represent?",
+	  "options": ["The object is accelerating", "The object is decelerating", "The object is moving at constant velocity", "The object is stationary"],
+	  "correct_answer": "The object is moving at constant velocity",
+	  "explanation": "On a velocity-time graph, a horizontal line means velocity is not changing — the object moves at constant velocity with zero acceleration."
+	},
+	{
+	  "id": "z01_f1_027",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why does a rocket work in the vacuum of space where there is no air to push against?",
+	  "options": ["It creates its own air", "It pushes gas backward and the reaction pushes the rocket forward", "It uses magnetic force from Earth", "Space has no friction so it keeps moving"],
+	  "correct_answer": "It pushes gas backward and the reaction pushes the rocket forward",
+	  "explanation": "Newton's Third Law: the rocket pushes exhaust gas backward (action); the gas pushes the rocket forward (reaction). No external medium is needed."
+	},
+	{
+	  "id": "z01_f1_028",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "What is the difference between mass and weight?",
+	  "options": ["They are the same thing", "Mass is a force; weight is the amount of matter", "Mass is the amount of matter; weight is the gravitational force acting on it", "Weight is measured in kg; mass is measured in N"],
+	  "correct_answer": "Mass is the amount of matter; weight is the gravitational force acting on it",
+	  "explanation": "Mass (kg) measures the quantity of matter and does not change with location. Weight (N) = mg and changes with gravitational field strength."
+	},
+	{
+	  "id": "z01_f1_029",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "An object moves in a straight line at 10 m/s. No net force acts on it. What happens next?",
+	  "options": ["It gradually slows and stops", "It speeds up", "It continues at 10 m/s indefinitely", "It changes direction"],
+	  "correct_answer": "It continues at 10 m/s indefinitely",
+	  "explanation": "Newton's First Law: without a net force, an object in motion stays in motion at the same speed and direction. This assumes no friction or air resistance."
+	},
+	{
+	  "id": "z01_f1_030",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "If mass is tripled and force stays the same, what happens to acceleration?",
+	  "options": ["Acceleration triples", "Acceleration doubles", "Acceleration is reduced to one-third", "Acceleration is unchanged"],
+	  "correct_answer": "Acceleration is reduced to one-third",
+	  "explanation": "From a = F/m, if m triples and F is constant, acceleration becomes F/(3m) = one-third of the original value. Mass and acceleration are inversely proportional."
+	},
+	{
+	  "id": "z01_f1_031",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the full form of the equation connecting force, mass and acceleration?",
+	  "options": ["F = mv", "F = ma", "F = m/a", "F = av"],
+	  "correct_answer": "F = ma",
+	  "explanation": "Newton's Second Law: Force equals mass multiplied by acceleration. F = ma is the core equation of classical mechanics."
+	},
+	{
+	  "id": "z01_f1_032",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "Which instrument is used to measure force?",
+	  "options": ["Barometer", "Thermometer", "Spring balance (Newton meter)", "Voltmeter"],
+	  "correct_answer": "Spring balance (Newton meter)",
+	  "explanation": "A spring balance, also called a Newton meter, measures force in Newtons using the extension of a calibrated spring."
+	},
+	{
+	  "id": "z01_f1_033",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the gravitational acceleration on Earth's surface?",
+	  "options": ["8.9 m/s²", "9.8 m/s²", "10.8 m/s²", "6.7 m/s²"],
+	  "correct_answer": "9.8 m/s²",
+	  "explanation": "The standard gravitational acceleration on Earth's surface is g = 9.8 m/s² (sometimes approximated as 10 m/s² for calculations)."
+	},
+	{
+	  "id": "z01_f1_034",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "Which type of friction is generally greater — static or kinetic?",
+	  "options": ["Kinetic friction", "Static friction", "They are always equal", "It depends on the surface only"],
+	  "correct_answer": "Static friction",
+	  "explanation": "Static friction is generally greater than kinetic (sliding) friction. It takes more force to start an object moving than to keep it moving."
+	},
+	{
+	  "id": "z01_f1_035",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What does the area under a velocity-time graph represent?",
+	  "options": ["Speed", "Force", "Displacement", "Acceleration"],
+	  "correct_answer": "Displacement",
+	  "explanation": "The area under a velocity-time graph equals displacement. Area = velocity × time = m/s × s = metres."
+	},
+	{
+	  "id": "z01_f1_036",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A 6 N force acts rightward and a 6 N force acts leftward on the same object. What is the net force?",
+	  "options": ["12 N rightward", "12 N leftward", "0 N", "6 N rightward"],
+	  "correct_answer": "0 N",
+	  "explanation": "Equal and opposite forces cancel. 6 N right + 6 N left = 0 N net force. The object remains at rest or continues at constant velocity."
+	},
+	{
+	  "id": "z01_f1_037",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why does a ball slow down when rolled on a rough floor?",
+	  "options": ["Gravity pulls it backward", "Air pushes it backward", "Kinetic friction acts opposite to its motion", "Its momentum increases"],
+	  "correct_answer": "Kinetic friction acts opposite to its motion",
+	  "explanation": "Kinetic friction always acts in the direction opposite to motion. On a rough floor it decelerates the ball by removing kinetic energy."
+	},
+	{
+	  "id": "z01_f1_038",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Two forces act on an object: 10 N upward and 4 N downward. What is the net force and direction?",
+	  "options": ["14 N downward", "6 N downward", "6 N upward", "14 N upward"],
+	  "correct_answer": "6 N upward",
+	  "explanation": "Net force = 10 N up − 4 N down = 6 N upward. The larger force determines direction; subtract the smaller from the larger."
+	},
+	{
+	  "id": "z01_f1_039",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "What does a negative slope on a velocity-time graph indicate?",
+	  "options": ["Constant velocity", "Acceleration", "Deceleration", "Zero displacement"],
+	  "correct_answer": "Deceleration",
+	  "explanation": "A negative slope means velocity is decreasing over time — the object is slowing down. This is called deceleration or negative acceleration."
+	},
+	{
+	  "id": "z01_f1_040",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Which object has greater momentum: a 2 kg ball at 10 m/s or a 5 kg ball at 3 m/s?",
+	  "options": ["The 2 kg ball", "The 5 kg ball", "They have equal momentum", "Cannot be determined"],
+	  "correct_answer": "The 2 kg ball",
+	  "explanation": "2 kg ball: p = 2 × 10 = 20 kg·m/s. 5 kg ball: p = 5 × 3 = 15 kg·m/s. The 2 kg ball has greater momentum."
+	},
+	{
+	  "id": "z01_f1_041",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What does 'uniform motion' mean?",
+	  "options": ["Motion with constant acceleration", "Motion in a circle", "Motion at constant speed in a straight line", "Motion that stops and starts"],
+	  "correct_answer": "Motion at constant speed in a straight line",
+	  "explanation": "Uniform motion means constant speed in a fixed direction — velocity is unchanging. There is no net force and no acceleration."
+	},
+	{
+	  "id": "z01_f1_042",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "Which of the following best defines a force?",
+	  "options": ["Energy stored in an object", "A push or pull that can change an object's state of motion or shape", "The speed of a moving object", "The weight of an object"],
+	  "correct_answer": "A push or pull that can change an object's state of motion or shape",
+	  "explanation": "A force is any interaction that can cause an object to accelerate, decelerate, change direction, or change shape."
+	},
+	{
+	  "id": "z01_f1_043",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is the weight of a 10 kg object on Earth? (g = 10 m/s²)",
+	  "options": ["10 N", "100 N", "1 N", "1000 N"],
+	  "correct_answer": "100 N",
+	  "explanation": "Weight = mass × g = 10 kg × 10 m/s² = 100 N. Weight is a force measured in Newtons."
+	},
+	{
+	  "id": "z01_f1_044",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A person stands on a scale in an elevator moving upward at constant speed. What does the scale read compared to their actual weight?",
+	  "options": ["More than actual weight", "Less than actual weight", "Equal to actual weight", "Zero"],
+	  "correct_answer": "Equal to actual weight",
+	  "explanation": "Constant speed means zero acceleration. Net force = 0, so the scale reads actual weight. Only acceleration changes the apparent weight reading."
+	},
+	{
+	  "id": "z01_f1_045",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Why is it easier to pull a wheeled suitcase than to drag it across the floor?",
+	  "options": ["Wheels reduce the mass of the suitcase", "Rolling friction is less than sliding friction", "Wheels increase the normal force", "Pulling always requires less force than dragging"],
+	  "correct_answer": "Rolling friction is less than sliding friction",
+	  "explanation": "Rolling friction is much smaller than sliding (kinetic) friction. Wheels convert sliding contact to rolling contact, dramatically reducing friction."
+	},
+	{
+	  "id": "z01_f1_046",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "In the equation v = u + at, what does 'u' represent?",
+	  "options": ["Final velocity", "Acceleration", "Initial velocity", "Displacement"],
+	  "correct_answer": "Initial velocity",
+	  "explanation": "In kinematics equations, u = initial velocity, v = final velocity, a = acceleration, and t = time."
+	},
+	{
+	  "id": "z01_f1_047",
+	  "bloom_level": "remember",
+	  "format": "mcq",
+	  "question": "What is meant by a balanced force?",
+	  "options": ["A single force acting on an object", "Two equal forces acting in the same direction", "Forces that produce no net force on an object", "A force that increases acceleration"],
+	  "correct_answer": "Forces that produce no net force on an object",
+	  "explanation": "Balanced forces are equal and opposite forces that cancel each other out, resulting in zero net force and no acceleration."
+	},
+	{
+	  "id": "z01_f1_048",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "What happens to the weight of an astronaut when they travel from Earth to the Moon?",
+	  "options": ["Weight increases because space is larger", "Weight decreases because the Moon has weaker gravity", "Weight stays the same because mass is constant", "Weight becomes zero immediately after leaving Earth"],
+	  "correct_answer": "Weight decreases because the Moon has weaker gravity",
+	  "explanation": "Weight = mg. The Moon's gravity is about 1/6 of Earth's, so weight decreases. Mass remains constant, but weight depends on gravitational field strength."
+	},
+	{
+	  "id": "z01_f1_049",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "Two students push a box from opposite sides with equal force. The box does not move. What can we conclude?",
+	  "options": ["There is no friction", "The forces are balanced and net force is zero", "One student is stronger", "The box has no inertia"],
+	  "correct_answer": "The forces are balanced and net force is zero",
+	  "explanation": "Equal forces from opposite directions cancel. Net force = 0, so there is no acceleration. The box remains stationary."
+	},
+	{
+	  "id": "z01_f1_050",
+	  "bloom_level": "understand",
+	  "format": "mcq",
+	  "question": "A car accelerates from rest. Which force is responsible for moving it forward?",
+	  "options": ["The engine pushes the car directly", "The wheels push backward on the road and friction pushes the car forward", "Air pressure from the front pushes it", "The weight of the car creates forward motion"],
+	  "correct_answer": "The wheels push backward on the road and friction pushes the car forward",
+	  "explanation": "Newton's Third Law: the tyres push backward on the road (action); friction from the road pushes the car forward (reaction). Without friction, the wheels would spin in place."
+	}
+  ]
+}

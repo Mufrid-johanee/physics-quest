@@ -1,0 +1,714 @@
+{
+  "zone": "02_energy_power",
+  "floor": 1,
+  "bloom_levels": [
+    "remember",
+    "understand"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z02_f1_001",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of work?",
+      "options": [
+        "Newton",
+        "Watt",
+        "Joule",
+        "Pascal"
+      ],
+      "correct_answer": "Joule",
+      "explanation": "Work is measured in Joules (J). 1 Joule of work is done when a force of 1 N moves an object through 1 m in the direction of the force."
+    },
+    {
+      "id": "z02_f1_002",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of energy?",
+      "options": [
+        "Watt",
+        "Joule",
+        "Newton",
+        "Calorie"
+      ],
+      "correct_answer": "Joule",
+      "explanation": "Energy, like work, is measured in Joules (J), since energy is the capacity to do work."
+    },
+    {
+      "id": "z02_f1_003",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the SI unit of power?",
+      "options": [
+        "Joule",
+        "Newton",
+        "Watt",
+        "Ampere"
+      ],
+      "correct_answer": "Watt",
+      "explanation": "Power is measured in Watts (W). 1 Watt equals 1 Joule of work done per second (1 W = 1 J/s)."
+    },
+    {
+      "id": "z02_f1_004",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for work done by a constant force?",
+      "options": [
+        "W = F/s",
+        "W = Fs",
+        "W = ma",
+        "W = mv"
+      ],
+      "correct_answer": "W = Fs",
+      "explanation": "Work done = Force × displacement in the direction of the force, W = Fs (more precisely W = Fs cos θ)."
+    },
+    {
+      "id": "z02_f1_005",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for kinetic energy?",
+      "options": [
+        "KE = mgh",
+        "KE = mv",
+        "KE = 1/2 mv²",
+        "KE = Fs"
+      ],
+      "correct_answer": "KE = 1/2 mv²",
+      "explanation": "Kinetic energy is the energy of motion. KE = 1/2 mv², where m is mass and v is velocity."
+    },
+    {
+      "id": "z02_f1_006",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for gravitational potential energy?",
+      "options": [
+        "PE = 1/2 mv²",
+        "PE = mgh",
+        "PE = Fs",
+        "PE = mv"
+      ],
+      "correct_answer": "PE = mgh",
+      "explanation": "Gravitational potential energy depends on mass (m), gravitational acceleration (g), and height (h): PE = mgh."
+    },
+    {
+      "id": "z02_f1_007",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the formula for power?",
+      "options": [
+        "P = Fs",
+        "P = mv",
+        "P = W/t",
+        "P = mgh"
+      ],
+      "correct_answer": "P = W/t",
+      "explanation": "Power is the rate of doing work: P = Work done ÷ Time taken (P = W/t)."
+    },
+    {
+      "id": "z02_f1_008",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which of the following is a form of energy?",
+      "options": [
+        "Force",
+        "Mass",
+        "Heat",
+        "Displacement"
+      ],
+      "correct_answer": "Heat",
+      "explanation": "Heat (thermal energy) is a form of energy. Force, mass, and displacement are not forms of energy themselves."
+    },
+    {
+      "id": "z02_f1_009",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the definition of energy?",
+      "options": [
+        "The force applied to an object",
+        "The capacity to do work",
+        "The speed of an object",
+        "The mass of an object"
+      ],
+      "correct_answer": "The capacity to do work",
+      "explanation": "Energy is defined as the capacity or ability of a body to do work."
+    },
+    {
+      "id": "z02_f1_010",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What does the law of conservation of energy state?",
+      "options": [
+        "Energy can be created but not destroyed",
+        "Energy can be destroyed but not created",
+        "Energy can neither be created nor destroyed, only transformed",
+        "Energy always increases over time"
+      ],
+      "correct_answer": "Energy can neither be created nor destroyed, only transformed",
+      "explanation": "The law of conservation of energy states that total energy in an isolated system remains constant; energy only changes from one form to another."
+    },
+    {
+      "id": "z02_f1_011",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is mechanical energy?",
+      "options": [
+        "Only kinetic energy",
+        "Only potential energy",
+        "The sum of kinetic and potential energy",
+        "Energy produced by machines only"
+      ],
+      "correct_answer": "The sum of kinetic and potential energy",
+      "explanation": "Mechanical energy of a body is the sum of its kinetic energy (energy of motion) and potential energy (energy of position)."
+    },
+    {
+      "id": "z02_f1_012",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What condition must be met for work to be done on an object?",
+      "options": [
+        "The object must be heavy",
+        "A force must act and cause displacement",
+        "The object must move at constant speed",
+        "The object must be lifted upward"
+      ],
+      "correct_answer": "A force must act and cause displacement",
+      "explanation": "Work is done only when a force acts on an object and causes it to be displaced in the direction of the force."
+    },
+    {
+      "id": "z02_f1_013",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "When is work done said to be zero?",
+      "options": [
+        "When force and displacement are in the same direction",
+        "When there is no displacement, or force and displacement are perpendicular",
+        "When the object moves very fast",
+        "When the force is very large"
+      ],
+      "correct_answer": "When there is no displacement, or force and displacement are perpendicular",
+      "explanation": "Work is zero if there is no displacement, or if the force is perpendicular to the displacement (cos 90° = 0)."
+    },
+    {
+      "id": "z02_f1_014",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is 1 Watt equal to?",
+      "options": [
+        "1 N·m",
+        "1 J/s",
+        "1 kg·m/s",
+        "1 J·s"
+      ],
+      "correct_answer": "1 J/s",
+      "explanation": "1 Watt is defined as 1 Joule of work done per second: 1 W = 1 J/s."
+    },
+    {
+      "id": "z02_f1_015",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which quantity represents the capacity of a body to do work due to its motion?",
+      "options": [
+        "Potential energy",
+        "Kinetic energy",
+        "Power",
+        "Momentum"
+      ],
+      "correct_answer": "Kinetic energy",
+      "explanation": "Kinetic energy is the energy possessed by a body because of its motion."
+    },
+    {
+      "id": "z02_f1_016",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which quantity represents the energy stored in a body due to its position or state?",
+      "options": [
+        "Kinetic energy",
+        "Power",
+        "Potential energy",
+        "Work"
+      ],
+      "correct_answer": "Potential energy",
+      "explanation": "Potential energy is the stored energy a body has because of its position (e.g., height) or state (e.g., a stretched spring)."
+    },
+    {
+      "id": "z02_f1_017",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is the larger practical unit of power commonly used for engines, equal to 746 W?",
+      "options": [
+        "Kilowatt",
+        "Horsepower",
+        "Joule per second",
+        "Calorie"
+      ],
+      "correct_answer": "Horsepower",
+      "explanation": "Horsepower (hp) is a practical unit of power; 1 horsepower = 746 Watts, often used to rate engines and motors."
+    },
+    {
+      "id": "z02_f1_018",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which of the following is an example of a renewable energy source?",
+      "options": [
+        "Coal",
+        "Natural gas",
+        "Solar energy",
+        "Petroleum"
+      ],
+      "correct_answer": "Solar energy",
+      "explanation": "Solar energy is renewable because it is continuously replenished by the sun. Coal, natural gas, and petroleum are non-renewable fossil fuels."
+    },
+    {
+      "id": "z02_f1_019",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What type of energy is stored in a stretched or compressed spring?",
+      "options": [
+        "Kinetic energy",
+        "Elastic potential energy",
+        "Chemical energy",
+        "Thermal energy"
+      ],
+      "correct_answer": "Elastic potential energy",
+      "explanation": "A stretched or compressed spring stores elastic potential energy due to the deformation of its shape."
+    },
+    {
+      "id": "z02_f1_020",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which unit is commonly used by electricity companies to measure electrical energy consumption?",
+      "options": [
+        "Joule",
+        "Watt",
+        "Kilowatt-hour",
+        "Newton-metre"
+      ],
+      "correct_answer": "Kilowatt-hour",
+      "explanation": "Electrical energy consumption is commonly measured in kilowatt-hours (kWh), a larger practical unit of energy used on electricity bills."
+    },
+    {
+      "id": "z02_f1_021",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What is efficiency of a machine?",
+      "options": [
+        "The ratio of input energy to output energy",
+        "The ratio of useful output energy to input energy, expressed as a percentage",
+        "The total energy supplied to a machine",
+        "The speed at which a machine operates"
+      ],
+      "correct_answer": "The ratio of useful output energy to input energy, expressed as a percentage",
+      "explanation": "Efficiency = (Useful output energy / Total input energy) × 100%. It shows how effectively a machine converts input energy into useful work."
+    },
+    {
+      "id": "z02_f1_022",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which form of energy is produced by the movement of electric charge?",
+      "options": [
+        "Chemical energy",
+        "Nuclear energy",
+        "Electrical energy",
+        "Sound energy"
+      ],
+      "correct_answer": "Electrical energy",
+      "explanation": "Electrical energy is associated with the flow (movement) of electric charge, such as current through a conductor."
+    },
+    {
+      "id": "z02_f1_023",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "What quantity does the area under a force-displacement graph represent?",
+      "options": [
+        "Power",
+        "Work done",
+        "Momentum",
+        "Kinetic energy"
+      ],
+      "correct_answer": "Work done",
+      "explanation": "The area under a force-displacement graph equals the work done, since work = force × displacement."
+    },
+    {
+      "id": "z02_f1_024",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "When a body falls freely under gravity, what happens to its potential energy?",
+      "options": [
+        "It increases",
+        "It decreases",
+        "It remains constant",
+        "It becomes zero instantly"
+      ],
+      "correct_answer": "It decreases",
+      "explanation": "As a body falls, its height above the ground decreases, so its gravitational potential energy (PE = mgh) decreases."
+    },
+    {
+      "id": "z02_f1_025",
+      "bloom_level": "remember",
+      "format": "mcq",
+      "question": "Which of the following best describes non-renewable energy sources?",
+      "options": [
+        "Sources that replenish naturally and quickly",
+        "Sources that are limited and take millions of years to form",
+        "Sources that produce no pollution",
+        "Sources that come only from sunlight"
+      ],
+      "correct_answer": "Sources that are limited and take millions of years to form",
+      "explanation": "Non-renewable energy sources, such as coal, oil, and natural gas, exist in limited quantities and take millions of years to form naturally."
+    },
+    {
+      "id": "z02_f1_026",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A boy pushes a wall with all his strength but the wall does not move. How much work is done on the wall?",
+      "options": [
+        "A large amount of work",
+        "A small amount of work",
+        "Zero work",
+        "Negative work"
+      ],
+      "correct_answer": "Zero work",
+      "explanation": "Since there is no displacement of the wall, the work done is zero, regardless of how much force is applied."
+    },
+    {
+      "id": "z02_f1_027",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A coolie carries a load on his head and walks horizontally. What is the work done against gravity?",
+      "options": [
+        "Maximum, since the load is heavy",
+        "Zero, because displacement is perpendicular to the gravitational force",
+        "Negative, because he is walking forward",
+        "Equal to the force times the horizontal distance"
+      ],
+      "correct_answer": "Zero, because displacement is perpendicular to the gravitational force",
+      "explanation": "The gravitational force acts vertically downward while the displacement is horizontal, so the angle between them is 90°, making the work done against gravity zero."
+    },
+    {
+      "id": "z02_f1_028",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A ball is thrown straight up. At the highest point of its path, what is its kinetic energy?",
+      "options": [
+        "Maximum",
+        "Zero",
+        "Equal to its potential energy at the ground",
+        "Negative"
+      ],
+      "correct_answer": "Zero",
+      "explanation": "At the highest point, the ball's velocity momentarily becomes zero, so its kinetic energy (KE = 1/2 mv²) is also zero."
+    },
+    {
+      "id": "z02_f1_029",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A pendulum bob swings from one extreme position to the mean position. What happens to its energy?",
+      "options": [
+        "Kinetic energy converts to potential energy",
+        "Potential energy converts to kinetic energy",
+        "Both energies remain constant",
+        "Both energies become zero"
+      ],
+      "correct_answer": "Potential energy converts to kinetic energy",
+      "explanation": "As the bob moves from the extreme (highest) position to the mean (lowest) position, its height decreases and speed increases, so potential energy converts into kinetic energy."
+    },
+    {
+      "id": "z02_f1_030",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Two objects of equal mass are dropped from the same height. Which one has greater potential energy just before release?",
+      "options": [
+        "The faster falling object",
+        "The one with more surface area",
+        "Both have equal potential energy",
+        "Cannot be determined"
+      ],
+      "correct_answer": "Both have equal potential energy",
+      "explanation": "Since PE = mgh depends only on mass, gravitational acceleration, and height, equal mass and equal height mean equal potential energy for both objects."
+    },
+    {
+      "id": "z02_f1_031",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A crane lifts a load slowly and another crane lifts an identical load quickly to the same height. Which crane does more work?",
+      "options": [
+        "The slower crane",
+        "The faster crane",
+        "Both do the same amount of work",
+        "Neither does any work"
+      ],
+      "correct_answer": "Both do the same amount of work",
+      "explanation": "Work done depends on force and displacement, not on time. Since both loads are lifted the same height, the work done is the same; only the power differs."
+    },
+    {
+      "id": "z02_f1_032",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "In the previous scenario, which crane delivers more power?",
+      "options": [
+        "The slower crane",
+        "The faster crane",
+        "Both deliver equal power",
+        "Power cannot be compared here"
+      ],
+      "correct_answer": "The faster crane",
+      "explanation": "Power = Work/time. Since the faster crane does the same work in less time, it delivers greater power."
+    },
+    {
+      "id": "z02_f1_033",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A car engine and a bicycle both do the same amount of work climbing a hill, but the car does it in less time. What can be concluded?",
+      "options": [
+        "The bicycle has more power",
+        "The car has more power",
+        "Both have equal power",
+        "Power is unrelated to time"
+      ],
+      "correct_answer": "The car has more power",
+      "explanation": "Since power is work divided by time, doing the same work in a shorter time means the car develops greater power than the bicycle."
+    },
+    {
+      "id": "z02_f1_034",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A stretched bow is about to release an arrow. What type of energy is stored in the bow just before release?",
+      "options": [
+        "Kinetic energy",
+        "Elastic potential energy",
+        "Chemical energy",
+        "Thermal energy"
+      ],
+      "correct_answer": "Elastic potential energy",
+      "explanation": "The bent bow is deformed from its natural shape, storing elastic potential energy, which converts to kinetic energy of the arrow upon release."
+    },
+    {
+      "id": "z02_f1_035",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A book rests on a table. Why is no work being done on the book by gravity, even though gravity acts on it?",
+      "options": [
+        "Because the book has no mass",
+        "Because there is no displacement of the book",
+        "Because gravity is too weak",
+        "Because the table cancels gravity"
+      ],
+      "correct_answer": "Because there is no displacement of the book",
+      "explanation": "Work requires displacement. Since the book is stationary, there is no displacement, so the work done by gravity on it is zero."
+    },
+    {
+      "id": "z02_f1_036",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A ball rolling on a frictionless horizontal surface has no change in height. What happens to its mechanical energy?",
+      "options": [
+        "It decreases continuously",
+        "It increases continuously",
+        "It remains constant",
+        "It becomes zero"
+      ],
+      "correct_answer": "It remains constant",
+      "explanation": "With no friction and no change in height, there is no energy loss or gain, so kinetic energy stays constant and total mechanical energy is conserved."
+    },
+    {
+      "id": "z02_f1_037",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A moving car brakes and comes to a stop due to friction. What happens to its kinetic energy?",
+      "options": [
+        "It increases",
+        "It is transformed mainly into heat energy",
+        "It converts entirely into potential energy",
+        "It remains unchanged"
+      ],
+      "correct_answer": "It is transformed mainly into heat energy",
+      "explanation": "Friction between the brakes and wheels converts the car's kinetic energy mainly into heat (and some sound) energy, causing the car to slow down and stop."
+    },
+    {
+      "id": "z02_f1_038",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a solar panel represent an example of a renewable energy source?",
+      "options": [
+        "Because it stores fossil fuel energy",
+        "Because sunlight is continuously available and does not get used up",
+        "Because it produces electricity without any energy input",
+        "Because it converts chemical energy directly to work"
+      ],
+      "correct_answer": "Because sunlight is continuously available and does not get used up",
+      "explanation": "Solar energy comes from sunlight, which is continuously replenished and will not run out on a human timescale, making it a renewable source."
+    },
+    {
+      "id": "z02_f1_039",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A machine has an efficiency of less than 100%. What does this indicate?",
+      "options": [
+        "The machine produces more energy than it receives",
+        "Some input energy is lost, often as heat, rather than converted to useful output",
+        "The machine violates the law of conservation of energy",
+        "The machine does no useful work at all"
+      ],
+      "correct_answer": "Some input energy is lost, often as heat, rather than converted to useful output",
+      "explanation": "No real machine is 100% efficient because some input energy is always lost to friction, heat, or sound rather than being converted into useful output work."
+    },
+    {
+      "id": "z02_f1_040",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A weightlifter holds a barbell stationary above his head for 30 seconds. How much work is he doing on the barbell during this time?",
+      "options": [
+        "A large amount, since he is exerting great force",
+        "Work equal to the barbell's weight times the height it was lifted",
+        "Zero, because there is no displacement while holding it",
+        "Negative work, because he is getting tired"
+      ],
+      "correct_answer": "Zero, because there is no displacement while holding it",
+      "explanation": "Work requires displacement. While the barbell is held stationary, there is no displacement, so no work is done on it during that period, even though force is being exerted."
+    },
+    {
+      "id": "z02_f1_041",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A skier slides down a snowy slope from rest. As she descends, what happens to her potential and kinetic energy (ignoring friction)?",
+      "options": [
+        "Both increase",
+        "Both decrease",
+        "Potential energy decreases while kinetic energy increases",
+        "Potential energy increases while kinetic energy decreases"
+      ],
+      "correct_answer": "Potential energy decreases while kinetic energy increases",
+      "explanation": "As height decreases while sliding down, potential energy decreases, and this lost potential energy converts into kinetic energy, so kinetic energy increases."
+    },
+    {
+      "id": "z02_f1_042",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Which requires more power: lifting a 10 kg box to a height of 2 m in 5 seconds, or lifting the same box to the same height in 10 seconds?",
+      "options": [
+        "Lifting it in 5 seconds",
+        "Lifting it in 10 seconds",
+        "Both require equal power",
+        "Power cannot be determined without force values"
+      ],
+      "correct_answer": "Lifting it in 5 seconds",
+      "explanation": "The work done is the same in both cases, but doing it in less time (5 s) means greater power, since power is inversely proportional to time for the same work."
+    },
+    {
+      "id": "z02_f1_043",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A person pushes a stalled car but it does not move because static friction is too strong. Is any work done on the car?",
+      "options": [
+        "Yes, because force is applied",
+        "No, because there is no displacement",
+        "Yes, but only a small amount",
+        "It depends on how hard the person pushes"
+      ],
+      "correct_answer": "No, because there is no displacement",
+      "explanation": "Since the car does not move, there is no displacement, and therefore no work is done on it, regardless of the effort or force applied."
+    },
+    {
+      "id": "z02_f1_044",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is coal considered a poor long-term energy choice compared to solar energy?",
+      "options": [
+        "Coal produces more energy per kilogram than the sun",
+        "Coal is a non-renewable resource that will eventually be exhausted",
+        "Coal is more expensive to extract than solar panels",
+        "Coal cannot be used to generate electricity"
+      ],
+      "correct_answer": "Coal is a non-renewable resource that will eventually be exhausted",
+      "explanation": "Coal takes millions of years to form and exists in limited supply, so continued use will eventually exhaust it, unlike the continuously available solar energy."
+    },
+    {
+      "id": "z02_f1_045",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "In a hydroelectric power plant, water stored at height falls and turns a turbine. What energy transformation occurs?",
+      "options": [
+        "Kinetic energy to chemical energy",
+        "Potential energy to kinetic energy to electrical energy",
+        "Electrical energy to potential energy",
+        "Thermal energy to potential energy"
+      ],
+      "correct_answer": "Potential energy to kinetic energy to electrical energy",
+      "explanation": "Stored water has gravitational potential energy; as it falls, this converts to kinetic energy, which then turns turbines to generate electrical energy."
+    },
+    {
+      "id": "z02_f1_046",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Two students of equal mass run up the same staircase; Student A takes 10 seconds and Student B takes 15 seconds. Who does more work, and who has more power?",
+      "options": [
+        "A does more work; B has more power",
+        "Both do the same work; A has more power",
+        "B does more work; A has more power",
+        "Both do the same work and have the same power"
+      ],
+      "correct_answer": "Both do the same work; A has more power",
+      "explanation": "Both students rise through the same height and have equal mass, so work done (W = mgh) is the same. Since A takes less time, A has more power."
+    },
+    {
+      "id": "z02_f1_047",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a burning candle represent a transformation of energy?",
+      "options": [
+        "It converts electrical energy into potential energy",
+        "It converts chemical energy stored in wax into heat and light energy",
+        "It converts kinetic energy into chemical energy",
+        "It creates new energy that did not exist before"
+      ],
+      "correct_answer": "It converts chemical energy stored in wax into heat and light energy",
+      "explanation": "The wax stores chemical energy, which is released as heat and light energy during combustion — an example of energy transformation, not creation."
+    },
+    {
+      "id": "z02_f1_048",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A cyclist pedals uphill at constant speed. Why does she feel like she is doing more work than cycling on a flat road at the same speed?",
+      "options": [
+        "Because her kinetic energy is increasing",
+        "Because she is also gaining potential energy by increasing height",
+        "Because friction disappears on hills",
+        "Because her mass increases going uphill"
+      ],
+      "correct_answer": "Because she is also gaining potential energy by increasing height",
+      "explanation": "On a hill, in addition to overcoming friction and air resistance, she must also do extra work to increase her gravitational potential energy as her height increases."
+    },
+    {
+      "id": "z02_f1_049",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "An electric heater converts electrical energy into heat energy with very little loss. What does this suggest about its efficiency?",
+      "options": [
+        "It has low efficiency",
+        "It has high efficiency, close to 100%",
+        "It violates the law of conservation of energy",
+        "Efficiency does not apply to heaters"
+      ],
+      "correct_answer": "It has high efficiency, close to 100%",
+      "explanation": "Since nearly all the input electrical energy is converted into useful heat output with minimal loss, the heater's efficiency is high, close to 100%."
+    },
+    {
+      "id": "z02_f1_050",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "A satellite orbits the Earth at a constant height and constant speed. What can be said about its total mechanical energy?",
+      "options": [
+        "It increases continuously",
+        "It decreases continuously",
+        "It remains constant",
+        "It fluctuates randomly"
+      ],
+      "correct_answer": "It remains constant",
+      "explanation": "Since both the height (potential energy) and speed (kinetic energy) of the satellite remain constant in a stable circular orbit, its total mechanical energy stays constant."
+    }
+  ]
+}

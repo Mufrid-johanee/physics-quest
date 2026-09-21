@@ -1,0 +1,263 @@
+[gd_scene format=3 uid="uid://c7f0q3gh144n1"]
+
+[ext_resource type="Script" uid="uid://cum668lhxsby4" path="res://scripts/zone03/Zone03Floor3.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://cqfduhkcvt8hk" path="res://asset/sprites/Environment/zone 3/signal_station_deck3_optics.png" id="2_room"]
+[ext_resource type="Texture2D" uid="uid://b5pox6ghd51sd" path="res://asset/sprites/character/worker 5.png" id="3_mj1xa"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="3_player"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="4_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="5_dialogue"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="6_interact"]
+[ext_resource type="Texture2D" uid="uid://cppk1w73pmvo0" path="res://asset/sprites/character/character zone 3/char_tania_idle.png" id="7_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/QuizPanel.tscn" id="8_quiz"]
+[ext_resource type="Script" uid="uid://c4w1hfb0xn10y" path="res://scripts/quiz/QuizController.gd" id="9_quizctl"]
+[ext_resource type="Texture2D" uid="uid://5dhumrv0ay8e" path="res://asset/sprites/character/worker 1.png" id="11_esbcq"]
+[ext_resource type="Texture2D" uid="uid://bm8mjvi2uf06v" path="res://asset/sprites/character/worker 2.png" id="12_1sk4u"]
+[ext_resource type="Script" uid="uid://3607pr7eqqgy" path="res://scripts/npc/AmbientProximity.gd" id="amb1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1920, 342)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(287.8333, 1072)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_1949a6a2"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_ea949de1"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veatc"]
+size = Vector2(145, 218)
+
+[sub_resource type="RectangleShape2D" id="Rect_npc_detect"]
+size = Vector2(140, 160)
+
+[sub_resource type="RectangleShape2D" id="Rect_exit"]
+size = Vector2(160, 100)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_41ca42a7"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_1da9156f"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_8eb7f4e0"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_50cfbe63"]
+size = Vector2(300, 350)
+
+[node name="Zone03_Floor3" type="Node2D" unique_id=1704160075]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=634725439]
+z_index = -20
+
+[node name="RoomArt" type="Sprite2D" parent="Background" unique_id=2147153764]
+scale = Vector2(1.4837962, 1)
+texture = ExtResource("2_room")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=516278546]
+position = Vector2(960, 536)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Collision" type="Node2D" parent="." unique_id=1809905258]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision" unique_id=546843591]
+position = Vector2(960, 20)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundTop" unique_id=1835179651]
+position = Vector2(0, 151)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision" unique_id=1017576799]
+position = Vector2(960, 1052)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundBottom" unique_id=1880844589]
+position = Vector2(-4, 135)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision" unique_id=1758722519]
+position = Vector2(20, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=1956790722]
+position = Vector2(-157, 49)
+scale = Vector2(3, 1)
+shape = SubResource("Rect_bound_v")
+
+[node name="Worker5" type="Sprite2D" parent="Collision/BoundLeft" unique_id=686086827]
+position = Vector2(1300, -192)
+scale = Vector2(0.6697417, 0.68636364)
+texture = ExtResource("3_mj1xa")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Collision/BoundLeft/Worker5" unique_id=1035944569]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft/Worker5/BodyCollision" unique_id=272245777]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_1949a6a2")
+
+[node name="AmbientProximity" type="Area2D" parent="Collision/BoundLeft/Worker5" unique_id=985267844]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft/Worker5/AmbientProximity" unique_id=1201014438]
+shape = SubResource("Rect_amb_prox_ea949de1")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision" unique_id=1360951632]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=859378438]
+position = Vector2(-94.083374, 0)
+shape = SubResource("Rect_bound_v")
+
+[node name="instruments" type="StaticBody2D" parent="Collision" unique_id=1077859457]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/instruments" unique_id=1902862015]
+position = Vector2(801.5, 575)
+shape = SubResource("RectangleShape2D_veatc")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision/instruments" unique_id=228757551]
+position = Vector2(1161, 618)
+shape = SubResource("RectangleShape2D_veatc")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision/instruments" unique_id=1660921676]
+position = Vector2(1422, 1015)
+shape = SubResource("RectangleShape2D_veatc")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Collision/instruments" unique_id=188663167]
+position = Vector2(1592, 934)
+shape = SubResource("RectangleShape2D_veatc")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=870644394]
+y_sort_enabled = true
+scale = Vector2(1.6, 1.6)
+
+[node name="Tania" parent="NPCs" unique_id=1182642463 instance=ExtResource("4_npc")]
+z_index = 5
+position = Vector2(268.125, 256.25)
+scale = Vector2(0.8, 0.8)
+display_name = "Tania"
+sprite_texture = ExtResource("7_npc")
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Tania" unique_id=2052022031]
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Tania/InteractionArea" unique_id=1478565579]
+position = Vector2(0, 48)
+shape = SubResource("Rect_npc_detect")
+
+[node name="Label" type="Label" parent="NPCs/Tania" unique_id=1214135850]
+offset_left = -42.1875
+offset_top = -183.59375
+offset_right = 28.90625
+offset_bottom = -146.59375
+theme_override_font_sizes/font_size = 27
+text = "Tania"
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=411136875]
+position = Vector2(998, 986)
+
+[node name="Player" parent="." unique_id=1261221579 instance=ExtResource("3_player")]
+z_index = 8
+position = Vector2(1001, 983.99994)
+scale = Vector2(2.7, 2.7)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="Interactions" type="Node2D" parent="." unique_id=830558796]
+
+[node name="ExteriorExit" type="Area2D" parent="Interactions" unique_id=883324872]
+position = Vector2(960, 1000)
+collision_layer = 8
+script = ExtResource("6_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit" unique_id=876594769]
+position = Vector2(4, 32)
+shape = SubResource("Rect_exit")
+
+[node name="DialoguePanel" parent="." unique_id=638564508 instance=ExtResource("5_dialogue")]
+visible = false
+
+[node name="QuizController" type="Node" parent="." unique_id=1346833243]
+script = ExtResource("9_quizctl")
+
+[node name="QuizPanel" parent="." unique_id=1224119626 instance=ExtResource("8_quiz")]
+visible = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1448474296]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=249792605]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+text = "Press E / F"
+horizontal_alignment = 1
+
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]
+[node name="Worker1" type="Sprite2D" parent="." unique_id=2006484765]
+position = Vector2(1582.0001, 533)
+scale = Vector2(0.5460319, 0.52362204)
+texture = ExtResource("11_esbcq")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Worker1" unique_id=9472731]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Worker1/BodyCollision" unique_id=119875004]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_41ca42a7")
+
+[node name="AmbientProximity" type="Area2D" parent="Worker1" unique_id=1610428110]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Worker1/AmbientProximity" unique_id=1473387750]
+shape = SubResource("Rect_amb_prox_1da9156f")
+
+[node name="Worker2" type="Sprite2D" parent="." unique_id=1224017776]
+position = Vector2(1585, 678)
+scale = Vector2(-0.6, 0.6)
+texture = ExtResource("12_1sk4u")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Worker2" unique_id=1767570856]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Worker2/BodyCollision" unique_id=1689307400]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_8eb7f4e0")
+
+[node name="AmbientProximity" type="Area2D" parent="Worker2" unique_id=127250160]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Worker2/AmbientProximity" unique_id=2070345342]
+shape = SubResource("Rect_amb_prox_50cfbe63")

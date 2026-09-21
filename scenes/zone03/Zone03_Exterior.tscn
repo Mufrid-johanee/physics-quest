@@ -1,0 +1,310 @@
+[gd_scene format=3 uid="uid://dp6na108yks7e"]
+
+[ext_resource type="Script" uid="uid://c8ep1irn1mcje" path="res://scripts/zone03/Zone03Exterior.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://cnttneedcjyu" path="res://asset/sprites/Environment/zone 3/signal_station_entry.png" id="2_wing"]
+[ext_resource type="Texture2D" uid="uid://fxmi63p4m5v6" path="res://asset/sprites/Environment/zone 2/energy_door_locked.png" id="3_door_l"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="4_player"]
+[ext_resource type="Texture2D" uid="uid://brlljputo1cha" path="res://asset/sprites/character/lab assistant 1.png" id="5_7wwcg"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="5_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="6_dialogue"]
+[ext_resource type="Texture2D" uid="uid://5dhumrv0ay8e" path="res://asset/sprites/character/worker 1.png" id="6_pxmo7"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="7_interact"]
+[ext_resource type="Texture2D" uid="uid://dc01gwyf1him1" path="res://asset/sprites/character/character zone 3/char_milon_idle.png" id="8_guide"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1920, 71.91443)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(227.81203, 892.6223)
+
+[sub_resource type="RectangleShape2D" id="Rect_guide_detect"]
+size = Vector2(1261.4045, 1659.2168)
+
+[sub_resource type="RectangleShape2D" id="Rect_door"]
+size = Vector2(110.194336, 132.72333)
+
+[node name="Zone03_Exterior" type="Node2D" unique_id=551093517]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=2123760237]
+z_index = -20
+
+[node name="WingArt" type="Sprite2D" parent="Background" unique_id=1605194429]
+texture = ExtResource("2_wing")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=818422115]
+position = Vector2(688, 506)
+zoom = Vector2(0.85, 0.7)
+
+[node name="Collision" type="Node2D" parent="." unique_id=1798715689]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision" unique_id=2042188060]
+position = Vector2(960, 20)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundTop" unique_id=1250276917]
+shape = SubResource("Rect_bound_h")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision/BoundTop" unique_id=757649598]
+position = Vector2(-52.920593, 1046.7606)
+rotation = -0.5309082
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision" unique_id=911700482]
+position = Vector2(960, 1052)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundBottom" unique_id=503578258]
+position = Vector2(-167, -17)
+rotation = 0.6812449
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision" unique_id=1091951441]
+position = Vector2(20, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=989710142]
+position = Vector2(-56, -8)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=1760328237]
+position = Vector2(242, -367)
+scale = Vector2(4, 0.2)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=1993908789]
+position = Vector2(710.00006, -228.00003)
+rotation = 0.46408468
+scale = Vector2(0.3, 0.2)
+skew = -0.43458697
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=1472043946]
+position = Vector2(874, -95.00003)
+rotation = 0.46408468
+scale = Vector2(0.3, 0.2)
+skew = -0.43458697
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=1335240316]
+position = Vector2(1061.1074, 47.059204)
+rotation = 0.46408468
+scale = Vector2(0.30000004, 0.2)
+skew = -0.434587
+shape = SubResource("Rect_bound_v")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision" unique_id=92459567]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=1044480057]
+position = Vector2(-586, -84)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=127565513]
+position = Vector2(-957.934, -235.80386)
+rotation = -0.9599311
+shape = SubResource("Rect_bound_v")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=1499114527]
+y_sort_enabled = true
+scale = Vector2(1.6, 1.6)
+
+[node name="Guide" parent="NPCs" unique_id=1649139421 instance=ExtResource("5_npc")]
+z_index = 5
+position = Vector2(269.37503, 361.25003)
+scale = Vector2(0.6, 0.6)
+display_name = "Milon"
+sprite_texture = ExtResource("8_guide")
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Guide" unique_id=379790003]
+scale = Vector2(0.4, 0.4)
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Guide/InteractionArea" unique_id=1595848886]
+position = Vector2(57.291473, 216.14572)
+scale = Vector2(0.4, 0.4)
+shape = SubResource("Rect_guide_detect")
+
+[node name="Label" type="Label" parent="NPCs/Guide" unique_id=1684584325]
+offset_left = -13.541718
+offset_top = 101.04159
+offset_right = 79.166595
+offset_bottom = 145.83322
+theme_override_font_sizes/font_size = 24
+text = "Milon"
+
+[node name="LabAssistant1" type="Sprite2D" parent="NPCs" unique_id=64781081]
+position = Vector2(265.62503, 161.25003)
+scale = Vector2(-0.22539705, 0.25092986)
+texture = ExtResource("5_7wwcg")
+
+[node name="Worker1" type="Sprite2D" parent="NPCs" unique_id=1536508705]
+position = Vector2(204.375, 163.12502)
+scale = Vector2(0.19841276, 0.22293295)
+texture = ExtResource("6_pxmo7")
+
+[node name="Doors" type="Node2D" parent="." unique_id=2098748859]
+
+[node name="Door1" type="Area2D" parent="Doors" unique_id=1830973357]
+position = Vector2(641, 315)
+collision_layer = 8
+script = ExtResource("7_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/Door1" unique_id=842133040]
+position = Vector2(-1, -48)
+rotation = 0.57770395
+skew = -0.5375614
+shape = SubResource("Rect_door")
+
+[node name="Label" type="Label" parent="Doors/Door1" unique_id=1058284311]
+offset_left = -77.00001
+offset_top = 11.000061
+offset_right = 22.999985
+offset_bottom = 51.00006
+rotation = 0.6606738
+theme_override_font_sizes/font_size = 24
+text = "Door 1"
+horizontal_alignment = 1
+
+[node name="Door2" type="Area2D" parent="Doors" unique_id=510320840]
+position = Vector2(808, 411)
+collision_layer = 8
+script = ExtResource("7_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/Door2" unique_id=1000221929]
+position = Vector2(-4.493103, -13.651215)
+rotation = 1.5726439
+skew = 0.64053583
+shape = SubResource("Rect_door")
+
+[node name="LockedVisual" type="Sprite2D" parent="Doors/Door2" unique_id=448864789]
+position = Vector2(-3.903946, -14.51635)
+rotation = 0.6614798
+scale = Vector2(0.09742544, 0.13670091)
+skew = -0.64053583
+texture = ExtResource("3_door_l")
+
+[node name="Label" type="Label" parent="Doors/Door2" unique_id=598320631]
+offset_left = -63.0
+offset_top = 32.0
+offset_right = 37.0
+offset_bottom = 72.0
+rotation = 0.69905055
+theme_override_font_sizes/font_size = 24
+text = "Door 2"
+horizontal_alignment = 1
+
+[node name="Door3" type="Area2D" parent="Doors" unique_id=1500479209]
+position = Vector2(987, 548)
+collision_layer = 8
+script = ExtResource("7_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/Door3" unique_id=1264198336]
+position = Vector2(-6.102539, -12.684631)
+rotation = 0.5794493
+scale = Vector2(1, 0.99999994)
+skew = -0.58119464
+shape = SubResource("Rect_door")
+
+[node name="LockedVisual" type="Sprite2D" parent="Doors/Door3" unique_id=1054157577]
+position = Vector2(-5.7330847, -14.097229)
+rotation = 0.5794493
+scale = Vector2(0.09173139, 0.13548231)
+skew = -0.5462881
+texture = ExtResource("3_door_l")
+
+[node name="Label" type="Label" parent="Doors/Door3" unique_id=752703070]
+offset_left = -102.0
+offset_top = 21.0
+offset_right = -2.0
+offset_bottom = 61.0
+rotation = 0.6255552
+theme_override_font_sizes/font_size = 24
+text = "Door 3"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Door4" type="Area2D" parent="Doors" unique_id=1511814826]
+position = Vector2(1187, 691)
+collision_layer = 8
+script = ExtResource("7_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/Door4" unique_id=509713235]
+position = Vector2(-15.000002, -9)
+rotation = 0.57770395
+skew = -0.4956735
+shape = SubResource("Rect_door")
+
+[node name="LockedVisual" type="Sprite2D" parent="Doors/Door4" unique_id=733613100]
+position = Vector2(-15.494511, -14.207317)
+rotation = 0.6614798
+scale = Vector2(0.10166193, 0.14949052)
+skew = -0.59864795
+texture = ExtResource("3_door_l")
+
+[node name="Label" type="Label" parent="Doors/Door4" unique_id=1875329633]
+offset_left = -82.0
+offset_top = 41.0
+offset_right = 18.0
+offset_bottom = 81.0
+rotation = 0.6048351
+theme_override_font_sizes/font_size = 24
+text = "Door 4"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1159410222]
+position = Vector2(960, 900)
+
+[node name="Floor1ReturnSpawn" type="Marker2D" parent="." unique_id=1532136417]
+position = Vector2(553, 406)
+
+[node name="Floor2ReturnSpawn" type="Marker2D" parent="." unique_id=1554382099]
+position = Vector2(724, 533)
+
+[node name="Floor3ReturnSpawn" type="Marker2D" parent="." unique_id=1629673881]
+position = Vector2(884, 660)
+rotation = 0.04834736
+
+[node name="Floor4ReturnSpawn" type="Marker2D" parent="." unique_id=1310995886]
+position = Vector2(1100, 760)
+
+[node name="Player" parent="." unique_id=988039711 instance=ExtResource("4_player")]
+z_index = 8
+position = Vector2(960, 900)
+scale = Vector2(1.9, 1.9)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="DialoguePanel" parent="." unique_id=40177631 instance=ExtResource("6_dialogue")]
+visible = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1096325877]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=1683982477]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+text = "Press E / F"
+horizontal_alignment = 1
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]

@@ -1,0 +1,701 @@
+{
+  "zone": "02_energy_power",
+  "floor": 4,
+  "bloom_levels": [
+    "analyze",
+    "evaluate"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 20,
+  "mcq_count": 12,
+  "one_word_count": 8,
+  "questions": [
+    {
+      "id": "z02_f4_001",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A ball's PE-vs-height graph is a straight line through the origin, while its KE-vs-height graph (as it falls from a fixed starting height) is a straight line with negative slope. What single principle explains why these two graphs are mirror images of each other?",
+      "correct_answer": "conservation of energy",
+      "accepted_answers": [
+        "conservation of energy",
+        "energy conservation",
+        "law of conservation of energy"
+      ],
+      "explanation": "Since total mechanical energy (KE + PE) stays constant during the fall, any decrease in PE must be exactly matched by an equal increase in KE, making the two graphs mirror images."
+    },
+    {
+      "id": "z02_f4_002",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "In a two-stage machine system where output of Machine 1 feeds into Machine 2, if Machine 1 is 80% efficient and Machine 2 is 50% efficient, what is the overall efficiency of the combined system, as a percentage?",
+      "correct_answer": "40%",
+      "accepted_answers": [
+        "40%",
+        "40",
+        "40 percent"
+      ],
+      "explanation": "Overall efficiency = 0.80 x 0.50 x 100% = 40%. Combined efficiencies of machines in series multiply."
+    },
+    {
+      "id": "z02_f4_003",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A cyclist going uphill at constant speed switches to a steeper hill but keeps the same speed. Which quantity must the cyclist increase to make this possible?",
+      "correct_answer": "power",
+      "accepted_answers": [
+        "power",
+        "power output"
+      ],
+      "explanation": "A steeper slope requires more work done per second against gravity at the same speed, so the cyclist must increase power output."
+    },
+    {
+      "id": "z02_f4_004",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "A 2 kg object falling from rest has its speed doubling between the 1st and 2nd second of fall. What single factor is responsible for this continuous increase in kinetic energy during free fall?",
+      "correct_answer": "gravity",
+      "accepted_answers": [
+        "gravity",
+        "gravitational force",
+        "acceleration due to gravity"
+      ],
+      "explanation": "Gravity continuously accelerates the falling object, increasing its speed and therefore its kinetic energy (KE = 1/2 mv^2) throughout the fall."
+    },
+    {
+      "id": "z02_f4_005",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "Comparing a machine at 90% efficiency to one at 60% efficiency, both receiving the same input energy, what is the ratio of their useful output energies (higher : lower), reduced to simplest whole-number form?",
+      "correct_answer": "3:2",
+      "accepted_answers": [
+        "3:2",
+        "3 to 2",
+        "3/2"
+      ],
+      "explanation": "Ratio of outputs = 90:60 = 3:2 after simplifying, since output is proportional to efficiency when input energy is equal."
+    },
+    {
+      "id": "z02_f4_006",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A technician claims, 'A machine that converts 800 J of input into 750 J of useful output is more efficient than one converting 500 J of input into 480 J of useful output.' Is this claim correct? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "Efficiency of machine 1 = 750/800 x 100 = 93.75%. Efficiency of machine 2 = 480/500 x 100 = 96%. Machine 2 is actually more efficient, so the claim is incorrect."
+    },
+    {
+      "id": "z02_f4_007",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A 5 kg object is dropped from a height of 20 m. Using energy conservation, what is its speed in m/s just before hitting the ground? (g = 10 m/s^2)",
+      "correct_answer": "20 m/s",
+      "accepted_answers": [
+        "20 m/s",
+        "20m/s",
+        "20"
+      ],
+      "explanation": "mgh = 1/2 mv^2, so v = sqrt(2gh) = sqrt(2 x 10 x 20) = sqrt(400) = 20 m/s."
+    },
+    {
+      "id": "z02_f4_008",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A hydroelectric plant releases 200 kg of water per second through a height of 25 m, with a generator that is 80% efficient at converting this to electricity. What is the electrical power output in Watts? (g = 10 m/s^2)",
+      "correct_answer": "40000 W",
+      "accepted_answers": [
+        "40000 W",
+        "40000W",
+        "40000",
+        "40 kW",
+        "40kW"
+      ],
+      "explanation": "Available power = mgh/t (per second) = 200 x 10 x 25 = 50000 W. Electrical output = 50000 x 0.80 = 40000 W."
+    },
+    {
+      "id": "z02_f4_009",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "An engineer claims a certain machine achieves 105% efficiency because it outputs more useful energy than the electrical energy it was metered as receiving. Is this claim physically possible? Answer yes or no.",
+      "correct_answer": "no",
+      "accepted_answers": [
+        "no"
+      ],
+      "explanation": "Efficiency can never exceed 100% for any real machine, since this would require creating energy from nothing, violating the law of conservation of energy. The claim must be due to a measurement or metering error."
+    },
+    {
+      "id": "z02_f4_010",
+      "bloom_level": "evaluate",
+      "format": "one_word",
+      "question": "A crane lifts a 2000 N load a height of 15 m in 25 seconds. What is the power delivered by the crane, in Watts?",
+      "correct_answer": "1200 W",
+      "accepted_answers": [
+        "1200 W",
+        "1200W",
+        "1200"
+      ],
+      "explanation": "Work = Force x height = 2000 x 15 = 30000 J. Power = Work/time = 30000/25 = 1200 W."
+    },
+    {
+      "id": "z02_f4_011",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A ball is thrown upward and analyzed at three points: launch, halfway up, and the peak. Which statement correctly describes the trend in kinetic and potential energy across these three points (ignoring air resistance)?",
+      "options": [
+        "KE increases while PE decreases from launch to peak",
+        "KE decreases while PE increases from launch to peak, with their sum remaining constant",
+        "Both KE and PE increase from launch to peak",
+        "Both KE and PE decrease from launch to peak"
+      ],
+      "correct_answer": "KE decreases while PE increases from launch to peak, with their sum remaining constant",
+      "explanation": "As the ball rises, its speed (and KE) decreases while its height (and PE) increases. The sum of KE and PE — total mechanical energy — stays constant throughout the flight, ignoring air resistance."
+    },
+    {
+      "id": "z02_f4_012",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A factory compares two machines with identical power ratings but different efficiencies. Machine A is 90% efficient and Machine B is 60% efficient. For the same operating time, what relationship holds between their useful work outputs?",
+      "options": [
+        "Machine A produces less useful work than Machine B",
+        "Machine A produces more useful work than Machine B, in the same ratio as their efficiencies",
+        "Both produce equal useful work since power ratings are equal",
+        "Useful work cannot be compared without knowing the input energy"
+      ],
+      "correct_answer": "Machine A produces more useful work than Machine B, in the same ratio as their efficiencies",
+      "explanation": "Since both have the same power rating and thus the same input energy over the same time, the useful output work is proportional to efficiency: Machine A produces 90/60 = 1.5 times more useful work than Machine B."
+    },
+    {
+      "id": "z02_f4_013",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A satellite in a stable circular orbit maintains constant speed and constant height. Analyzing its kinetic and potential energy over one full orbit, what pattern would be observed?",
+      "options": [
+        "Both KE and PE oscillate periodically with the orbit",
+        "Both KE and PE remain constant throughout the orbit",
+        "KE increases steadily while PE decreases steadily",
+        "Total mechanical energy decreases with each orbit due to gravity"
+      ],
+      "correct_answer": "Both KE and PE remain constant throughout the orbit",
+      "explanation": "In a stable circular orbit, both height (hence PE) and speed (hence KE) remain constant at every point, so both quantities stay unchanged throughout the orbit."
+    },
+    {
+      "id": "z02_f4_014",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An analyst reviewing a wind turbine's performance notices its electrical output is proportional to the cube of the wind speed rather than the wind speed itself. What does this reveal about the underlying energy relationship?",
+      "options": [
+        "Power depends linearly on velocity, and the relationship is an error",
+        "Kinetic energy in the moving air depends on v^2, and since a greater mass of air also passes per second at higher speed (proportional to v), the combined power scales as v^3",
+        "The turbine's efficiency changes randomly with wind speed",
+        "Wind speed has no real effect on available power"
+      ],
+      "correct_answer": "Kinetic energy in the moving air depends on v^2, and since a greater mass of air also passes per second at higher speed (proportional to v), the combined power scales as v^3",
+      "explanation": "Available wind power combines the v^2 dependence of kinetic energy per unit mass with the v dependence of mass flow rate (more air passes per second at higher speed), giving an overall v^3 relationship — a well-known result in wind energy analysis."
+    },
+    {
+      "id": "z02_f4_015",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A study compares energy loss in two identical cars: Car X brakes suddenly to stop, while Car Y coasts to a gradual stop due to friction and air resistance alone. Which best explains where the kinetic energy goes in each case?",
+      "options": [
+        "Car X's kinetic energy disappears completely; Car Y's converts to potential energy",
+        "In both cases, kinetic energy converts mainly into heat, but Car X's heat is generated quickly at the brakes while Car Y's is generated gradually via friction and air drag",
+        "Car X gains kinetic energy while Car Y loses it",
+        "Neither car experiences any energy transformation while stopping"
+      ],
+      "correct_answer": "In both cases, kinetic energy converts mainly into heat, but Car X's heat is generated quickly at the brakes while Car Y's is generated gradually via friction and air drag",
+      "explanation": "In both scenarios, the car's kinetic energy is ultimately converted to heat energy; the difference lies in the rate and location of this conversion — concentrated at the brake pads for sudden stopping versus distributed through rolling resistance and air drag for gradual coasting."
+    },
+    {
+      "id": "z02_f4_016",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A researcher plots efficiency (%) against load for an electric motor and finds efficiency peaks at a moderate load, dropping at both very low and very high loads. What does the drop at very low load most likely indicate?",
+      "options": [
+        "The motor produces zero output at low load",
+        "A significant share of input energy is used to overcome fixed internal losses (like friction) regardless of how little useful work is done",
+        "Efficiency always increases as load decreases",
+        "Low load causes the motor to violate energy conservation"
+      ],
+      "correct_answer": "A significant share of input energy is used to overcome fixed internal losses (like friction) regardless of how little useful work is done",
+      "explanation": "At low loads, the fixed internal losses (friction, resistive heating) form a larger fraction of the total input energy relative to the small useful output, lowering the observed efficiency."
+    },
+    {
+      "id": "z02_f4_017",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Two identical pendulums are released from the same height, but one is in air and one is in a vacuum chamber. Comparing their maximum heights after many swings, what underlying difference in energy transformation explains the divergence over time?",
+      "options": [
+        "The vacuum pendulum gains energy from the chamber walls",
+        "The pendulum in air continuously loses mechanical energy to heat via air resistance, while the vacuum pendulum's energy loss is negligible",
+        "Both pendulums lose energy at identical rates since gravity is the same",
+        "The pendulum in air converts its energy into additional potential energy"
+      ],
+      "correct_answer": "The pendulum in air continuously loses mechanical energy to heat via air resistance, while the vacuum pendulum's energy loss is negligible",
+      "explanation": "Air resistance does negative work on the pendulum in air, steadily converting mechanical energy into heat and reducing its swing height over time, while the vacuum pendulum experiences no such drag, so it retains height far longer."
+    },
+    {
+      "id": "z02_f4_018",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An engineer designs a roller coaster where the second hill is taller than the first. Analyzing this using energy conservation principles, what problem would this design create?",
+      "options": [
+        "The coaster would move faster than intended at the first hill",
+        "The coaster would not have enough energy to reach the top of the second (taller) hill, since it cannot regain more PE than it started with (ignoring extra energy input)",
+        "The design has no effect on the coaster's motion",
+        "The coaster would gain extra energy at the second hill automatically"
+      ],
+      "correct_answer": "The coaster would not have enough energy to reach the top of the second (taller) hill, since it cannot regain more PE than it started with (ignoring extra energy input)",
+      "explanation": "Since total mechanical energy is essentially fixed after the initial lift (minus friction losses), the coaster cannot rise higher than its starting height without additional energy input, so a taller second hill would leave it short of the top, or stalled."
+    },
+    {
+      "id": "z02_f4_019",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A comparison of two similar-sized power plants shows Plant A has higher thermal efficiency than Plant B. Analyzing their fuel consumption for the same electrical output, what can be inferred?",
+      "options": [
+        "Plant A requires more fuel than Plant B for the same output",
+        "Plant A requires less fuel than Plant B, since more of its input energy is effectively converted to electricity",
+        "Fuel consumption is unrelated to thermal efficiency",
+        "Both plants consume identical amounts of fuel regardless of efficiency"
+      ],
+      "correct_answer": "Plant A requires less fuel than Plant B, since more of its input energy is effectively converted to electricity",
+      "explanation": "Higher thermal efficiency means a greater proportion of the chemical energy in fuel is converted into useful electrical output, so Plant A can generate the same electricity while consuming less fuel than the less efficient Plant B."
+    },
+    {
+      "id": "z02_f4_020",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A physics class examines a spring-mass system oscillating with no friction. At the equilibrium position, the spring's elastic PE is zero. Analyzing energy distribution at this point, what can be concluded?",
+      "options": [
+        "Both KE and elastic PE are zero at equilibrium",
+        "KE is at its maximum at equilibrium since all elastic PE has converted to KE",
+        "Elastic PE is at its maximum at equilibrium",
+        "Total mechanical energy is zero at equilibrium"
+      ],
+      "correct_answer": "KE is at its maximum at equilibrium since all elastic PE has converted to KE",
+      "explanation": "As the mass passes through the equilibrium position, the spring is undeformed (elastic PE = 0), so all of the system's mechanical energy at that instant exists as kinetic energy, making KE maximum there."
+    },
+    {
+      "id": "z02_f4_021",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A device is tested with varying input energies. Data shows that useful output energy rises linearly with input, but the line does not pass through the origin at input = 0 — instead the output is negative for very small inputs. What does this pattern suggest?",
+      "options": [
+        "The device creates energy from nothing at low input",
+        "There is a minimum threshold input energy needed just to overcome fixed internal losses before any useful output is produced",
+        "The data must be measured incorrectly and is otherwise meaningless",
+        "Efficiency remains constant at all input levels including zero"
+      ],
+      "correct_answer": "There is a minimum threshold input energy needed just to overcome fixed internal losses before any useful output is produced",
+      "explanation": "A negative-output intercept implies that some minimum input energy is consumed purely to overcome internal resistive or frictional losses before any energy becomes available as useful output — common in real machines with fixed loss components."
+    },
+    {
+      "id": "z02_f4_022",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Comparing the energy transformation pathway of a solar panel-battery-LED system to a candle, both eventually producing light, what is a defining structural difference in their transformation chains?",
+      "options": [
+        "The candle involves no energy transformation at all",
+        "The solar system converts light to electrical to chemical (storage) to electrical to light energy, while the candle converts chemical energy directly to heat and light",
+        "Both systems have identical numbers of transformation steps",
+        "The candle converts electrical energy to chemical energy first"
+      ],
+      "correct_answer": "The solar system converts light to electrical to chemical (storage) to electrical to light energy, while the candle converts chemical energy directly to heat and light",
+      "explanation": "The solar-battery-LED pathway involves multiple conversions (solar to electrical, storage as chemical energy in the battery, then back to electrical, then to light), while a candle converts stored chemical energy in wax directly into heat and light through combustion, a far more direct pathway."
+    },
+    {
+      "id": "z02_f4_023",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An elevator motor's power requirement is analyzed for two scenarios: carrying one passenger versus carrying five passengers, both lifted the same height in the same time. What relationship would be expected between the required power in these two cases?",
+      "options": [
+        "Power required is the same in both cases",
+        "Power required for five passengers is roughly five times that for one passenger, assuming similar average mass",
+        "Power decreases as more passengers are added",
+        "Power depends only on the elevator's motor, not on the load"
+      ],
+      "correct_answer": "Power required for five passengers is roughly five times that for one passenger, assuming similar average mass",
+      "explanation": "Since work = mgh and time is unchanged, power (W/t) scales directly with the total mass being lifted; five times the mass (five passengers) requires roughly five times the power for the same height and time."
+    },
+    {
+      "id": "z02_f4_024",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A comparison of two identical objects sliding down inclines of different lengths but the same height and both frictionless shows they reach the bottom with equal speeds but at different times. What does this reveal about the relationship between energy conservation and motion time?",
+      "options": [
+        "Energy conservation determines speed at the bottom, but not the time taken, which depends on the incline's geometry and acceleration profile",
+        "Energy conservation determines both speed and time identically for any incline",
+        "The shorter incline must have less energy conservation",
+        "Time taken is unrelated to any physical property of the incline"
+      ],
+      "correct_answer": "Energy conservation determines speed at the bottom, but not the time taken, which depends on the incline's geometry and acceleration profile",
+      "explanation": "Energy conservation guarantees the same final speed at the bottom for equal heights regardless of path (frictionless), but it says nothing about the time taken, which depends on how the acceleration varies along each different incline length and angle."
+    },
+    {
+      "id": "z02_f4_025",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a factory audit, one production line's machines collectively show declining overall efficiency over several months, while individual machine power ratings remain unchanged. What is the most likely systemic explanation?",
+      "options": [
+        "The machines are now converting more energy into useful output than before",
+        "Increasing wear, friction, or misalignment across machines is likely causing more input energy to be lost as heat, reducing overall efficiency despite unchanged power ratings",
+        "Power rating and efficiency are entirely unrelated quantities that cannot explain this pattern",
+        "The law of conservation of energy has changed for this factory"
+      ],
+      "correct_answer": "Increasing wear, friction, or misalignment across machines is likely causing more input energy to be lost as heat, reducing overall efficiency despite unchanged power ratings",
+      "explanation": "Since power rating reflects the rate of input energy, not how it's used, an unchanged rating with declining efficiency points to increasing internal losses — commonly due to component wear, friction, or misalignment — diverting more input into heat rather than useful work."
+    },
+    {
+      "id": "z02_f4_026",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A comparison of a bicycle dynamo lighting system versus a battery-only lighting system shows the dynamo light dims when the cyclist slows down, while the battery light stays constant regardless of speed. What does this reveal about the underlying energy source of each?",
+      "options": [
+        "Both systems draw energy from an identical, speed-independent source",
+        "The dynamo directly converts the cyclist's mechanical energy (dependent on speed) into electrical energy in real time, while the battery releases previously stored chemical energy independent of current speed",
+        "The battery light dims because it depends on speed just like the dynamo",
+        "Neither system involves any energy conversion"
+      ],
+      "correct_answer": "The dynamo directly converts the cyclist's mechanical energy (dependent on speed) into electrical energy in real time, while the battery releases previously stored chemical energy independent of current speed",
+      "explanation": "A dynamo generates electricity in real time from the wheel's rotation, so its output depends directly on current cycling speed, whereas a battery supplies energy from a chemical store built up earlier, delivering a steady output regardless of the cyclist's present speed."
+    },
+    {
+      "id": "z02_f4_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A student compares a pulley system that trades force for distance against a direct lift of the same load. Analyzing total energy input in an ideal (frictionless) case, what conclusion follows?",
+      "options": [
+        "The pulley system requires less total energy input than the direct lift",
+        "The pulley system requires the same total energy input as the direct lift, since ideal machines conserve energy while only changing the force-distance trade-off",
+        "The pulley system requires more total energy input due to added machine parts",
+        "Energy input cannot be compared between the two methods"
+      ],
+      "correct_answer": "The pulley system requires the same total energy input as the direct lift, since ideal machines conserve energy while only changing the force-distance trade-off",
+      "explanation": "An ideal (frictionless) pulley system does not create or destroy energy; it only redistributes the force-distance product (work = force x distance), so the total energy input needed remains the same as lifting the load directly."
+    },
+    {
+      "id": "z02_f4_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "An analyst notices a machine's kinetic energy output graph rises with time but its slope decreases as time goes on, even though force remains constant. What is the most likely explanation, considering that under constant force, velocity increases linearly with time?",
+      "options": [
+        "The machine is losing mass over time",
+        "Since KE depends on v^2 and v increases linearly with time under constant force, KE should actually rise with an increasing (not decreasing) slope, so this pattern suggests an opposing resistive force is growing, limiting further velocity gain",
+        "Constant force always produces a decreasing KE slope regardless of other factors",
+        "The pattern is expected and requires no further explanation"
+      ],
+      "correct_answer": "Since KE depends on v^2 and v increases linearly with time under constant force, KE should actually rise with an increasing (not decreasing) slope, so this pattern suggests an opposing resistive force is growing, limiting further velocity gain",
+      "explanation": "For truly constant net force, velocity grows linearly with time, making KE (proportional to v^2) grow with an accelerating slope. A decreasing slope instead suggests a growing opposing force (such as air resistance increasing with speed) that is reducing the net accelerating force over time."
+    },
+    {
+      "id": "z02_f4_029",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student argues: 'Since power = work/time, a machine can achieve unlimited power by simply reducing the time to nearly zero, without any physical limit.' Evaluate this claim.",
+      "options": [
+        "The claim is correct; power has no physical upper limit",
+        "The claim is flawed; real machines face physical limits (material strength, energy source capacity) that prevent time from being reduced indefinitely while keeping work constant",
+        "The claim is irrelevant since power does not depend on time",
+        "The claim is correct only for electrical machines"
+      ],
+      "correct_answer": "The claim is flawed; real machines face physical limits (material strength, energy source capacity) that prevent time from being reduced indefinitely while keeping work constant",
+      "explanation": "While the formula P = W/t suggests power rises as time shrinks, real-world constraints — material strength, force limits, and energy delivery rates — prevent time from approaching zero while still doing the same amount of work, so power cannot rise without bound in practice."
+    },
+    {
+      "id": "z02_f4_030",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "An engineer proposes a machine that outputs slightly more energy than it takes in, claiming careful design can 'recover losses' beyond 100% efficiency. Evaluate this proposal.",
+      "options": [
+        "The proposal is sound if the machine is built with high-quality materials",
+        "The proposal is invalid; it would violate the law of conservation of energy, which no design can overcome",
+        "The proposal is valid only for electrical machines",
+        "The proposal is valid because efficiency losses can sometimes be negative"
+      ],
+      "correct_answer": "The proposal is invalid; it would violate the law of conservation of energy, which no design can overcome",
+      "explanation": "No machine can output more energy than it receives, as this would create energy from nothing, violating the law of conservation of energy. Improved design can reduce losses toward 100% efficiency but never exceed it."
+    },
+    {
+      "id": "z02_f4_031",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A salesperson claims a new type of light bulb is 'more powerful' than an older one because it is rated at 100 W compared to the older bulb's 60 W. Evaluate whether higher wattage alone proves the new bulb is a better choice for lighting.",
+      "options": [
+        "Yes, higher wattage always means better lighting performance",
+        "Not necessarily; wattage indicates power consumption, not light output or efficiency — a less efficient bulb could use more power while producing less useful light than a more efficient one",
+        "No, wattage has nothing to do with a bulb's performance at all",
+        "Yes, because power and brightness are identical properties"
+      ],
+      "correct_answer": "Not necessarily; wattage indicates power consumption, not light output or efficiency — a less efficient bulb could use more power while producing less useful light than a more efficient one",
+      "explanation": "Wattage measures the rate of energy consumption, not the amount or quality of useful light produced. An inefficient 100 W bulb might actually give less light than an efficient, lower-wattage bulb, so wattage alone is a poor measure of lighting performance."
+    },
+    {
+      "id": "z02_f4_032",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A manufacturer advertises a machine as '95% efficient' but independent testing finds it produces only 70 J of useful output from 100 J of input. Evaluate this discrepancy.",
+      "options": [
+        "The advertised efficiency is accurate since 70/100 rounds to 95%",
+        "The advertised efficiency is overstated; the tested efficiency is actually 70%, well below the claimed 95%",
+        "Efficiency cannot be tested independently, so the claim must be accepted",
+        "The discrepancy is irrelevant to evaluating the machine's real-world performance"
+      ],
+      "correct_answer": "The advertised efficiency is overstated; the tested efficiency is actually 70%, well below the claimed 95%",
+      "explanation": "Efficiency = (useful output/input) x 100% = (70/100) x 100% = 70%, which is significantly lower than the advertised 95%, indicating the manufacturer's claim is not supported by the test data."
+    },
+    {
+      "id": "z02_f4_033",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A city planner must choose between building a coal power plant or a solar farm of similar output capacity for long-term energy security. Evaluate which factor most strongly favors the solar option from a sustainability standpoint.",
+      "options": [
+        "Coal plants have no operating costs after construction",
+        "Solar energy relies on a renewable, continuously available resource, while coal is finite and will eventually be exhausted",
+        "Coal plants produce electricity more reliably at night",
+        "Solar panels require no maintenance over their lifetime"
+      ],
+      "correct_answer": "Solar energy relies on a renewable, continuously available resource, while coal is finite and will eventually be exhausted",
+      "explanation": "From a long-term sustainability perspective, the key advantage of solar is that sunlight is a renewable resource that will not run out, unlike coal, which is finite and non-renewable, making the solar farm the more sustainable long-term choice despite other practical trade-offs like storage for nighttime use."
+    },
+    {
+      "id": "z02_f4_034",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A 1000 kg elevator car is lifted 30 m in 20 seconds by a motor. If the motor's efficiency is 75%, evaluate the actual electrical power input required. (g = 10 m/s^2)",
+      "options": [
+        "15000 W",
+        "20000 W",
+        "11250 W",
+        "26667 W"
+      ],
+      "correct_answer": "20000 W",
+      "explanation": "Useful power output = Work/time = (mgh)/t = (1000 x 10 x 30)/20 = 300000/20 = 15000 W. Electrical input = Output/Efficiency = 15000/0.75 = 20000 W."
+    },
+    {
+      "id": "z02_f4_035",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student claims, 'Since a spring stores elastic potential energy proportional to the square of its compression, compressing a spring three times as much stores three times the energy.' Evaluate this statement.",
+      "options": [
+        "The statement is correct as written",
+        "The statement is incorrect; tripling the compression would store nine times the energy, since energy is proportional to the square of compression",
+        "The statement is correct only for metal springs",
+        "Elastic potential energy does not depend on compression amount at all"
+      ],
+      "correct_answer": "The statement is incorrect; tripling the compression would store nine times the energy, since energy is proportional to the square of compression",
+      "explanation": "If PE is proportional to compression squared, tripling compression gives (3)^2 = 9 times the stored energy, not three times as the student claimed — a common misunderstanding of squared relationships."
+    },
+    {
+      "id": "z02_f4_036",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "Two competing machine designs achieve the same useful output, but Design A uses less input energy than Design B to achieve it. A reviewer must recommend one design based purely on energy performance. Evaluate the better choice and justify it.",
+      "options": [
+        "Design B, because using more energy shows greater capability",
+        "Design A, because it has higher efficiency, converting a larger share of its input into useful output",
+        "Neither design can be evaluated without knowing their price",
+        "Both designs are equally good since useful output is the same"
+      ],
+      "correct_answer": "Design A, because it has higher efficiency, converting a larger share of its input into useful output",
+      "explanation": "Since Design A achieves the same useful output with less input energy, it necessarily has higher efficiency, making it the better choice from a purely energy-performance standpoint, minimizing waste."
+    },
+    {
+      "id": "z02_f4_037",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A factory worker claims that turning off machines between short breaks wastes more energy than leaving them running, because restarting requires an energy 'surge.' Evaluate this claim in the context of overall energy consumption for moderately long breaks.",
+      "options": [
+        "The claim is generally true for all break lengths",
+        "The claim may be true only for very short breaks where restart surges are significant, but for moderately long breaks, the energy saved by not running idle typically outweighs the restart surge",
+        "The claim is completely false since restarting never requires extra energy",
+        "Energy consumption is unrelated to whether a machine is running or off"
+      ],
+      "correct_answer": "The claim may be true only for very short breaks where restart surges are significant, but for moderately long breaks, the energy saved by not running idle typically outweighs the restart surge",
+      "explanation": "While some machines do draw a brief surge of extra power on restart, for moderately long idle periods, the cumulative energy consumed by continuing to run typically exceeds the one-time restart surge, making shutting down the more energy-efficient choice in most such cases."
+    },
+    {
+      "id": "z02_f4_038",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A 60 kg athlete runs up a 5 m high staircase in 4 seconds. A reviewer wants to evaluate the athlete's power output in horsepower. What is the closest value? (g = 10 m/s^2, 1 hp = 746 W)",
+      "options": [
+        "1 hp",
+        "0.5 hp",
+        "2 hp",
+        "0.1 hp"
+      ],
+      "correct_answer": "1 hp",
+      "explanation": "Work = mgh = 60 x 10 x 5 = 3000 J. Power = Work/time = 3000/4 = 750 W. In horsepower: 750/746 ≈ 1.0 hp, so approximately 1 horsepower."
+    },
+    {
+      "id": "z02_f4_039",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A homeowner is deciding between an appliance rated 'Energy Star efficient' at 800 W and a similar non-rated appliance at 1000 W, both performing the same task in the same time. Evaluate the most energy-conscious choice, all else being equal.",
+      "options": [
+        "The 1000 W appliance, since higher wattage means better performance",
+        "The 800 W appliance, since it consumes less power for the same output, indicating better efficiency",
+        "Both are equally energy-conscious since they perform the same task",
+        "Wattage rating is irrelevant to energy consumption"
+      ],
+      "correct_answer": "The 800 W appliance, since it consumes less power for the same output, indicating better efficiency",
+      "explanation": "Since both appliances perform the same task in the same time, the lower-wattage (800 W) appliance uses less total energy for the same result, making it the more energy-efficient and cost-effective choice."
+    },
+    {
+      "id": "z02_f4_040",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A critic argues that nuclear power should not be classified with renewable sources like solar and wind because uranium, its fuel, is a finite resource. Evaluate the validity of this argument.",
+      "options": [
+        "The argument is invalid; nuclear fuel is unlimited",
+        "The argument is valid; since uranium is mined and finite (though abundant), nuclear power is typically classified separately from renewable sources based on fuel replenishment",
+        "The argument is irrelevant since all energy sources are technically finite",
+        "Nuclear power should be classified as fossil fuel-based"
+      ],
+      "correct_answer": "The argument is valid; since uranium is mined and finite (though abundant), nuclear power is typically classified separately from renewable sources based on fuel replenishment",
+      "explanation": "Since renewable classification depends on whether a resource is naturally and continuously replenished, and uranium is a mined, finite resource (even though reserves are large), nuclear power is generally categorized as non-renewable, distinct from solar and wind."
+    },
+    {
+      "id": "z02_f4_041",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A 500 W motor lifts a 25 kg object. Evaluate the maximum height it can lift the object to in 10 seconds, assuming 100% efficiency. (g = 10 m/s^2)",
+      "options": [
+        "20 m",
+        "10 m",
+        "2 m",
+        "200 m"
+      ],
+      "correct_answer": "20 m",
+      "explanation": "Work done = Power x time = 500 x 10 = 5000 J. Using W = mgh: h = W/(mg) = 5000/(25 x 10) = 20 m."
+    },
+    {
+      "id": "z02_f4_042",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student argues that because energy is always conserved, energy problems (like fuel shortages) are not real concerns — 'the energy is never actually lost.' Evaluate this reasoning.",
+      "options": [
+        "The reasoning is sound; conservation of energy means there is never truly an energy shortage",
+        "The reasoning is flawed; while total energy is conserved, usable (high-quality, concentrated) energy sources can be converted into less useful, dispersed forms like waste heat, creating real practical shortages of accessible energy",
+        "The reasoning applies only to renewable energy sources",
+        "Energy conservation contradicts the existence of fuel shortages, proving shortages are impossible"
+      ],
+      "correct_answer": "The reasoning is flawed; while total energy is conserved, usable (high-quality, concentrated) energy sources can be converted into less useful, dispersed forms like waste heat, creating real practical shortages of accessible energy",
+      "explanation": "Although total energy is conserved, practical energy problems arise because concentrated, usable forms of energy (like fuel) get converted into dispersed, less useful forms (like waste heat), which cannot easily be reused — so 'shortages' refer to accessible usable energy, not a violation of conservation."
+    },
+    {
+      "id": "z02_f4_043",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A machine lifts a 400 N load through 6 m using an input of 3000 J. Evaluate whether the manufacturer's claim of '90% efficiency' is accurate.",
+      "options": [
+        "Accurate; the actual efficiency is exactly 90%",
+        "Inaccurate; the actual efficiency is 80%, lower than claimed",
+        "Inaccurate; the actual efficiency exceeds 100%, which is impossible",
+        "Cannot be evaluated without knowing the machine's mass"
+      ],
+      "correct_answer": "Inaccurate; the actual efficiency is 80%, lower than claimed",
+      "explanation": "Useful output work = Force x distance = 400 x 6 = 2400 J. Efficiency = (2400/3000) x 100% = 80%, which is lower than the manufacturer's claimed 90%, showing the claim is inaccurate."
+    },
+    {
+      "id": "z02_f4_044",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A debate arises over whether a flywheel (a spinning wheel storing kinetic energy) is a good method for short-term energy storage compared to a battery. Evaluate a key advantage of the flywheel approach.",
+      "options": [
+        "Flywheels can store energy indefinitely with zero losses",
+        "Flywheels can typically charge and discharge energy very quickly with minimal chemical degradation compared to batteries, making them well-suited for rapid, repeated energy storage cycles",
+        "Flywheels do not obey the law of conservation of energy",
+        "Flywheels store more total energy than any battery regardless of size"
+      ],
+      "correct_answer": "Flywheels can typically charge and discharge energy very quickly with minimal chemical degradation compared to batteries, making them well-suited for rapid, repeated energy storage cycles",
+      "explanation": "A key advantage of flywheels is their ability to rapidly absorb and release kinetic energy without the chemical wear that batteries experience over repeated charge-discharge cycles, making them useful for short-term, high-frequency energy storage applications, though they do lose some energy to friction and air resistance over time."
+    },
+    {
+      "id": "z02_f4_045",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A vendor claims their new turbine converts '100% of wind's kinetic energy into electricity, with zero loss.' A physics-literate reviewer evaluates this claim against the well-established Betz limit, which caps maximum theoretical wind turbine efficiency around 59%. What should the reviewer conclude?",
+      "options": [
+        "The claim is credible since modern engineering can exceed theoretical limits",
+        "The claim is very likely false, since it exceeds the theoretical maximum efficiency for extracting kinetic energy from wind, as established by the Betz limit",
+        "The claim is irrelevant since the Betz limit only applies to solar panels",
+        "The claim should be accepted without question since it comes from the manufacturer"
+      ],
+      "correct_answer": "The claim is very likely false, since it exceeds the theoretical maximum efficiency for extracting kinetic energy from wind, as established by the Betz limit",
+      "explanation": "The Betz limit is a well-established physical constraint showing that no wind turbine can extract more than about 59% of the kinetic energy in wind (some must remain in the air for it to keep flowing past the blades), so a claim of 100% conversion is inconsistent with established physics and should be treated with strong skepticism."
+    },
+    {
+      "id": "z02_f4_046",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A 2 kg block sliding at 8 m/s on a rough surface comes to rest after travelling 4 m. Evaluate the average frictional force acting on it, using the work-energy theorem.",
+      "options": [
+        "16 N",
+        "32 N",
+        "4 N",
+        "64 N"
+      ],
+      "correct_answer": "16 N",
+      "explanation": "Initial KE = 1/2 x 2 x 8^2 = 64 J. This KE is entirely removed by friction over 4 m: Friction force = KE/distance = 64/4 = 16 N."
+    },
+    {
+      "id": "z02_f4_047",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A student argues that since both a slow-moving truck and a fast-moving car can have the same kinetic energy, they are equally dangerous in a collision. Evaluate this reasoning, considering that momentum and stopping distance also matter in real collisions.",
+      "options": [
+        "The reasoning is fully correct; kinetic energy alone determines danger in all cases",
+        "The reasoning is incomplete; while equal KE means equal energy to dissipate, factors like momentum (which differs since it depends linearly on speed, not squared) and how quickly the energy is released also affect real-world danger and damage",
+        "The reasoning is irrelevant since kinetic energy has no connection to collision danger",
+        "The heavier vehicle is always safer regardless of kinetic energy"
+      ],
+      "correct_answer": "The reasoning is incomplete; while equal KE means equal energy to dissipate, factors like momentum (which differs since it depends linearly on speed, not squared) and how quickly the energy is released also affect real-world danger and damage",
+      "explanation": "Although equal kinetic energy means equal total energy to be absorbed in a collision, real-world danger also depends on momentum (mv, which differs between the truck and car since it scales linearly with speed while KE scales with speed squared) and the rate of energy release, so equal KE alone does not guarantee equal danger."
+    },
+    {
+      "id": "z02_f4_048",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A reviewer evaluates a claim that 'doubling a machine's operating time while halving its power rating results in the same total work done.' Assess this claim mathematically.",
+      "options": [
+        "The claim is correct, since Work = Power x time, and doubling time while halving power leaves the product unchanged",
+        "The claim is incorrect; halving power and doubling time results in only half the original work",
+        "The claim is incorrect; the total work would double",
+        "Work cannot be calculated from power and time alone"
+      ],
+      "correct_answer": "The claim is correct, since Work = Power x time, and doubling time while halving power leaves the product unchanged",
+      "explanation": "Work = Power x time. If power is halved (P/2) and time is doubled (2t), the product becomes (P/2) x (2t) = Pt, which is exactly the original work — confirming the claim is mathematically correct."
+    },
+    {
+      "id": "z02_f4_049",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A company claims their new insulation reduces a building's heating energy loss, thereby improving overall heating system 'efficiency.' Evaluate whether reducing energy loss through insulation is technically the same as increasing the heater's own efficiency.",
+      "options": [
+        "Yes, they are identical; any energy saved counts as improved heater efficiency",
+        "No; the heater's intrinsic efficiency (how well it converts fuel/electricity into heat) is unchanged by insulation — insulation instead reduces the building's total heat demand, which is a separate factor from the heater's own conversion efficiency",
+        "No, because insulation has no measurable effect on energy consumption",
+        "Yes, because all forms of energy saving are equivalent to efficiency gains"
+      ],
+      "correct_answer": "No; the heater's intrinsic efficiency (how well it converts fuel/electricity into heat) is unchanged by insulation — insulation instead reduces the building's total heat demand, which is a separate factor from the heater's own conversion efficiency",
+      "explanation": "The heater's own efficiency depends on how well it converts input energy (fuel or electricity) into heat output, which insulation does not change. Insulation instead reduces how much heat is lost from the building, lowering the total heating demand — a distinct but complementary way to save energy."
+    },
+    {
+      "id": "z02_f4_050",
+      "bloom_level": "evaluate",
+      "format": "mcq",
+      "question": "A 15 kg gym weight is lifted 2 m in 5 seconds by a weightlifter, who claims this represents 'over 100 Watts of power.' Evaluate this claim. (g = 10 m/s^2)",
+      "options": [
+        "The claim is accurate; power is exactly 150 W",
+        "The claim is inaccurate; power is only 60 W, well under 100 W",
+        "The claim is accurate; power is exactly 300 W",
+        "The claim cannot be evaluated without knowing the weightlifter's mass"
+      ],
+      "correct_answer": "The claim is inaccurate; power is only 60 W, well under 100 W",
+      "explanation": "Work = mgh = 15 x 10 x 2 = 300 J. Power = Work/time = 300/5 = 60 W, which is well under the claimed 100 W, so the claim is inaccurate."
+    }
+  ]
+}

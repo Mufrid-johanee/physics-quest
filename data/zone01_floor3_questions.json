@@ -1,0 +1,461 @@
+{
+  "zone": "01_mechanics",
+  "floor": 3,
+  "bloom_levels": ["apply", "analyze"],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 10,
+  "one_word_count": 5,
+  "questions": [
+	{
+	  "id": "z01_f3_001",
+	  "bloom_level": "apply",
+	  "format": "one_word",
+	  "question": "A rocket expels gas downward. In which direction does the rocket move?",
+	  "correct_answer": "upward",
+	  "accepted_answers": ["upward", "up"],
+	  "explanation": "Newton's Third Law: the rocket pushes gas downward (action); the gas pushes the rocket upward (reaction)."
+	},
+	{
+	  "id": "z01_f3_002",
+	  "bloom_level": "apply",
+	  "format": "one_word",
+	  "question": "Two equal and opposite forces act on an object. What is the net force?",
+	  "correct_answer": "zero",
+	  "accepted_answers": ["zero", "0", "0 N", "none"],
+	  "explanation": "Equal and opposite forces cancel. Net force = 0 N. The object remains in its current state of motion."
+	},
+	{
+	  "id": "z01_f3_003",
+	  "bloom_level": "analyze",
+	  "format": "one_word",
+	  "question": "Which quantity is conserved in all collisions regardless of type?",
+	  "correct_answer": "momentum",
+	  "accepted_answers": ["momentum"],
+	  "explanation": "The law of conservation of momentum states total momentum before equals total momentum after any collision, provided no external forces act."
+	},
+	{
+	  "id": "z01_f3_004",
+	  "bloom_level": "apply",
+	  "format": "one_word",
+	  "question": "A box is pushed with 20 N but does not move. What is the static friction force acting on it?",
+	  "correct_answer": "20 N",
+	  "accepted_answers": ["20 N", "20N", "20"],
+	  "explanation": "If the object does not move, static friction exactly equals the applied force. Net force = 0."
+	},
+	{
+	  "id": "z01_f3_005",
+	  "bloom_level": "analyze",
+	  "format": "one_word",
+	  "question": "An astronaut in deep space throws an object. What happens to the astronaut?",
+	  "correct_answer": "moves backward",
+	  "accepted_answers": ["moves backward", "moves back", "recoils", "pushed backward", "backward"],
+	  "explanation": "Newton's Third Law and conservation of momentum: throwing the object forward gives the astronaut equal and opposite momentum — they move backward."
+	},
+	{
+	  "id": "z01_f3_006",
+	  "bloom_level": "apply",
+	  "format": "one_word",
+	  "question": "A 5 kg object accelerates at 2 m/s². What is the net force in Newtons?",
+	  "correct_answer": "10 N",
+	  "accepted_answers": ["10 N", "10N", "10"],
+	  "explanation": "F = ma = 5 × 2 = 10 N."
+	},
+	{
+	  "id": "z01_f3_007",
+	  "bloom_level": "analyze",
+	  "format": "one_word",
+	  "question": "In a perfectly inelastic collision, what quantity is NOT conserved?",
+	  "correct_answer": "kinetic energy",
+	  "accepted_answers": ["kinetic energy", "KE"],
+	  "explanation": "In perfectly inelastic collisions, objects stick together. Momentum is conserved but kinetic energy is lost to heat, sound, and deformation."
+	},
+	{
+	  "id": "z01_f3_008",
+	  "bloom_level": "apply",
+	  "format": "one_word",
+	  "question": "A wheel turns at constant speed in a fixed direction. Is the velocity constant?",
+	  "correct_answer": "no",
+	  "accepted_answers": ["no"],
+	  "explanation": "Speed is constant, but direction continuously changes in circular motion. Since velocity is a vector (magnitude + direction), it is not constant."
+	},
+	{
+	  "id": "z01_f3_009",
+	  "bloom_level": "analyze",
+	  "format": "one_word",
+	  "question": "What type of force keeps a satellite in circular orbit around Earth?",
+	  "correct_answer": "gravity",
+	  "accepted_answers": ["gravity", "gravitational force", "gravitation"],
+	  "explanation": "Gravity provides the centripetal force needed to keep the satellite in circular orbit. It acts perpendicular to the satellite's velocity, curving its path."
+	},
+	{
+	  "id": "z01_f3_010",
+	  "bloom_level": "analyze",
+	  "format": "one_word",
+	  "question": "Two cars of equal mass collide head-on at equal speeds. After the collision both are at rest. What law confirms this is valid?",
+	  "correct_answer": "conservation of momentum",
+	  "accepted_answers": ["conservation of momentum", "momentum conservation"],
+	  "explanation": "Total momentum before = m×v + m×(−v) = 0. After = 0. Momentum is conserved. This confirms the result is physically valid."
+	},
+	{
+	  "id": "z01_f3_011",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 10 kg block is on a surface with μ = 0.3. A 50 N applied force acts on it. What is the net force? (g = 10 m/s²)",
+	  "options": ["50 N", "30 N", "20 N", "80 N"],
+	  "correct_answer": "20 N",
+	  "explanation": "Friction = μmg = 0.3×10×10 = 30 N. Net force = 50 − 30 = 20 N."
+	},
+	{
+	  "id": "z01_f3_012",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A 5 kg object and a 10 kg object are pushed off a frictionless surface with the same force for the same time. Which has greater momentum afterward?",
+	  "options": ["The 5 kg object", "The 10 kg object", "Both have equal momentum", "The one with greater velocity"],
+	  "correct_answer": "Both have equal momentum",
+	  "explanation": "Impulse = Ft is the same for both. Since impulse equals change in momentum, and both start at rest, they have equal final momentum. The lighter object moves faster."
+	},
+	{
+	  "id": "z01_f3_013",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A driver reacts to a hazard and brakes. Which factor does NOT increase stopping distance?",
+	  "options": ["Higher initial speed", "Wet road surface", "Greater vehicle mass", "Colour of the vehicle"],
+	  "correct_answer": "Colour of the vehicle",
+	  "explanation": "Stopping distance depends on speed (KE = ½mv²), road friction (surface condition), and mass (more momentum to overcome). Colour has no physical effect."
+	},
+	{
+	  "id": "z01_f3_014",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 3 kg cart at 6 m/s collides with a 3 kg stationary cart and they stick together. What is the final speed?",
+	  "options": ["6 m/s", "4 m/s", "3 m/s", "2 m/s"],
+	  "correct_answer": "3 m/s",
+	  "explanation": "p_initial = 3×6 = 18 kg·m/s. (3+3)×v = 18 → v = 3 m/s."
+	},
+	{
+	  "id": "z01_f3_015",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A 60 kg person stands in a 40 kg boat at rest. The person walks at 2 m/s toward the bow. What happens to the boat?",
+	  "options": ["It remains still", "It moves forward at 2 m/s", "It moves backward at 3 m/s", "It moves backward at 2 m/s"],
+	  "correct_answer": "It moves backward at 3 m/s",
+	  "explanation": "Total momentum = 0. 60×2 + 40×v_boat = 0 → v_boat = −120/40 = −3 m/s. Boat moves backward at 3 m/s."
+	},
+	{
+	  "id": "z01_f3_016",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "What net force is needed to stop a 1200 kg car moving at 20 m/s in 8 seconds?",
+	  "options": ["150 N", "3000 N", "24 000 N", "960 N"],
+	  "correct_answer": "3000 N",
+	  "explanation": "a = (0−20)/8 = −2.5 m/s². F = ma = 1200×2.5 = 3000 N."
+	},
+	{
+	  "id": "z01_f3_017",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A 2 kg ball hits a wall at 5 m/s and rebounds at 5 m/s. The contact time is 0.1 s. What is the average force on the ball?",
+	  "options": ["10 N", "50 N", "100 N", "200 N"],
+	  "correct_answer": "200 N",
+	  "explanation": "Δp = 2×(5−(−5)) = 20 kg·m/s. F = Δp/t = 20/0.1 = 200 N."
+	},
+	{
+	  "id": "z01_f3_018",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "Two forces act on an object: F₁ = 15 N north, F₂ = 20 N east. What is the magnitude of the resultant force?",
+	  "options": ["25 N", "35 N", "5 N", "17.5 N"],
+	  "correct_answer": "25 N",
+	  "explanation": "For perpendicular forces: R = √(F₁² + F₂²) = √(225 + 400) = √625 = 25 N."
+	},
+	{
+	  "id": "z01_f3_019",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "An object is acted on by a force. Its mass halves while force stays constant. How does acceleration change?",
+	  "options": ["Stays the same", "Halves", "Doubles", "Quadruples"],
+	  "correct_answer": "Doubles",
+	  "explanation": "a = F/m. If m halves and F is constant: a_new = F/(m/2) = 2F/m = 2×original acceleration."
+	},
+	{
+	  "id": "z01_f3_020",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 0.5 kg ball is dropped from 20 m. Ignoring air resistance, what is its speed just before hitting the ground? (g = 10 m/s²)",
+	  "options": ["10 m/s", "14.1 m/s", "20 m/s", "200 m/s"],
+	  "correct_answer": "20 m/s",
+	  "explanation": "Using v² = u² + 2as: v² = 0 + 2×10×20 = 400 → v = 20 m/s."
+	},
+	{
+	  "id": "z01_f3_021",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "Car A brakes from 30 m/s to rest. Car B brakes from 60 m/s to rest. Both cars are identical. How does Car B's stopping distance compare to Car A's?",
+	  "options": ["Twice as far", "Three times as far", "Four times as far", "The same"],
+	  "correct_answer": "Four times as far",
+	  "explanation": "Stopping distance ∝ v² (from v²=2as). If v doubles, v² quadruples. Car B needs four times the stopping distance."
+	},
+	{
+	  "id": "z01_f3_022",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 2000 kg truck and 800 kg car travel at the same speed. The truck's momentum is how many times greater?",
+	  "options": ["1.6 times", "2.5 times", "3.2 times", "Equal"],
+	  "correct_answer": "2.5 times",
+	  "explanation": "p_truck/p_car = m_truck/m_car = 2000/800 = 2.5. At the same velocity, momentum ratios equal mass ratios."
+	},
+	{
+	  "id": "z01_f3_023",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "An ice skater spins and pulls her arms in. Her rotation speeds up. Which law explains this?",
+	  "options": ["Conservation of linear momentum", "Newton's Second Law", "Conservation of angular momentum", "Newton's First Law"],
+	  "correct_answer": "Conservation of angular momentum",
+	  "explanation": "Pulling arms in reduces the moment of inertia. To conserve angular momentum (L = Iω), angular velocity ω must increase."
+	},
+	{
+	  "id": "z01_f3_024",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A force of 30 N acts for 0.2 s on a 1.5 kg ball initially at rest. What is the ball's final velocity?",
+	  "options": ["4 m/s", "6 m/s", "20 m/s", "9 m/s"],
+	  "correct_answer": "4 m/s",
+	  "explanation": "Impulse = Ft = 30×0.2 = 6 N·s = Δp. v = Δp/m = 6/1.5 = 4 m/s."
+	},
+	{
+	  "id": "z01_f3_025",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A system of two objects has zero total momentum. One object moves east. What must be true of the other?",
+	  "options": ["It is also moving east", "It is stationary", "It is moving west with equal momentum", "It has zero mass"],
+	  "correct_answer": "It is moving west with equal momentum",
+	  "explanation": "If total momentum = 0 and one object has momentum p east, the other must have momentum p west to cancel. They are equal and opposite."
+	},
+	{
+	  "id": "z01_f3_026",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 4 kg object at rest is struck and acquires a velocity of 6 m/s. What impulse was applied?",
+	  "options": ["1.5 N·s", "10 N·s", "24 N·s", "0.67 N·s"],
+	  "correct_answer": "24 N·s",
+	  "explanation": "Impulse = Δp = m×Δv = 4×(6−0) = 24 N·s."
+	},
+	{
+	  "id": "z01_f3_027",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A block slides down a frictionless ramp. As it descends, which statement is correct?",
+	  "options": ["Its potential energy increases", "Its total mechanical energy increases", "Its kinetic energy increases as potential energy decreases", "Its momentum stays constant"],
+	  "correct_answer": "Its kinetic energy increases as potential energy decreases",
+	  "explanation": "On a frictionless surface, no energy is lost. Potential energy converts to kinetic energy as the block descends. Total mechanical energy is conserved."
+	},
+	{
+	  "id": "z01_f3_028",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 1000 kg car and 3000 kg truck collide and stick together, initially moving at the same 10 m/s toward each other. What is the final velocity?",
+	  "options": ["10 m/s in truck's direction", "5 m/s in truck's direction", "10 m/s in car's direction", "2.5 m/s in truck's direction"],
+	  "correct_answer": "5 m/s in truck's direction",
+	  "explanation": "p_total = 3000×10 − 1000×10 = 20 000 kg·m/s in truck's direction. v_f = 20 000/(3000+1000) = 5 m/s in truck's direction."
+	},
+	{
+	  "id": "z01_f3_029",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "An object thrown horizontally from a cliff. At any point in its flight, which component of velocity is constant (ignoring air resistance)?",
+	  "options": ["Vertical component", "Horizontal component", "Both components", "Neither component"],
+	  "correct_answer": "Horizontal component",
+	  "explanation": "No horizontal force acts on the projectile (ignoring air resistance). By Newton's First Law, horizontal velocity stays constant. Vertical velocity changes due to gravity."
+	},
+	{
+	  "id": "z01_f3_030",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A driver doubles their speed on a motorway. How does this affect thinking distance and braking distance?",
+	  "options": ["Both double", "Thinking distance doubles; braking distance quadruples", "Thinking distance quadruples; braking distance doubles", "Both quadruple"],
+	  "correct_answer": "Thinking distance doubles; braking distance quadruples",
+	  "explanation": "Thinking distance = speed × reaction time → doubles with speed. Braking distance ∝ v² → quadruples when speed doubles."
+	},
+	{
+	  "id": "z01_f3_031",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 250 g ball (0.25 kg) is dropped and hits the ground at 12 m/s then bounces up at 8 m/s. What is the magnitude of the change in momentum?",
+	  "options": ["1 kg·m/s", "5 kg·m/s", "3 kg·m/s", "0.5 kg·m/s"],
+	  "correct_answer": "5 kg·m/s",
+	  "explanation": "Δp = m×(v₂ − v₁) = 0.25×(8−(−12)) = 0.25×20 = 5 kg·m/s."
+	},
+	{
+	  "id": "z01_f3_032",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A 5 kg mass hangs from a spring balance in an elevator decelerating downward at 3 m/s². What does the balance read? (g = 10 m/s²)",
+	  "options": ["50 N", "35 N", "65 N", "15 N"],
+	  "correct_answer": "65 N",
+	  "explanation": "Decelerating downward = net upward acceleration. T = m(g+a) = 5×(10+3) = 65 N."
+	},
+	{
+	  "id": "z01_f3_033",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A machine exerts a constant force of 500 N on a 50 kg object starting from rest for 6 s. What is the final velocity?",
+	  "options": ["60 m/s", "3000 m/s", "8.3 m/s", "300 m/s"],
+	  "correct_answer": "60 m/s",
+	  "explanation": "a = F/m = 500/50 = 10 m/s². v = u + at = 0 + 10×6 = 60 m/s."
+	},
+	{
+	  "id": "z01_f3_034",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A weightlifter holds a 100 kg barbell stationary overhead. What is the upward force exerted by the lifter? (g = 10 m/s²)",
+	  "options": ["0 N", "100 N", "500 N", "1000 N"],
+	  "correct_answer": "1000 N",
+	  "explanation": "The barbell is stationary so net force = 0. Upward force = weight = mg = 100×10 = 1000 N."
+	},
+	{
+	  "id": "z01_f3_035",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "Two identical balls collide elastically. Ball A at 6 m/s hits stationary Ball B. What happens after the elastic collision?",
+	  "options": ["Both move at 3 m/s", "Ball A continues at 6 m/s; Ball B stays still", "Ball A stops; Ball B moves at 6 m/s", "Both stop"],
+	  "correct_answer": "Ball A stops; Ball B moves at 6 m/s",
+	  "explanation": "In a perfectly elastic collision between equal masses, the moving object stops and the stationary one moves at the original velocity. Both momentum and KE are conserved."
+	},
+	{
+	  "id": "z01_f3_036",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 2 kg object is pushed with 10 N for 3 seconds from rest. How far does it travel?",
+	  "options": ["7.5 m", "22.5 m", "15 m", "45 m"],
+	  "correct_answer": "22.5 m",
+	  "explanation": "a = F/m = 10/2 = 5 m/s². s = ut + ½at² = 0 + ½×5×9 = 22.5 m."
+	},
+	{
+	  "id": "z01_f3_037",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A 4 kg trolley and a 6 kg trolley are connected by a compressed spring. When released, the 4 kg trolley moves at 3 m/s. What is the speed of the 6 kg trolley?",
+	  "options": ["4.5 m/s", "3 m/s", "2 m/s", "1.3 m/s"],
+	  "correct_answer": "2 m/s",
+	  "explanation": "Conservation of momentum from rest: 0 = 4×3 + 6×v₂ → v₂ = −12/6 = −2 m/s. Speed = 2 m/s in opposite direction."
+	},
+	{
+	  "id": "z01_f3_038",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A car of mass 800 kg accelerates from 10 m/s to 25 m/s in 5 s. What is the net force?",
+	  "options": ["1200 N", "2400 N", "4000 N", "160 N"],
+	  "correct_answer": "2400 N",
+	  "explanation": "a = (25−10)/5 = 3 m/s². F = ma = 800×3 = 2400 N."
+	},
+	{
+	  "id": "z01_f3_039",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A runner on a track increases speed from 3 m/s to 9 m/s. By what factor does their kinetic energy increase?",
+	  "options": ["2×", "3×", "6×", "9×"],
+	  "correct_answer": "9×",
+	  "explanation": "KE ∝ v². (9/3)² = 3² = 9. Speed tripled → KE increases by factor of 9."
+	},
+	{
+	  "id": "z01_f3_040",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "An object is in free fall. Which statement correctly describes the forces on it? (ignore air resistance)",
+	  "options": ["Only gravity acts on it", "Gravity and normal force act on it", "No forces act on it", "Air resistance and gravity balance each other"],
+	  "correct_answer": "Only gravity acts on it",
+	  "explanation": "In free fall with no air resistance, only gravity (weight) acts. There is no support surface so no normal force, and air resistance is ignored."
+	},
+	{
+	  "id": "z01_f3_041",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 5 kg block is pulled up a frictionless slope with 30 N force and accelerates at 2 m/s². What component of gravity acts along the slope?",
+	  "options": ["10 N", "20 N", "30 N", "40 N"],
+	  "correct_answer": "20 N",
+	  "explanation": "Net force = Applied − gravity component along slope. ma = 30 − Fg_slope → 5×2 = 30 − Fg_slope → Fg_slope = 20 N."
+	},
+	{
+	  "id": "z01_f3_042",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A ball is thrown upward. At the peak, what is the net force on it? (ignore air resistance)",
+	  "options": ["Zero", "Equal to its weight downward", "Equal to the throwing force upward", "Cannot be determined"],
+	  "correct_answer": "Equal to its weight downward",
+	  "explanation": "At the peak, velocity is zero but gravity still acts. Net force = mg downward. This is why the ball immediately begins to fall again."
+	},
+	{
+	  "id": "z01_f3_043",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A 3 kg ball moving at 4 m/s east and a 3 kg ball moving at 4 m/s west collide and stick. What is the total kinetic energy after the collision?",
+	  "options": ["48 J", "24 J", "0 J", "12 J"],
+	  "correct_answer": "0 J",
+	  "explanation": "Total momentum = 0. After sticking, velocity = 0. KE = ½mv² = 0 J. All kinetic energy was lost to heat/deformation."
+	},
+	{
+	  "id": "z01_f3_044",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A student pushes a 3 kg book across a table with 9 N. The friction force is 3 N. What is the acceleration?",
+	  "options": ["1 m/s²", "2 m/s²", "3 m/s²", "4 m/s²"],
+	  "correct_answer": "2 m/s²",
+	  "explanation": "Net force = 9 − 3 = 6 N. a = F/m = 6/3 = 2 m/s²."
+	},
+	{
+	  "id": "z01_f3_045",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A stationary bomb explodes into two fragments. Fragment X is 2 kg moving at 30 m/s. What is the velocity of the 6 kg Fragment Y?",
+	  "options": ["30 m/s same direction", "10 m/s opposite direction", "6 m/s opposite direction", "90 m/s same direction"],
+	  "correct_answer": "10 m/s opposite direction",
+	  "explanation": "Conservation of momentum from rest: 0 = 2×30 + 6×v_Y → v_Y = −60/6 = −10 m/s. Fragment Y moves at 10 m/s in the opposite direction."
+	},
+	{
+	  "id": "z01_f3_046",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "An object travels 60 m in 3 s starting from rest under constant acceleration. What is the acceleration?",
+	  "options": ["6.67 m/s²", "10 m/s²", "13.3 m/s²", "20 m/s²"],
+	  "correct_answer": "13.3 m/s²",
+	  "explanation": "s = ut + ½at² → 60 = 0 + ½×a×9 → a = 120/9 ≈ 13.3 m/s²."
+	},
+	{
+	  "id": "z01_f3_047",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A 10 kg box is pushed 5 m by a 20 N force, then pushed 3 m more by a 15 N force. What is the total work done on the box?",
+	  "options": ["145 J", "175 J", "100 J", "35 J"],
+	  "correct_answer": "145 J",
+	  "explanation": "Work = Force × distance. W₁ = 20×5 = 100 J. W₂ = 15×3 = 45 J. Total = 145 J."
+	},
+	{
+	  "id": "z01_f3_048",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "A car travelling at 20 m/s brakes and stops after travelling 40 m. What was the deceleration?",
+	  "options": ["5 m/s²", "0.5 m/s²", "10 m/s²", "2 m/s²"],
+	  "correct_answer": "5 m/s²",
+	  "explanation": "v² = u² − 2as → 0 = 400 − 2×a×40 → a = 400/80 = 5 m/s²."
+	},
+	{
+	  "id": "z01_f3_049",
+	  "bloom_level": "apply",
+	  "format": "mcq",
+	  "question": "A 0.2 kg ball is thrown at 15 m/s and hits a wall. It bounces back at 10 m/s. What is the magnitude of the change in momentum?",
+	  "options": ["1 kg·m/s", "3 kg·m/s", "5 kg·m/s", "7 kg·m/s"],
+	  "correct_answer": "5 kg·m/s",
+	  "explanation": "Δp = m×(v₂ − v₁) = 0.2×(10−(−15)) = 0.2×25 = 5 kg·m/s."
+	},
+	{
+	  "id": "z01_f3_050",
+	  "bloom_level": "analyze",
+	  "format": "mcq",
+	  "question": "Object A (2 kg, 6 m/s) and Object B (3 kg, 4 m/s) move in the same direction. They collide and stick. Is momentum conserved?",
+	  "options": ["No — speeds are different", "Yes — total before and after are equal", "Only if they are elastic", "Cannot determine without more information"],
+	  "correct_answer": "Yes — total before and after are equal",
+	  "explanation": "Before: p = 2×6 + 3×4 = 12+12 = 24 kg·m/s. After: v = 24/5 = 4.8 m/s. Total p = 5×4.8 = 24 kg·m/s. Conserved."
+	}
+  ]
+}

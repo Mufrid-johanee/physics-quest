@@ -1,0 +1,707 @@
+{
+  "zone": "04_electricity_magnetism",
+  "floor": 3,
+  "bloom_levels": [
+    "apply",
+    "analyze"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 10,
+  "one_word_count": 5,
+  "questions": [
+    {
+      "id": "z04_f3_001",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A 12 V battery is connected across a 4 Ω resistor. What current in Amperes flows through the resistor?",
+      "correct_answer": "3 A",
+      "accepted_answers": [
+        "3 A",
+        "3A",
+        "3",
+        "3.0 A",
+        "3.0"
+      ],
+      "explanation": "I = V / R = 12 V ÷ 4 Ω = 3 A."
+    },
+    {
+      "id": "z04_f3_002",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "Two resistors of 6 Ω and 3 Ω are connected in parallel. What is their equivalent resistance in Ohms?",
+      "correct_answer": "2 Ω",
+      "accepted_answers": [
+        "2 Ω",
+        "2Ω",
+        "2 ohm",
+        "2 ohms",
+        "2"
+      ],
+      "explanation": "R_p = (6 × 3) / (6 + 3) = 18 / 9 = 2 Ω."
+    },
+    {
+      "id": "z04_f3_003",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A 100 W bulb operates on a 200 V line. What is the current drawn by the bulb in Amperes?",
+      "correct_answer": "0.5 A",
+      "accepted_answers": [
+        "0.5 A",
+        "0.5A",
+        "0.5"
+      ],
+      "explanation": "I = P / V = 100 W ÷ 200 V = 0.5 A."
+    },
+    {
+      "id": "z04_f3_004",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A transformer steps down 240 V to 12 V. If the primary has 1000 turns, how many turns are on the secondary coil?",
+      "correct_answer": "50",
+      "accepted_answers": [
+        "50",
+        "50 turns"
+      ],
+      "explanation": "Ns = Np × (Vs / Vp) = 1000 × (12 / 240) = 1000 × (1/20) = 50 turns."
+    },
+    {
+      "id": "z04_f3_005",
+      "bloom_level": "apply",
+      "format": "one_word",
+      "question": "A 1000 W room heater runs for 5 hours. How many kilowatt-hours (kWh) of electrical energy are consumed?",
+      "correct_answer": "5 kWh",
+      "accepted_answers": [
+        "5 kWh",
+        "5kWh",
+        "5 units",
+        "5"
+      ],
+      "explanation": "Energy = 1 kW × 5 h = 5 kWh."
+    },
+    {
+      "id": "z04_f3_006",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What fundamental law of physics ensures that the polarity of induced EMF opposes the magnetic flux change producing it?",
+      "correct_answer": "conservation of energy",
+      "accepted_answers": [
+        "conservation of energy",
+        "law of conservation of energy",
+        "energy conservation"
+      ],
+      "explanation": "Lenz's law is a consequence of the conservation of energy; otherwise, induced current would create unbounded kinetic energy without doing mechanical work."
+    },
+    {
+      "id": "z04_f3_007",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "Which safety component in a three-pin plug is made longest and thickest to ensure it connects first and disconnects last?",
+      "correct_answer": "earth pin",
+      "accepted_answers": [
+        "earth pin",
+        "ground pin",
+        "earth",
+        "ground"
+      ],
+      "explanation": "The earth pin is physically longer so the metal casing of the appliance is grounded before live electrical contact is established, protecting users against shock."
+    },
+    {
+      "id": "z04_f3_008",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What type of electrical current is produced by a rotating coil connected to a pair of continuous slip rings?",
+      "correct_answer": "alternating current",
+      "accepted_answers": [
+        "alternating current",
+        "ac"
+      ],
+      "explanation": "Slip rings maintain continuous contact with coil terminals, preserving the sinusoidal alternating polarity of induced EMF to output AC."
+    },
+    {
+      "id": "z04_f3_009",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "If the temperature of an intrinsic semiconductor such as silicon is raised, does its electrical resistance increase or decrease?",
+      "correct_answer": "decrease",
+      "accepted_answers": [
+        "decrease",
+        "decreases"
+      ],
+      "explanation": "Unlike metals, semiconductors have a negative temperature coefficient of resistance; heat frees electron-hole pairs across the bandgap, lowering resistance."
+    },
+    {
+      "id": "z04_f3_010",
+      "bloom_level": "analyze",
+      "format": "one_word",
+      "question": "What parasitic circulating currents in a solid transformer iron core are minimized by laminating the core?",
+      "correct_answer": "eddy currents",
+      "accepted_answers": [
+        "eddy currents",
+        "eddy current",
+        "foucault currents"
+      ],
+      "explanation": "Alternating magnetic flux induces circulating loops of current known as eddy currents in bulk iron, which are minimized by thin insulated laminations."
+    },
+    {
+      "id": "z04_f3_011",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two point charges of +8 μC and -2 μC are placed 0.2 m apart. What is the magnitude and nature of the electrostatic force between them? (k = 9 × 10⁹ N·m²/C²)",
+      "options": [
+        "3.6 N attractive",
+        "3.6 N repulsive",
+        "0.36 N attractive",
+        "7.2 N repulsive"
+      ],
+      "correct_answer": "3.6 N attractive",
+      "explanation": "F = k|q1q2|/r² = (9 × 10⁹ × 8 × 10⁻⁶ × 2 × 10⁻⁶) / (0.2)² = 0.144 / 0.04 = 3.6 N. Unlike charges attract."
+    },
+    {
+      "id": "z04_f3_012",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An electric toaster operates at 220 V and draws 5 A. What is the electrical resistance of the toaster heating element?",
+      "options": [
+        "44 Ω",
+        "1100 Ω",
+        "22 Ω",
+        "0.023 Ω"
+      ],
+      "correct_answer": "44 Ω",
+      "explanation": "R = V / I = 220 V ÷ 5 A = 44 Ω."
+    },
+    {
+      "id": "z04_f3_013",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A cylindrical wire of length L and resistance 10 Ω is drawn through a die so that its radius is halved while volume is conserved. What is its new resistance?",
+      "options": [
+        "160 Ω",
+        "40 Ω",
+        "80 Ω",
+        "20 Ω"
+      ],
+      "correct_answer": "160 Ω",
+      "explanation": "When radius halves, cross-sectional area drops to A/4. Volume conservation requires length to become 4L. New resistance R' = ρ(4L)/(A/4) = 16(ρL/A) = 16 × 10 = 160 Ω."
+    },
+    {
+      "id": "z04_f3_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In the circuit shown, three 9 Ω resistors are connected in parallel across a 12 V battery with an internal resistance of 1 Ω. What is the terminal voltage of the battery?",
+      "options": [
+        "9 V",
+        "12 V",
+        "10 V",
+        "8 V"
+      ],
+      "correct_answer": "9 V",
+      "explanation": "Equivalent external resistance R_p = 9 / 3 = 3 Ω. Total resistance R_total = 3 + 1 = 4 Ω. Circuit current I = 12 / 4 = 3 A. Terminal voltage V = I × R_p = 3 A × 3 Ω = 9 V."
+    },
+    {
+      "id": "z04_f3_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How many 176 Ω resistors connected in parallel are required to draw a current of 5 A from a 220 V supply line?",
+      "options": [
+        "4",
+        "2",
+        "8",
+        "5"
+      ],
+      "correct_answer": "4",
+      "explanation": "Desired equivalent resistance R_p = V / I = 220 / 5 = 44 Ω. Since R_p = R / n → 44 = 176 / n → n = 176 / 44 = 4."
+    },
+    {
+      "id": "z04_f3_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A domestic electricity meter records a consumption of 250 units in a month. If the utility company charges 7.5 Taka per unit plus a fixed meter rent of 50 Taka, what is the total electricity bill?",
+      "options": [
+        "1925 Taka",
+        "1875 Taka",
+        "2000 Taka",
+        "1825 Taka"
+      ],
+      "correct_answer": "1925 Taka",
+      "explanation": "Energy charge = 250 units × 7.5 Taka/unit = 1875 Taka. Total bill = 1875 + 50 (meter rent) = 1925 Taka."
+    },
+    {
+      "id": "z04_f3_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A step-up transformer with 95% efficiency delivers 19 kW of electrical power at 2000 V. What is the electric current flowing into the primary coil if it is supplied at 200 V?",
+      "options": [
+        "100 A",
+        "95 A",
+        "105 A",
+        "190 A"
+      ],
+      "correct_answer": "100 A",
+      "explanation": "Output power P_out = 19,000 W. Efficiency η = P_out / P_in → 0.95 = 19,000 / P_in → P_in = 20,000 W. Primary current I_p = P_in / V_p = 20,000 W ÷ 200 V = 100 A."
+    },
+    {
+      "id": "z04_f3_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 2.0 m long horizontal wire carries a current of 10 A from west to east in a region where the Earth's magnetic field is 5 × 10⁻⁵ T pointing horizontally north. What is the magnetic force on the wire?",
+      "options": [
+        "1.0 × 10⁻³ N vertically upward",
+        "1.0 × 10⁻³ N vertically downward",
+        "2.5 × 10⁻⁴ N south",
+        "Zero"
+      ],
+      "correct_answer": "1.0 × 10⁻³ N vertically upward",
+      "explanation": "F = BIL = (5 × 10⁻⁵ T) × (10 A) × (2.0 m) = 1.0 × 10⁻³ N. By Fleming's Left-Hand Rule (Field North, Current East), the force points vertically upward."
+    },
+    {
+      "id": "z04_f3_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A capacitor of capacitance 50 μF is charged to a potential difference of 200 V. What is the total electric charge stored on each plate?",
+      "options": [
+        "0.01 C",
+        "0.02 C",
+        "10 C",
+        "0.005 C"
+      ],
+      "correct_answer": "0.01 C",
+      "explanation": "Q = C × V = (50 × 10⁻⁶ F) × 200 V = 0.01 Coulombs."
+    },
+    {
+      "id": "z04_f3_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Two resistors of 20 Ω and 30 Ω are connected in parallel across a 60 V DC line. What is the ratio of electric power consumed by the 20 Ω resistor to that by the 30 Ω resistor?",
+      "options": [
+        "3 : 2",
+        "2 : 3",
+        "9 : 4",
+        "1 : 1"
+      ],
+      "correct_answer": "3 : 2",
+      "explanation": "In parallel, both have the same voltage V = 60 V. P = V² / R. P1 / P2 = R2 / R1 = 30 / 20 = 3/2."
+    },
+    {
+      "id": "z04_f3_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A coil of 200 turns and cross-sectional area 0.05 m² is placed perpendicular to a magnetic field of 0.4 T. If the coil is flipped by 180° in 0.1 s, what average EMF is induced?",
+      "options": [
+        "80 V",
+        "40 V",
+        "160 V",
+        "20 V"
+      ],
+      "correct_answer": "80 V",
+      "explanation": "Initial flux per turn Φ1 = BA = 0.4 × 0.05 = 0.02 Wb. When flipped 180°, Φ2 = -0.02 Wb. ΔΦ = 0.04 Wb. Induced EMF e = N(ΔΦ / Δt) = 200 × (0.04 / 0.1) = 200 × 0.4 = 80 V."
+    },
+    {
+      "id": "z04_f3_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An electric tea kettle rated 220 V, 1100 W takes 4 minutes to bring water to boil. How many Coulombs of charge passed through the heating element?",
+      "options": [
+        "1200 C",
+        "5 C",
+        "4400 C",
+        "240 C"
+      ],
+      "correct_answer": "1200 C",
+      "explanation": "Current I = P / V = 1100 / 220 = 5 A. Time t = 4 × 60 = 240 s. Q = I × t = 5 A × 240 s = 1200 C."
+    },
+    {
+      "id": "z04_f3_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 12 V battery supplies 2 A of current to a circuit for 1 hour. What is the total chemical energy transformed by the battery?",
+      "options": [
+        "86,400 J",
+        "24 J",
+        "1,440 J",
+        "43,200 J"
+      ],
+      "correct_answer": "86,400 J",
+      "explanation": "Energy W = V × I × t = 12 V × 2 A × 3600 s = 86,400 Joules."
+    },
+    {
+      "id": "z04_f3_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A silver wire has a resistance of 2.1 Ω at 20°C. If the temperature coefficient of resistance of silver is 0.004 °C⁻¹, what will its resistance be at 100°C?",
+      "options": [
+        "2.77 Ω",
+        "2.18 Ω",
+        "3.50 Ω",
+        "2.45 Ω"
+      ],
+      "correct_answer": "2.77 Ω",
+      "explanation": "R_T = R_0(1 + αΔT) = 2.1 × [1 + 0.004 × (100 - 20)] = 2.1 × [1 + 0.32] = 2.1 × 1.32 = 2.772 Ω ≈ 2.77 Ω."
+    },
+    {
+      "id": "z04_f3_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A power station generates 50 MW of electricity at 10 kV. Before long-distance transmission, the voltage is stepped up to 250 kV. What is the transmission line current?",
+      "options": [
+        "200 A",
+        "5000 A",
+        "20 A",
+        "50 A"
+      ],
+      "correct_answer": "200 A",
+      "explanation": "I = P / V = (50 × 10⁶ W) / (250 × 10³ V) = 200 A."
+    },
+    {
+      "id": "z04_f3_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "Three identical capacitors of 9 μF each are connected in series. What is the equivalent capacitance of the combination?",
+      "options": [
+        "3 μF",
+        "27 μF",
+        "1 μF",
+        "6 μF"
+      ],
+      "correct_answer": "3 μF",
+      "explanation": "For n identical capacitors in series, C_s = C / n = 9 μF / 3 = 3 μF."
+    },
+    {
+      "id": "z04_f3_027",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an aluminum ring jump upward into the air when an alternating current is suddenly switched on through an underlying solenoid?",
+      "options": [
+        "Rising magnetic flux induces an opposing magnetic field in the ring, causing mutual magnetic repulsion (Lenz's Law)",
+        "The solenoid attracts gravitational waves that lift the ring",
+        "Aluminum becomes permanently magnetized as a south pole",
+        "The alternating current electrostatically charges the air below the ring"
+      ],
+      "correct_answer": "Rising magnetic flux induces an opposing magnetic field in the ring, causing mutual magnetic repulsion (Lenz's Law)",
+      "explanation": "When current turns on, upward flux increases. By Lenz's law, the induced current in the ring produces a downward opposing magnetic field. The like poles repel, thrusting the ring into the air."
+    },
+    {
+      "id": "z04_f3_028",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A homeowner connects a 100 W bulb and a 40 W bulb in series across a 220 V line. Which bulb glows brighter and why?",
+      "options": [
+        "The 40 W bulb glows brighter because its higher resistance dissipates more power with the same series current",
+        "The 100 W bulb glows brighter because it has a higher rated wattage",
+        "Both bulbs glow with equal brightness because the current is identical",
+        "Neither bulb glows because series connection blocks current"
+      ],
+      "correct_answer": "The 40 W bulb glows brighter because its higher resistance dissipates more power with the same series current",
+      "explanation": "Rated R = V²/P, so R_40W > R_100W. In series, both share the same current I. Since P_dissipated = I²R, the 40 W bulb dissipates more power and glows noticeably brighter."
+    },
+    {
+      "id": "z04_f3_029",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What happens to the reading of an ammeter and a voltmeter if they are accidentally swapped in a circuit (voltmeter in series, ammeter in parallel with the load)?",
+      "options": [
+        "The voltmeter's huge resistance reduces circuit current to near zero, while the ammeter risks burning out from drawing heavy current",
+        "Both instruments function normally without error",
+        "The voltmeter explodes instantly while the ammeter reads zero",
+        "The power supply converts from DC to AC automatically"
+      ],
+      "correct_answer": "The voltmeter's huge resistance reduces circuit current to near zero, while the ammeter risks burning out from drawing heavy current",
+      "explanation": "A voltmeter has megaohm internal resistance; placing it in series chokes circuit current to microamperes. An ammeter has near-zero resistance; placing it across the load creates a short circuit that can burn the meter."
+    },
+    {
+      "id": "z04_f3_030",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does touching an ungrounded appliance with wet hands present a much higher electrocution risk than with dry skin?",
+      "options": [
+        "Water and dissolved skin salts reduce human electrical contact resistance from over 100,000 Ω down to less than 1,000 Ω",
+        "Wet hands attract electrical charges from the air like a lightning rod",
+        "Water accelerates the speed of light in the nervous system",
+        "Dry skin has zero resistance while wet skin is a superconductor"
+      ],
+      "correct_answer": "Water and dissolved skin salts reduce human electrical contact resistance from over 100,000 Ω down to less than 1,000 Ω",
+      "explanation": "Dry stratum corneum provides high resistance (~100 kΩ). Moisture containing dissolved electrolytes penetrates skin pores, dropping body resistance below 1 kΩ and allowing lethal currents (>30 mA) to flow at 220 V."
+    },
+    {
+      "id": "z04_f3_031",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why are copper coils wound on an iron armature in electric motors, rather than winding them in empty space?",
+      "options": [
+        "Iron has high magnetic permeability, concentrating and amplifying the magnetic flux through the coils",
+        "Iron prevents copper wire from conducting electric current",
+        "Iron insulates the motor against electrical short circuits",
+        "Empty space repels all magnetic fields"
+      ],
+      "correct_answer": "Iron has high magnetic permeability, concentrating and amplifying the magnetic flux through the coils",
+      "explanation": "Ferromagnetic iron provides a low-reluctance path that channels and multiplies magnetic flux density hundreds of times, dramatically increasing motor torque (Torque ∝ B)."
+    },
+    {
+      "id": "z04_f3_032",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A technician connects an ideal voltmeter across the terminals of an open-circuit battery and measures 1.5 V. When a 5 Ω resistor is connected, the voltmeter reads 1.25 V. What is the internal resistance of the battery?",
+      "options": [
+        "1.0 Ω",
+        "0.5 Ω",
+        "0.25 Ω",
+        "2.0 Ω"
+      ],
+      "correct_answer": "1.0 Ω",
+      "explanation": "EMF E = 1.5 V. Terminal V = 1.25 V. Current I = V / R = 1.25 / 5 = 0.25 A. Voltage drop Ir = E - V = 1.5 - 1.25 = 0.25 V. Internal resistance r = 0.25 V / 0.25 A = 1.0 Ω."
+    },
+    {
+      "id": "z04_f3_033",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a compass needle placed above a wire carrying current from South to North deflect toward the West? (SNOW rule)",
+      "options": [
+        "By Ampere's Right-Hand Grip Rule, circular magnetic field lines run from East to West above the conductor",
+        "The Earth's geographic North Pole attracts the wire's electrons westward",
+        "Current pushes air molecules toward the west",
+        "The compass needle becomes positively charged and repels the battery"
+      ],
+      "correct_answer": "By Ampere's Right-Hand Grip Rule, circular magnetic field lines run from East to West above the conductor",
+      "explanation": "Pointing the right thumb North, curled fingers point West above the wire. The North-seeking pole of the compass aligns along this circular field line, deflecting West (SNOW: South to North Over West)."
+    },
+    {
+      "id": "z04_f3_034",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why do high-voltage transmission towers feature three or four bundles of spaced conductor wires for each phase rather than a single thick wire?",
+      "options": [
+        "Bundling increases effective cross-sectional radius, reducing electric field strength at the surface to suppress corona discharge",
+        "Multiple wires allow separate frequencies to travel independently",
+        "Bundled wires make it easier for birds to perch safely",
+        "It is impossible to manufacture copper wires thicker than 1 cm"
+      ],
+      "correct_answer": "Bundling increases effective cross-sectional radius, reducing electric field strength at the surface to suppress corona discharge",
+      "explanation": "A bundle behaves as a single conductor of large equivalent diameter. This lowers the surface electric field intensity below the dielectric breakdown of air (30 kV/cm), suppressing power loss and buzzing from corona discharge."
+    },
+    {
+      "id": "z04_f3_035",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does a Residual Current Circuit Breaker (RCCB) detect an electrical leakage fault in a domestic installation?",
+      "options": [
+        "It monitors whether the current leaving through the live wire exactly equals the current returning through the neutral wire",
+        "It measures the overall temperature of the copper cables",
+        "It counts the number of appliances switched on in the house",
+        "It monitors the frequency of alternating current from the power station"
+      ],
+      "correct_answer": "It monitors whether the current leaving through the live wire exactly equals the current returning through the neutral wire",
+      "explanation": "In a healthy circuit, I_live = I_neutral. If a human touches a live wire or insulation leaks to earth, I_live ≠ I_neutral. The differential current transformer detects this imbalance and trips the breaker within milliseconds."
+    },
+    {
+      "id": "z04_f3_036",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a capacitor block direct current (DC) in steady state while allowing alternating current (AC) to pass continuously?",
+      "options": [
+        "In DC, the dielectric charges fully and opposing electric field balances source voltage; in AC, continuous reversal alternates charging and discharging",
+        "Capacitors melt under DC voltage but freeze under AC voltage",
+        "DC current is absorbed into the aluminum foil plates as heat",
+        "AC electrons physically tunnel across the dielectric gap without resistance"
+      ],
+      "correct_answer": "In DC, the dielectric charges fully and opposing electric field balances source voltage; in AC, continuous reversal alternates charging and discharging",
+      "explanation": "Under DC, once Q = CV is reached, no further charge flows (I = 0, capacitive reactance Xc = 1/(2πfC) → ∞ as f → 0). AC continuously alternates polarities, driving continuous displacement current through the circuit."
+    },
+    {
+      "id": "z04_f3_037",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the reason that a piece of unmagnetized iron is attracted to both the North pole and the South pole of a permanent magnet?",
+      "options": [
+        "Magnetic induction causes atomic domains in the iron to reorient, always presenting an opposite attracting pole to the approaching magnet",
+        "Iron atoms contain only positive magnetic monopoles",
+        "Permanent magnets create static electric charges on iron",
+        "The Earth's gravity pulls the iron toward magnetic materials"
+      ],
+      "correct_answer": "Magnetic induction causes atomic domains in the iron to reorient, always presenting an opposite attracting pole to the approaching magnet",
+      "explanation": "Ferromagnetic domains readily align with external magnetic fields. Near a North pole, the iron develops an induced South pole facing it; near a South pole, it develops an induced North pole. Both yield attraction."
+    },
+    {
+      "id": "z04_f3_038",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does the efficiency of a practical transformer never reach 100%?",
+      "options": [
+        "Energy is lost due to copper winding resistance (I²R), core hysteresis, eddy currents, and magnetic flux leakage",
+        "Transformers violate Ohm's law",
+        "Electrons are absorbed by the secondary turns",
+        "The iron core radiates nuclear energy"
+      ],
+      "correct_answer": "Energy is lost due to copper winding resistance (I²R), core hysteresis, eddy currents, and magnetic flux leakage",
+      "explanation": "Real transformers suffer from Joule heating in copper windings, magnetic domain friction (hysteresis loss), induced eddy currents in the core, and imperfect inductive coupling between coils."
+    },
+    {
+      "id": "z04_f3_039",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why is the neutral wire in a domestic electrical distribution system grounded at the local distribution transformer?",
+      "options": [
+        "To establish a stable zero-volt reference potential and prevent dangerous voltage floating during phase imbalances",
+        "To double the current delivered to consumer homes",
+        "To eliminate the need for an earth wire in domestic appliances",
+        "To return all electric power back to the coal power plant"
+      ],
+      "correct_answer": "To establish a stable zero-volt reference potential and prevent dangerous voltage floating during phase imbalances",
+      "explanation": "Grounding the neutral at the substation anchors the neutral point to 0 V relative to Earth, preventing neutral float and ensuring balanced 220 V phase-to-neutral voltages across all consumers."
+    },
+    {
+      "id": "z04_f3_040",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why do two parallel wires carrying currents in the SAME direction attract each other, while currents in OPPOSITE directions repel?",
+      "options": [
+        "Magnetic fields between like currents partially cancel, creating net inward Lorentz forces; opposing currents concentrate field between them, pushing wires apart",
+        "Like currents have opposite electrostatic charges",
+        "Parallel wires experience gravitational attraction",
+        "Wires carrying current in the same direction share the same electrons"
+      ],
+      "correct_answer": "Magnetic fields between like currents partially cancel, creating net inward Lorentz forces; opposing currents concentrate field between them, pushing wires apart",
+      "explanation": "By the Right-Hand Rule and F = I(L × B), parallel currents experience attractive Lorentz forces (F/L = μ₀I1I2 / 2πd), while antiparallel currents experience repulsive forces."
+    },
+    {
+      "id": "z04_f3_041",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "A student builds a simple DC motor but forgets to include the split-ring commutator, using solid slip rings instead. What will the motor armature do when connected to a DC battery?",
+      "options": [
+        "It will rotate a quarter or half turn and then oscillate back and forth around equilibrium without continuously spinning",
+        "It will spin twice as fast in the clockwise direction",
+        "It will immediately explode due to overcurrent",
+        "It will transform into an alternating current generator"
+      ],
+      "correct_answer": "It will rotate a quarter or half turn and then oscillate back and forth around equilibrium without continuously spinning",
+      "explanation": "Without a commutator reversing current every 180°, torque reverses once the coil overshoots the neutral plane, pulling it backward and causing it to halt at magnetic alignment."
+    },
+    {
+      "id": "z04_f3_042",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a bridge rectifier circuit made of four diodes, what is the key operational advantage over a center-tapped transformer with two diodes?",
+      "options": [
+        "It utilizes the entire transformer secondary winding on both AC half-cycles without requiring a bulky center-tapped transformer",
+        "It produces pure DC without requiring any smoothing capacitors",
+        "It doubles the incoming AC frequency to 100 kHz",
+        "It eliminates all heat dissipation completely"
+      ],
+      "correct_answer": "It utilizes the entire transformer secondary winding on both AC half-cycles without requiring a bulky center-tapped transformer",
+      "explanation": "A bridge rectifier achieves full-wave rectification using an ordinary two-terminal secondary winding, delivering higher transformer utilization factor and lower peak inverse voltage per diode."
+    },
+    {
+      "id": "z04_f3_043",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does an ammeter read a non-zero current when an AC voltage is applied across an ideal capacitor, even though the space between its plates is a non-conductive insulator?",
+      "options": [
+        "The time-varying electric field between the plates constitutes Maxwell's displacement current, which equals conduction current in the external wires",
+        "Electrons spark physically across the dielectric vacuum",
+        "Capacitor plates act as miniature alternating current batteries",
+        "Air molecules between the plates undergo continuous nuclear fusion"
+      ],
+      "correct_answer": "The time-varying electric field between the plates constitutes Maxwell's displacement current, which equals conduction current in the external wires",
+      "explanation": "As AC voltage oscillates, electric flux between plates changes (dΦ_E/dt ≠ 0). This changing electric field generates a displacement current I_d = ε₀(dΦ_E/dt) that maintains circuit continuity."
+    },
+    {
+      "id": "z04_f3_044",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does adding more branches in parallel to a household distribution board cause the total main current to increase?",
+      "options": [
+        "Each new parallel branch provides an extra path for current, increasing total current drawn from the mains (I_total = I1 + I2 + ...)",
+        "The supply voltage automatically rises to power the new branch",
+        "Parallel connections increase the total circuit resistance",
+        "Adding appliances causes the electric meter to spin backward"
+      ],
+      "correct_answer": "Each new parallel branch provides an extra path for current, increasing total current drawn from the mains (I_total = I1 + I2 + ...)",
+      "explanation": "By Kirchhoff's Current Law, the total current entering a junction equals the sum of branch currents. Since each branch draws I_k = V/R_k independently at 220 V, total current increases with every active load."
+    },
+    {
+      "id": "z04_f3_045",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "What is the reason why magnetic field lines form continuous closed loops with no beginning or end, whereas electrostatic field lines begin on positive charges and terminate on negative charges?",
+      "options": [
+        "Isolated magnetic monopoles do not exist in nature, whereas isolated electric charges exist",
+        "Magnetic fields have zero energy",
+        "Electric charges cannot move, while magnetic poles move continuously",
+        "Magnetic field lines are made of physical iron filaments"
+      ],
+      "correct_answer": "Isolated magnetic monopoles do not exist in nature, whereas isolated electric charges exist",
+      "explanation": "Gauss's law for magnetism (∇·B = 0) confirms that magnetic monopoles do not exist. Cutting a magnet in half creates new pairs of poles, so field lines must always form continuous closed loops."
+    },
+    {
+      "id": "z04_f3_046",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a miniature circuit breaker (MCB) provide superior protection over a traditional rewirable porcelain wire fuse?",
+      "options": [
+        "MCB trips rapidly and precisely via magnetic and bimetallic mechanisms, and can be reset with a switch without handling live wires",
+        "MCBs never trip even during a severe short circuit",
+        "MCBs reduce monthly electricity bills by 50%",
+        "MCBs convert 220 V AC electricity into battery DC power"
+      ],
+      "correct_answer": "MCB trips rapidly and precisely via magnetic and bimetallic mechanisms, and can be reset with a switch without handling live wires",
+      "explanation": "An MCB combines thermal overload protection (bimetallic strip) and instantaneous magnetic short-circuit protection (solenoid trip). It is safer, reusable, and eliminates the hazard of incorrect fuse wire sizing."
+    },
+    {
+      "id": "z04_f3_047",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "How does a moving-coil galvanometer achieve a linear, evenly spaced scale for current deflection?",
+      "options": [
+        "Cylindrical soft-iron core and curved pole pieces produce a radial magnetic field, ensuring deflecting torque is strictly proportional to current",
+        "The restoring spring has a non-linear spring constant",
+        "The pointer is equipped with a digital optical lens",
+        "The coil moves in a completely non-magnetic environment"
+      ],
+      "correct_answer": "Cylindrical soft-iron core and curved pole pieces produce a radial magnetic field, ensuring deflecting torque is strictly proportional to current",
+      "explanation": "A radial magnetic field ensures the coil plane is always parallel to field lines (sin θ = 1). Deflecting torque τ = NIAB is directly proportional to current I, balancing linear spring torque kθ to give θ ∝ I."
+    },
+    {
+      "id": "z04_f3_048",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "In a series circuit containing two different incandescent lamps, why does unscrewing one lamp immediately extinguish the other lamp as well?",
+      "options": [
+        "A series circuit has only a single continuous loop; removing one component creates an open circuit that stops all current",
+        "The remaining lamp is overwhelmed by excess voltage and burns out",
+        "The second lamp's resistance drops to zero",
+        "Current flows backward into the electric meter"
+      ],
+      "correct_answer": "A series circuit has only a single continuous loop; removing one component creates an open circuit that stops all current",
+      "explanation": "In series, all components share the same unbroken path. Removing any element breaks the circuit loop (R → ∞), reducing current to zero throughout the entire circuit."
+    },
+    {
+      "id": "z04_f3_049",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does electrostatic induction cause an uncharged metal sphere placed near a positive charge to experience net attraction rather than repulsion?",
+      "options": [
+        "Induced negative charges on the near side are closer to the external charge than induced positive charges on the far side",
+        "The metal sphere destroys the external electric field",
+        "Positive charges in the sphere turn negative automatically",
+        "The sphere is pulled exclusively by Earth's gravity"
+      ],
+      "correct_answer": "Induced negative charges on the near side are closer to the external charge than induced positive charges on the far side",
+      "explanation": "By Coulomb's law F ∝ 1/r², the attractive force on the nearer induced negative charges is strictly greater than the repulsive force on the farther induced positive charges, yielding net attraction."
+    },
+    {
+      "id": "z04_f3_050",
+      "bloom_level": "analyze",
+      "format": "mcq",
+      "question": "Why does a transformer core hum with a low acoustic buzz (typically 100 Hz or 120 Hz) during operation?",
+      "options": [
+        "Magnetostriction causes the ferromagnetic core laminations to physically expand and contract twice per AC cycle",
+        "Electrons vibrate against the air molecules outside the casing",
+        "The copper coils are rattling against loose terminal screws",
+        "The electric current undergoes nuclear resonance in the insulation"
+      ],
+      "correct_answer": "Magnetostriction causes the ferromagnetic core laminations to physically expand and contract twice per AC cycle",
+      "explanation": "Ferromagnetic materials experience microscopic mechanical strain (magnetostriction) when magnetized. Because elongation occurs twice every AC cycle regardless of field polarity, 50 Hz AC drives 100 Hz acoustic vibrations."
+    }
+  ]
+}

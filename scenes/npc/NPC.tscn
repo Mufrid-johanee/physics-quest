@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dgs1w1l1epcfu"]
+
+[ext_resource type="Script" uid="uid://bdfuk41c7etst" path="res://scripts/npc/NPCController.gd" id="1_npc"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="2_interact"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(32, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_interact"]
+size = Vector2(64, 64)
+
+[node name="NPC" type="CharacterBody2D" unique_id=1096474201]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_npc")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1169468016]
+offset = Vector2(0, -40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=340354886]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_body")
+
+[node name="Interactable" type="Area2D" parent="." unique_id=702597297]
+collision_layer = 8
+script = ExtResource("2_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable" unique_id=1160221581]
+shape = SubResource("RectangleShape2D_interact")

@@ -1,0 +1,714 @@
+{
+  "zone": "05_thermodynamics_modern_physics",
+  "floor": 2,
+  "bloom_levels": [
+    "understand",
+    "apply"
+  ],
+  "total_in_bank": 50,
+  "questions_to_load": 15,
+  "mcq_count": 15,
+  "one_word_count": 0,
+  "questions": [
+    {
+      "id": "z05_f2_001",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the physical condition for an object to float in a liquid in static equilibrium?",
+      "options": [
+        "The buoyant force exerted by the displaced liquid must equal the total downward weight of the object",
+        "The object's density must be strictly greater than the liquid's density",
+        "The volume of the object must equal the volume of the container",
+        "The liquid must have zero viscosity"
+      ],
+      "correct_answer": "The buoyant force exerted by the displaced liquid must equal the total downward weight of the object",
+      "explanation": "According to the law of floatation, a floating object displaces a volume of fluid whose weight exactly balances the entire gravitational weight of the object (net vertical force = 0)."
+    },
+    {
+      "id": "z05_f2_002",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a hot glass tumbler often crack when cold water is suddenly poured into it?",
+      "options": [
+        "The inner surface contracts rapidly while the outer surface remains expanded, setting up large internal thermal stresses",
+        "Cold water chemically reacts with silicon in glass",
+        "Glass becomes a superconductor at cold temperatures",
+        "Water molecules expand and explode inside the glass pores"
+      ],
+      "correct_answer": "The inner surface contracts rapidly while the outer surface remains expanded, setting up large internal thermal stresses",
+      "explanation": "Glass is a poor thermal conductor. Sudden cooling contracts the inner wall while the outer wall is still hot, creating uneven differential contraction and brittle fracture."
+    },
+    {
+      "id": "z05_f2_003",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What does Hooke's law state regarding an elastic material deformed within its elastic limit?",
+      "options": [
+        "Stress is directly proportional to strain (Stress = Y × Strain)",
+        "Force is inversely proportional to extension squared",
+        "Strain decreases as applied stress increases",
+        "Elastic materials never return to their original shape"
+      ],
+      "correct_answer": "Stress is directly proportional to strain (Stress = Y × Strain)",
+      "explanation": "Hooke's law states that within the proportional/elastic limit, the restoring stress produced is directly proportional to the strain experienced by the material."
+    },
+    {
+      "id": "z05_f2_004",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does the temperature of a pure substance remain strictly constant while it is melting or boiling, despite continuous heat input?",
+      "options": [
+        "The absorbed heat (latent heat) is utilized entirely to break intermolecular bonds and change physical phase rather than increasing kinetic energy",
+        "Heat input is balanced by cold air entering the pot",
+        "The thermometer stops conducting thermal energy during phase change",
+        "Molecules cease moving during phase transitions"
+      ],
+      "correct_answer": "The absorbed heat (latent heat) is utilized entirely to break intermolecular bonds and change physical phase rather than increasing kinetic energy",
+      "explanation": "Temperature reflects average molecular kinetic energy. During a phase transition, supplied latent heat increases potential energy by separating molecules against cohesive forces, holding temperature steady."
+    },
+    {
+      "id": "z05_f2_005",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens when an alpha particle is emitted from an unstable atomic nucleus (A, Z)?",
+      "options": [
+        "Mass number A decreases by 4, and atomic number Z decreases by 2",
+        "Mass number A decreases by 2, and atomic number Z decreases by 4",
+        "Mass number A remains unchanged, and atomic number Z increases by 1",
+        "Both mass number and atomic number remain unchanged"
+      ],
+      "correct_answer": "Mass number A decreases by 4, and atomic number Z decreases by 2",
+      "explanation": "An alpha particle carries away 2 protons and 2 neutrons (⁴₂He). Thus, the daughter nucleus has A' = A - 4 and Z' = Z - 2."
+    },
+    {
+      "id": "z05_f2_006",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What happens to the parent nucleus during beta-minus (β⁻) decay?",
+      "options": [
+        "A neutron transforms into a proton, electron, and antineutrino; atomic number Z increases by 1 while mass number A is unchanged",
+        "A proton turns into a neutron; atomic number Z decreases by 1",
+        "Mass number A decreases by 1 while atomic number Z increases by 2",
+        "The nucleus splits into two identical fragments"
+      ],
+      "correct_answer": "A neutron transforms into a proton, electron, and antineutrino; atomic number Z increases by 1 while mass number A is unchanged",
+      "explanation": "In beta-minus decay: n → p + e⁻ + ν_e. The mass number A remains constant, while the nuclear charge (atomic number Z) increases by 1."
+    },
+    {
+      "id": "z05_f2_007",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a ship submerge slightly deeper into the water when it sails from the ocean into a freshwater river?",
+      "options": [
+        "Freshwater has a lower density than saltwater, so a larger volume must be displaced to balance the ship's weight",
+        "Freshwater exerts downward suction on the ship's hull",
+        "River water contains dissolved mud that makes the ship heavier",
+        "The ship's engines work harder in rivers"
+      ],
+      "correct_answer": "Freshwater has a lower density than saltwater, so a larger volume must be displaced to balance the ship's weight",
+      "explanation": "Weight W = V_submerged × ρ_liquid × g. Because freshwater density (~1000 kg/m³) is less than seawater (~1025 kg/m³), V_submerged must increase to provide the same buoyant force."
+    },
+    {
+      "id": "z05_f2_008",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does an earthen clay pot (matka) keep drinking water noticeably cool during hot summer days?",
+      "options": [
+        "Water seeps through microscopic clay pores and continuously evaporates from the outer surface, extracting heat from the water inside",
+        "Clay has a chemical cooling reaction with water",
+        "Clay reflects 100% of solar radiation back into space",
+        "Clay pots draw cold air from underground aquifers"
+      ],
+      "correct_answer": "Water seeps through microscopic clay pores and continuously evaporates from the outer surface, extracting heat from the water inside",
+      "explanation": "The porous clay allows water to seep to the exterior where dry summer breezes evaporate it. The latent heat of vaporization is drawn from the pot and water within, cooling it."
+    },
+    {
+      "id": "z05_f2_009",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why is mercury enclosed inside an X-ray tube's rotating anode assembly replaced by tungsten metal?",
+      "options": [
+        "Tungsten has an extremely high melting point (3422°C) and high atomic number (Z = 74) to withstand electron bombardment and generate X-rays",
+        "Tungsten is transparent to visible light",
+        "Tungsten absorbs all heat without warming up",
+        "Tungsten generates electricity when struck by photons"
+      ],
+      "correct_answer": "Tungsten has an extremely high melting point (3422°C) and high atomic number (Z = 74) to withstand electron bombardment and generate X-rays",
+      "explanation": "Over 99% of kinetic energy of bombarding electrons converts into heat. Tungsten's refractory melting point prevents anode meltdown, while its high Z maximizes bremsstrahlung X-ray output."
+    },
+    {
+      "id": "z05_f2_010",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "How does an Endoscope illuminate internal bodily cavities without causing thermal burns to delicate stomach tissue?",
+      "options": [
+        "It uses 'cold light' transmitted from an external source via fiber optic bundles, where heat-generating infrared rays are filtered out",
+        "It carries miniature candles inside the optical tip",
+        "It uses radioactive isotopes to produce harmless glowing light",
+        "The fiber optic glass converts stomach acid into light"
+      ],
+      "correct_answer": "It uses 'cold light' transmitted from an external source via fiber optic bundles, where heat-generating infrared rays are filtered out",
+      "explanation": "High-intensity external lamps pass through heat-absorbing filters. The cool visible light is routed via flexible fiber bundles through total internal reflection, preventing mucosal burns."
+    },
+    {
+      "id": "z05_f2_011",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does a piece of ice at 0°C feel much colder to the touch than water at 0°C?",
+      "options": [
+        "Ice extracts 3.36 × 10⁵ J/kg of latent heat from the hand to melt, in addition to warming up as water",
+        "Ice is at a temperature below absolute zero",
+        "Water at 0°C contains dissolved heat molecules",
+        "Ice conducts electricity from the skin"
+      ],
+      "correct_answer": "Ice extracts 3.36 × 10⁵ J/kg of latent heat from the hand to melt, in addition to warming up as water",
+      "explanation": "Both start at 0°C, but ice requires 336,000 J/kg of latent heat of fusion directly from the skin just to convert into liquid water, resulting in rapid heat extraction and a colder sensation."
+    },
+    {
+      "id": "z05_f2_012",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "What is the function of the radiofrequency (RF) pulse in an MRI scanner?",
+      "options": [
+        "It tips the precessing hydrogen proton magnetic moments out of alignment with the main B₀ field into the transverse plane",
+        "It heats the patient's body to sterilize surgical areas",
+        "It magnetizes iron atoms in the patient's blood permanently",
+        "It ionizes atomic electrons to create electrical currents"
+      ],
+      "correct_answer": "It tips the precessing hydrogen proton magnetic moments out of alignment with the main B₀ field into the transverse plane",
+      "explanation": "At the Larmor frequency, resonant RF energy tips proton spins into the transverse plane. When the RF pulse stops, relaxation generates detectable free induction decay radio signals."
+    },
+    {
+      "id": "z05_f2_013",
+      "bloom_level": "understand",
+      "format": "mcq",
+      "question": "Why does adding salt to ice in an ice-cream maker lower the mixture temperature below 0°C?",
+      "options": [
+        "Dissolving salt lowers the freezing point of water and forces ice to melt, drawing latent heat from the mixture and depressing temperature down to -20°C",
+        "Salt is an endothermic chemical that generates liquid nitrogen",
+        "Salt absorbs light and converts it into cold air",
+        "Salt freezes water molecules instantly into dry ice"
+      ],
+      "correct_answer": "Dissolving salt lowers the freezing point of water and forces ice to melt, drawing latent heat from the mixture and depressing temperature down to -20°C",
+      "explanation": "Salt depresses the freezing point of water. Ice melts to form brine, extracting its latent heat of fusion from the surrounding bath and chilling the ice-cream canister well below 0°C."
+    },
+    {
+      "id": "z05_f2_014",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A force of 600 N acts perpendicular to an area of 0.05 m². What is the pressure exerted?",
+      "options": [
+        "12,000 Pa",
+        "30 Pa",
+        "3,000 Pa",
+        "120 Pa"
+      ],
+      "correct_answer": "12,000 Pa",
+      "explanation": "P = F / A = 600 N ÷ 0.05 m² = 12,000 Pa."
+    },
+    {
+      "id": "z05_f2_015",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "What is the water pressure at a depth of 10 meters in a lake? (Density of water = 1000 kg/m³, g = 9.8 m/s²)",
+      "options": [
+        "98,000 Pa",
+        "9,800 Pa",
+        "980,000 Pa",
+        "10,000 Pa"
+      ],
+      "correct_answer": "98,000 Pa",
+      "explanation": "P = hρg = 10 m × 1000 kg/m³ × 9.8 m/s² = 98,000 Pa (≈ 1 atm)."
+    },
+    {
+      "id": "z05_f2_016",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In a hydraulic press, an input force of 50 N is applied to a piston of area 0.01 m². If the output piston has an area of 0.5 m², what output force is exerted?",
+      "options": [
+        "2500 N",
+        "100 N",
+        "500 N",
+        "1000 N"
+      ],
+      "correct_answer": "2500 N",
+      "explanation": "F2 = F1 × (A2 / A1) = 50 N × (0.5 / 0.01) = 50 × 50 = 2500 N."
+    },
+    {
+      "id": "z05_f2_017",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A metal cube of volume 0.002 m³ is completely immersed in water (density = 1000 kg/m³). What buoyant force does it experience? (g = 9.8 m/s²)",
+      "options": [
+        "19.6 N",
+        "196 N",
+        "2.0 N",
+        "9.8 N"
+      ],
+      "correct_answer": "19.6 N",
+      "explanation": "Buoyant force F_B = V × ρ × g = 0.002 m³ × 1000 kg/m³ × 9.8 m/s² = 19.6 N."
+    },
+    {
+      "id": "z05_f2_018",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A piece of wood of density 700 kg/m³ floats on water of density 1000 kg/m³. What fraction of the wood's total volume is submerged below the surface?",
+      "options": [
+        "0.70 (70%)",
+        "0.30 (30%)",
+        "0.50 (50%)",
+        "1.00 (100%)"
+      ],
+      "correct_answer": "0.70 (70%)",
+      "explanation": "V_submerged / V_total = ρ_body / ρ_liquid = 700 / 1000 = 0.70 (70%)."
+    },
+    {
+      "id": "z05_f2_019",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A steel wire of length 2.0 m and cross-sectional area 1.0 × 10⁻⁶ m² stretches by 1.0 mm under a tensile load of 100 N. What is Young's modulus of the steel?",
+      "options": [
+        "2.0 × 10¹¹ Pa",
+        "1.0 × 10¹¹ Pa",
+        "2.0 × 10¹⁰ Pa",
+        "5.0 × 10¹¹ Pa"
+      ],
+      "correct_answer": "2.0 × 10¹¹ Pa",
+      "explanation": "Y = (F × L) / (A × ΔL) = (100 × 2.0) / (1.0 × 10⁻⁶ × 1.0 × 10⁻³) = 200 / 10⁻⁹ = 2.0 × 10¹¹ Pa."
+    },
+    {
+      "id": "z05_f2_020",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much heat energy is required to raise the temperature of 2 kg of water from 20°C to 70°C? (Specific heat capacity of water = 4200 J/(kg·K))",
+      "options": [
+        "420,000 J",
+        "210,000 J",
+        "840,000 J",
+        "105,000 J"
+      ],
+      "correct_answer": "420,000 J",
+      "explanation": "Q = m × s × ΔT = 2 kg × 4200 J/(kg·K) × (70 - 20) K = 2 × 4200 × 50 = 420,000 J."
+    },
+    {
+      "id": "z05_f2_021",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 10-meter steel bridge girder experiences a temperature rise of 30°C. If the coefficient of linear expansion of steel is 1.1 × 10⁻⁵ K⁻¹, what is the increase in its length?",
+      "options": [
+        "3.3 mm",
+        "33 mm",
+        "0.33 mm",
+        "1.1 mm"
+      ],
+      "correct_answer": "3.3 mm",
+      "explanation": "ΔL = L × α × ΔT = 10 m × (1.1 × 10⁻⁵ K⁻¹) × 30 K = 0.0033 m = 3.3 mm."
+    },
+    {
+      "id": "z05_f2_022",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much heat is required to completely melt 0.5 kg of ice at 0°C into liquid water at 0°C? (Latent heat of fusion = 3.36 × 10⁵ J/kg)",
+      "options": [
+        "168,000 J",
+        "336,000 J",
+        "84,000 J",
+        "672,000 J"
+      ],
+      "correct_answer": "168,000 J",
+      "explanation": "Q = m × L_f = 0.5 kg × (3.36 × 10⁵ J/kg) = 168,000 J."
+    },
+    {
+      "id": "z05_f2_023",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much heat is required to convert 2 kg of boiling water at 100°C into steam at 100°C? (Latent heat of vaporization = 2.26 × 10⁶ J/kg)",
+      "options": [
+        "4.52 × 10⁶ J",
+        "2.26 × 10⁶ J",
+        "1.13 × 10⁶ J",
+        "9.04 × 10⁶ J"
+      ],
+      "correct_answer": "4.52 × 10⁶ J",
+      "explanation": "Q = m × L_v = 2 kg × (2.26 × 10⁶ J/kg) = 4.52 × 10⁶ J."
+    },
+    {
+      "id": "z05_f2_024",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "The half-life of a radioactive isotope is 8 days. What fraction of the original radioactive material remains undecayed after 24 days?",
+      "options": [
+        "1/8",
+        "1/4",
+        "1/16",
+        "1/2"
+      ],
+      "correct_answer": "1/8",
+      "explanation": "Number of half-lives n = 24 days / 8 days = 3. Remaining fraction = (1/2)ⁿ = (1/2)³ = 1/8."
+    },
+    {
+      "id": "z05_f2_025",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A sample containing 16 grams of Iodine-131 (half-life = 8 days) decays over 32 days. How many grams of Iodine-131 remain?",
+      "options": [
+        "1 gram",
+        "2 grams",
+        "4 grams",
+        "0.5 grams"
+      ],
+      "correct_answer": "1 gram",
+      "explanation": "n = 32 / 8 = 4 half-lives. Remaining mass = 16 g × (1/2)⁴ = 16 / 16 = 1 gram."
+    },
+    {
+      "id": "z05_f2_026",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "What is the temperature of 300 Kelvin expressed in the Celsius scale?",
+      "options": [
+        "26.85°C",
+        "27.00°C",
+        "573.15°C",
+        "-26.85°C"
+      ],
+      "correct_answer": "26.85°C",
+      "explanation": "T(°C) = T(K) - 273.15 = 300 - 273.15 = 26.85°C (often approximated as 27°C)."
+    },
+    {
+      "id": "z05_f2_027",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "At what temperature do the Celsius scale and the Fahrenheit scale read the exact same numerical value?",
+      "options": [
+        "-40°",
+        "+40°",
+        "0°",
+        "-273°"
+      ],
+      "correct_answer": "-40°",
+      "explanation": "C/5 = (F - 32)/9. Setting C = F = x: x/5 = (x - 32)/9 → 9x = 5x - 160 → 4x = -160 → x = -40°."
+    },
+    {
+      "id": "z05_f2_028",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A metal block of mass 1 kg at 100°C is dropped into 1 kg of water at 20°C in a calorimeter. If the final equilibrium temperature is 25°C, what is the specific heat capacity of the metal? (s_water = 4200 J/(kg·K))",
+      "options": [
+        "280 J/(kg·K)",
+        "420 J/(kg·K)",
+        "140 J/(kg·K)",
+        "560 J/(kg·K)"
+      ],
+      "correct_answer": "280 J/(kg·K)",
+      "explanation": "Heat lost = Heat gained → m_metal × s_metal × (100 - 25) = m_water × s_water × (25 - 20) → 1 × s_metal × 75 = 1 × 4200 × 5 = 21,000 → s_metal = 21,000 / 75 = 280 J/(kg·K)."
+    },
+    {
+      "id": "z05_f2_029",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A barometer reads 76 cm of mercury (density = 13,600 kg/m³). What is the atmospheric pressure in Pascals? (g = 9.8 m/s²)",
+      "options": [
+        "101,293 Pa",
+        "74,480 Pa",
+        "136,000 Pa",
+        "98,000 Pa"
+      ],
+      "correct_answer": "101,293 Pa",
+      "explanation": "P = hρg = 0.76 m × 13,600 kg/m³ × 9.8 m/s² = 101,292.8 Pa ≈ 1.013 × 10⁵ Pa."
+    },
+    {
+      "id": "z05_f2_030",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An iceberg of density 920 kg/m³ floats in seawater of density 1025 kg/m³. What percentage of the iceberg's total volume remains visible above the water surface?",
+      "options": [
+        "10.2%",
+        "89.8%",
+        "20.0%",
+        "5.5%"
+      ],
+      "correct_answer": "10.2%",
+      "explanation": "Submerged fraction = 920 / 1025 ≈ 0.8976 (89.8%). Visible fraction = 1 - 0.8976 = 0.1024 = 10.2%."
+    },
+    {
+      "id": "z05_f2_031",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A 50 kg girl stands balanced on the stiletto heel of one shoe of circular area 1.0 cm² (1.0 × 10⁻⁴ m²). What pressure does she exert on the floor? (g = 9.8 m/s²)",
+      "options": [
+        "4.9 × 10⁶ Pa",
+        "4.9 × 10⁴ Pa",
+        "490 Pa",
+        "4.9 × 10⁵ Pa"
+      ],
+      "correct_answer": "4.9 × 10⁶ Pa",
+      "explanation": "Weight F = mg = 50 × 9.8 = 490 N. Area A = 10⁻⁴ m². Pressure P = 490 N ÷ 10⁻⁴ m² = 4.9 × 10⁶ Pa (approx. 49 atmospheres)."
+    },
+    {
+      "id": "z05_f2_032",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A submarine dives to a depth of 200 meters in the ocean (seawater density = 1030 kg/m³). What total hydrostatic pressure acts on its hull? (g = 9.8 m/s²)",
+      "options": [
+        "2.02 × 10⁶ Pa",
+        "2.02 × 10⁵ Pa",
+        "1.01 × 10⁶ Pa",
+        "4.04 × 10⁶ Pa"
+      ],
+      "correct_answer": "2.02 × 10⁶ Pa",
+      "explanation": "P = hρg = 200 m × 1030 kg/m³ × 9.8 m/s² = 2,018,800 Pa ≈ 2.02 × 10⁶ Pa (approx. 20 atm)."
+    },
+    {
+      "id": "z05_f2_033",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "If the coefficient of linear expansion of copper is 1.7 × 10⁻⁵ K⁻¹, what is its coefficient of volume expansion (γ)?",
+      "options": [
+        "5.1 × 10⁻⁵ K⁻¹",
+        "3.4 × 10⁻⁵ K⁻¹",
+        "1.7 × 10⁻⁵ K⁻¹",
+        "0.57 × 10⁻⁵ K⁻¹"
+      ],
+      "correct_answer": "5.1 × 10⁻⁵ K⁻¹",
+      "explanation": "For isotropic solids, the volume expansion coefficient is three times the linear coefficient: γ = 3α = 3 × (1.7 × 10⁻⁵) = 5.1 × 10⁻⁵ K⁻¹."
+    },
+    {
+      "id": "z05_f2_034",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much heat is required to warm 100 grams of ice from -10°C to 0°C? (Specific heat capacity of ice = 2100 J/(kg·K))",
+      "options": [
+        "2100 J",
+        "4200 J",
+        "21,000 J",
+        "1050 J"
+      ],
+      "correct_answer": "2100 J",
+      "explanation": "m = 0.1 kg, ΔT = 10 K. Q = m × s_ice × ΔT = 0.1 kg × 2100 J/(kg·K) × 10 K = 2100 J."
+    },
+    {
+      "id": "z05_f2_035",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An ultrasound machine operating at 3.5 MHz emits a pulse into human muscle tissue where sound speed is 1540 m/s. An echo returns after 40 μs (40 × 10⁻⁶ s). How deep is the reflecting tissue interface?",
+      "options": [
+        "3.08 cm",
+        "6.16 cm",
+        "1.54 cm",
+        "0.77 cm"
+      ],
+      "correct_answer": "3.08 cm",
+      "explanation": "Round-trip distance 2d = v × t → d = (v × t) / 2 = (1540 m/s × 40 × 10⁻⁶ s) / 2 = 0.0616 / 2 = 0.0308 m = 3.08 cm."
+    },
+    {
+      "id": "z05_f2_036",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An archaeologist discovers an ancient wooden artifact that has a Carbon-14 activity equal to 25% of modern living wood. If the half-life of Carbon-14 is 5730 years, what is the age of the artifact?",
+      "options": [
+        "11,460 years",
+        "5,730 years",
+        "17,190 years",
+        "2,865 years"
+      ],
+      "correct_answer": "11,460 years",
+      "explanation": "25% remaining = (1/2)² = 2 half-lives elapsed. Age = 2 × 5730 years = 11,460 years."
+    },
+    {
+      "id": "z05_f2_037",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In an X-ray tube, electrons are accelerated across an operating potential difference of 50,000 Volts (50 kV). What is the maximum kinetic energy acquired by each electron in electron-volts (eV)?",
+      "options": [
+        "50,000 eV (50 keV)",
+        "25,000 eV",
+        "100,000 eV",
+        "1.6 × 10⁻¹⁹ eV"
+      ],
+      "correct_answer": "50,000 eV (50 keV)",
+      "explanation": "Kinetic energy KE_max = q × V = 1 e × 50,000 V = 50,000 eV (50 keV)."
+    },
+    {
+      "id": "z05_f2_038",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A body weighs 50 N in air. When completely immersed in water, it weighs 30 N. What is the buoyant force acting on it?",
+      "options": [
+        "20 N",
+        "80 N",
+        "30 N",
+        "50 N"
+      ],
+      "correct_answer": "20 N",
+      "explanation": "Buoyant force = Apparent loss of weight in liquid = W_air - W_water = 50 N - 30 N = 20 N."
+    },
+    {
+      "id": "z05_f2_039",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "What is the density of the object in the previous question (weight in air = 50 N, buoyant force in water = 20 N)? (Density of water = 1000 kg/m³, g = 10 m/s²)",
+      "options": [
+        "2500 kg/m³",
+        "1500 kg/m³",
+        "2000 kg/m³",
+        "3000 kg/m³"
+      ],
+      "correct_answer": "2500 kg/m³",
+      "explanation": "Relative density = Weight in air / Buoyant force in water = 50 / 20 = 2.5. Density = 2.5 × 1000 kg/m³ = 2500 kg/m³."
+    },
+    {
+      "id": "z05_f2_040",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A normal human body temperature is 98.6°F. What is this temperature on the Celsius scale?",
+      "options": [
+        "37.0°C",
+        "36.5°C",
+        "38.2°C",
+        "35.0°C"
+      ],
+      "correct_answer": "37.0°C",
+      "explanation": "C = (F - 32) × (5/9) = (98.6 - 32) × (5/9) = 66.6 × 5 / 9 = 37.0°C."
+    },
+    {
+      "id": "z05_f2_041",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A radiation source of Cobalt-60 has an initial activity of 4000 Bq. If its half-life is approximately 5.3 years, what will its activity be after 15.9 years?",
+      "options": [
+        "500 Bq",
+        "1000 Bq",
+        "250 Bq",
+        "2000 Bq"
+      ],
+      "correct_answer": "500 Bq",
+      "explanation": "Number of half-lives n = 15.9 / 5.3 = 3. Remaining activity = 4000 × (1/2)³ = 4000 / 8 = 500 Bq."
+    },
+    {
+      "id": "z05_f2_042",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "An electric hot plate rated 500 W heats 1 kg of water for 420 seconds. Assuming no heat is lost, what is the temperature rise of the water? (s = 4200 J/(kg·K))",
+      "options": [
+        "50°C",
+        "25°C",
+        "100°C",
+        "10°C"
+      ],
+      "correct_answer": "50°C",
+      "explanation": "Heat supplied Q = P × t = 500 W × 420 s = 210,000 J. Q = msΔT → 210,000 = 1 × 4200 × ΔT → ΔT = 210,000 / 4200 = 50°C."
+    },
+    {
+      "id": "z05_f2_043",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A glass bulb of initial volume 500 cm³ is heated through a temperature change of 40°C. If the volume expansion coefficient of glass is 2.7 × 10⁻⁵ K⁻¹, what is the increase in volume of the bulb?",
+      "options": [
+        "0.54 cm³",
+        "5.4 cm³",
+        "0.27 cm³",
+        "1.08 cm³"
+      ],
+      "correct_answer": "0.54 cm³",
+      "explanation": "ΔV = V × γ × ΔT = 500 cm³ × (2.7 × 10⁻⁵ K⁻¹) × 40 K = 0.54 cm³."
+    },
+    {
+      "id": "z05_f2_044",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A tensile force of 500 N stretches a wire by 0.5 mm. How much force is required to stretch the same wire by 2.0 mm, assuming it remains within the elastic limit?",
+      "options": [
+        "2000 N",
+        "1000 N",
+        "250 N",
+        "4000 N"
+      ],
+      "correct_answer": "2000 N",
+      "explanation": "By Hooke's law F ∝ ΔL. Quadrupling the elongation (from 0.5 mm to 2.0 mm) requires four times the force: 4 × 500 N = 2000 N."
+    },
+    {
+      "id": "z05_f2_045",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "In a Thorium decay chain, a nucleus of ²³²₉₀Th emits an alpha particle. What are the mass number and atomic number of the resulting Radium daughter nucleus?",
+      "options": [
+        "²²⁸₈₈Ra",
+        "²³⁰₈₈Ra",
+        "²²⁸₈₉Ra",
+        "²³²₈₈Ra"
+      ],
+      "correct_answer": "²²⁸₈₈Ra",
+      "explanation": "Alpha decay reduces mass number by 4 (232 - 4 = 228) and atomic number by 2 (90 - 2 = 88). The daughter is ²²⁸₈₈Ra."
+    },
+    {
+      "id": "z05_f2_046",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "How much total heat is needed to convert 10 grams (0.01 kg) of ice at 0°C into steam at 100°C? (L_f = 3.36 × 10⁵ J/kg, s_water = 4200 J/(kg·K), L_v = 2.26 × 10⁶ J/kg)",
+      "options": [
+        "30,160 J",
+        "22,600 J",
+        "3,360 J",
+        "4,200 J"
+      ],
+      "correct_answer": "30,160 J",
+      "explanation": "Q1 (melting) = 0.01 × 336,000 = 3360 J. Q2 (heating 0 to 100°C) = 0.01 × 4200 × 100 = 4200 J. Q3 (vaporization) = 0.01 × 2,260,000 = 22,600 J. Total Q = 3360 + 4200 + 22,600 = 30,160 J."
+    },
+    {
+      "id": "z05_f2_047",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A hydraulic car lift has an input piston of radius 5 cm and an output piston of radius 50 cm. What mechanical advantage (force ratio F2 / F1) does this lift provide?",
+      "options": [
+        "100",
+        "10",
+        "50",
+        "25"
+      ],
+      "correct_answer": "100",
+      "explanation": "Force ratio F2 / F1 = A2 / A1 = (π r2²) / (π r1²) = (r2 / r1)² = (50 / 5)² = 10² = 100."
+    },
+    {
+      "id": "z05_f2_048",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A diver's watch is certified waterproof up to a gauge pressure of 5 × 10⁵ Pa. What is the maximum safe dive depth in freshwater? (ρ = 1000 kg/m³, g = 10 m/s²)",
+      "options": [
+        "50 m",
+        "5 m",
+        "500 m",
+        "25 m"
+      ],
+      "correct_answer": "50 m",
+      "explanation": "P = hρg → h = P / (ρg) = (5 × 10⁵ Pa) / (1000 × 10) = 500,000 / 10,000 = 50 m."
+    },
+    {
+      "id": "z05_f2_049",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A bimetallic thermostat strip bends through 2 mm when heated by 20°C. If temperature rises by 60°C instead, how much will the strip deflect, assuming linear elastic response?",
+      "options": [
+        "6 mm",
+        "4 mm",
+        "8 mm",
+        "2 mm"
+      ],
+      "correct_answer": "6 mm",
+      "explanation": "Deflection of a bimetallic strip is directly proportional to temperature change ΔT: deflection ∝ ΔT. Tripling ΔT from 20°C to 60°C triples deflection from 2 mm to 6 mm."
+    },
+    {
+      "id": "z05_f2_050",
+      "bloom_level": "apply",
+      "format": "mcq",
+      "question": "A medical clinic receives a sample of Technetium-99m (half-life = 6 hours) with an initial activity of 800 MBq. What is its activity after 24 hours?",
+      "options": [
+        "50 MBq",
+        "100 MBq",
+        "25 MBq",
+        "200 MBq"
+      ],
+      "correct_answer": "50 MBq",
+      "explanation": "Number of half-lives elapsed n = 24 hours / 6 hours = 4. Remaining activity = 800 MBq × (1/2)⁴ = 800 / 16 = 50 MBq."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Godot 4 — keep local cache off GitHub; does not affect gameplay
+.godot/
+*.translation
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+~$*
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Exports / builds
+export/
+*.pck
+*.zip
+!Docs.zip
+
+# Local helper scripts (if any)
+_patch_*.ps1
+_verify_*.gd

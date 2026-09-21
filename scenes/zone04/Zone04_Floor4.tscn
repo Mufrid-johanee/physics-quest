@@ -1,0 +1,401 @@
+[gd_scene format=3 uid="uid://bnh4iaowoks1o"]
+
+[ext_resource type="Script" uid="uid://dvidskt1q173c" path="res://scripts/zone04/Zone04Floor4.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://4qdvu8jyfof1" path="res://asset/sprites/Environment/zone 4/substation_bay4_diagnostics.png" id="2_room"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="3_player"]
+[ext_resource type="Texture2D" uid="uid://b4ujd0cut4y75" path="res://asset/sprites/character/worker 4.png" id="3_rukn0"]
+[ext_resource type="Texture2D" uid="uid://cifve0er0enk7" path="res://asset/sprites/character/player backview.png" id="4_n3npj"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="4_npc"]
+[ext_resource type="Texture2D" uid="uid://bm8mjvi2uf06v" path="res://asset/sprites/character/worker 2.png" id="5_3onbc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="5_dialogue"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="6_interact"]
+[ext_resource type="Texture2D" uid="uid://b1taj8yi61yd8" path="res://asset/sprites/character/worker 7.png" id="6_lgwxr"]
+[ext_resource type="Texture2D" uid="uid://c10accd1c2e2c" path="res://asset/sprites/character/zone 4/Engineer_Farid.png" id="7_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/QuizPanel.tscn" id="8_quiz"]
+[ext_resource type="Script" uid="uid://c4w1hfb0xn10y" path="res://scripts/quiz/QuizController.gd" id="9_quizctl"]
+[ext_resource type="Texture2D" uid="uid://bvvmgv3k4yrg" path="res://asset/sprites/Environment/zone 4/ui_badge_spark_emblem.png" id="10_badge"]
+[ext_resource type="Texture2D" uid="uid://dhthtuqi3b7m1" path="res://asset/sprites/character/karim.png" id="16_2qx3w"]
+[ext_resource type="Script" uid="uid://3607pr7eqqgy" path="res://scripts/npc/AmbientProximity.gd" id="amb1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_68ed98e0"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_0edba9d6"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_6997ccb5"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_02fc1303"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_d0e46a6a"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_4cff1e37"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1920, 412)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(469.5, 1072)
+
+[sub_resource type="RectangleShape2D" id="Rect_npc_detect"]
+size = Vector2(129.52382, 67.79765)
+
+[sub_resource type="RectangleShape2D" id="Rect_exit"]
+size = Vector2(248, 100)
+
+[sub_resource type="RectangleShape2D" id="Rect_mg"]
+size = Vector2(220, 160)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_ae6013e6"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_7807d97d"]
+size = Vector2(300, 350)
+
+[node name="Zone04_Floor4" type="Node2D" unique_id=1911615216]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=283574257]
+z_index = -20
+
+[node name="RoomArt" type="Sprite2D" parent="Background" unique_id=592389510]
+scale = Vector2(2.920684, 1)
+texture = ExtResource("2_room")
+centered = false
+
+[node name="Worker4" type="Sprite2D" parent="Background" unique_id=262761073]
+position = Vector2(232.00005, 543)
+scale = Vector2(0.5777776, 0.6073059)
+texture = ExtResource("3_rukn0")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Background/Worker4" unique_id=56458724]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker4/BodyCollision" unique_id=254222354]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_68ed98e0")
+
+[node name="AmbientProximity" type="Area2D" parent="Background/Worker4" unique_id=1786977409]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker4/AmbientProximity" unique_id=1274359375]
+shape = SubResource("Rect_amb_prox_0edba9d6")
+
+[node name="PlayerBackview" type="Sprite2D" parent="Background" unique_id=894117394]
+position = Vector2(996, 269)
+scale = Vector2(0.62978756, 0.6955923)
+texture = ExtResource("4_n3npj")
+
+[node name="Worker2" type="Sprite2D" parent="Background" unique_id=1371128194]
+position = Vector2(422, 263)
+scale = Vector2(0.5306749, 0.71568626)
+texture = ExtResource("5_3onbc")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Background/Worker2" unique_id=673470056]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker2/BodyCollision" unique_id=157187282]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_6997ccb5")
+
+[node name="AmbientProximity" type="Area2D" parent="Background/Worker2" unique_id=311938942]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker2/AmbientProximity" unique_id=2118106486]
+shape = SubResource("Rect_amb_prox_02fc1303")
+
+[node name="Worker7" type="Sprite2D" parent="Background" unique_id=1384848305]
+position = Vector2(828, 275)
+scale = Vector2(0.6007194, 0.5810811)
+texture = ExtResource("6_lgwxr")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Background/Worker7" unique_id=1684407241]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker7/BodyCollision" unique_id=1496893944]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_d0e46a6a")
+
+[node name="AmbientProximity" type="Area2D" parent="Background/Worker7" unique_id=1158328689]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker7/AmbientProximity" unique_id=471203821]
+shape = SubResource("Rect_amb_prox_4cff1e37")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=531167305]
+position = Vector2(960, 536)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Collision" type="Node2D" parent="." unique_id=845950058]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision" unique_id=1792286530]
+position = Vector2(957, 57)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundTop" unique_id=1360896089]
+position = Vector2(7, 4)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision" unique_id=1497655829]
+position = Vector2(960, 1052)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundBottom" unique_id=1724515148]
+position = Vector2(-3, 123)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision" unique_id=1646336250]
+position = Vector2(20, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=517183366]
+position = Vector2(-92, 0)
+shape = SubResource("Rect_bound_v")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision" unique_id=2028302654]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=1929522939]
+position = Vector2(115, -53)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=339179394]
+position = Vector2(-284, 161)
+scale = Vector2(1, 0.1)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=813853537]
+position = Vector2(-1375, 21)
+scale = Vector2(1, 0.1)
+shape = SubResource("Rect_bound_v")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=1659016102]
+y_sort_enabled = true
+scale = Vector2(1.6, 1.6)
+
+[node name="Farid" parent="NPCs" unique_id=1835883507 instance=ExtResource("4_npc")]
+z_index = 5
+position = Vector2(1015.625, 254.37503)
+scale = Vector2(2.1, 2.1)
+display_name = "Engineer Farid"
+sprite_texture = ExtResource("7_npc")
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Farid" unique_id=564697590]
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Farid/InteractionArea" unique_id=1662967526]
+position = Vector2(14.880962, 1.4880753)
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("Rect_npc_detect")
+
+[node name="Label" type="Label" parent="NPCs/Farid" unique_id=263076505]
+offset_left = -5.357143
+offset_top = -77.08335
+offset_right = 34.642857
+offset_bottom = -54.08335
+text = "Farid"
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1432388290]
+position = Vector2(960, 900)
+
+[node name="Player" parent="." unique_id=1056961007 instance=ExtResource("3_player")]
+z_index = 8
+position = Vector2(960, 900)
+scale = Vector2(2.5, 2.5)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="Interactions" type="Node2D" parent="." unique_id=473993090]
+
+[node name="ExteriorExit" type="Area2D" parent="Interactions" unique_id=1347353735]
+position = Vector2(960, 1000)
+collision_layer = 8
+script = ExtResource("6_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit" unique_id=1526384021]
+position = Vector2(-44, 0)
+shape = SubResource("Rect_exit")
+
+[node name="MiniGameArea" type="Area2D" parent="." unique_id=1251925312]
+position = Vector2(543, 556)
+collision_layer = 0
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MiniGameArea" unique_id=1712505689]
+shape = SubResource("Rect_mg")
+
+[node name="Label" type="Label" parent="MiniGameArea" unique_id=422088275]
+offset_left = -98.0
+offset_top = -21.0
+offset_right = 102.0
+offset_bottom = 19.0
+theme_override_font_sizes/font_size = 18
+text = "Mini-Game Area"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="DialoguePanel" parent="." unique_id=1097722920 instance=ExtResource("5_dialogue")]
+visible = false
+
+[node name="QuizController" type="Node" parent="." unique_id=289198487]
+script = ExtResource("9_quizctl")
+
+[node name="QuizPanel" parent="." unique_id=1357607149 instance=ExtResource("8_quiz")]
+visible = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=75276048]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=98559193]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+text = "Press E / F"
+horizontal_alignment = 1
+
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]
+[node name="DemoCompleteUI" type="CanvasLayer" parent="." unique_id=1512220682]
+layer = 20
+
+[node name="Root" type="Control" parent="DemoCompleteUI" unique_id=1997819075]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="DemoCompleteUI/Root" unique_id=49914874]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.55)
+
+[node name="Center" type="CenterContainer" parent="DemoCompleteUI/Root" unique_id=1860270310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="DemoCompleteUI/Root/Center" unique_id=60593457]
+custom_minimum_size = Vector2(480, 360)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="DemoCompleteUI/Root/Center/Panel" unique_id=734605942]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="DemoCompleteUI/Root/Center/Panel/Margin" unique_id=1378453454]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1227586906]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Mini-Game Area"
+horizontal_alignment = 1
+
+[node name="BadgeArt" type="TextureRect" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=638079882]
+visible = false
+custom_minimum_size = Vector2(160, 160)
+layout_mode = 2
+texture = ExtResource("10_badge")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BadgeLabel" type="Label" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1227019252]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Demo"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="CompleteButton" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1842807274]
+visible = false
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "Complete"
+
+[node name="PlayMiniGame1Button" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=574574205]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "PLAY — Mini Game 1"
+
+[node name="PlayMiniGame2Button" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1102904330]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+text = "PLAY — Mini Game 2"
+
+[node name="ClosePlaceholderButton" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=288858983]
+custom_minimum_size = Vector2(0, 36)
+layout_mode = 2
+text = "Close"
+
+[node name="ReturnToWorldMapButton" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1883933415]
+visible = false
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+text = "RETURN TO THE WORLD MAP"
+
+[node name="Karim" type="Sprite2D" parent="." unique_id=934395513]
+position = Vector2(855, 497)
+scale = Vector2(0.5690789, 0.65789473)
+texture = ExtResource("16_2qx3w")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Karim" unique_id=1450663967]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Karim/BodyCollision" unique_id=408677638]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_ae6013e6")
+
+[node name="AmbientProximity" type="Area2D" parent="Karim" unique_id=877746190]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+speaker_name = "Coworker"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Karim/AmbientProximity" unique_id=360976088]
+shape = SubResource("Rect_amb_prox_7807d97d")

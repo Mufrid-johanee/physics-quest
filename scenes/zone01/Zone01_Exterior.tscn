@@ -1,0 +1,319 @@
+[gd_scene format=3 uid="uid://dteh6c6mknxe1"]
+
+[ext_resource type="Script" uid="uid://cii0jknimw2yt" path="res://scripts/zone01/Zone01Exterior.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://dtj6w6gpkh4pf" path="res://asset/sprites/Environment/zone 1/factory_yard_grass_bg.png" id="2_grass"]
+[ext_resource type="Texture2D" uid="uid://djclvyk3dvcu8" path="res://asset/sprites/Environment/zone 1/road_factory_entrance.png" id="3_road"]
+[ext_resource type="Texture2D" uid="uid://c1ei8iscvcm2b" path="res://asset/sprites/Environment/zone 1/factory_exterior (1).png" id="4_factory"]
+[ext_resource type="Texture2D" uid="uid://brlljputo1cha" path="res://asset/sprites/character/lab assistant 1.png" id="5_2vi5b"]
+[ext_resource type="Texture2D" uid="uid://cyj11asks88ku" path="res://asset/sprites/Environment/zone 1/factory_gate_locked.png" id="5_gate_l"]
+[ext_resource type="Texture2D" uid="uid://ct7ci03ipn6nx" path="res://asset/sprites/character/manager 2 front.png" id="6_aqkr1"]
+[ext_resource type="Texture2D" uid="uid://c2xdgocib203l" path="res://asset/sprites/Environment/zone 1/factory_gate_open.png" id="6_gate_o"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="7_player"]
+[ext_resource type="Texture2D" uid="uid://b5uosftkip2kr" path="res://asset/sprites/character/supervisor 1.png" id="9_cfgh5"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="9_dialogue"]
+[ext_resource type="Texture2D" uid="uid://dwjlark8hlher" path="res://asset/sprites/character/player left view.png" id="10_crvol"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="10_interact"]
+[ext_resource type="Texture2D" uid="uid://bunbvo1vl03ni" path="res://asset/sprites/character/guard 1.png" id="11_guard"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="12_npc"]
+[ext_resource type="Texture2D" uid="uid://bm8mjvi2uf06v" path="res://asset/sprites/character/worker 2.png" id="13_w2"]
+[ext_resource type="Texture2D" uid="uid://b4ujd0cut4y75" path="res://asset/sprites/character/worker 4.png" id="14_w4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a02lp"]
+size = Vector2(233.8154, 306.33884)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1340, 30)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(36, 768)
+
+[sub_resource type="RectangleShape2D" id="Rect_factory_left"]
+size = Vector2(193, 437)
+
+[sub_resource type="RectangleShape2D" id="Rect_factory_right"]
+size = Vector2(215.5, 444)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veatc"]
+size = Vector2(396.02002, 378.47473)
+
+[sub_resource type="RectangleShape2D" id="Rect_gate_barrier"]
+size = Vector2(200, 40)
+
+[sub_resource type="RectangleShape2D" id="Rect_guard_interact"]
+size = Vector2(181, 149)
+
+[sub_resource type="RectangleShape2D" id="Rect_floor1"]
+size = Vector2(160, 100)
+
+[node name="Zone01_Exterior" type="Node2D" unique_id=1349611789]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=1098370441]
+z_index = -20
+
+[node name="YardGrass" type="Sprite2D" parent="Background" unique_id=624265297]
+texture = ExtResource("2_grass")
+centered = false
+
+[node name="PromptLabel" type="Label" parent="Background/YardGrass" unique_id=379032377]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 239.0
+offset_top = -64.0
+offset_right = 799.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 20
+text = "Use arrow keys to move"
+horizontal_alignment = 1
+
+[node name="FactoryExterior" type="Sprite2D" parent="Background" unique_id=1821201967]
+z_index = 2
+position = Vector2(1059.02, 274.1)
+scale = Vector2(0.4845988, 0.57796293)
+texture = ExtResource("4_factory")
+
+[node name="EntranceRoad" type="Sprite2D" parent="Background" unique_id=79853291]
+z_index = 1
+position = Vector2(684.8545, 624.0003)
+rotation = 1.5708
+scale = Vector2(0.32, 0.8811194)
+texture = ExtResource("3_road")
+
+[node name="LabAssistant1" type="Sprite2D" parent="Background" unique_id=1207227160]
+position = Vector2(535, 196.99997)
+scale = Vector2(0.31981975, 0.3418079)
+texture = ExtResource("5_2vi5b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LabAssistant1" unique_id=1560173695]
+position = Vector2(-12.50708, 8.583069e-05)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_a02lp")
+
+[node name="Manager2Front" type="Sprite2D" parent="Background" unique_id=396962991]
+position = Vector2(428.99994, 411)
+rotation = -0.013605356
+scale = Vector2(0.30802292, 0.32702702)
+texture = ExtResource("6_aqkr1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Manager2Front" unique_id=1828877091]
+position = Vector2(-29.215454, 0.00061035156)
+scale = Vector2(1.0000001, 1.0000001)
+shape = SubResource("RectangleShape2D_a02lp")
+
+[node name="LabAssistant2" type="Sprite2D" parent="Background" unique_id=1099738111]
+position = Vector2(108.49999, 113.499985)
+scale = Vector2(0.31981975, 0.3418079)
+texture = ExtResource("5_2vi5b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/LabAssistant2" unique_id=347394668]
+position = Vector2(-12.50708, 8.583069e-05)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_a02lp")
+
+[node name="Worker4" type="Sprite2D" parent="Background" unique_id=553000820]
+position = Vector2(651, 277)
+scale = Vector2(0.37037036, 0.33105022)
+texture = ExtResource("14_w4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker4" unique_id=397632193]
+position = Vector2(-12.50708, 8.583069e-05)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_a02lp")
+
+[node name="Worker2" type="Sprite2D" parent="Background" unique_id=1826523355]
+position = Vector2(192.00003, 109.000015)
+scale = Vector2(0.30674857, 0.3333333)
+texture = ExtResource("13_w2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Worker2" unique_id=982534481]
+position = Vector2(-12.50708, 8.583069e-05)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_a02lp")
+
+[node name="Supervisor1" type="Sprite2D" parent="Background" unique_id=1683948798]
+position = Vector2(147.99997, 314.375)
+scale = Vector2(0.336, 0.34164435)
+texture = ExtResource("9_cfgh5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/Supervisor1" unique_id=1790311732]
+position = Vector2(-12.50708, 8.583069e-05)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_a02lp")
+
+[node name="PlayerLeftView" type="Sprite2D" parent="Background" unique_id=131202707]
+position = Vector2(223.5, 307.0625)
+scale = Vector2(0.35096148, 0.32910964)
+texture = ExtResource("10_crvol")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/PlayerLeftView" unique_id=1061590200]
+position = Vector2(-12.50708, 8.583069e-05)
+scale = Vector2(1, 1.0000001)
+shape = SubResource("RectangleShape2D_a02lp")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=675044869]
+position = Vector2(688, 384)
+zoom = Vector2(0.93, 0.93)
+
+[node name="Collision" type="Node2D" parent="." unique_id=553860561]
+
+[node name="Boundaries" type="Node2D" parent="Collision" unique_id=386585377]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision/Boundaries" unique_id=1918832401]
+position = Vector2(688, 10)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundTop" unique_id=575180371]
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision/Boundaries" unique_id=750671604]
+position = Vector2(688, 758)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundBottom" unique_id=1673500687]
+position = Vector2(23, -4)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision/Boundaries" unique_id=1986410341]
+position = Vector2(10, 384)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundLeft" unique_id=355510046]
+shape = SubResource("Rect_bound_v")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision/Boundaries" unique_id=1172993749]
+position = Vector2(1366, 384)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundRight" unique_id=501435575]
+shape = SubResource("Rect_bound_v")
+
+[node name="FactoryFootprint_Left" type="StaticBody2D" parent="Collision" unique_id=1695428791]
+position = Vector2(875.5, 229)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/FactoryFootprint_Left" unique_id=813012339]
+position = Vector2(0, 15.5)
+shape = SubResource("Rect_factory_left")
+
+[node name="FactoryFootprint_Right" type="StaticBody2D" parent="Collision" unique_id=1773038764]
+position = Vector2(1215.5, 229)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/FactoryFootprint_Right" unique_id=911444465]
+position = Vector2(24.25, 24)
+shape = SubResource("Rect_factory_right")
+
+[node name="Gate" type="Node2D" parent="." unique_id=393916907]
+z_index = 4
+position = Vector2(1065, 374)
+
+[node name="LockedVisual" type="Sprite2D" parent="Gate" unique_id=1438928373]
+position = Vector2(-8.9999695, -56.500008)
+scale = Vector2(0.21716097, 0.25364965)
+texture = ExtResource("5_gate_l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gate/LockedVisual" unique_id=1505933103]
+position = Vector2(18.420898, 9.856079)
+scale = Vector2(0.9999998, 1)
+shape = SubResource("RectangleShape2D_veatc")
+
+[node name="OpenVisual" type="Sprite2D" parent="Gate" unique_id=1356645095]
+position = Vector2(-7.4999843, -51.499966)
+scale = Vector2(0.21080506, 0.25126475)
+texture = ExtResource("6_gate_o")
+
+[node name="Barrier" type="StaticBody2D" parent="Gate" unique_id=1408568830]
+position = Vector2(103, 161)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Gate/Barrier" unique_id=554717215]
+position = Vector2(32, 1)
+shape = SubResource("Rect_gate_barrier")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=390734637]
+y_sort_enabled = true
+
+[node name="Guard" parent="NPCs" unique_id=2124870207 instance=ExtResource("12_npc")]
+position = Vector2(915, 525)
+display_name = "Guard"
+sprite_texture = ExtResource("11_guard")
+sprite_scale = 0.45
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Guard" unique_id=233896413]
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Guard/InteractionArea" unique_id=1747016364]
+position = Vector2(-30.5, 14.5)
+shape = SubResource("Rect_guard_interact")
+
+[node name="Label" type="Label" parent="NPCs/Guard" unique_id=180350780]
+offset_left = -92.0
+offset_top = -24.0
+offset_right = -44.0
+offset_bottom = -1.0
+text = "Guard"
+
+[node name="GuardAsidePoint" type="Marker2D" parent="NPCs" unique_id=1511222585]
+position = Vector2(1183, 597)
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=875983049]
+position = Vector2(136, 606)
+
+[node name="Player" parent="." unique_id=2000941385 instance=ExtResource("7_player")]
+z_index = 8
+position = Vector2(117, 590)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="InteractionPoints" type="Node2D" parent="." unique_id=2034125732]
+
+[node name="Floor1Entrance" type="Area2D" parent="InteractionPoints" unique_id=1894608532]
+position = Vector2(1053, 407)
+collision_layer = 8
+script = ExtResource("10_interact")
+enabled = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionPoints/Floor1Entrance" unique_id=2065290564]
+position = Vector2(15, -41)
+shape = SubResource("Rect_floor1")
+
+[node name="DialoguePanel" parent="." unique_id=1894544014 instance=ExtResource("9_dialogue")]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1203268959]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=591397390]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -280.0
+offset_top = -72.0
+offset_right = 280.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 20
+text = "Press E / F"
+horizontal_alignment = 1
+
+[node name="GameplayStatusBar" parent="UI" unique_id=1965049516 instance=ExtResource("gsb_ui")]
+offset_right = 78.0

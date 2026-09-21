@@ -1,0 +1,260 @@
+[gd_scene format=3 uid="uid://cd2rtc3huuml4"]
+
+[ext_resource type="Script" uid="uid://b6x68wintthxc" path="res://scripts/zone02/Zone02Exterior.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://ctxdm1kcjt4ed" path="res://asset/sprites/Environment/zone 2/energy_assessment_wing.png" id="2_wing"]
+[ext_resource type="Texture2D" uid="uid://fxmi63p4m5v6" path="res://asset/sprites/Environment/zone 2/energy_door_locked.png" id="3_door_l"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="4_player"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="5_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="6_dialogue"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="7_interact"]
+[ext_resource type="Texture2D" uid="uid://d3nm7jnriap41" path="res://asset/sprites/character/rina fornt view.png" id="8_rina"]
+[ext_resource type="Texture2D" uid="uid://5dhumrv0ay8e" path="res://asset/sprites/character/worker 1.png" id="9_worker"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1920, 40)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(232, 1072)
+
+[sub_resource type="RectangleShape2D" id="Rect_block_a"]
+size = Vector2(373.5, 441)
+
+[sub_resource type="RectangleShape2D" id="Rect_block_b"]
+size = Vector2(391.22266, 677.32385)
+
+[sub_resource type="RectangleShape2D" id="Rect_guide_detect"]
+size = Vector2(140, 160)
+
+[sub_resource type="RectangleShape2D" id="Rect_door"]
+size = Vector2(149.8085, 276.5365)
+
+[node name="Zone02_Exterior" type="Node2D" unique_id=1149155655]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=37564043]
+z_index = -20
+
+[node name="WingArt" type="Sprite2D" parent="Background" unique_id=1234423130]
+texture = ExtResource("2_wing")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=956283207]
+position = Vector2(960, 536)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Collision" type="Node2D" parent="." unique_id=37898778]
+
+[node name="Boundaries" type="Node2D" parent="Collision" unique_id=1637759808]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision/Boundaries" unique_id=734452903]
+position = Vector2(960, 20)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundTop" unique_id=1046386220]
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision/Boundaries" unique_id=1088009958]
+position = Vector2(960, 1052)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundBottom" unique_id=407362220]
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision/Boundaries" unique_id=336599968]
+position = Vector2(20, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundLeft" unique_id=926976933]
+shape = SubResource("Rect_bound_v")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision/Boundaries" unique_id=425040711]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/Boundaries/BoundRight" unique_id=470848071]
+position = Vector2(-96, 0)
+shape = SubResource("Rect_bound_v")
+
+[node name="BuildingBlockA" type="StaticBody2D" parent="Collision" unique_id=774567793]
+position = Vector2(480, 280)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BuildingBlockA" unique_id=1737040546]
+position = Vector2(188.75, -25)
+shape = SubResource("Rect_block_a")
+
+[node name="BuildingBlockB" type="StaticBody2D" parent="Collision" unique_id=1077159063]
+position = Vector2(1440, 300)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BuildingBlockB" unique_id=1340124349]
+position = Vector2(-193.46008, 99.93695)
+rotation = 0.51487213
+skew = -0.47472966
+shape = SubResource("Rect_block_b")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=1485991099]
+y_sort_enabled = true
+scale = Vector2(2, 2)
+
+[node name="Guide" parent="NPCs" unique_id=145899751 instance=ExtResource("5_npc")]
+z_index = 5
+position = Vector2(347, 317)
+display_name = "Rina"
+sprite_texture = ExtResource("8_rina")
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Guide" unique_id=1497407747]
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Guide/InteractionArea" unique_id=739904969]
+position = Vector2(0, 48)
+shape = SubResource("Rect_guide_detect")
+
+[node name="Label" type="Label" parent="NPCs/Guide" unique_id=2016988045]
+offset_left = -24.0
+offset_top = 72.5
+offset_right = 28.0
+offset_bottom = 95.5
+text = "rina"
+
+[node name="WorkerAmbient" parent="NPCs" unique_id=1619894915 instance=ExtResource("5_npc")]
+z_index = 4
+position = Vector2(586.5, 417.5)
+display_name = "Worker"
+sprite_texture = ExtResource("9_worker")
+sprite_scale = 0.28
+enable_collision = false
+
+[node name="Doors" type="Node2D" parent="." unique_id=354429965]
+
+[node name="Door1" type="Area2D" parent="Doors" unique_id=360900471]
+position = Vector2(356, 501)
+collision_layer = 8
+script = ExtResource("7_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/Door1" unique_id=848484739]
+position = Vector2(5.0000305, -11.000008)
+rotation = -0.39793506
+scale = Vector2(0.9999998, 0.9999999)
+skew = 0.413643
+shape = SubResource("Rect_door")
+
+[node name="Label" type="Label" parent="Doors/Door1" unique_id=636973850]
+offset_left = -12.0000305
+offset_top = 147.0
+offset_right = 84.99997
+offset_bottom = 189.0
+rotation = -0.45944378
+theme_override_font_sizes/font_size = 30
+text = "Door 1"
+horizontal_alignment = 1
+
+[node name="Door2" type="Area2D" parent="Doors" unique_id=257225280]
+position = Vector2(960, 520)
+collision_layer = 8
+script = ExtResource("7_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/Door2" unique_id=601575610]
+position = Vector2(0, -51.072998)
+rotation = 0.32986724
+scale = Vector2(0.99999994, 1)
+skew = -0.32986736
+shape = SubResource("Rect_door")
+
+[node name="LockedVisual" type="Sprite2D" parent="Doors/Door2" unique_id=871790429]
+position = Vector2(1.9072542, -46.312115)
+rotation = 0.429351
+scale = Vector2(0.13528644, 0.22581154)
+skew = -0.4537856
+texture = ExtResource("3_door_l")
+
+[node name="Label" type="Label" parent="Doors/Door2" unique_id=1597111381]
+offset_left = -71.0
+offset_top = 71.0
+offset_right = 22.0
+offset_bottom = 105.0
+rotation = 0.34303388
+theme_override_font_sizes/font_size = 30
+text = "Door 2"
+horizontal_alignment = 1
+
+[node name="Door3" type="Area2D" parent="Doors" unique_id=995781611]
+position = Vector2(1280, 520)
+collision_layer = 8
+script = ExtResource("7_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doors/Door3" unique_id=217619203]
+position = Vector2(237.82263, 230.36688)
+rotation = 0.4118977
+skew = -0.37175524
+shape = SubResource("Rect_door")
+
+[node name="LockedVisual" type="Sprite2D" parent="Doors/Door3" unique_id=652988725]
+position = Vector2(235.99998, 225.00002)
+rotation = 0.41364303
+scale = Vector2(0.13441607, 0.28506306)
+skew = -0.41364303
+texture = ExtResource("3_door_l")
+
+[node name="Label" type="Label" parent="Doors/Door3" unique_id=1170544945]
+offset_left = 166.0
+offset_top = 365.0
+offset_right = 269.0
+offset_bottom = 410.0
+rotation = 0.43226698
+theme_override_font_sizes/font_size = 30
+text = "Door 3"
+horizontal_alignment = 1
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=759458594]
+position = Vector2(960, 920)
+
+[node name="Floor1ReturnSpawn" type="Marker2D" parent="." unique_id=84324038]
+position = Vector2(475, 681)
+
+[node name="Floor2ReturnSpawn" type="Marker2D" parent="." unique_id=1604599572]
+position = Vector2(960, 640)
+
+[node name="Floor3ReturnSpawn" type="Marker2D" parent="." unique_id=1691092139]
+position = Vector2(1417, 936)
+
+[node name="Player" parent="." unique_id=1704943842 instance=ExtResource("4_player")]
+z_index = 8
+position = Vector2(960, 920)
+scale = Vector2(2, 2)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="DialoguePanel" parent="." unique_id=1271710239 instance=ExtResource("6_dialogue")]
+visible = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=712599216]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=1489308123]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+text = "Press E / F"
+horizontal_alignment = 1
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]

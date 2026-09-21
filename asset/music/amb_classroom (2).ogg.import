@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bg5xih2n0cwyi"
+path="res://.godot/imported/amb_classroom (2).ogg-da71123c67aa936f745447addcae9ae1.oggvorbisstr"
+
+[deps]
+
+source_file="res://asset/music/amb_classroom (2).ogg"
+dest_files=["res://.godot/imported/amb_classroom (2).ogg-da71123c67aa936f745447addcae9ae1.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

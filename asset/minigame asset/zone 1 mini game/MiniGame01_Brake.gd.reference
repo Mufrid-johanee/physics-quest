@@ -1,0 +1,181 @@
+class_name MiniGame01_Brake
+extends MiniGameBase
+
+const DATA_PATH := "res://Zone01_Factory/data/zone01_minigames.json"
+const G := 10.0
+
+# Tune these in the Inspector so the block starts and hits the wall at the right spots in mg01_brake_bg.
+@export var block_start_x: float = 120.0
+@export var crash_x: float = 980.0
+# Match these to the grid of crash_burst_spritesheet.png (columns x rows).
+@export var burst_hframes: int = 6
+@export var burst_vframes: int = 1
+
+@onready var block: Sprite2D = $BlockSprite
+@onready var burst: Sprite2D = $CrashBurst
+@onready var info_label: Label = $HUD/InfoLabel
+@onready var question_label: Label = $HUD/QuestionLabel
+@onready var timer_bar: TextureProgressBar = $HUD/CountdownBar
+@onready var yes_btn: TextureButton = $HUD/YesButton
+@onready var no_btn: TextureButton = $HUD/NoButton
+@onready var force_box: HBoxContainer = $HUD/ForceBox
+@onready var ref_card: TextureRect = $HUD/ReferenceCard
+@onready var ref_toggle: Button = $HUD/ReferenceToggle
+@onready var result_label: Label = $HUD/ResultLabel
+
+static var _last_id: String = ""
+
+var scenario: Dictionary = {}
+var total_time: float = 12.0
+var time_left: float = 12.0
+var locked: bool = false
+
+
+func _ready() -> void:
+	mini_game_id = "mg01_brake"
+	burst.hframes = burst_hframes
+	burst.vframes = burst_vframes
+	burst.visible = false
+	ref_card.visible = false
+	force_box.visible = false
+	result_label.text = ""
+
+	_style_button(yes_btn)
+	_style_button(no_btn)
+	yes_btn.pressed.connect(_on_answer.bind("yes"))
+	no_btn.pressed.connect(_on_answer.bind("no"))
+
+	for child in force_box.get_children():
+		var b := child as TextureButton
+		_style_button(b)
+		b.pressed.connect(_on_force_pressed.bind(b))
+
+	ref_toggle.pressed.connect(func(): ref_card.visible = not ref_card.visible)
+
+
+# No hover/pressed art exists, so fake the states with modulate.
+func _style_button(b: BaseButton) -> void:
+	b.mouse_entered.connect(func(): if not locked: b.modulate = Color(1.2, 1.2, 1.2))
+	b.mouse_exited.connect(func(): b.modulate = Color.WHITE)
+	b.button_down.connect(func(): b.modulate = Color(0.75, 0.75, 0.75))
+	b.button_up.connect(func(): b.modulate = Color(1.2, 1.2, 1.2))
+
+
+func load_scenario() -> void:
+	var file := FileAccess.open(DATA_PATH, FileAccess.READ)
+	var data: Dictionary = JSON.parse_string(file.get_as_text())
+	var mg: Dictionary = data["minigames"]["mg01_brake"]
+
+	# 50/50 between the YES pool and the NO pool, then a random entry from that pool.
+	var pool: Array = mg["yes_scenarios"] if randf() < 0.5 else mg["no_scenarios"]
+	var pick: Dictionary = pool.pick_random()
+	var tries := 0
+	while pick["id"] == _last_id and tries < 10:
+		pick = pool.pick_random()
+		tries += 1
+	scenario = pick
+	_last_id = pick["id"]
+
+	total_time = float(scenario["countdown_seconds"])
+	time_left = total_time
+	locked = false
+
+	info_label.text = "%s\nMass: %d kg    μ = %.2f\nBraking force needed: %d N" % [
+		scenario["surface_label"], scenario["block_mass_kg"],
+		scenario["mu"], scenario["required_stop_force_n"]]
+	question_label.text = "Will friction alone stop the block?"
+	result_label.text = ""
+
+	block.visible = true
+	block.position.x = block_start_x
+	burst.visible = false
+	force_box.visible = false
+	yes_btn.visible = true
+	no_btn.visible = true
+	timer_bar.value = 100.0
+
+
+func _process(delta: float) -> void:
+	if not is_active or locked:
+		return
+	time_left -= delta
+	var ratio: float = clamp(time_left / total_time, 0.0, 1.0)
+	timer_bar.value = ratio * 100.0
+	block.position.x = lerp(crash_x, block_start_x, ratio)   # block creeps toward the wall
+	if time_left <= 0.0:
+		_crash("TIME'S UP")
+
+
+func _on_answer(choice: String) -> void:
+	if locked:
+		return
+	var friction_ok: bool = scenario["friction_sufficient"]
+	if choice == "yes":
+		if friction_ok:
+			_success()
+		else:
+			_crash("NOT ENOUGH FRICTION")
+	else:
+		if friction_ok:
+			_crash("FRICTION WAS ENOUGH")
+		else:
+			_show_force_options()
+
+
+func _show_force_options() -> void:
+	yes_btn.visible = false
+	no_btn.visible = false
+	question_label.text = "How much extra braking force is needed?"
+
+	var values: Array = [scenario["correct_additional_force_n"]]
+	values.append_array(scenario["distractor_forces_n"])
+	values.shuffle()
+
+	for i in force_box.get_child_count():
+		var b := force_box.get_child(i) as TextureButton
+		b.set_meta("force", values[i])
+		b.get_node("Label").text = "%d N" % values[i]
+		b.modulate = Color.WHITE
+	force_box.visible = true
+
+
+func _on_force_pressed(b: TextureButton) -> void:
+	if locked:
+		return
+	if int(b.get_meta("force")) == int(scenario["correct_additional_force_n"]):
+		_success()
+	else:
+		_crash("WRONG FORCE")
+
+
+func _success() -> void:
+	locked = true
+	result_label.text = "BLOCK STOPPED"
+	result_label.modulate = Color(0.4, 1.0, 0.4)
+	var t := create_tween()
+	t.tween_property(block, "position:x", block.position.x + 40.0, 0.5) \
+		.set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
+	await get_tree().create_timer(1.3).timeout
+	_pass()
+
+
+func _crash(reason: String) -> void:
+	locked = true
+	result_label.text = reason
+	result_label.modulate = Color(1.0, 0.35, 0.35)
+
+	var t := create_tween()
+	t.tween_property(block, "position:x", crash_x, 0.25)
+	await t.finished
+
+	burst.position = block.position
+	burst.frame = 0
+	burst.visible = true
+	var frames := burst_hframes * burst_vframes
+	var bt := create_tween()
+	bt.tween_property(burst, "frame", frames - 1, 0.7)
+	await bt.finished
+
+	block.visible = false
+	await get_tree().create_timer(0.8).timeout
+	_fail()

@@ -1,0 +1,253 @@
+[gd_scene format=3 uid="uid://3xkhsq1m1dwm"]
+
+[ext_resource type="Script" uid="uid://cdeykjodqv4jf" path="res://scripts/zone04/Zone04Floor1.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://wrow7tj5u4yw" path="res://asset/sprites/Environment/zone 4/substation_bay1_fundamentals.png" id="2_room"]
+[ext_resource type="PackedScene" uid="uid://cshuaeqllxb3e" path="res://scenes/player/Player.tscn" id="3_player"]
+[ext_resource type="PackedScene" uid="uid://dgs1w1l1epcfu" path="res://scenes/npc/NPC.tscn" id="4_npc"]
+[ext_resource type="PackedScene" path="res://scenes/ui/DialoguePanel.tscn" id="5_dialogue"]
+[ext_resource type="Script" uid="uid://cb2y73acgxvxi" path="res://scripts/components/Interactable.gd" id="6_interact"]
+[ext_resource type="Texture2D" uid="uid://c5d34f5a42ada" path="res://asset/sprites/character/zone 4/Professor_Mira.png" id="7_npc"]
+[ext_resource type="Texture2D" uid="uid://b5pox6ghd51sd" path="res://asset/sprites/character/worker 5.png" id="8_jo8el"]
+[ext_resource type="Texture2D" uid="uid://b4wo8wsv4q51" path="res://asset/sprites/character/lab assistant 2.png" id="8_ois3t"]
+[ext_resource type="PackedScene" path="res://scenes/ui/QuizPanel.tscn" id="8_quiz"]
+[ext_resource type="Script" uid="uid://c4w1hfb0xn10y" path="res://scripts/quiz/QuizController.gd" id="9_quizctl"]
+[ext_resource type="Texture2D" uid="uid://b5uosftkip2kr" path="res://asset/sprites/character/supervisor 1.png" id="12_k1lsa"]
+[ext_resource type="Script" uid="uid://3607pr7eqqgy" path="res://scripts/npc/AmbientProximity.gd" id="amb1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/GameplayStatusBar.tscn" id="gsb_ui"]
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_h"]
+size = Vector2(1920, 425)
+
+[sub_resource type="RectangleShape2D" id="Rect_bound_v"]
+size = Vector2(142.125, 1072)
+
+[sub_resource type="RectangleShape2D" id="Rect_npc_detect"]
+size = Vector2(90.70303, 138.93753)
+
+[sub_resource type="RectangleShape2D" id="Rect_exit"]
+size = Vector2(465, 100)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_bdf5387d"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_f077c2fc"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_45840897"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_acc13e7c"]
+size = Vector2(300, 350)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_body_ef625dc3"]
+size = Vector2(90, 50)
+
+[sub_resource type="RectangleShape2D" id="Rect_amb_prox_d94d17a4"]
+size = Vector2(300, 350)
+
+[node name="Zone04_Floor1" type="Node2D" unique_id=1567084438]
+y_sort_enabled = true
+script = ExtResource("1_script")
+
+[node name="Background" type="Node2D" parent="." unique_id=1981540657]
+z_index = -20
+
+[node name="RoomArt" type="Sprite2D" parent="Background" unique_id=1868379975]
+scale = Vector2(1.5264874, 1)
+texture = ExtResource("2_room")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1965183687]
+position = Vector2(903, 528)
+zoom = Vector2(0.7, 0.7)
+
+[node name="Collision" type="Node2D" parent="." unique_id=2119521173]
+
+[node name="BoundTop" type="StaticBody2D" parent="Collision" unique_id=924506536]
+position = Vector2(960, 20)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundTop" unique_id=189292002]
+position = Vector2(0, 192.5)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundBottom" type="StaticBody2D" parent="Collision" unique_id=868132556]
+position = Vector2(960, 1052)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundBottom" unique_id=1795821093]
+position = Vector2(-15, 132)
+shape = SubResource("Rect_bound_h")
+
+[node name="BoundLeft" type="StaticBody2D" parent="Collision" unique_id=2132071431]
+position = Vector2(20, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=1856284464]
+position = Vector2(-55, 4)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=522116851]
+position = Vector2(-38, -107)
+scale = Vector2(4, 0.2)
+shape = SubResource("Rect_bound_v")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Collision/BoundLeft" unique_id=947599514]
+position = Vector2(1444.75, -23)
+scale = Vector2(4, 0.2)
+shape = SubResource("Rect_bound_v")
+
+[node name="BoundRight" type="StaticBody2D" parent="Collision" unique_id=1484300440]
+position = Vector2(1900, 536)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision/BoundRight" unique_id=567617631]
+shape = SubResource("Rect_bound_v")
+
+[node name="NPCs" type="Node2D" parent="." unique_id=692081110]
+y_sort_enabled = true
+scale = Vector2(1.6, 1.6)
+
+[node name="Mira" parent="NPCs" unique_id=536228265 instance=ExtResource("4_npc")]
+z_index = 5
+position = Vector2(1070, 437.49997)
+scale = Vector2(2, 2)
+display_name = "Professor Mira"
+sprite_texture = ExtResource("7_npc")
+
+[node name="InteractionArea" type="Area2D" parent="NPCs/Mira" unique_id=2146574471]
+position = Vector2(-2.3439407, 0)
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPCs/Mira/InteractionArea" unique_id=2045558151]
+position = Vector2(-0.5075989, 31.874985)
+scale = Vector2(0.99999976, 0.99999976)
+shape = SubResource("Rect_npc_detect")
+
+[node name="Label" type="Label" parent="NPCs/Mira" unique_id=2072805590]
+offset_left = -14.374999
+offset_top = -95.93747
+offset_right = 25.625
+offset_bottom = -72.93747
+text = "Mira"
+
+[node name="PlayerSpawn" type="Marker2D" parent="." unique_id=1072523415]
+position = Vector2(960, 900)
+
+[node name="Player" parent="." unique_id=1225230004 instance=ExtResource("3_player")]
+z_index = 8
+position = Vector2(960, 900)
+scale = Vector2(2.7, 2.7)
+move_speed = 160.0
+sprite_scale = 0.28
+
+[node name="Interactions" type="Node2D" parent="." unique_id=1484468491]
+
+[node name="ExteriorExit" type="Area2D" parent="Interactions" unique_id=2032565623]
+position = Vector2(960, 1000)
+collision_layer = 8
+script = ExtResource("6_interact")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit" unique_id=126035537]
+position = Vector2(10.5, 0)
+shape = SubResource("Rect_exit")
+
+[node name="LabAssistant2" type="Sprite2D" parent="Interactions/ExteriorExit" unique_id=1075047086]
+position = Vector2(99, -511)
+scale = Vector2(0.8333333, 0.87288135)
+texture = ExtResource("8_ois3t")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Interactions/ExteriorExit/LabAssistant2" unique_id=1235587880]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit/LabAssistant2/BodyCollision" unique_id=1893321380]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_bdf5387d")
+
+[node name="AmbientProximity" type="Area2D" parent="Interactions/ExteriorExit/LabAssistant2" unique_id=1349014750]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+speaker_name = "Lab Assistant"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit/LabAssistant2/AmbientProximity" unique_id=860011013]
+shape = SubResource("Rect_amb_prox_f077c2fc")
+
+[node name="Worker5" type="Sprite2D" parent="Interactions/ExteriorExit" unique_id=1440197023]
+position = Vector2(-808.99994, -540)
+scale = Vector2(0.6697417, 0.75)
+texture = ExtResource("8_jo8el")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Interactions/ExteriorExit/Worker5" unique_id=1663611472]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit/Worker5/BodyCollision" unique_id=36658301]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_45840897")
+
+[node name="AmbientProximity" type="Area2D" parent="Interactions/ExteriorExit/Worker5" unique_id=57198025]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactions/ExteriorExit/Worker5/AmbientProximity" unique_id=641315083]
+shape = SubResource("Rect_amb_prox_acc13e7c")
+
+[node name="DialoguePanel" parent="." unique_id=1675848937 instance=ExtResource("5_dialogue")]
+visible = false
+
+[node name="QuizController" type="Node" parent="." unique_id=879041373]
+script = ExtResource("9_quizctl")
+
+[node name="QuizPanel" parent="." unique_id=594090098 instance=ExtResource("8_quiz")]
+visible = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1163626725]
+layer = 10
+
+[node name="PromptLabel" type="Label" parent="UI" unique_id=537512974]
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -72.0
+offset_right = 320.0
+offset_bottom = -24.0
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+text = "Press E / F"
+horizontal_alignment = 1
+
+
+[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]
+[node name="Supervisor1" type="Sprite2D" parent="." unique_id=876836420]
+position = Vector2(373.13263, 450.36172)
+scale = Vector2(-0.761, 0.828)
+texture = ExtResource("12_k1lsa")
+
+[node name="BodyCollision" type="StaticBody2D" parent="Supervisor1" unique_id=1586211263]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Supervisor1/BodyCollision" unique_id=1405550941]
+position = Vector2(0, 24)
+shape = SubResource("Rect_amb_body_ef625dc3")
+
+[node name="AmbientProximity" type="Area2D" parent="Supervisor1" unique_id=1569030813]
+collision_layer = 0
+monitorable = false
+script = ExtResource("amb1")
+speaker_name = "Coworker"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Supervisor1/AmbientProximity" unique_id=747511400]
+shape = SubResource("Rect_amb_prox_d94d17a4")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dvgwsow0bceib"
+path="res://.godot/imported/music_opening_sting (2).ogg-b6e52221f94ab0f8c5ff457395d68fbf.oggvorbisstr"
+
+[deps]
+
+source_file="res://asset/music/music_opening_sting (2).ogg"
+dest_files=["res://.godot/imported/music_opening_sting (2).ogg-b6e52221f94ab0f8c5ff457395d68fbf.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
