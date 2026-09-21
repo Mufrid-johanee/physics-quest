@@ -15,7 +15,9 @@ This audit’s “no NPC retuning” snapshot is historical; ambient collision s
 
 Floor 4 Mini-Game Area now launches the **real Emergency Brake** scene (`scenes/minigames/zone01/MiniGame01_Brake.tscn`). Fake SUCCESSFUL mark removed. Canonical badge: **Momentum Crest**. See `Docs/MINIGAME_IMPLEMENTATION.md` and `Docs/PROGRESS.md`. Sections below that say “MG stub only” are **historical audit snapshot** (2026-09-18).
 
----
+### Amendment 2026-09-21 — Badge UI
+
+Zone floors instance shared `GameplayStatusBar` under `$UI`. Collection UI: `BadgeScreen`. Does not change assessment/door audit findings below.
 
 **Sources compared:**
 - `Docs/MASTER_GAME_SPEC.md`

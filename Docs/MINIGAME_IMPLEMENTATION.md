@@ -10,6 +10,7 @@ This document tracks mini-game implementation for the **current rebuild** (`d:\c
 - Floor **Supervisors** remain assessment-only; exterior guides remain guide-only.
 - Unlock gate: `floor4_passed AND minigame_successful` via `GameState.mark_minigame_successful` → `sync_world_map_unlocks()`.
 - Ambient system guide: `Docs/AMBIENT_CHARACTERS.md`.
+- **Do not** instance `GameplayStatusBar` inside mini-game scenes.
 
 ---
 
@@ -21,8 +22,21 @@ This document tracks mini-game implementation for the **current rebuild** (`d:\c
 | 02 | Harbor Works (machine grid) | **REAL** | `scenes/minigames/zone02/MiniGame02_HarborWorks.tscn` | `scripts/minigames/zone02/MiniGame02HarborWorks.gd` | Radiant Crest |
 | 03 | Fiber Escape (beam routing) | **REAL** | `scenes/minigames/zone03/MiniGame03_FiberEscape.tscn` | `scripts/minigames/zone03/MiniGame03FiberEscape.gd` | Spectrum Crest |
 | 04 | (deferred Build the Generator) | **PLACEHOLDER** PLAY → SUCCESSFUL | Floor4 demo UI only | — | Spark Emblem |
+| 05 | — | **DEFERRED** | Exterior stub only | — | Atomic Amber |
 
 **No `MiniGameBase`** in the current rebuild. Each real MG is a self-contained `Control` scene.
+
+### Badge flag wiring (honest)
+
+| Zone | Sets `zoneN_badge_earned` on MG success? |
+|------|------------------------------------------|
+| 01 | **No** (map unlock only today) |
+| 02 | **Yes** (`zone02_badge_earned = true` in Harbor Works `_floor_complete`) |
+| 03 | **No** (map unlock only today) |
+| 04 | **No** (placeholder must not award Spark Emblem in Badge Screen) |
+| 05 | Flag does not exist yet |
+
+Badge collection UI: `Docs/SCENE_IMPLEMENTATION.md` (Status Bar + Badge Screen).
 
 ---
 
@@ -37,7 +51,7 @@ This document tracks mini-game implementation for the **current rebuild** (`d:\c
 
 **Verifier:** `scripts/tools/verify_mg01_brake.gd` → `VERIFY_MG1 fail=0`
 
-**Note:** Older GDD five-MG sequence (Brake → Gear → Balance → Pressure → Pulley → Momentum Crest) remains reference-only. This rebuild uses **one** Floor4 mini-game gate (Emergency Brake). Badge art `badge_momentum_crest (1).png` exists; ceremony UI may still be light.
+**Note:** Older GDD five-MG sequence (Brake → Gear → Balance → Pressure → Pulley → Momentum Crest) remains reference-only. This rebuild uses **one** Floor4 mini-game gate (Emergency Brake). Badge art `badge_momentum_crest (1).png` exists; set `zone01_badge_earned` when wiring Badge Screen unlock for Momentum Crest.
 
 Source material (historical / polish target):
 - `Docs/zone01_minigame_implementation_spec.md`
@@ -47,10 +61,11 @@ Source material (historical / polish target):
 
 ## Zone 02 — Harbor Works (IMPLEMENTED)
 
-**Gate:** Zone02 Floor4 quiz pass → Mini-Game Area → PLAY → `MiniGame02_HarborWorks.tscn`.
+**Gate:** Zone02 Floor4 quiz pass → Mini-Game Area → PLAY MINI-GAME 02 → `MiniGame02_HarborWorks.tscn`.
 
 **Assets:** `asset/minigame asset/zone 2 mini game/mini_games_2_asset/` (19 PNGs; `liver_*.png` kept)  
-**Data:** `data/zone02_harbor_briefs.json` (3 briefs)  
+**Data:** `data/zone02_harbor_briefs.json` (3 briefs: Cargo Ship / Lifeboat / Storm Blackout)  
+**Board:** 4×4 tile machine; Source→Load path; predict energy → Launch → stars  
 **Success:** All 3 briefs Star-1 pass → `zone02_badge_earned` + `mark_minigame_successful(ZONE_02)` → World Map → Zone 03 unlock  
 **Fail:** Keep board; show failed constraints; re-LAUNCH  
 
@@ -80,14 +95,23 @@ Lab Bench is **not** a stage.
 
 **Verifier:** `scripts/tools/verify_mg03_fiber_escape.gd` → `VERIFY_MG3 fail=0`
 
-Canonical badge: **Spectrum Crest** (`spectrum badge.png`).
+Canonical badge: **Spectrum Crest** (`spectrum _badge.png` — space before `_`).  
+Does **not** currently set `zone03_badge_earned`.
 
 ---
 
 ## Zone 04 — deferred
 
 Floor4 still uses temporary **PLAY → SUCCESSFUL**.  
+Sets `zone04_minigame_successful` (map unlock) but **must not** be treated as Spark Emblem earned — Badge Screen reads `zone04_badge_earned` only (unset).  
 Canonical badge: **Spark Emblem** (`ui_badge_spark_emblem.png`).
+
+---
+
+## Zone 05 — deferred
+
+Canonical badge: **Atomic Amber** (`asset/sprites/Environment/Zone_5_badge.png`).  
+No `zone05_badge_earned` in GameState yet. Badge Screen always shows Atomic Amber locked.
 
 ---
 

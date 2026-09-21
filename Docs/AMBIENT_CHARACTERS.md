@@ -1,10 +1,12 @@
 # Ambient Characters — Architecture & Upgrade Guide
 
 **Status:** IMPLEMENTED (Zone 01–04 floors)  
-**Last updated:** 2026-09-20  
+**Last updated:** 2026-09-21  
 **Related:** `Docs/PROGRESS.md`, `Docs/SCENE_IMPLEMENTATION.md`, `Docs/MASTER_GAME_SPEC.md`
 
 This document is the **authoritative guide** for future ambient / Supervisor work. Keep assessment and ambient systems separate.
+
+**Note:** Shared `GameplayStatusBar` (BADGES) lives under zone `$UI` and is unrelated to ambient proximity — do not merge ambient triggers with Badge Screen navigation.
 
 ---
 

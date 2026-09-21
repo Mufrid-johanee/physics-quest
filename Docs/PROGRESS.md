@@ -3,7 +3,7 @@
 **Living development log.** Update after every meaningful implementation task.  
 **Reflect real state only.** Untested = NOT TESTED. Partial = PARTIALLY IMPLEMENTED.
 
-Docs sync 2026-09-21: living specs (`MASTER_GAME_SPEC`, `MINIGAME_IMPLEMENTATION`, `SCENE_IMPLEMENTATION`, audits, GDD notes) updated for Fiber Escape, Emergency Brake, and canonical badges.
+Docs sync 2026-09-21 (later): living specs updated for **Gameplay Status Bar + Badge Screen**, Harbor Works, Fiber Escape, Emergency Brake, and canonical five badges (incl. Atomic Amber).
 
 ---
 
@@ -18,20 +18,28 @@ Ambient characters and Zone 01–04 progression remain as previously documented.
 Canonical upgrade guide: `Docs/AMBIENT_CHARACTERS.md`.  
 Assessment / quiz / door / mini-game / World Map unlock flows unchanged.
 
+**Gameplay Status Bar + Badge Screen IMPLEMENTED** (normal zone gameplay only — not mini-games).  
+- Shared UI: `scenes/ui/GameplayStatusBar.tscn` instanced under `$UI` on Z01–Z04 Exterior/Floors + Z05 Exterior.  
+- **BADGES** (top-right) → `SceneTransition` → `scenes/ui/BadgeScreen.tscn` (read-only collection; no autosave).  
+- Canonical names: Momentum Crest · Radiant Crest · Spectrum Crest · Spark Emblem · **Atomic Amber**.  
+- Hall of Legends button only at **5/5** earned badges.  
+Details: `Docs/SCENE_IMPLEMENTATION.md` (UI section) + `Docs/MASTER_GAME_SPEC.md`.
+
 **Progression connection IMPLEMENTED:** each Zone Floor 4 quiz → mini-game → success → next Zone unlocks → RETURN TO WORLD MAP.  
 **Zone 01** uses the **real Emergency Brake** mini-game (`scenes/minigames/zone01/MiniGame01_Brake.tscn`).  
-**Zone 02** uses the **real Harbor Works** mini-game (`scenes/minigames/zone02/MiniGame02_HarborWorks.tscn`).  
+**Zone 02** uses the **real Harbor Works** mini-game (`scenes/minigames/zone02/MiniGame02_HarborWorks.tscn`) — sets `zone02_badge_earned`.  
 **Zone 03** uses the **real Fiber Escape** mini-game (`scenes/minigames/zone03/MiniGame03_FiberEscape.tscn`).  
-Zone 04 still uses the temporary PLAY → SUCCESSFUL placeholder.  
-**Canonical badges:** Momentum Crest · Radiant Crest · Spectrum Crest · Spark Emblem (see `Docs/MASTER_GAME_SPEC.md`).  
+Zone 04 still uses the temporary PLAY → SUCCESSFUL placeholder (**does not** set `zone04_badge_earned`).  
+**Zone 05:** Exterior stub scene exists; World Map click still shows “coming soon”; no `zone05_badge_earned` flag yet.  
 Floor 1–3 flows unchanged.
 
 ### Deferred / next upgrades (tracked)
 
 | Item | Doc |
 |------|-----|
-| Real mini-games (Z02, Z04) | `Docs/MINIGAME_IMPLEMENTATION.md` |
-| Zone 05 scene | Map pin only; no scene yet |
+| Real mini-game Zone 04 | `Docs/MINIGAME_IMPLEMENTATION.md` |
+| Wire `zone01` / `zone03` badge flags on MG success | Badge Screen shows locked until flags set |
+| Zone 05 floors + `zone05_badge_earned` + map entry | Exterior only today |
 | Zone 04 approved assessor dialogue | `Docs/ZONE04_IMPLEMENTATION.md` |
 | New ambient characters / Zone 05 floors | `Docs/AMBIENT_CHARACTERS.md` |
 | Ambient proximity shape polish | Editor only — do not move sprites |
@@ -39,6 +47,21 @@ Floor 1–3 flows unchanged.
 ---
 
 # Completed
+
+## 2026-09-21 — Gameplay Status Bar + Badge Screen
+
+Reusable in-zone HUD button and dedicated collection screen (read-only; no progression rewrite).
+
+- **Status Bar:** `scenes/ui/GameplayStatusBar.tscn` + `scripts/ui/GameplayStatusBar.gd` — top-right **BADGES** under each zone `$UI` CanvasLayer  
+- **Badge Screen:** `scenes/ui/BadgeScreen.tscn` + `scripts/ui/BadgeScreen.gd` — profile name from `SaveManager.active_profile_name`; X/5 from GameState flags; locked = modulate darken  
+- **Integrated:** Zone 01–04 Exterior + Floors 1–4; Zone 05 Exterior only (no Z05 floors exist)  
+- **Not on mini-games** (Brake / Harbor Works / Fiber Escape)  
+- **Assets reused:** existing crest/emblem PNGs; Spectrum uses on-disk `spectrum _badge.png`; Atomic Amber uses `Zone_5_badge.png` (always locked until Z05 flag exists)  
+- **Hall:** `TO THE HALL OF LEGENDS` visible only at 5/5 → existing `scenes/Hall of  legends/hall of legends.tscn`  
+- **Return:** `BadgeScreen.return_scene_path` set before transition; fallback World Map  
+- No autosave on open; manual **S** unchanged  
+
+---
 
 ## 2026-09-21 — Zone 02 real Harbor Works mini-game
 
@@ -67,7 +90,8 @@ Replaced Zone 03 Floor 4 fake SUCCESSFUL gate with playable **Fiber Escape** (Mi
 - **Stage 2:** TRANSOCEANIC CABLE, θc = 68° (unlocks only after Stage 1 success)
 - **Success:** Stage 2 clear → `GameState.mark_minigame_successful(ZONE_03)` → World Map → Zone 04 unlock
 - **Failure:** leak/obstacle feedback + RETRY; does **not** unlock Zone 04
-- **Canonical badge:** Spectrum Crest (`spectrum badge.png`)
+- **Canonical badge:** Spectrum Crest (art on disk: `spectrum _badge.png` — space before `_`)  
+- **Note:** Fiber Escape currently calls `mark_minigame_successful(ZONE_03)` but does **not** set `zone03_badge_earned` (Badge Screen stays locked for Spectrum until that flag is wired).  
 - **Floor4:** `Zone03Floor4.gd` PLAY launches MG3 scene (no fake mark)
 - **Verifier:** `scripts/tools/verify_mg03_fiber_escape.gd` → `VERIFY_MG3 fail=0`
 - Zones 01 / 02 / 04 gameplay untouched. Zone 03 quizzes / Bloom / doors unchanged.
@@ -557,22 +581,26 @@ Fix null Player/PlayerSpawn errors by removing walking-map dependency. Map is a 
 
 # Currently Working On
 
-Nothing — Phase 11B stopped.
+Nothing — docs sync after Status Bar / Badge Screen + Harbor Works.
 
 ---
 
 # Not Yet Implemented
 
-- Floor 2–4 quizzes / Director / MG1
-- Production: turn off Floor 1 quiz demo mode
-- Real mouse-click visual QA on World Map
+- Zone 04 **real** mini-game (still PLAY → SUCCESSFUL placeholder)
+- Zone 05 floors / progression / `zone05_badge_earned` (Exterior stub + map “coming soon” only)
+- Set `zone01_badge_earned` / `zone03_badge_earned` from real MG success (only Harbor Works sets badge today)
+- Hall of Legends interior gameplay (stub background scene only)
+- Zone 04 approved cast dialogue polish
 
 ---
 
 # Known Issues
 
 - Click-area sizes may need editor eye-tuning vs landmark art
-- Actual mouse-click in-game: **NOT TESTED** (headless simulates `select_zone01` / locked handler)
+- Spectrum Crest filename is `spectrum _badge.png` (space); docs must not invent `spectrum badge.png`
+- Badge Screen can show at most **4/5** until Zone 05 flag exists; Hall button requires true 5/5
+- World Map Zone 05 click still feedback-only (“coming soon”) even though `Zone05_Exterior.tscn` exists
 
 ---
 
@@ -580,15 +608,15 @@ Nothing — Phase 11B stopped.
 
 | Test | Result |
 |------|--------|
-| `verify_world_map.gd` | **PASS** |
-| `verify_world_map_flow.gd` | **PASS** |
-| `verify_zone01_exterior_flow.gd` | **PASS** |
-| `verify_zone01_floor1_quiz.gd` | **PASS** (regression) |
-| `verify_foundation.gd` | **PASS** |
-| Real mouse click on Factory | **NOT TESTED** |
+| `verify_mg01_brake.gd` | **PASS** (prior) |
+| `verify_mg02_harbor_works.gd` | **PASS** (`VERIFY_MG2 fail=0`) |
+| `verify_mg03_fiber_escape.gd` | **PASS** (`VERIFY_MG3 fail=0`) |
+| `verify_save_system.gd` | **PASS** (prior) |
+| Status Bar / Badge Screen headless load | **PASS** (instantiate checks) |
+| Real mouse click on World Map / BADGES in-editor | **NOT TESTED** in this docs pass |
 
 ---
 
 # Next Task
 
-Await instruction (Floor 2 quiz, demo-mode off, or visual click tuning).
+Await instruction (Z04 real MG, badge-flag wiring for Z01/Z03, or Zone 05 floors).

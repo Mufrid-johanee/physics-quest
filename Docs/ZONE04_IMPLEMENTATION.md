@@ -2,7 +2,9 @@
 
 **Status:** Assessments + door progression + MG SUCCESSFUL **placeholder** + **floor ambient characters** **IMPLEMENTED**.  
 **Real mini-game mechanics:** DEFERRED.  
-**Canonical badge (when awarded later):** **Spark Emblem** (`asset/sprites/Environment/zone 4/ui_badge_spark_emblem.png`).
+**Canonical badge (when awarded later):** **Spark Emblem** (`asset/sprites/Environment/zone 4/ui_badge_spark_emblem.png`).  
+**Important:** Placeholder SUCCESSFUL sets `zone04_minigame_successful` for map unlock but must **not** set `zone04_badge_earned` — Badge Screen stays locked for Spark Emblem until a real MG awards it.  
+**Badge UI:** Shared Status Bar / Badge Screen on zone floors (not on future Z04 MG). See `Docs/SCENE_IMPLEMENTATION.md`.  
 **Ambient upgrade guide:** `Docs/AMBIENT_CHARACTERS.md`
 
 ## Authoritative structure (4 floors only)

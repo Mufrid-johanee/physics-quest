@@ -1,13 +1,14 @@
 # PHYSICS QUEST — MASTER PROJECT DOCUMENT
 
 **Document type:** Single source of truth for developers, artists, and AI agents  
-**Project root:** `C:\Users\Mufrid Johanee\Desktop\capstone\final\`  
-**Godot project:** `final-godot/`  
-**Assets:** `asset/` (linked into Godot as `res://asset/`)  
-**Last inventory date:** 2026-09-16 (legacy path notes below). **This rebuild root:** `d:\capstone 2`. Ambient/Supervisor floor system: `Docs/AMBIENT_CHARACTERS.md` (2026-09-20). **Profile save/load (authoritative for this rebuild):** `Docs/PROGRESS.md` + `Docs/SCENE_IMPLEMENTATION.md` — `SaveManager` autoload, `user://profiles/`, Main Menu New/Load, in-game **S** after checkpoint (supersedes legacy `user://savegame.json` / GameManager / F5 notes elsewhere in this file).  
-**Mini-games / badges (authoritative for this rebuild, 2026-09-21):** `Docs/MINIGAME_IMPLEMENTATION.md` + `Docs/MASTER_GAME_SPEC.md` — Zone 01 **Emergency Brake** (real), Zone 03 **Fiber Escape** (real), Zones 02/04 PLAY→SUCCESSFUL placeholders. Canonical badges: **Momentum Crest** / **Radiant Crest** / **Spectrum Crest** / **Spark Emblem**. Unlock = `floor4_passed AND minigame_successful`. Older sections in this master that describe five Zone01 MGs, `MiniGameBase`, or missing Spectrum Crest PNG describe the **legacy** tree or outdated asset notes — prefer the living docs above.  
+**Project root (this rebuild):** `d:\capstone 2`  
+**Godot project:** open `project.godot` in Godot **4.7.1**  
+**Assets:** `asset/` → `res://asset/`  
+**Last inventory date:** 2026-09-16 (legacy path notes below). Ambient/Supervisor: `Docs/AMBIENT_CHARACTERS.md` (2026-09-20).  
+**Profile save/load (authoritative):** `Docs/PROGRESS.md` + `Docs/SCENE_IMPLEMENTATION.md` — `SaveManager`, `user://profiles/`, Main Menu New/Load, in-game **S** after checkpoint (supersedes legacy `user://savegame.json` / GameManager / F5 notes elsewhere in this file).  
+**Mini-games / badges / Badge UI (authoritative, 2026-09-21):** `Docs/MINIGAME_IMPLEMENTATION.md` + `Docs/MASTER_GAME_SPEC.md` + `Docs/SCENE_IMPLEMENTATION.md` — Zone 01 **Emergency Brake** (real), Zone 02 **Harbor Works** (real), Zone 03 **Fiber Escape** (real), Zone 04 PLAY→SUCCESSFUL placeholder. Canonical badges: **Momentum Crest** / **Radiant Crest** / **Spectrum Crest** (`spectrum _badge.png`) / **Spark Emblem** / **Atomic Amber**. Shared **GameplayStatusBar** + **BadgeScreen**. Unlock = `floor4_passed AND minigame_successful`. Older sections in this master that describe five Zone01 MGs, `MiniGameBase`, Map A Flux/Lens names, or missing Spectrum art describe the **legacy** tree — prefer the living docs above.  
 **Living status file:** `Docs/PROGRESS.md` (code / scene / on-disk asset / verify **only**)  
-**Standing rule:** Update **this file** after any decision, chat spec, asset list, poster copy, or implementation. Update `docs/PROGRESS.md` **only** after code, scenes, files on disk, or verify runs. Chat-only replies do not edit PROGRESS. Do not leave the master describing an older Godot **or** an older agreed spec.
+**Standing rule:** Update **this file** after any decision, chat spec, asset list, poster copy, or implementation. Update `Docs/PROGRESS.md` **only** after code, scenes, files on disk, or verify runs. Chat-only replies do not edit PROGRESS. Do not leave the master describing an older Godot **or** an older agreed spec.
 
 ---
 
@@ -534,7 +535,7 @@ Duplicates named `(2)` or `(1)` are Windows copies. **Do not use `(2)` files** (
 | Zone 02 Assessment Wing rooms | `Environment/zone 2/energy_assessment_wing.png` 1920×1072, `energy_quiz_room_1.png` 1920×1072, `energy_quiz_room_2.png` **1080×1080**, `energy_quiz_room_3.png` 1920×1072 RGB, `energy_control_room.png` **1296×1080** | Env | CONFIRMED EXISTING | Zone02 Entry / Floors 1–3 / Capstone / MG3 | Room 2 square; Room 3 no alpha | No — do not re-crop in-repo | Cover-scale is viewport 16:9 (not 1296). Control room uses `scale_mode: contain` so 1296×1080 fits without vertical crop-zoom. Room 2 `painted_norm` is the visible 16:9 band |
 | Radiant Crest | `Environment/zone 2/crest radiant.png` | Badge | CONFIRMED EXISTING | Capstone + MiniGame3 `BadgeArt` | Spaces in name | Optional rename | Preview on Capstone; full on MG3 win + flag |
 | Zone 03 Signal Station rooms / MG boards | `Environment/zone 3/signal_station_*.png` | Env | CONFIRMED EXISTING | Zone03 Entry–MG2 | Truncated capstone filename | Optional rename | `RoomArt` + walk colliders |
-| Spectrum Crest | `Environment/zone 3/spectrum badge.png` | Badge | CONFIRMED EXISTING (rebuild) | Zone03 Floor4 BadgeArt / docs | Spaces in name | Keep filename | Living docs: `MINIGAME_IMPLEMENTATION.md` |
+| Spectrum Crest | `Environment/zone 3/spectrum _badge.png` | Badge | CONFIRMED EXISTING (rebuild) | BadgeScreen / Floor4 docs | Filename has space before `_` | Keep filename | Living docs: `MINIGAME_IMPLEMENTATION.md` |
 | Zone 04 Substation env | `Environment/zone 4/substation_*.png` | Env | CONFIRMED EXISTING | Zone04 Entry–MG1 | — | No | `RoomArt` + walk colliders |
 | Observatory | — | Env | MISSING | — | — | Yes when designed | |
 | Thermo / industrial | — | Env | MISSING | — | — | Yes when designed | |

@@ -14,6 +14,7 @@ This GDD’s Zone 03–05 names (Matter Labs / Wave Observatory / Citadel) are *
 | 02 | Energy / Assessment Wing | Radiant Crest |
 | 03 | Signal Station | Spectrum Crest |
 | 04 | The Substation | Spark Emblem |
+| 05 | Research facility (WIP) | Atomic Amber |
 
 Keep this file for historical / alternate design ideas only.
 
