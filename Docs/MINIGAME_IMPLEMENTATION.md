@@ -1,7 +1,7 @@
 # MINIGAME IMPLEMENTATION — Physics Quest
 
 **Living status:** See also `Docs/PROGRESS.md` and `Docs/SCENE_IMPLEMENTATION.md`.  
-**Last updated:** 2026-09-21
+**Last updated:** 2026-09-24 (Zone 02 → PLAY/SUCCESSFUL placeholder; Harbor Works unused legacy)
 
 This document tracks mini-game implementation for the **current rebuild** (`d:\capstone 2`).
 
@@ -19,7 +19,7 @@ This document tracks mini-game implementation for the **current rebuild** (`d:\c
 | Zone | Mini-game | Status | Scene | Controller | Badge (canonical) |
 |------|-----------|--------|-------|------------|-------------------|
 | 01 | Emergency Brake (friction) | **REAL** | `scenes/minigames/zone01/MiniGame01_Brake.tscn` | `scripts/minigames/zone01/MiniGame01Brake.gd` | Momentum Crest |
-| 02 | Harbor Works (machine grid) | **REAL** | `scenes/minigames/zone02/MiniGame02_HarborWorks.tscn` | `scripts/minigames/zone02/MiniGame02HarborWorks.gd` | Radiant Crest |
+| 02 | Harbor Works (machine grid) | **UNUSED LEGACY** (Floor4 uses PLAY→SUCCESSFUL placeholder) | `scenes/minigames/zone02/MiniGame02_HarborWorks.tscn` (not launched) | — | Radiant Crest (set by Floor4 placeholder) |
 | 03 | Fiber Escape (beam routing) | **REAL** | `scenes/minigames/zone03/MiniGame03_FiberEscape.tscn` | `scripts/minigames/zone03/MiniGame03FiberEscape.gd` | Spectrum Crest |
 | 04 | (deferred Build the Generator) | **PLACEHOLDER** PLAY → SUCCESSFUL | Floor4 demo UI only | — | Spark Emblem |
 | 05 | — | **DEFERRED** | Exterior stub only | — | Atomic Amber |
@@ -31,7 +31,7 @@ This document tracks mini-game implementation for the **current rebuild** (`d:\c
 | Zone | Sets `zoneN_badge_earned` on MG success? |
 |------|------------------------------------------|
 | 01 | **No** (map unlock only today) |
-| 02 | **Yes** (`zone02_badge_earned = true` in Harbor Works `_floor_complete`) |
+| 02 | **Yes** (Floor4 placeholder sets `zone02_badge_earned`) |
 | 03 | **No** (map unlock only today) |
 | 04 | **No** (placeholder must not award Spark Emblem in Badge Screen) |
 | 05 | Flag does not exist yet |
@@ -59,19 +59,13 @@ Source material (historical / polish target):
 
 ---
 
-## Zone 02 — Harbor Works (IMPLEMENTED)
+## Zone 02 — Mini-game 02 PLACEHOLDER (active) / Harbor Works UNUSED
 
-**Gate:** Zone02 Floor4 quiz pass → Mini-Game Area → PLAY MINI-GAME 02 → `MiniGame02_HarborWorks.tscn`.
+**Active gate:** Zone02 Floor4 DemoCompleteUI → PLAY MINI-GAME 02 → SUCCESSFUL (no scene change).
 
-**Assets:** `asset/minigame asset/zone 2 mini game/mini_games_2_asset/` (19 PNGs; `liver_*.png` kept)  
-**Data:** `data/zone02_harbor_briefs.json` (3 briefs: Cargo Ship / Lifeboat / Storm Blackout)  
-**Board:** 4×4 tile machine; Source→Load path; predict energy → Launch → stars  
-**Success:** All 3 briefs Star-1 pass → `zone02_badge_earned` + `mark_minigame_successful(ZONE_02)` → World Map → Zone 03 unlock  
-**Fail:** Keep board; show failed constraints; re-LAUNCH  
+**Success:** `zone02_badge_earned = true` + `mark_minigame_successful(ZONE_02)` → unlocks Zone 03 → RETURN TO WORLD MAP.
 
-**Verifier:** `scripts/tools/verify_mg02_harbor_works.gd` → `VERIFY_MG2 fail=0`
-
-Canonical badge: **Radiant Crest** (`crest radiant.png`).
+**Harbor Works (unused legacy):** `MiniGame02_HarborWorks.tscn` / `.gd` / `zone02_harbor_briefs.json` / `mini_games_2_asset/` remain on disk but are **not launched**.
 
 ---
 

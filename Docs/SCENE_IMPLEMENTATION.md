@@ -3,7 +3,7 @@
 **Scope:** Scene implementation tracking (School → World Map → Zones 01–04).  
 **Not for inventing new mini-game designs** (see `Docs/MINIGAME_IMPLEMENTATION.md` for current MG status).  
 **Ambient / Supervisor upgrade guide:** `Docs/AMBIENT_CHARACTERS.md`  
-**Last updated:** 2026-09-21 (Status Bar + Badge Screen; Harbor Works; Fiber Escape; Emergency Brake)
+**Last updated:** 2026-09-24 (Zone 02 MG placeholder, Harbor Works unused; World Map completed-zone visuals; Status Bar + Badge Screen; Fiber Escape; Emergency Brake)
 
 ### Canonical badges
 
@@ -20,7 +20,7 @@
 | Zone | Gate | Unlocks |
 |------|------|---------|
 | 01 | Real Emergency Brake | Zone 02 |
-| 02 | Real Harbor Works (3 briefs) | Zone 03 |
+| 02 | Floor4 DemoCompleteUI placeholder: PLAY → SUCCESSFUL | Zone 03 |
 | 03 | Real Fiber Escape (55° → 68°) | Zone 04 |
 | 04 | PLAY → SUCCESSFUL placeholder | Zone 05 pin |
 
@@ -31,7 +31,7 @@
 | Status Bar | `scenes/ui/GameplayStatusBar.tscn` | Instanced under `$UI` on Z01–Z04 Exterior/Floors + Z05 Exterior |
 | Script | `scripts/ui/GameplayStatusBar.gd` | Top-right **BADGES** → `SceneTransition.change_to(BadgeScreen)` |
 | Badge Screen | `scenes/ui/BadgeScreen.tscn` + `.gd` | Read-only; profile via `SaveManager.active_profile_name`; X/5 from GameState |
-| Mini-games | — | **Do not** instance Status Bar on Brake / Harbor Works / Fiber Escape |
+| Mini-games | — | **Do not** instance Status Bar on Brake / Fiber Escape (or legacy Harbor Works) |
 
 Return uses `BadgeScreen.return_scene_path` (set by Status Bar). Hall button only at **5/5**. No autosave on open.
 
@@ -95,7 +95,7 @@ After each Zone’s Floor 4 quiz pass:
 
 1. Mini-game entry
    - **Zone 01:** real Emergency Brake (`scenes/minigames/zone01/MiniGame01_Brake.tscn`)
-   - **Zone 02:** real Harbor Works (`scenes/minigames/zone02/MiniGame02_HarborWorks.tscn`)
+   - **Zone 02:** Floor4 DemoCompleteUI placeholder — PLAY → `mark_minigame_successful(ZONE_02)` + `zone02_badge_earned` → SUCCESSFUL → World Map (**does not** launch Harbor Works; Harbor Works files unused legacy)
    - **Zone 03:** real Fiber Escape (`scenes/minigames/zone03/MiniGame03_FiberEscape.tscn`)
    - **Zone 04:** Click **PLAY MINI-GAME 1** → **SUCCESSFUL** (temporary demo; does **not** set `zone04_badge_earned`)
 2. On real-MG pass / placeholder SUCCESSFUL → `mark_minigame_successful` → World Map
@@ -105,14 +105,19 @@ After each Zone’s Floor 4 quiz pass:
 
 Unlock condition: `floor4_passed AND minigame_successful` only.
 
-**Badge flags:** Only Harbor Works currently sets `zone02_badge_earned`. Emergency Brake / Fiber Escape unlock the map without setting their badge flags yet. Badge Screen reflects flags only.
+**Badge flags:** Zone 02 placeholder sets `zone02_badge_earned`. Emergency Brake / Fiber Escape unlock the map without setting their badge flags yet. Badge Screen reflects flags only.
 
 Zone 05: World Map click shows “Zone 05 coming soon.” Exterior stub: `scenes/zone05/Zone05_Exterior.tscn` (incomplete; not map-wired).
 
 Zone 01 assets/data: `asset/minigame asset/zone 1 mini game/`, `data/zone01_minigames.json`.  
-Zone 02 assets/data: `asset/minigame asset/zone 2 mini game/mini_games_2_asset/`, `data/zone02_harbor_briefs.json`.  
+Zone 02 Harbor Works assets/data remain on disk unused (`mini_games_2_asset/`, `zone02_harbor_briefs.json`) — not in active flow.  
 Zone 03 assets: `asset/minigame asset/zone 3 mini game/mini game 3 asset/` (**JPG**). Plan: `fiber_escape_implementation_plan.md`.  
 Zone 04 real mini-game deferred.
+
+### World Map landmark visuals
+
+Full-color modulate if `is_zone_unlocked(zone)` **or** `zoneN_minigame_successful`.  
+Clickable only if `is_zone_unlocked(zone)`. Zone 01 always available + full color.
 
 ---
 

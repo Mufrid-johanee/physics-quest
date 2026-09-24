@@ -4,7 +4,7 @@
 
 ### Rebuild note (`d:\capstone 2`, 2026-09-21)
 
-This file is **design exploration** for an Energy Refinery layout. **Canonical Zone 02** in the rebuild is the Assessment Wing / Map C path with badge **Radiant Crest**. Floor4 mini-game is **real Harbor Works** (`MiniGame02_HarborWorks.tscn`). Living status: `Docs/PROGRESS.md`, `Docs/MINIGAME_IMPLEMENTATION.md`, `Docs/MASTER_GAME_SPEC.md`.
+This file is **design exploration** for an Energy Refinery layout. **Canonical Zone 02** in the rebuild is the Assessment Wing / Map C path with badge **Radiant Crest**. Floor4 mini-game is a simple **PLAY → SUCCESSFUL placeholder** (sets `zone02_badge_earned`); Harbor Works (`MiniGame02_HarborWorks.tscn`) remains on disk as unused legacy. Living status: `Docs/PROGRESS.md`, `Docs/MINIGAME_IMPLEMENTATION.md`, `Docs/MASTER_GAME_SPEC.md`.
 
 Working assumption, flag if wrong: each floor is one primary screen (not a scrolling level) containing a dialogue/quiz kiosk zone and a mini-game trigger zone, connected to the next floor via a stairwell/elevator transition screen — same shape as Zone 01's factory floors. Interior lighting stays warm (sodium-vapor industrial lamps, dusty light shafts) to keep the palette consistent even though these are indoor scenes.
 

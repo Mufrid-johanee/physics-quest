@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://dndi81f730yld"]
 
-[ext_resource type="Script" path="res://scripts/minigames/zone02/MiniGame02HarborWorks.gd" id="1_hw"]
+[ext_resource type="Script" uid="uid://c2o86nnfdsh0k" path="res://scripts/minigames/zone02/MiniGame02HarborWorks.gd" id="1_hw"]
 
-[node name="MiniGame02_HarborWorks" type="Control"]
+[node name="MiniGame02_HarborWorks" type="Control" unique_id=1827135880]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hw")
 
-[node name="Background" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="." unique_id=161675772]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -22,40 +22,40 @@ mouse_filter = 2
 expand_mode = 1
 stretch_mode = 6
 
-[node name="BriefPanel" type="PanelContainer" parent="."]
+[node name="BriefPanel" type="PanelContainer" parent="." unique_id=91426785]
 layout_mode = 0
 offset_left = 200.0
 offset_top = 8.0
 offset_right = 900.0
 offset_bottom = 120.0
 
-[node name="Margin" type="MarginContainer" parent="BriefPanel"]
+[node name="Margin" type="MarginContainer" parent="BriefPanel" unique_id=1794982767]
 layout_mode = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 6
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 6
 
-[node name="VBox" type="VBoxContainer" parent="BriefPanel/Margin"]
+[node name="VBox" type="VBoxContainer" parent="BriefPanel/Margin" unique_id=209069404]
 layout_mode = 2
 
-[node name="BriefTitle" type="Label" parent="BriefPanel/Margin/VBox"]
+[node name="BriefTitle" type="Label" parent="BriefPanel/Margin/VBox" unique_id=60424826]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "HARBOR WORKS"
 
-[node name="BriefConstraints" type="Label" parent="BriefPanel/Margin/VBox"]
+[node name="BriefConstraints" type="Label" parent="BriefPanel/Margin/VBox" unique_id=1927006716]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
-autowrap_mode = 3
 text = "Constraints"
+autowrap_mode = 3
 
-[node name="SourceAllowed" type="Label" parent="BriefPanel/Margin/VBox"]
+[node name="SourceAllowed" type="Label" parent="BriefPanel/Margin/VBox" unique_id=1091542148]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
 text = "Sources"
 
-[node name="TilePalette" type="VBoxContainer" parent="."]
+[node name="TilePalette" type="VBoxContainer" parent="." unique_id=1208223730]
 layout_mode = 0
 offset_left = 8.0
 offset_top = 8.0
@@ -63,7 +63,7 @@ offset_right = 190.0
 offset_bottom = 700.0
 theme_override_constants/separation = 4
 
-[node name="BoardArea" type="HBoxContainer" parent="."]
+[node name="BoardArea" type="HBoxContainer" parent="." unique_id=1817634613]
 layout_mode = 0
 offset_left = 220.0
 offset_top = 130.0
@@ -72,7 +72,7 @@ offset_bottom = 520.0
 theme_override_constants/separation = 12
 alignment = 1
 
-[node name="SourceZone" type="Label" parent="BoardArea"]
+[node name="SourceZone" type="Label" parent="BoardArea" unique_id=84660761]
 custom_minimum_size = Vector2(70, 0)
 layout_mode = 2
 text = "SOURCE
@@ -80,29 +80,29 @@ text = "SOURCE
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BoardGrid" type="GridContainer" parent="BoardArea"]
+[node name="BoardGrid" type="GridContainer" parent="BoardArea" unique_id=307201869]
 layout_mode = 2
 theme_override_constants/h_separation = 6
 theme_override_constants/v_separation = 6
 columns = 4
 
-[node name="LoadZone" type="VBoxContainer" parent="BoardArea"]
+[node name="LoadZone" type="VBoxContainer" parent="BoardArea" unique_id=902732735]
 custom_minimum_size = Vector2(110, 0)
 layout_mode = 2
 alignment = 1
 
-[node name="LoadLabel" type="Label" parent="BoardArea/LoadZone"]
+[node name="LoadLabel" type="Label" parent="BoardArea/LoadZone" unique_id=1727943244]
 layout_mode = 2
 text = "LOAD"
 horizontal_alignment = 1
 
-[node name="CargoCrate" type="TextureRect" parent="BoardArea/LoadZone"]
+[node name="CargoCrate" type="TextureRect" parent="BoardArea/LoadZone" unique_id=1608651943]
 custom_minimum_size = Vector2(96, 96)
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="ParameterPanel" type="VBoxContainer" parent="."]
+[node name="ParameterPanel" type="VBoxContainer" parent="." unique_id=952873949]
 layout_mode = 0
 offset_left = 940.0
 offset_top = 130.0
@@ -110,54 +110,48 @@ offset_right = 1260.0
 offset_bottom = 320.0
 theme_override_constants/separation = 8
 
-[node name="ParamTitle" type="Label" parent="ParameterPanel"]
+[node name="ParamTitle" type="Label" parent="ParameterPanel" unique_id=438081834]
 layout_mode = 2
 text = "PARAMETERS"
 
-[node name="CounterweightMass" type="SpinBox" parent="ParameterPanel"]
+[node name="CounterweightMass" type="SpinBox" parent="ParameterPanel" unique_id=87821448]
 layout_mode = 2
-visible = false
 min_value = 50.0
 max_value = 200.0
 value = 100.0
 prefix = "Mass "
 suffix = " kg"
 
-[node name="RampAngleLabel" type="Label" parent="ParameterPanel"]
+[node name="RampAngleLabel" type="Label" parent="ParameterPanel" unique_id=2054631521]
 layout_mode = 2
-visible = false
 text = "Ramp angle: 25°"
 
-[node name="RampAngle" type="HSlider" parent="ParameterPanel"]
+[node name="RampAngle" type="HSlider" parent="ParameterPanel" unique_id=156188813]
 layout_mode = 2
-visible = false
 min_value = 10.0
 max_value = 40.0
 value = 25.0
 
-[node name="LeverRatio" type="OptionButton" parent="ParameterPanel"]
+[node name="LeverRatio" type="OptionButton" parent="ParameterPanel" unique_id=951492243]
 layout_mode = 2
-visible = false
 
-[node name="RotateButton" type="Button" parent="."]
+[node name="RotateButton" type="Button" parent="." unique_id=1172998182]
 layout_mode = 0
 offset_left = 940.0
 offset_top = 330.0
 offset_right = 1100.0
 offset_bottom = 366.0
-visible = false
 text = "ROTATE"
 
-[node name="RemoveButton" type="Button" parent="."]
+[node name="RemoveButton" type="Button" parent="." unique_id=1717303474]
 layout_mode = 0
 offset_left = 1110.0
 offset_top = 330.0
 offset_right = 1260.0
 offset_bottom = 366.0
-visible = false
 text = "REMOVE"
 
-[node name="PredictionPanel" type="VBoxContainer" parent="."]
+[node name="PredictionPanel" type="VBoxContainer" parent="." unique_id=3539771]
 layout_mode = 0
 offset_left = 220.0
 offset_top = 530.0
@@ -165,20 +159,20 @@ offset_right = 520.0
 offset_bottom = 640.0
 theme_override_constants/separation = 6
 
-[node name="PredictionLabel" type="Label" parent="PredictionPanel"]
+[node name="PredictionLabel" type="Label" parent="PredictionPanel" unique_id=1054294339]
 layout_mode = 2
 text = "Predict input energy (J):"
 
-[node name="PredictionInput" type="LineEdit" parent="PredictionPanel"]
+[node name="PredictionInput" type="LineEdit" parent="PredictionPanel" unique_id=434712598]
 layout_mode = 2
 placeholder_text = "e.g. 2500"
 
-[node name="LaunchButton" type="Button" parent="PredictionPanel"]
+[node name="LaunchButton" type="Button" parent="PredictionPanel" unique_id=587981828]
 custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 text = "LAUNCH"
 
-[node name="ValidityLabel" type="Label" parent="."]
+[node name="ValidityLabel" type="Label" parent="." unique_id=1625664742]
 layout_mode = 0
 offset_left = 220.0
 offset_top = 500.0
@@ -186,64 +180,64 @@ offset_right = 520.0
 offset_bottom = 528.0
 text = "Machine path: —"
 
-[node name="ReadoutPanel" type="PanelContainer" parent="."]
+[node name="ReadoutPanel" type="PanelContainer" parent="." unique_id=104449486]
 layout_mode = 0
 offset_left = 540.0
 offset_top = 530.0
 offset_right = 920.0
 offset_bottom = 710.0
 
-[node name="PanelArt" type="TextureRect" parent="ReadoutPanel"]
+[node name="PanelArt" type="TextureRect" parent="ReadoutPanel" unique_id=1969825280]
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 6
 
-[node name="Margin" type="MarginContainer" parent="ReadoutPanel"]
+[node name="Margin" type="MarginContainer" parent="ReadoutPanel" unique_id=327467289]
 layout_mode = 2
 theme_override_constants/margin_left = 12
 theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 8
 
-[node name="VBox" type="VBoxContainer" parent="ReadoutPanel/Margin"]
+[node name="VBox" type="VBoxContainer" parent="ReadoutPanel/Margin" unique_id=641173512]
 layout_mode = 2
 theme_override_constants/separation = 2
 
-[node name="EnergyOut" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="EnergyOut" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=1058568260]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
 
-[node name="EnergyIn" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="EnergyIn" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=1842193368]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
 
-[node name="TimeTaken" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="TimeTaken" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=122993488]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
 
-[node name="EffortForce" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="EffortForce" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=1176888141]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
 
-[node name="EfficiencyTotal" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="EfficiencyTotal" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=1976128896]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
 
-[node name="PredictionResult" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="PredictionResult" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=767199801]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
 
-[node name="StatusLabel" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="StatusLabel" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=776365507]
 layout_mode = 2
 theme_override_font_sizes/font_size = 15
 text = "STATUS: —"
 
-[node name="FailedConstraints" type="Label" parent="ReadoutPanel/Margin/VBox"]
+[node name="FailedConstraints" type="Label" parent="ReadoutPanel/Margin/VBox" unique_id=1191764039]
 layout_mode = 2
 theme_override_font_sizes/font_size = 12
 autowrap_mode = 3
 
-[node name="StarsPanel" type="HBoxContainer" parent="."]
+[node name="StarsPanel" type="HBoxContainer" parent="." unique_id=33693448]
 layout_mode = 0
 offset_left = 940.0
 offset_top = 380.0
@@ -251,35 +245,33 @@ offset_right = 1160.0
 offset_bottom = 440.0
 theme_override_constants/separation = 8
 
-[node name="Star1" type="TextureRect" parent="StarsPanel"]
+[node name="Star1" type="TextureRect" parent="StarsPanel" unique_id=1903606236]
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Star2" type="TextureRect" parent="StarsPanel"]
+[node name="Star2" type="TextureRect" parent="StarsPanel" unique_id=99694597]
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Star3" type="TextureRect" parent="StarsPanel"]
+[node name="Star3" type="TextureRect" parent="StarsPanel" unique_id=257194210]
 custom_minimum_size = Vector2(48, 48)
 layout_mode = 2
 expand_mode = 1
 stretch_mode = 5
 
-[node name="NextBriefButton" type="Button" parent="."]
+[node name="NextBriefButton" type="Button" parent="." unique_id=511723904]
 layout_mode = 0
 offset_left = 940.0
 offset_top = 460.0
 offset_right = 1160.0
 offset_bottom = 504.0
-visible = false
 text = "NEXT BRIEF"
 
-[node name="CompleteBanner" type="Label" parent="."]
-visible = false
+[node name="CompleteBanner" type="Label" parent="." unique_id=1126304872]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

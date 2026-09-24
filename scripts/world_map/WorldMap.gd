@@ -36,19 +36,40 @@ func _ready() -> void:
 
 
 func _apply_landmark_states() -> void:
-	## Zone 01 is always available for the current development path.
-	_set_landmark_unlocked(zone01_root, zone01_click, true)
-	_set_landmark_unlocked(zone02_root, zone02_click, GameState.is_zone_unlocked(GameState.ZONE_02))
-	_set_landmark_unlocked(zone03_root, zone03_click, GameState.is_zone_unlocked(GameState.ZONE_03))
-	_set_landmark_unlocked(zone04_root, zone04_click, GameState.is_zone_unlocked(GameState.ZONE_04))
-	_set_landmark_unlocked(zone05_root, zone05_click, GameState.is_zone_unlocked(GameState.ZONE_05))
+	## Visual: unlocked OR completed → full color. Clickable: is_zone_unlocked only.
+	## Zone 01 is always available (and full color) for the current development path.
+	_set_landmark_state(zone01_root, zone01_click, true, true)
+	_set_landmark_state(
+		zone02_root,
+		zone02_click,
+		GameState.is_zone_unlocked(GameState.ZONE_02),
+		GameState.is_zone_unlocked(GameState.ZONE_02) or GameState.zone02_minigame_successful
+	)
+	_set_landmark_state(
+		zone03_root,
+		zone03_click,
+		GameState.is_zone_unlocked(GameState.ZONE_03),
+		GameState.is_zone_unlocked(GameState.ZONE_03) or GameState.zone03_minigame_successful
+	)
+	_set_landmark_state(
+		zone04_root,
+		zone04_click,
+		GameState.is_zone_unlocked(GameState.ZONE_04),
+		GameState.is_zone_unlocked(GameState.ZONE_04) or GameState.zone04_minigame_successful
+	)
+	_set_landmark_state(
+		zone05_root,
+		zone05_click,
+		GameState.is_zone_unlocked(GameState.ZONE_05),
+		GameState.is_zone_unlocked(GameState.ZONE_05)
+	)
 
 
-func _set_landmark_unlocked(root: Node2D, click: Area2D, unlocked: bool) -> void:
+func _set_landmark_state(root: Node2D, click: Area2D, clickable: bool, full_color: bool) -> void:
 	if root:
-		root.modulate = UNLOCKED_MODULATE if unlocked else LOCKED_MODULATE
+		root.modulate = UNLOCKED_MODULATE if full_color else LOCKED_MODULATE
 	if click and "is_locked" in click:
-		click.is_locked = not unlocked
+		click.is_locked = not clickable
 
 
 func _wire_click(area: Area2D) -> void:

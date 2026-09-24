@@ -178,13 +178,11 @@ visible = false
 script = ExtResource("9_quizctl")
 
 [node name="QuizPanel" parent="." unique_id=1411307383 instance=ExtResource("8_quiz")]
-visible = false
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=884399717]
 layer = 10
 
 [node name="PromptLabel" type="Label" parent="UI" unique_id=37920735]
-visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -201,8 +199,8 @@ theme_override_font_sizes/font_size = 18
 text = "Press E / F"
 horizontal_alignment = 1
 
+[node name="GameplayStatusBar" parent="UI" unique_id=749657685 instance=ExtResource("gsb_ui")]
 
-[node name="GameplayStatusBar" parent="UI" instance=ExtResource("gsb_ui")]
 [node name="MiniGameArea" type="Area2D" parent="." unique_id=1198368880]
 position = Vector2(978, 580)
 collision_layer = 0
@@ -227,7 +225,6 @@ metadata/_edit_use_anchors_ = true
 layer = 20
 
 [node name="Root" type="Control" parent="DemoCompleteUI" unique_id=1267173487]
-visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -286,7 +283,6 @@ layout_mode = 2
 text = "PLAY MINI-GAME 1"
 
 [node name="ReturnToWorldMapButton" type="Button" parent="DemoCompleteUI/Root/Center/Panel/Margin/VBox" unique_id=1330207382]
-visible = false
 custom_minimum_size = Vector2(0, 44)
 layout_mode = 2
 text = "RETURN TO THE WORLD MAP"

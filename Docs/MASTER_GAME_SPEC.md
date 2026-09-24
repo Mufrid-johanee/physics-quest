@@ -6,7 +6,7 @@
 **Assets:** `asset/` → `res://asset/`  
 **Source docs (read-only inventory):** `Docs/PHYSICS_QUEST_MASTER.md`, `Docs/zone01_minigame_implementation_spec.md`, zone 02–05 GDDs  
 **Living status:** `Docs/PROGRESS.md`  
-**Last updated:** 2026-09-21 (Status Bar + Badge Screen; Harbor Works; Fiber Escape; Emergency Brake; five canonical badges)
+**Last updated:** 2026-09-24 (Zone 02 MG → SUCCESSFUL placeholder, Harbor Works unused; World Map completed-zone full-color visuals; Status Bar + Badge Screen; Fiber Escape; Emergency Brake; five canonical badges)
 
 ---
 
@@ -54,7 +54,7 @@ Zone 05 map pin (“coming soon” feedback; Exterior stub exists, floors deferr
 
 **Mini-game status (this rebuild):**
 - Zone 01: **real** Emergency Brake → unlocks Zone 02
-- Zone 02: **real** Harbor Works (3 briefs) → unlocks Zone 03 (+ sets `zone02_badge_earned`)
+- Zone 02: simple PLAY → SUCCESSFUL placeholder on Floor4 → unlocks Zone 03 (+ sets `zone02_badge_earned`). Harbor Works files remain on disk **unused**.
 - Zone 03: **real** Fiber Escape (2 stages) → unlocks Zone 04
 - Zone 04: temporary PLAY → SUCCESSFUL placeholder → unlocks Zone 05 map pin (**does not** set `zone04_badge_earned`)
 
@@ -65,7 +65,7 @@ Zone 05 map pin (“coming soon” feedback; Exterior stub exists, floors deferr
 | Zone | Location (docs) | Badge (canonical) | Status this project |
 |------|-----------------|-------------------|---------------------|
 | 01 | Mechanics Factory | **Momentum Crest** | **Implemented** — Exterior + F1–4 + real Emergency Brake MG |
-| 02 | Energy Refinery / Assessment Wing | **Radiant Crest** | **Implemented** — assessments + real Harbor Works MG |
+| 02 | Energy Refinery / Assessment Wing | **Radiant Crest** | **Implemented** — assessments + MG SUCCESSFUL placeholder (sets Radiant Crest) |
 | 03 | Signal Station | **Spectrum Crest** | **Implemented** — Exterior + F1–4 + real Fiber Escape MG |
 | 04 | The Substation | **Spark Emblem** | **Implemented** — 4 floors + Volt guide + MG SUCCESSFUL placeholder |
 | 05 | Research facility (WIP) | **Atomic Amber** | Exterior stub + badge art; floors / flag / map entry **deferred** |
@@ -82,7 +82,9 @@ Zone 05 map pin (“coming soon” feedback; Exterior stub exists, floors deferr
 
 Do **not** use obsolete names (Flux Badge, Lens Token, Heat Sigil, Spark Emblem-as-Zone-02).  
 Do **not** invent `spectrum badge.png` — on-disk name is **`spectrum _badge.png`**.  
-Unlock authority for World Map is `GameState.mark_minigame_successful` + `sync_world_map_unlocks()`. Badge Screen reads **badge flags only** (Harbor Works sets Radiant Crest; Z01/Z03 MG success currently unlocks map without setting badge flags).
+Unlock authority for World Map is `GameState.mark_minigame_successful` + `sync_world_map_unlocks()`. Badge Screen reads **badge flags only** (Zone 02 Floor4 placeholder sets Radiant Crest; Z01/Z03 MG success currently unlocks map without setting badge flags).
+
+**World Map landmark visuals:** Zone 01 always full color + clickable. Zones 02–04 are drawn in **full color** if `is_zone_unlocked(N)` **or** `zoneN_minigame_successful`; they are **clickable only** if `is_zone_unlocked(N)`. Zone 05 follows `is_zone_unlocked(5)` for both. (`scripts/world_map/WorldMap.gd` → `_set_landmark_state`.)
 
 ### Badge collection UI
 
@@ -260,7 +262,7 @@ Developer must be able to edit in the editor without fighting code:
 - Zone 04 **real** mini-game mechanics (still PLAY→SUCCESSFUL placeholder)  
 - Zone 05 floors + badge flag  
 
-**Implemented since Phase 1 (see living docs):** Zone 01–04 assessments, ambient characters, profile save/load, Zone 01 Emergency Brake, Zone 02 Harbor Works, Zone 03 Fiber Escape, Gameplay Status Bar + Badge Screen.
+**Implemented since Phase 1 (see living docs):** Zone 01–04 assessments, ambient characters, profile save/load, Zone 01 Emergency Brake, Zone 02 MG placeholder (Harbor Works built but unused), Zone 03 Fiber Escape, World Map completed-zone visuals, Gameplay Status Bar + Badge Screen.
 
 ---
 
@@ -271,7 +273,7 @@ Authoritative: `Docs/MINIGAME_IMPLEMENTATION.md`.
 | Zone | Current gate |
 |------|----------------|
 | 01 | Real Emergency Brake → Zone 02 |
-| 02 | Real Harbor Works (3 briefs) → Zone 03 |
+| 02 | PLAY → SUCCESSFUL placeholder (sets `zone02_badge_earned`) → Zone 03 |
 | 03 | Real Fiber Escape (Server Room 55° → Transoceanic 68°) → Zone 04 |
 | 04 | PLAY → SUCCESSFUL placeholder → Zone 05 pin |
 
@@ -330,7 +332,8 @@ Older five-MG Factory Emergency order (Brake → Gear → Balance → Pressure �
 | D35 | Ambient guide doc | `Docs/AMBIENT_CHARACTERS.md` is upgrade authority |
 | D36 | Profile save/load | `SaveManager` + `user://profiles/`; manual **S** after checkpoint; no autosave |
 | D37 | Menu art hotspots | `load game screen.png`; UI reaches SaveManager via `/root/SaveManager` |
-| D38 | Zone MG gates | Z01 Emergency Brake + Z02 Harbor Works + Z03 Fiber Escape are real; Z04 placeholder; no `MiniGameBase` |
+| D38 | Zone MG gates | Z01 Emergency Brake + Z03 Fiber Escape are real; Z02 + Z04 placeholders (Harbor Works files unused legacy); no `MiniGameBase` |
+| D41 | World Map visuals | Full color = unlocked OR MG successful; clickable = `is_zone_unlocked` only |
 | D39 | Canonical badges | Momentum Crest / Radiant Crest / Spectrum Crest / Spark Emblem / Atomic Amber |
 | D40 | Badge UI | Shared `GameplayStatusBar` + `BadgeScreen`; not on mini-games; Hall at 5/5 only |
 
@@ -343,7 +346,7 @@ Older five-MG Factory Emergency order (Brake → Gear → Balance → Pressure �
 - Audio wiring — files exist; Dummy driver note in old docs; wire later  
 - Fonts folder is empty — use Godot default font until fonts supplied  
 - Zone 04 **real** mini-game (generator) — still deferred; see `Docs/MINIGAME_IMPLEMENTATION.md`  
-- Wire `zone01_badge_earned` / `zone03_badge_earned` on MG success (Harbor Works already sets Radiant Crest)  
+- Wire `zone01_badge_earned` / `zone03_badge_earned` on MG success (Zone 02 placeholder already sets Radiant Crest)  
 - Zone 01 MG2–MG5 chain / Hall of Legends gameplay — optional polish  
 - Zone 05 floors + `zone05_badge_earned` + map entry (Exterior stub exists; map still “coming soon”)  
 - Per-character ambient proximity shape polish — optional editor tuning (`AMBIENT_CHARACTERS.md`)  

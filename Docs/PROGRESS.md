@@ -3,7 +3,7 @@
 **Living development log.** Update after every meaningful implementation task.  
 **Reflect real state only.** Untested = NOT TESTED. Partial = PARTIALLY IMPLEMENTED.
 
-Docs sync 2026-09-21 (later): living specs updated for **Gameplay Status Bar + Badge Screen**, Harbor Works, Fiber Escape, Emergency Brake, and canonical five badges (incl. Atomic Amber).
+Docs sync 2026-09-24: living specs updated for **Zone 02 Mini-game 02 placeholder** (Harbor Works retired to unused legacy), **World Map completed-zone full-color visuals**, Gameplay Status Bar + Badge Screen, Fiber Escape, Emergency Brake, and canonical five badges (incl. Atomic Amber).
 
 ---
 
@@ -27,7 +27,7 @@ Details: `Docs/SCENE_IMPLEMENTATION.md` (UI section) + `Docs/MASTER_GAME_SPEC.md
 
 **Progression connection IMPLEMENTED:** each Zone Floor 4 quiz → mini-game → success → next Zone unlocks → RETURN TO WORLD MAP.  
 **Zone 01** uses the **real Emergency Brake** mini-game (`scenes/minigames/zone01/MiniGame01_Brake.tscn`).  
-**Zone 02** uses the **real Harbor Works** mini-game (`scenes/minigames/zone02/MiniGame02_HarborWorks.tscn`) — sets `zone02_badge_earned`.  
+**Zone 02** uses a **simple Mini-game 02 placeholder** on Floor4: PLAY → SUCCESSFUL → `mark_minigame_successful(ZONE_02)` + `zone02_badge_earned` → World Map (Harbor Works scene/assets remain on disk unused).  
 **Zone 03** uses the **real Fiber Escape** mini-game (`scenes/minigames/zone03/MiniGame03_FiberEscape.tscn`).  
 Zone 04 still uses the temporary PLAY → SUCCESSFUL placeholder (**does not** set `zone04_badge_earned`).  
 **Zone 05:** Exterior stub scene exists; World Map click still shows “coming soon”; no `zone05_badge_earned` flag yet.  
@@ -63,7 +63,20 @@ Reusable in-zone HUD button and dedicated collection screen (read-only; no progr
 
 ---
 
+## 2026-09-21 — Zone 02 Mini-game 02 placeholder (Harbor Works retired from active flow)
+
+Active Floor4 gate is now a simple DemoCompleteUI placeholder (same pattern as Zone 04):
+
+- PLAY MINI-GAME 02 → `zone02_badge_earned = true` + `GameState.mark_minigame_successful(ZONE_02)` → **SUCCESSFUL** → RETURN TO WORLD MAP  
+- Does **not** launch `MiniGame02_HarborWorks.tscn`  
+- Harbor Works scene/script/JSON/assets remain on disk as **unused legacy/reference** only  
+- World Map: landmark full-color if `is_zone_unlocked` **or** `zoneN_minigame_successful`; clickable only if unlocked  
+
+---
+
 ## 2026-09-21 — Zone 02 real Harbor Works mini-game
+
+> **Superseded for active gameplay (same day):** Floor4 PLAY is now a SUCCESSFUL placeholder. Harbor Works files left unused.
 
 Replaced Zone 02 Floor 4 fake SUCCESSFUL gate with playable **Harbor Works** (Mini-Game 02).
 
@@ -581,7 +594,7 @@ Fix null Player/PlayerSpawn errors by removing walking-map dependency. Map is a 
 
 # Currently Working On
 
-Nothing — docs sync after Status Bar / Badge Screen + Harbor Works.
+Nothing — docs sync after Zone 02 MG placeholder + World Map completed-zone visual fix.
 
 ---
 
@@ -589,7 +602,7 @@ Nothing — docs sync after Status Bar / Badge Screen + Harbor Works.
 
 - Zone 04 **real** mini-game (still PLAY → SUCCESSFUL placeholder)
 - Zone 05 floors / progression / `zone05_badge_earned` (Exterior stub + map “coming soon” only)
-- Set `zone01_badge_earned` / `zone03_badge_earned` from real MG success (only Harbor Works sets badge today)
+- Set `zone01_badge_earned` / `zone03_badge_earned` from real MG success (only the Zone 02 Floor4 placeholder sets a badge today)
 - Hall of Legends interior gameplay (stub background scene only)
 - Zone 04 approved cast dialogue polish
 

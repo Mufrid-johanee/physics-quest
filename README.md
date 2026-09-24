@@ -8,10 +8,10 @@
 ## Features (this rebuild)
 
 - Main Menu New / Load / Quit + profile saves under `user://profiles/` (manual **S** after checkpoint; no autosave)
-- World Map click landmarks → Zones 01–04
+- World Map click landmarks → Zones 01–04 (completed / unlocked zones shown in full color; only unlocked zones are clickable)
 - Zone 01–04: Exterior + Floors 1–4, quizzes (≥80%), ambient characters, Floor4 mini-game gate
-- **Real mini-games:** Emergency Brake (Z01) · Harbor Works (Z02) · Fiber Escape (Z03)
-- Zone 04 mini-game still a temporary SUCCESSFUL placeholder
+- **Real mini-games:** Emergency Brake (Z01) · Fiber Escape (Z03)
+- Zone 02 and Zone 04 mini-games are simple PLAY → SUCCESSFUL placeholders (Zone 02 Harbor Works files kept on disk, unused)
 - Shared **Gameplay Status Bar** (**BADGES**) → **Badge Screen** collection UI
 - Canonical badges: Momentum Crest · Radiant Crest · Spectrum Crest · Spark Emblem · Atomic Amber
 

@@ -1,9 +1,8 @@
 extends Node2D
-## Zone 02 Floor 4 — Director assessment → Harbor Works (MG02) → unlock Zone 03.
+## Zone 02 Floor 4 — Director assessment → Mini-game 02 PLACEHOLDER → unlock Zone 03.
 ## Floor 4 quiz alone does NOT unlock Zone 03. Scene tree owns layout transforms.
 
 const WORLD_MAP_PATH := "res://scenes/world_map/WorldMap.tscn"
-const MG2_PATH := "res://scenes/minigames/zone02/MiniGame02_HarborWorks.tscn"
 
 const DIRECTOR_LINES: PackedStringArray = [
 	"This is the Energy Control Room — the final assessment of Zone 02.",
@@ -225,7 +224,7 @@ func _open_placeholder_ui() -> void:
 		_show_successful_ui()
 	else:
 		if placeholder_label:
-			placeholder_label.text = "HARBOR WORKS\nMachine-building challenge — Create level.\nPress PLAY MINI-GAME 02."
+			placeholder_label.text = "MINI-GAME 02 PLACEHOLDER\nPress PLAY MINI-GAME 02."
 		if play_mg1_btn:
 			play_mg1_btn.visible = true
 			play_mg1_btn.text = "PLAY MINI-GAME 02"
@@ -236,16 +235,18 @@ func _open_placeholder_ui() -> void:
 
 
 func _on_play_mg1() -> void:
-	## Launch real Harbor Works — success is decided inside the mini-game.
+	## Placeholder SUCCESSFUL — does not launch Harbor Works.
 	if GameState.zone02_minigame_successful:
 		_show_successful_ui()
 		return
-	_go_scene(MG2_PATH)
+	GameState.zone02_badge_earned = true
+	GameState.mark_minigame_successful(GameState.ZONE_02)
+	_show_successful_ui()
 
 
 func _show_successful_ui() -> void:
 	if placeholder_label:
-		placeholder_label.text = "Harbor Works cleared.\nZone 03 unlocked on the World Map."
+		placeholder_label.text = "SUCCESSFUL\nZone 03 unlocked on the World Map."
 	if play_mg1_btn:
 		play_mg1_btn.visible = false
 	if return_wm_btn:

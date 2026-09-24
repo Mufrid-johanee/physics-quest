@@ -19,7 +19,7 @@ Emergency Brake is now **implemented** in this rebuild (`MiniGame01_Brake.tscn`)
 | 1 | `Docs/ZONE01_AUDIT.md` + `Docs/MASTER_GAME_SPEC.md` + `Docs/PROGRESS.md` | **Where** MG1 attaches to this project; physical chain; placeholder status; rebuild scope |
 | 2 | `Docs/PHYSICS_QUEST_MASTER.md` **§33.1** (+ §7 MG1 asset table, §32 beat 7–8) | **Authoritative GDD** for MG1 identity, numbers, steps, success/fail presentation |
 | 3 | `Docs/zone01_minigame_implementation_spec.md` | Scenario object shape, UI pieces, fail→MG1 sequence; **defaults must match §33** |
-| 4 | `Docs/MINIGAME_IMPLEMENTATION.md` | **Current** MG status (Z01 Brake + Z02 Harbor Works + Z03 Fiber Escape real; Z04 placeholder) |
+| 4 | `Docs/MINIGAME_IMPLEMENTATION.md` | **Current** MG status (Z01 Brake + Z03 Fiber Escape real; Z02 + Z04 placeholders; Harbor Works unused legacy) |
 | 5 | `Docs/SCENE_IMPLEMENTATION.md` | Current Floor 4 / MG wiring |
 
 ### Conflict resolution (do not invent)

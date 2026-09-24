@@ -91,9 +91,11 @@ func _run() -> void:
 
 	var src := FileAccess.get_file_as_string("res://scripts/zone02/Zone02Floor4.gd")
 	_expect(src.contains("load_zone02_floor4_bank"), "loads zone02 floor4 bank")
-	_expect(src.contains("mark_minigame_successful"), "MG SUCCESSFUL marks progress")
-	_expect(src.contains("PLAY MINI-GAME 02") or src.contains("Harbor Works"), "PLAY Harbor Works")
-	_expect(src.contains("MiniGame02_HarborWorks.tscn"), "launches Harbor Works scene")
+	_expect(src.contains("mark_minigame_successful(GameState.ZONE_02)"), "PLAY marks ZONE_02 via GameState")
+	_expect(src.contains("PLAY MINI-GAME 02"), "PLAY MINI-GAME 02 label")
+	_expect(src.contains("SUCCESSFUL"), "SUCCESSFUL placeholder text")
+	_expect(not src.contains("MiniGame02_HarborWorks.tscn"), "does not launch Harbor Works")
+	_expect(not src.contains("MG2_PATH"), "MG2_PATH removed")
 	_expect(not src.contains("zone02_complete = true"), "quiz Continue does not set complete")
 
 	var before_marker := str(gs.zone02_exterior_spawn_marker) if gs else ""
@@ -107,12 +109,13 @@ func _run() -> void:
 	_expect(not gs.is_zone_unlocked(gs.ZONE_03), "quiz alone does not unlock ZONE_03")
 	_expect(gs == null or str(gs.zone02_exterior_spawn_marker) == before_marker, "CONTINUE does not set exterior spawn")
 
-	## PLAY must NOT fake-mark success — real Harbor Works decides that.
-	var before_mg := bool(gs.zone02_minigame_successful) if gs else false
+	## PLAY placeholder marks success + unlocks Zone 03 (floor4 already passed).
 	scene._on_play_mg1()
 	await process_frame
-	_expect(gs == null or gs.zone02_minigame_successful == before_mg, "PLAY does not fake-mark MG successful")
-	_expect(not gs.is_zone_unlocked(gs.ZONE_03) or before_mg, "PLAY alone does not unlock ZONE_03")
+	_expect(gs != null and gs.zone02_minigame_successful, "PLAY sets zone02_minigame_successful")
+	_expect(gs != null and gs.zone02_complete, "PLAY sets zone02_complete")
+	_expect(gs != null and gs.zone02_badge_earned, "PLAY sets zone02_badge_earned")
+	_expect(gs.is_zone_unlocked(gs.ZONE_03), "PLAY unlocks ZONE_03")
 
 	scene.queue_free()
 	await process_frame
